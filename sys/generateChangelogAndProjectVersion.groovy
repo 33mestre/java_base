@@ -32,7 +32,7 @@ def projectDir = Paths.get("").toAbsolutePath().normalize().toString()
 // ---------------------------------
 // user and repo
 // ---------------------------------
-def user = 'java_base'
+def user = '33mestre'
 def repo = 'sognisport'
 
 // ---------------------------------
