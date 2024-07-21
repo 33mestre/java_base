@@ -48,7 +48,7 @@ Configures:
     <!-- Additional project information -->
     <name>sognisport</name> <!-- Project name -->
     <description>Project for Currency Conversion API</description> <!-- Project description -->
-    <url>https://github.com/33mestre/sognisport</url> <!-- Project URL -->
+    <url>https://github.com/java_base/sognisport</url> <!-- Project URL -->
 
     <!-- Parent project definition -->
     <parent>
@@ -233,7 +233,7 @@ Configures:
                                     <url>https://about.me/shelson</url>
                                 </contact>
                                     <license>
-                                        <url>https://github.com/33mestre/sognisport/blob/master/LICENSES</url>
+                                        <url>https://github.com/java_base/sognisport/blob/master/LICENSES</url>
                                         <name>Dual Licence - MIT License and Apache License 2.0</name>
                                     </license>
                             </info>
@@ -408,13 +408,13 @@ Configures:
     <licenses>
         <license>
             <name>MIT License</name>
-            <url>https://github.com/33mestre/sognisport/blob/master/LICENSE-MIT</url>
+            <url>https://github.com/java_base/sognisport/blob/master/LICENSE-MIT</url>
             <distribution>repo</distribution>
             <comments>MIT License</comments>
         </license>
         <license>
             <name>Apache License</name>
-            <url>https://github.com/33mestre/sognisport/blob/master/LICENSE-APACHE</url>
+            <url>https://github.com/java_base/sognisport/blob/master/LICENSE-APACHE</url>
             <distribution>repo</distribution>
             <comments>Apache License</comments>
         </license>
@@ -422,8 +422,8 @@ Configures:
 
     <!-- SCM (Source Code Management) configuration -->
     <scm>
-        <connection>scm:git:git://github.com/33mestre/sognisport.git</connection>
-        <developerConnection>scm:git:ssh://github.com:33mestre/sognisport.git</developerConnection>
-        <url>https://github.com/33mestre/sognisport</url>
+        <connection>scm:git:git://github.com/java_base/sognisport.git</connection>
+        <developerConnection>scm:git:ssh://github.com:java_base/sognisport.git</developerConnection>
+        <url>https://github.com/java_base/sognisport</url>
     </scm>
 </project>

@@ -11,7 +11,7 @@
     },
     "license" : {
       "name" : "Dual Licence - MIT License and Apache License 2.0",
-      "url" : "https://github.com/33mestre/sognisport/blob/master/LICENSES"
+      "url" : "https://github.com/java_base/sognisport/blob/master/LICENSES"
     }
   },
   "host" : "localhost:8080",

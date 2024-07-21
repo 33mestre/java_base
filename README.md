@@ -1,12 +1,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-[![Build and Test For PR](https://github.com/33mestre/sognisport/actions/workflows/main.yml/badge.svg)](https://github.com/33mestre/sognisport/actions/workflows/main.yml)
+[![Build and Test For PR](https://github.com/java_base/sognisport/actions/workflows/main.yml/badge.svg)](https://github.com/java_base/sognisport/actions/workflows/main.yml)
 
-[![Known Vulnerabilities](https://snyk.io/test/github/33mestre/sognisport/badge.svg?targetFile=pom.xml)](https://snyk.io/test/github/33mestre/sognisport?targetFile=pom.xml) 
+[![Known Vulnerabilities](https://snyk.io/test/github/java_base/sognisport/badge.svg?targetFile=pom.xml)](https://snyk.io/test/github/java_base/sognisport?targetFile=pom.xml) 
 
-![GitHub repo size](https://img.shields.io/github/repo-size/33mestre/sognisport.svg) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/33mestre/sognisport.svg) ![GitHub top language](https://img.shields.io/github/languages/top/33mestre/sognisport.svg) ![GitHub language count](https://img.shields.io/github/languages/count/33mestre/sognisport.svg) ![GitHub last commit](https://img.shields.io/github/last-commit/33mestre/sognisport.svg)
+![GitHub repo size](https://img.shields.io/github/repo-size/java_base/sognisport.svg) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/java_base/sognisport.svg) ![GitHub top language](https://img.shields.io/github/languages/top/java_base/sognisport.svg) ![GitHub language count](https://img.shields.io/github/languages/count/java_base/sognisport.svg) ![GitHub last commit](https://img.shields.io/github/last-commit/java_base/sognisport.svg)
 
-[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/33mestre/sognisport.svg)](http://isitmaintained.com/project/33mestre/sognisport "Average time to resolve an issue") [![Percentage of issues still open](http://isitmaintained.com/badge/open/33mestre/sognisport.svg)](http://isitmaintained.com/project/33mestre/sognisport "Percentage of issues still open")
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/java_base/sognisport.svg)](http://isitmaintained.com/project/java_base/sognisport "Average time to resolve an issue") [![Percentage of issues still open](http://isitmaintained.com/badge/open/java_base/sognisport.svg)](http://isitmaintained.com/project/java_base/sognisport "Percentage of issues still open")
 
 --- 
 
@@ -25,7 +25,7 @@ A Currency conversion project - server, database, access clients (input data and
 - **Clone the GitHub repository and access the project folder:**
     
 ```bash
-git clone https://github.com/33mestre/sognisport.git
+git clone https://github.com/java_base/sognisport.git
 cd sognisport
 ```
 
@@ -160,23 +160,23 @@ The generation of `CHANGELOG.md` is automated and occurs with each new commit to
 
 ## Wiki
 
-- [Presentation](https://github.com/33mestre/sognisport/wiki/presentation)
-- [Project](https://github.com/33mestre/sognisport/wiki/project)
-- [Technical Definitions](https://github.com/33mestre/sognisport/wiki/technical-definitions)
-- [Project Structure](https://github.com/33mestre/sognisport/wiki/project-structure)
-- [Project Components](https://github.com/33mestre/sognisport/wiki/project-components)
-- [Testing](https://github.com/33mestre/sognisport/wiki/testing)
-- [Documentation and Swagger](https://github.com/33mestre/sognisport/wiki/documentation-and-swagger)
-- [Application Execution](https://github.com/33mestre/sognisport/wiki/application-execution)
-- [H2 Database](https://github.com/33mestre/sognisport/wiki/h2-database)
-- [CI/CD Pipeline](https://github.com/33mestre/sognisport/wiki/ci-cd-pipeline)
-- [Configuration Files](https://github.com/33mestre/sognisport/wiki/configuration-files)
-- [Logs and Best Practices](https://github.com/33mestre/sognisport/wiki/logs-and-best-practices)
-- [Differentials](https://github.com/33mestre/sognisport/wiki/differentials)
+- [Presentation](https://github.com/java_base/sognisport/wiki/presentation)
+- [Project](https://github.com/java_base/sognisport/wiki/project)
+- [Technical Definitions](https://github.com/java_base/sognisport/wiki/technical-definitions)
+- [Project Structure](https://github.com/java_base/sognisport/wiki/project-structure)
+- [Project Components](https://github.com/java_base/sognisport/wiki/project-components)
+- [Testing](https://github.com/java_base/sognisport/wiki/testing)
+- [Documentation and Swagger](https://github.com/java_base/sognisport/wiki/documentation-and-swagger)
+- [Application Execution](https://github.com/java_base/sognisport/wiki/application-execution)
+- [H2 Database](https://github.com/java_base/sognisport/wiki/h2-database)
+- [CI/CD Pipeline](https://github.com/java_base/sognisport/wiki/ci-cd-pipeline)
+- [Configuration Files](https://github.com/java_base/sognisport/wiki/configuration-files)
+- [Logs and Best Practices](https://github.com/java_base/sognisport/wiki/logs-and-best-practices)
+- [Differentials](https://github.com/java_base/sognisport/wiki/differentials)
 - [Project Architecture Documentation](/ARCHITECTURE.md)
-- [Attachments](https://github.com/33mestre/sognisport/wiki/attachments)
-- [Licensing](https://github.com/33mestre/sognisport/wiki/licensing)
-- [Useful Links](https://github.com/33mestre/sognisport/wiki/useful-links)
+- [Attachments](https://github.com/java_base/sognisport/wiki/attachments)
+- [Licensing](https://github.com/java_base/sognisport/wiki/licensing)
+- [Useful Links](https://github.com/java_base/sognisport/wiki/useful-links)
 - [Authors](/AUTHORS.md)
 - [Code of Conduct](/CODE_OF_CONDUCT.md)
 - [Project Change Log](/CHANGELOG.md)

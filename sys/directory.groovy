@@ -108,7 +108,7 @@ def rootDirPath = "src/main/java/com/sognisport"
 // ---------------------------------
 // Base URL of the GitHub repository
 // ---------------------------------
-def baseUrl = "https://github.com/33mestre/sognisport/tree/master/src/main/java/com/sognisport"
+def baseUrl = "https://github.com/java_base/sognisport/tree/master/src/main/java/com/sognisport"
 
 // ---------------------------------
 // Path to the output file
