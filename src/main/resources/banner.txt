@@ -1,0 +1,17 @@
+---------------------------------
+    _____ __         __                    ______                          _
+   / ___// /_  ___  / /________  ____     / ____/__  ______________ ______(_)
+   \__ \/ __ \/ _ \/ / ___/ __ \/ __ \   / /_  / _ \/ ___/ ___/ __ \`/ ___/ /
+  ___/ / / / /  __/ (__  ) /_/ / / / /  / __/ /  __/ /  / /  / /_/ / /  / /
+ /____/_/ /_/\___/_/____/\____/_/ /_/  /_/    \___/_/  /_/   \__,_/_/  /_/
+---------------------------------
+Project Name: ${project.name}
+Project Phase: ${project.phase}
+Description: ${project.description}
+Java Version: ${java.version}
+---------------------------------
+Swagger Documentation: http://localhost:8080/swagger-ui
+H2 Console: http://localhost:8080/h2-console
+Postman File (for import): postman_collection.json
+Example Request: http://localhost:8080/api/v1/conversions/convert?source=BRL&target=EUR&amount=33
+---------------------------------

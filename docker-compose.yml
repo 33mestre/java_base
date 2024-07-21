@@ -1,0 +1,53 @@
+# ---------------------------------
+#    _____ __         __                    ______                          _
+#   / ___// /_  ___  / /________  ____     / ____/__  ______________ ______(_)
+#   \__ \/ __ \/ _ \/ / ___/ __ \/ __ \   / /_  / _ \/ ___/ ___/ __ `/ ___/ /
+#  ___/ / / / /  __/ (__  ) /_/ / / / /  / __/ /  __/ /  / /  / /_/ / /  / /
+# /____/_/ /_/\___/_/____/\____/_/ /_/  /_/    \___/_/  /_/   \__,_/_/  /_/
+# ---------------------------------
+# Currency Conversion API - Main Docker Compose
+# ---------------------------------
+# This docker-compose.yml file is responsible for installing, configuring, running, and starting:
+# - The Java HTTP server on port 8080
+# - The H2 server on port 8092
+# 
+# Docker Compose Features:
+# - Uses Docker Compose version 3.8.
+# - Defines a service called sognisport-app.
+# - Builds the Docker image from the Dockerfile in the current directory.
+# - Maps port 8080 of the container to port 8080 of the host.
+# - Maps port 1521 of the container to port 1521 of the host (H2 TCP connection).
+# - Maps port 81 of the container to port 81 of the host (H2 web console).
+# - Sets environment variables to configure the active profile, datasource URL, JDBC driver, and H2 web console settings.
+# - Maps the ./data directory on the host to /var/lib/sognisport-app in the container.
+# ---------------------------------
+version: '3.8'
+
+services:
+  sognisport-app:
+    build: .
+    # Maps port 8080 of the container to port 8080 of the host
+    ports:
+      - "8080:8080"
+      - "1521:1521"  # Port for H2 TCP connection
+      - "81:81"      # Port for H2 web console
+    environment:
+      # Sets the active profile to 'dev'
+      - SPRING_PROFILES_ACTIVE=dev
+      # H2 in-memory datasource URL
+      - SPRING_DATASOURCE_URL=jdbc:h2:mem:sognisport;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+      # JDBC driver class for H2
+      - SPRING_DATASOURCE_DRIVER_CLASS_NAME=org.h2.Driver
+      # H2 database username
+      - SPRING_DATASOURCE_USERNAME=sa
+      # H2 database password (empty)
+      - SPRING_DATASOURCE_PASSWORD=
+      # Enables the H2 web console
+      - SPRING_H2_CONSOLE_ENABLED=true
+      # Sets the path to access the H2 console
+      - SPRING_H2_CONSOLE_PATH=/h2-console
+      # Allows access to the H2 console from other machines on the network
+      - SPRING_H2_CONSOLE_SETTINGS_WEB_ALLOW_OTHERS=true
+    # Maps the ./data directory on the host to /var/lib/sognisport-app in the container
+    volumes:
+      - ./data:/var/lib/sognisport-app

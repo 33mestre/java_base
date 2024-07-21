@@ -1,0 +1,42 @@
+# ---------------------------------
+#    _____ __         __                    ______                          _
+#   / ___// /_  ___  / /________  ____     / ____/__  ______________ ______(_)
+#   \__ \/ __ \/ _ \/ / ___/ __ \/ __ \   / /_  / _ \/ ___/ ___/ __ `/ ___/ /
+#  ___/ / / / /  __/ (__  ) /_/ / / / /  / __/ /  __/ /  / /  / /_/ / /  / /
+# /____/_/ /_/\___/_/____/\____/_/ /_/  /_/    \___/_/  /_/   \__,_/_/  /_/
+# ---------------------------------
+# Currency Conversion API - Configuração do Travis CI
+# ---------------------------------
+# Este arquivo de configuração do Travis CI é responsável por:
+# - Definir a distribuição do Ubuntu como Bionic (18.04 LTS)
+# - Configurar o ambiente de construção para usar Java com JDK 17
+# - Executar a construção e os testes somente na branch master
+# - Cachear dependências do Maven para acelerar builds futuros
+# - Instalar dependências do projeto e rodar testes
+
+# Define a distribuição do Ubuntu como Bionic (18.04 LTS)
+dist: bionic           
+language: java
+
+# Configura o JDK 17
+jdk:
+  - openjdk17
+
+# Somente construa na branch master
+branches:
+  only:
+    - master
+
+# Cachear dependências do Maven
+cache:
+  directories:
+    - $HOME/.m2
+
+# Antes de instalar, garante que o script mvnw tem permissões de execução
+before_install:
+  - chmod +x mvnw
+
+# Instalar dependências e rodar testes
+script:
+  - ./mvnw clean install -Pci-cd -DskipTests
+  - ./mvnw test -Pci-cd

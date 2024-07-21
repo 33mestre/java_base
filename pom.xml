@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    _____ __         __                    ______                          _
+   / ___// /_  ___  / /________  ____     / ____/__  ______________ ______(_)
+   \__ \/ __ \/ _ \/ / ___/ __ \/ __ \   / /_  / _ \/ ___/ ___/ __ `/ ___/ /
+  ___/ / / / /  __/ (__  ) /_/ / / / /  / __/ /  __/ /  / /  / /_/ / /  / /
+ /____/_/ /_/\___/_/____/\____/_/ /_/  /_/    \___/_/  /_/   \__,_/_/  /_/
+
+Currency Conversion API - POM.xml 
+
+This file configures the Maven project for the Currency Conversion API application.
+
+Includes:
+- Dependency definitions
+- Plugins
+- Build profiles
+- Project properties
+
+Manages:
+- Spring Boot dependencies
+- Testing tools
+- Validation
+- JSON handling
+
+Configures:
+- Plugins for code style checking
+- Rule enforcement
+- Javadoc generation
+-->
+
+<!-- Maven project definition -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!-- POM model version -->
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Project identification -->
+    <groupId>com.sognisport</groupId> <!-- Project group -->
+    <artifactId>sognisport</artifactId> <!-- Artifact identifier -->
+    <version>${PROJECT_VERSION}</version>
+    <!-- Project version -->
+
+    <packaging>jar</packaging>
+     <!-- Packaging type -->
+
+    <!-- Additional project information -->
+    <name>sognisport</name> <!-- Project name -->
+    <description>Project for Currency Conversion API</description> <!-- Project description -->
+    <url>https://github.com/33mestre/sognisport</url> <!-- Project URL -->
+
+    <!-- Parent project definition -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.3.2</version> <!-- Spring Boot version -->
+        <relativePath /> <!-- Relative path to parent project -->
+    </parent>
+
+    <!-- Project properties -->
+    <properties>
+        <!-- Defining a single property for the Java version -->
+        <java.version>17</java.version>
+    
+        <!-- Using java.version property to define compile and run versions -->
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+    
+        <!-- Other general project properties -->
+        <project.phase>Development</project.phase>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+    
+    <!-- Project dependencies -->
+    <dependencies>
+        <!-- springdoc dependencies -->
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+            <version>2.3.0</version> <!-- or the latest compatible version -->
+        </dependency>
+        <!-- Spring Boot dependencies -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <!-- H2 database dependency -->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>2.1.214</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-ui</artifactId>
+            <version>1.8.0</version> <!-- OpenAPI documentation dependency -->
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope> <!-- Spring Boot testing dependency -->
+            <exclusions>
+                <exclusion>
+                    <groupId>org.junit.vintage</groupId>
+                    <artifactId>junit-vintage-engine</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <!-- Testing dependencies -->
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-junit-jupiter</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+        </dependency>
+        <!-- JSON handling dependency -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20231013</version>
+        </dependency>
+        <!-- FlatLaf (Look and Feel) dependency -->
+        <dependency>
+            <groupId>com.formdev</groupId>
+            <artifactId>flatlaf</artifactId>
+            <version>2.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.jaxb</groupId>
+            <artifactId>jaxb-runtime</artifactId>
+            <version>2.3.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.swagger</groupId>
+            <artifactId>swagger-annotations</artifactId>
+            <version>1.5.21</version>
+        </dependency>
+        <dependency>
+            <groupId>io.swagger</groupId>
+            <artifactId>swagger-models</artifactId>
+            <version>1.5.21</version>
+        </dependency>
+        
+    </dependencies>
+
+    <!-- Build configuration -->
+    <build>
+        <plugins>
+
+            <plugin>
+                <groupId>org.jetbrains.dokka</groupId>
+                <artifactId>dokka-maven-plugin</artifactId>
+                <version>1.9.20</version>
+                <configuration>
+                    <outputDir>${project.basedir}/docs/site</outputDir>
+                    <dokkaPlugins>
+                        <plugin>
+                            <groupId>org.jetbrains.dokka</groupId>
+                            <artifactId>gfm-plugin</artifactId>
+                            <version>1.9.20</version>
+                        </plugin>
+                    </dokkaPlugins>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>pre-site</phase>
+                        <goals>
+                            <goal>dokka</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>com.github.kongchen</groupId>
+                <artifactId>swagger-maven-plugin</artifactId>
+                <version>3.1.8</version>
+                <configuration>
+                    <apiSources>
+                        <apiSource>
+                            <springmvc>true</springmvc>
+                            <locations>com.sognisport.application</locations>
+                            <schemes>http,https</schemes>
+                            <host>localhost:8080</host>
+                            <basePath>/api-doc</basePath>
+                            <info>
+                                <title>Sognisport Currency Conversion API</title>
+                                <version>v1</version>
+                                <description>API for converting currency rates</description>
+                                <contact>
+                                    <email>shelson@gmail.com</email>
+                                    <name>Shelson Ferrari</name>
+                                    <url>https://about.me/shelson</url>
+                                </contact>
+                                    <license>
+                                        <url>https://github.com/33mestre/sognisport/blob/master/LICENSES</url>
+                                        <name>Dual Licence - MIT License and Apache License 2.0</name>
+                                    </license>
+                            </info>
+                            <outputFormats>json,yaml</outputFormats>
+                            <outputPath>sys/swagger</outputPath>
+                            <swaggerDirectory>sys</swaggerDirectory>
+                            <securityDefinitions>
+                                <securityDefinition>
+                                    <name>basicAuth</name>
+                                    <type>basic</type>
+                                </securityDefinition>
+                            </securityDefinitions>
+                        </apiSource>
+                    </apiSources>
+                </configuration>
+            </plugin>
+            
+            <!-- Plugin for reading .env file -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>properties-maven-plugin</artifactId>
+                <version>1.2.1</version>
+                <executions>
+                    <execution>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>read-project-properties</goal>
+                        </goals>
+                        <configuration>
+                            <files>
+                                <file>.env</file>
+                            </files>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- Spring Boot plugin -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <!-- Plugin for code style checking -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <configLocation>src/main/resources/checkstyle.xml</configLocation> <!-- Location of Checkstyle configuration file -->
+                    <encoding>UTF-8</encoding>
+                    <consoleOutput>true</consoleOutput> <!-- Console output -->
+                    <failsOnError>true</failsOnError> <!-- Fail on errors -->
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>checkstyle</id>
+                        <phase>none</phase> <!-- Ignore execution -->
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- Plugin for Maven rule enforcement -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <version>3.0.0</version>
+                <executions>
+                    <execution>
+                        <id>enforce-maven</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <requireJavaVersion>
+                                    <version>17</version>
+                                </requireJavaVersion>
+                            </rules>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- Maven compiler plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+            <!-- Maven Site Plugin with Port Configuration -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.9.1</version>
+                <configuration>
+                    <port>3000</port> <!-- Sets port to 3000 -->
+                </configuration>
+            </plugin>
+            <!-- Maven Javadoc Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <useStandardDocletOptions>false</useStandardDocletOptions>
+                    <detectLinks>false</detectLinks>
+                    <detectJavaApiLink>false</detectJavaApiLink>
+                    <encoding>UTF-8</encoding>
+                    <docencoding>UTF-8</docencoding>
+                    <charset>UTF-8</charset>
+                    <source>17</source>
+                    <show>protected</show>
+                    <linksource>true</linksource>
+                    <breakiterator>true</breakiterator>
+                    <doclint>none</doclint>
+                    <links>
+                        <link>https://docs.oracle.com/javase/17/docs/api/</link>
+                    </links>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!-- Profile configuration -->
+    <profiles>
+        <profile>
+            <id>ci-cd</id> <!-- Profile identifier -->
+            <build>
+                <plugins>
+                    <!-- Ant plugin for running tasks during the build -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-antrun-plugin</artifactId>
+                        <version>1.8</version>
+                        <executions>
+                            <execution>
+                                <phase>initialize</phase>
+                                <goals>
+                                    <goal>run</goal>
+                                </goals>
+                                <configuration>
+                                    <target>
+                                        <delete dir="src/main/java/com/sognisport/swing" /> <!-- Example of using Ant to delete a directory -->
+                                    </target>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+    <!-- Developer information -->
+    <developers>
+        <developer>
+            <id>shelson</id>
+            <name>Shelson Ferrari</name>
+            <email>shelson@gmail.com</email>
+            <organization>Sognisport</organization>
+            <roles>
+                <role>Developer</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <!-- Project licenses -->
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://github.com/33mestre/sognisport/blob/master/LICENSE-MIT</url>
+            <distribution>repo</distribution>
+            <comments>MIT License</comments>
+        </license>
+        <license>
+            <name>Apache License</name>
+            <url>https://github.com/33mestre/sognisport/blob/master/LICENSE-APACHE</url>
+            <distribution>repo</distribution>
+            <comments>Apache License</comments>
+        </license>
+    </licenses>
+
+    <!-- SCM (Source Code Management) configuration -->
+    <scm>
+        <connection>scm:git:git://github.com/33mestre/sognisport.git</connection>
+        <developerConnection>scm:git:ssh://github.com:33mestre/sognisport.git</developerConnection>
+        <url>https://github.com/33mestre/sognisport</url>
+    </scm>
+</project>

@@ -1,0 +1,47 @@
+# ---------------------------------
+#    _____ __         __                    ______                          _
+#   / ___// /_  ___  / /________  ____     / ____/__  ______________ ______(_)
+#   \__ \/ __ \/ _ \/ / ___/ __ \/ __ \   / /_  / _ \/ ___/ ___/ __ `/ ___/ /
+#  ___/ / / / /  __/ (__  ) /_/ / / / /  / __/ /  __/ /  / /  / /_/ / /  / /
+# /____/_/ /_/\___/_/____/\____/_/ /_/  /_/    \___/_/  /_/   \__,_/_/  /_/
+# ---------------------------------
+# Currency Conversion API - db-docker.yml
+# ---------------------------------
+# This Dockerfile is responsible for:
+# - Generating the project DIRECTORY.md
+# ---------------------------------
+
+# ---------------------------------
+# Use the OpenJDK 17 base image
+# ---------------------------------
+FROM openjdk:17-slim
+
+# ---------------------------------
+# Install Groovy and Git
+# ---------------------------------
+RUN apt-get update && apt-get install -y groovy git
+
+# ---------------------------------
+# Set the working directory inside the container
+# ---------------------------------
+WORKDIR /app
+
+# ---------------------------------
+# Copy the sys folder to the container
+# ---------------------------------
+COPY sys ./sys
+
+# ---------------------------------
+# Copy the src folder to the container
+# ---------------------------------
+COPY src ./src
+
+# ---------------------------------
+# Give execution permission to the script
+# ---------------------------------
+RUN chmod +x ./sys/callDirectory.sh
+
+# ---------------------------------
+# Command to start the script
+# ---------------------------------
+CMD ["./sys/callDirectory.sh"]

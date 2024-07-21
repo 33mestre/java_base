@@ -1,0 +1,114 @@
+# ---------------------------------
+#    _____ __         __                    ______                          _
+#   / ___// /_  ___  / /________  ____     / ____/__  ______________ ______(_)
+#   \__ \/ __ \/ _ \/ / ___/ __ \/ __ \   / /_  / _ \/ ___/ ___/ __ `/ ___/ /
+#  ___/ / / / /  __/ (__  ) /_/ / / / /  / __/ /  __/ /  / /  / /_/ / /  / /
+# /____/_/ /_/\___/_/____/\____/_/ /_/  /_/    \___/_/  /_/   \__,_/_/  /_/
+# ---------------------------------
+# Currency Conversion API - Dockerfile console-app
+# ---------------------------------
+# This Dockerfile sets up a Docker environment to run a Java console application,
+# allowing the testing of the Currency Conversion API application.
+# 
+# Dockerfile Features:
+# - Uses the OpenJDK 17 slim base image.
+# - Installs Maven and other necessary dependencies.
+# - Sets the working directory inside the container.
+# - Dynamically creates the pom.xml file.
+# - Copies the source code files to the container.
+# - Downloads Maven dependencies.
+# - Compiles the project using Maven.
+# - Sets the default command to start the application.
+# ---------------------------------
+
+# ---------------------------------
+# Use the OpenJDK 17 slim base image
+# ---------------------------------
+FROM openjdk:17-slim
+
+# ---------------------------------
+# Install Maven and other necessary dependencies
+# ---------------------------------
+RUN apt-get update && apt-get install -y maven libx11-dev socat
+
+# ---------------------------------
+# Set the working directory inside the container
+# ---------------------------------
+WORKDIR /app
+
+# ---------------------------------
+# Dynamically create the pom.xml file
+# ---------------------------------
+RUN echo '<?xml version="1.0" encoding="UTF-8"?>' > pom.xml && \
+    echo '<project xmlns="http://maven.apache.org/POM/4.0.0"' >> pom.xml && \
+    echo '         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"' >> pom.xml && \
+    echo '         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">' >> pom.xml && \
+    echo '    <modelVersion>4.0.0</modelVersion>' >> pom.xml && \
+    echo '    <groupId>com.sognisport</groupId>' >> pom.xml && \
+    echo '    <artifactId>sognisport-console</artifactId>' >> pom.xml && \
+    echo '    <version>1.0-SNAPSHOT</version>' >> pom.xml && \
+    echo '    <properties>' >> pom.xml && \
+    echo '        <maven.compiler.source>17</maven.compiler.source>' >> pom.xml && \
+    echo '        <maven.compiler.target>17</maven.compiler.target>' >> pom.xml && \
+    echo '    </properties>' >> pom.xml && \
+    echo '    <dependencies>' >> pom.xml && \
+    echo '        <dependency>' >> pom.xml && \
+    echo '            <groupId>org.json</groupId>' >> pom.xml && \
+    echo '            <artifactId>json</artifactId>' >> pom.xml && \
+    echo '            <version>20231013</version>' >> pom.xml && \
+    echo '        </dependency>' >> pom.xml && \
+    echo '        <dependency>' >> pom.xml && \
+    echo '            <groupId>org.slf4j</groupId>' >> pom.xml && \
+    echo '            <artifactId>slf4j-api</artifactId>' >> pom.xml && \
+    echo '            <version>1.7.32</version>' >> pom.xml && \
+    echo '        </dependency>' >> pom.xml && \
+    echo '        <dependency>' >> pom.xml && \
+    echo '            <groupId>org.slf4j</groupId>' >> pom.xml && \
+    echo '            <artifactId>slf4j-simple</artifactId>' >> pom.xml && \
+    echo '            <version>1.7.32</version>' >> pom.xml && \
+    echo '        </dependency>' >> pom.xml && \
+    echo '    </dependencies>' >> pom.xml && \
+    echo '    <build>' >> pom.xml && \
+    echo '        <plugins>' >> pom.xml && \
+    echo '            <plugin>' >> pom.xml && \
+    echo '                <groupId>org.apache.maven.plugins</groupId>' >> pom.xml && \
+    echo '                <artifactId>maven-shade-plugin</artifactId>' >> pom.xml && \
+    echo '                <version>3.2.4</version>' >> pom.xml && \
+    echo '                <executions>' >> pom.xml && \
+    echo '                    <execution>' >> pom.xml && \
+    echo '                        <phase>package</phase>' >> pom.xml && \
+    echo '                        <goals><goal>shade</goal></goals>' >> pom.xml && \
+    echo '                        <configuration>' >> pom.xml && \
+    echo '                            <transformers>' >> pom.xml && \
+    echo '                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">' >> pom.xml && \
+    echo '                                    <mainClass>com.sognisport.console.CurrencyConverterConsoleApp</mainClass>' >> pom.xml && \
+    echo '                                </transformer>' >> pom.xml && \
+    echo '                            </transformers>' >> pom.xml && \
+    echo '                        </configuration>' >> pom.xml && \
+    echo '                    </execution>' >> pom.xml && \
+    echo '                </executions>' >> pom.xml && \
+    echo '            </plugin>' >> pom.xml && \
+    echo '        </plugins>' >> pom.xml && \
+    echo '    </build>' >> pom.xml && \
+    echo '</project>' >> pom.xml
+
+# ---------------------------------
+# Copy specific project files
+# ---------------------------------
+COPY src/main/java/com/sognisport/console/CurrencyConverterConsoleApp.java ./src/main/java/com/sognisport/console/CurrencyConverterConsoleApp.java
+COPY src/main/java/com/sognisport/domain/model/Currency.java ./src/main/java/com/sognisport/domain/model/Currency.java
+
+# ---------------------------------
+# Run mvn dependency:go-offline to download dependencies
+# ---------------------------------
+RUN mvn dependency:go-offline
+
+# ---------------------------------
+# Run the Maven command to compile the project and skip tests
+# ---------------------------------
+RUN mvn clean package -DskipTests
+
+# ---------------------------------
+# Set the default command to start the application
+# ---------------------------------
+CMD ["java", "-cp", "target/sognisport-console-1.0-SNAPSHOT.jar", "com.sognisport.console.CurrencyConverterConsoleApp"]

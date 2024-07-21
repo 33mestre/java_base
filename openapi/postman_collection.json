@@ -1,0 +1,250 @@
+{
+	"info": {
+			"_postman_id": "abcdef12345",
+			"name": "Currency Conversion API",
+			"description": "",
+			"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+			{
+					"name": "Convert Currency USD to BRL",
+					"request": {
+							"method": "GET",
+							"header": [],
+							"url": {
+									"raw": "http://localhost:8080/api/v1/conversions/convert?source=USD&target=BRL&amount=100",
+									"protocol": "http",
+									"host": ["localhost"],
+									"port": "8080",
+									"path": ["api", "v1", "conversions", "convert"],
+									"query": [
+											{"key": "source", "value": "USD"},
+											{"key": "target", "value": "BRL"},
+											{"key": "amount", "value": "100"}
+									]
+							}
+					},
+					"response": []
+			},
+			{
+					"name": "Convert Currency EUR to USD",
+					"request": {
+							"method": "GET",
+							"header": [],
+							"url": {
+									"raw": "http://localhost:8080/api/v1/conversions/convert?source=EUR&target=USD&amount=50",
+									"protocol": "http",
+									"host": ["localhost"],
+									"port": "8080",
+									"path": ["api", "v1", "conversions", "convert"],
+									"query": [
+											{"key": "source", "value": "EUR"},
+											{"key": "target", "value": "USD"},
+											{"key": "amount", "value": "50"}
+									]
+							}
+					},
+					"response": []
+			},
+			{
+					"name": "Convert Currency GBP to JPY",
+					"request": {
+							"method": "GET",
+							"header": [],
+							"url": {
+									"raw": "http://localhost:8080/api/v1/conversions/convert?source=GBP&target=JPY&amount=200",
+									"protocol": "http",
+									"host": ["localhost"],
+									"port": "8080",
+									"path": ["api", "v1", "conversions", "convert"],
+									"query": [
+											{"key": "source", "value": "GBP"},
+											{"key": "target", "value": "JPY"},
+											{"key": "amount", "value": "200"}
+									]
+							}
+					},
+					"response": []
+			},
+			{
+					"name": "Convert Currency AUD to CAD",
+					"request": {
+							"method": "GET",
+							"header": [],
+							"url": {
+									"raw": "http://localhost:8080/api/v1/conversions/convert?source=AUD&target=CAD&amount=75",
+									"protocol": "http",
+									"host": ["localhost"],
+									"port": "8080",
+									"path": ["api", "v1", "conversions", "convert"],
+									"query": [
+											{"key": "source", "value": "AUD"},
+											{"key": "target", "value": "CAD"},
+											{"key": "amount", "value": "75"}
+									]
+							}
+					},
+					"response": []
+			},
+			{
+					"name": "Convert Currency INR to GBP",
+					"request": {
+							"method": "GET",
+							"header": [],
+							"url": {
+									"raw": "http://localhost:8080/api/v1/conversions/convert?source=INR&target=GBP&amount=1000",
+									"protocol": "http",
+									"host": ["localhost"],
+									"port": "8080",
+									"path": ["api", "v1", "conversions", "convert"],
+									"query": [
+											{"key": "source", "value": "INR"},
+											{"key": "target", "value": "GBP"},
+											{"key": "amount", "value": "1000"}
+									]
+							}
+					},
+					"response": []
+			},
+			{
+					"name": "Convert Currency JPY to CNY",
+					"request": {
+							"method": "GET",
+							"header": [],
+							"url": {
+									"raw": "http://localhost:8080/api/v1/conversions/convert?source=JPY&target=CNY&amount=500",
+									"protocol": "http",
+									"host": ["localhost"],
+									"port": "8080",
+									"path": ["api", "v1", "conversions", "convert"],
+									"query": [
+											{"key": "source", "value": "JPY"},
+											{"key": "target", "value": "CNY"},
+											{"key": "amount", "value": "500"}
+									]
+							}
+					},
+					"response": []
+			},
+			{
+					"name": "Convert Currency BRL to ARS",
+					"request": {
+							"method": "GET",
+							"header": [],
+							"url": {
+									"raw": "http://localhost:8080/api/v1/conversions/convert?source=BRL&target=ARS&amount=150",
+									"protocol": "http",
+									"host": ["localhost"],
+									"port": "8080",
+									"path": ["api", "v1", "conversions", "convert"],
+									"query": [
+											{"key": "source", "value": "BRL"},
+											{"key": "target", "value": "ARS"},
+											{"key": "amount", "value": "150"}
+									]
+							}
+					},
+					"response": []
+			},
+			{
+					"name": "Convert Currency CAD to EUR",
+					"request": {
+							"method": "GET",
+							"header": [],
+							"url": {
+									"raw": "http://localhost:8080/api/v1/conversions/convert?source=CAD&target=EUR&amount=120",
+									"protocol": "http",
+									"host": ["localhost"],
+									"port": "8080",
+									"path": ["api", "v1", "conversions", "convert"],
+									"query": [
+											{"key": "source", "value": "CAD"},
+											{"key": "target", "value": "EUR"},
+											{"key": "amount", "value": "120"}
+									]
+							}
+					},
+					"response": []
+			},
+			{
+					"name": "Convert Currency CNY to USD",
+					"request": {
+							"method": "GET",
+							"header": [],
+							"url": {
+									"raw": "http://localhost:8080/api/v1/conversions/convert?source=CNY&target=USD&amount=300",
+									"protocol": "http",
+									"host": ["localhost"],
+									"port": "8080",
+									"path": ["api", "v1", "conversions", "convert"],
+									"query": [
+											{"key": "source", "value": "CNY"},
+											{"key": "target", "value": "USD"},
+											{"key": "amount", "value": "300"}
+									]
+							}
+					},
+					"response": []
+			},
+			{
+					"name": "Convert Currency MXN to AUD",
+					"request": {
+							"method": "GET",
+							"header": [],
+							"url": {
+									"raw": "http://localhost:8080/api/v1/conversions/convert?source=MXN&target=AUD&amount=400",
+									"protocol": "http",
+									"host": ["localhost"],
+									"port": "8080",
+									"path": ["api", "v1", "conversions", "convert"],
+									"query": [
+											{"key": "source", "value": "MXN"},
+											{"key": "target", "value": "AUD"},
+											{"key": "amount", "value": "400"}
+									]
+							}
+					},
+					"response": []
+			},
+			{
+					"name": "Convert Currency ZAR to INR",
+					"request": {
+							"method": "GET",
+							"header": [],
+							"url": {
+									"raw": "http://localhost:8080/api/v1/conversions/convert?source=ZAR&target=INR&amount=500",
+									"protocol": "http",
+									"host": ["localhost"],
+									"port": "8080",
+									"path": ["api", "v1", "conversions", "convert"],
+									"query": [
+											{"key": "source", "value": "ZAR"},
+											{"key": "target", "value": "INR"},
+											{"key": "amount", "value": "500"}
+									]
+							}
+					},
+					"response": []
+			},
+			{
+					"name": "Convert Currency RUB to THB",
+					"request": {
+							"method": "GET",
+							"header": [],
+							"url": {
+									"raw": "http://localhost:8080/api/v1/conversions/convert?source=RUB&target=THB&amount=1000",
+									"protocol": "http",
+									"host": ["localhost"],
+									"port": "8080",
+									"path": ["api", "v1", "conversions", "convert"],
+									"query": [
+											{"key": "source", "value": "RUB"},
+											{"key": "target", "value": "THB"},
+											{"key": "amount", "value": "1000"}
+									]
+							}
+					},
+					"response": []
+			}
+	]
+}

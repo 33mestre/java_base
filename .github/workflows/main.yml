@@ -1,0 +1,375 @@
+# ---------------------------------
+#    _____ __         __                    ______                          _
+#   / ___// /_  ___  / /________  ____     / ____/__  ______________ ______(_)
+#   \__ \/ __ \/ _ \/ / ___/ __ \/ __ \   / /_  / _ \/ ___/ ___/ __ `/ ___/ /
+#  ___/ / / / /  __/ (__  ) /_/ / / / /  / __/ /  __/ /  / /  / /_/ / /  / /
+# /____/_/ /_/\___/_/____/\____/_/ /_/  /_/    \___/_/  /_/   \__,_/_/  /_/
+# ---------------------------------
+# Currency Conversion API
+# GitHub Actions CI/CD workflow for the Java project with Maven
+# - Runs on push or pull request to the master branch
+# - Checks commit message to decide whether to skip changelog update
+# - Sets up JDK 17
+# - Installs Groovy if needed
+# - Generates necessary SVG images for Markdown Documentation - PlantUML
+# - Generates and checks changes in CHANGELOG.md, .env, swagger.json, swagger.yaml, and DIRECTORY.md
+# - Uploads files if changed
+# - Cleans up local repository
+# - Maven package cache
+# - Installs dependencies
+# - Runs tests
+# ---------------------------------
+
+# ---------------------------------
+# Name of the workflow
+# ---------------------------------
+name: Build and Test Java Project with Maven
+
+# ---------------------------------
+# Events that trigger the workflow
+# ---------------------------------
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+permissions:
+  contents: write  # Permite leitura e escrita no repositório
+
+jobs:
+  build:
+    # ---------------------------------
+    # Defines that the job will run on the latest Ubuntu environment
+    # ---------------------------------
+    runs-on: ubuntu-latest
+
+    steps:
+
+    # ---------------------------------
+    # Checkout the repository
+    # ---------------------------------
+    - name: Check out the repository
+      id: check-out-repository
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0 # Obtém todo o histórico para todas as branches e tags
+
+    # ---------------------------------
+    # Checks the commit message to determine which files to update
+    # ---------------------------------
+    - name: Check if is primary
+      id: check-is_primary
+      run: |
+        COMMIT_MESSAGE=$(git log -1 --pretty=%B)
+        if [[ "$COMMIT_MESSAGE" == AUTO_COMMIT:* || "$COMMIT_MESSAGE" == "Render PlantUML files" ]]; then
+          echo "is_primary=false" >> $GITHUB_ENV
+        else
+          echo "is_primary=true" >> $GITHUB_ENV
+        fi
+
+    # ---------------------------------
+    # Generates PlantUML
+    # ---------------------------------
+    - name: Generate PlantUML diagrams
+      id: generate-plantuml-diagrams
+      if: env.is_primary == 'true'
+      uses: grassedge/generate-plantuml-action@master
+      with:
+        path: sys/uml
+        message: "Render PlantUML files"
+      env:
+        GITHUB_TOKEN: ${{ secrets.TOKEN }}
+
+    # ---------------------------------
+    # Sets up JDK 17
+    # ---------------------------------
+    - name: Set up JDK 17
+      id: setup-jdk
+      if: env.is_primary == 'true'
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'adopt'
+        java-version: '17'
+
+    # Step to cache Maven packages
+    - name: Cache Maven packages
+      id: cache-maven-package
+      if: env.is_primary == 'true'
+      uses: actions/cache@v4
+      with:
+        path: ~/.m2/repository
+        key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+        restore-keys: ${{ runner.os }}-maven
+
+    # ---------------------------------
+    # Installs Groovy if needed
+    # ---------------------------------
+    - name: Install Groovy
+      id: install-groovy
+      if: env.is_primary == 'true'
+      run: |
+        sudo apt-get install -y groovy
+
+   # ---------------------------------
+    # Caches Maven packages if no file needs to be updated
+    # ---------------------------------
+    - name: Cache Maven packages
+      id: cache-maven-packages
+      if: env.is_primary == 'true'
+      uses: actions/cache@v4
+      with:
+        path: ~/.m2/repository
+        key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+        restore-keys: ${{ runner.os }}-maven
+
+    # ---------------------------------
+    # Installs dependencies if no file needs to be updated
+    # ---------------------------------
+    - name: Install dependencies
+      id: install-depencencies
+      if: env.is_primary == 'true'
+      run: mvn clean install -Pci-cd -DskipTests
+
+    # ---------------------------------
+    # Gets the SHA of files if they exist
+    # ---------------------------------
+    - name: Get SHA of files if they exist
+      if: env.is_primary == 'true'
+      id: get-sha
+      run: |
+        CHANGELOG_SHA=$(curl -s -H "Authorization: Bearer ${{ secrets.TOKEN }}" -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/${{ github.repository }}/contents/CHANGELOG.md | jq -r .sha)
+        ENV_SHA=$(curl -s -H "Authorization: Bearer ${{ secrets.TOKEN }}" -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/${{ github.repository }}/contents/.env | jq -r .sha)
+        DIRECTORY_SHA=$(curl -s -H "Authorization: Bearer ${{ secrets.TOKEN }}" -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/${{ github.repository }}/contents/DIRECTORY.md | jq -r .sha)
+        SWAGGER_JSON_SHA=$(curl -s -H "Authorization: Bearer ${{ secrets.TOKEN }}" -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/${{ github.repository }}/contents/openapi/swagger.json | jq -r .sha)
+        SWAGGER_YAML_SHA=$(curl -s -H "Authorization: Bearer ${{ secrets.TOKEN }}" -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/${{ github.repository }}/contents/openapi/swagger.yaml | jq -r .sha)
+
+        if [ "$CHANGELOG_SHA" != "null" ]; then
+          echo "changelog_sha=$CHANGELOG_SHA" >> $GITHUB_ENV
+        else
+          echo "changelog_sha=" >> $GITHUB_ENV
+        fi
+        if [ "$ENV_SHA" != "null" ]; then
+          echo "env_sha=$ENV_SHA" >> $GITHUB_ENV
+        else
+          echo "env_sha=" >> $GITHUB_ENV
+        fi
+        if [ "$DIRECTORY_SHA" != "null" ]; then
+          echo "directory_sha=$DIRECTORY_SHA" >> $GITHUB_ENV
+        else
+          echo "directory_sha=" >> $GITHUB_ENV
+        fi
+        if [ "$SWAGGER_JSON_SHA" != "null" ]; then
+          echo "swagger_json_sha=$SWAGGER_JSON_SHA" >> $GITHUB_ENV
+        else
+          echo "swagger_json_sha=" >> $GITHUB_ENV
+        fi
+        if [ "$SWAGGER_YAML_SHA" != "null" ]; then
+          echo "swagger_yaml_sha=$SWAGGER_YAML_SHA" >> $GITHUB_ENV
+        else
+          echo "swagger_yaml_sha=" >> $GITHUB_ENV
+        fi
+      env:
+        GITHUB_TOKEN: ${{ secrets.TOKEN }}
+
+    # ---------------------------------
+    # Checks if CHANGELOG.md, .env, DIRECTORY.md, swagger.json or swagger.yaml have changed
+    # ---------------------------------
+    - name: Check if CHANGELOG.md, .env, DIRECTORY.md, swagger.json or swagger.yaml have changed
+      if: env.is_primary == 'true'
+      id: check-changes
+      run: |
+        REMOTE_CHANGELOG=$(curl -s -H "Authorization: Bearer ${{ secrets.TOKEN }}" -H "Accept: application/vnd.github.v3.raw" https://api.github.com/repos/${{ github.repository }}/contents/CHANGELOG.md | base64 -d || echo "")
+        LOCAL_CHANGELOG=$(cat CHANGELOG.md)
+        if [ "$REMOTE_CHANGELOG" == "$LOCAL_CHANGELOG" ]; then
+          echo "No changes in CHANGELOG.md"
+          exit 0
+        fi
+        REMOTE_ENV=$(curl -s -H "Authorization: Bearer ${{ secrets.TOKEN }}" -H "Accept: application/vnd.github.v3.raw" https://api.github.com/repos/${{ github.repository }}/contents/.env | base64 -d || echo "")
+        LOCAL_ENV=$(cat .env)
+        if [ "$REMOTE_ENV" == "$LOCAL_ENV" ]; then
+          echo "No changes in .env"
+          exit 0
+        fi
+        REMOTE_DIRECTORY=$(curl -s -H "Authorization: Bearer ${{ secrets.TOKEN }}" -H "Accept: application/vnd.github.v3.raw" https://api.github.com/repos/${{ github.repository }}/contents/DIRECTORY.md | base64 -d || echo "")
+        LOCAL_DIRECTORY=$(cat DIRECTORY.md)
+        if [ "$REMOTE_DIRECTORY" == "$LOCAL_DIRECTORY" ]; then
+          echo "No changes in DIRECTORY.md"
+          exit 0
+        fi
+        REMOTE_SWAGGER_JSON=$(curl -s -H "Authorization: Bearer ${{ secrets.TOKEN }}" -H "Accept: application/vnd.github.v3.raw" https://api.github.com/repos/${{ github.repository }}/contents/openapi/swagger.json | base64 -d || echo "")
+        LOCAL_SWAGGER_JSON=$(cat openapi/swagger.json)
+        if [ "$REMOTE_SWAGGER_JSON" == "$LOCAL_SWAGGER_JSON" ]; then
+          echo "No changes in swagger.json"
+          exit 0
+        fi
+        REMOTE_SWAGGER_YAML=$(curl -s -H "Authorization: Bearer ${{ secrets.TOKEN }}" -H "Accept: application/vnd.github.v3.raw" https://api.github.com/repos/${{ github.repository }}/contents/openapi/swagger.yaml | base64 -d || echo "")
+        LOCAL_SWAGGER_YAML=$(cat openapi/swagger.yaml)
+        if [ "$REMOTE_SWAGGER_YAML" == "$LOCAL_SWAGGER_YAML" ]; then
+          echo "No changes in swagger.yaml"
+          exit 0
+        fi
+
+    # ---------------------------------
+    # Generates CHANGELOG.md, .env, swagger.json, swagger.yaml, and DIRECTORY.md if needed
+    # And Java doc in MD
+    # ---------------------------------
+    - name: Generate necessary files
+      id: generate-necessary-files
+      if: env.is_primary == 'true'
+      run: |
+        chmod +x sys/generateChangelogAndProjectVersion.groovy
+        groovy sys/generateChangelogAndProjectVersion.groovy
+        chmod +x sys/directory.groovy
+        groovy sys/directory.groovy
+        mvn clean install swagger:generate
+        mvn dokka:dokka
+
+    - name: Set up Python
+      if: env.is_primary == 'true'
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'  # Especificando a versão 3.8 do Python
+
+    - name: Install Python dependencies
+      if: env.is_primary == 'true'
+      run: pip install requests
+
+    # ---------------------------------
+    # Adjust Markdown Table with Python
+    # ---------------------------------
+    - name: Adjust Markdown Table with Python
+      id: adjust-markdown-table-index
+      if: env.is_primary == 'true'
+      run: |
+        python sys/javadocmd.py
+      env:
+        PYTHONIOENCODING: UTF-8
+
+    - name: Upload all files from docs/site
+      if: env.is_primary == 'true'
+      run: |
+        # Navegar para o diretório correto
+        ( cd docs/site
+        # Adicionar todos os arquivos modificados ao staging area do Git
+        git add .
+        # Verificar se há mudanças; se sim, fazer commit e push
+        if git diff --staged --quiet; then
+          echo "No changes to commit."
+        else
+          git config --global user.email "shelson@gmail.com"
+          git config --global user.name "Shelson Ferrari"
+          git commit -m "AUTO_COMMIT: Bulk update of documentation"
+          git push
+        fi )
+      env:
+        GITHUB_TOKEN: ${{ secrets.TOKEN3 }}
+        
+    # ---------------------------------
+    # Uploads CHANGELOG.md if it has changed
+    # ---------------------------------
+    - name: Upload CHANGELOG.md
+      id: upload-changelog
+      if: env.is_primary == 'true'
+      run: |
+        BASE64_CHANGELOG=$(base64 -w 0 CHANGELOG.md)
+        curl -X PUT \
+          -H "Authorization: Bearer ${{ secrets.TOKEN }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          https://api.github.com/repos/${{ github.repository }}/contents/CHANGELOG.md \
+          -d "$(jq -nc --arg content "$BASE64_CHANGELOG" --arg message "AUTO_COMMIT: Update CHANGELOG.md" --arg sha "$changelog_sha" --arg branch "${GITHUB_REF#refs/heads/}" '{message: $message, content: $content, sha: $sha, branch: $branch}')"
+      env:
+        GITHUB_TOKEN: ${{ secrets.TOKEN }}
+
+    # ---------------------------------
+    # Uploads .env if it has changed
+    # ---------------------------------
+    - name: Upload .env
+      id: upload-env
+      if: env.is_primary == 'true'
+      run: |
+        BASE64_ENV=$(base64 -w 0 .env)
+        curl -X PUT \
+          -H "Authorization: Bearer ${{ secrets.TOKEN }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          https://api.github.com/repos/${{ github.repository }}/contents/.env \
+          -d "$(jq -nc --arg content "$BASE64_ENV" --arg message "AUTO_COMMIT: Update .env" --arg sha "$env_sha" --arg branch "${GITHUB_REF#refs/heads/}" '{message: $message, content: $content, sha: $sha, branch: $branch}')"
+      env:
+        GITHUB_TOKEN: ${{ secrets.TOKEN }}
+
+    # ---------------------------------
+    # Uploads DIRECTORY.md if it has changed
+    # ---------------------------------
+    - name: Upload DIRECTORY.md
+      id: upload-directory
+      if: env.is_primary == 'true'
+      run: |
+        BASE64_DIRECTORY=$(base64 -w 0 DIRECTORY.md)
+        curl -X PUT \
+          -H "Authorization: Bearer ${{ secrets.TOKEN }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          https://api.github.com/repos/${{ github.repository }}/contents/DIRECTORY.md \
+          -d "$(jq -nc --arg content "$BASE64_DIRECTORY" --arg message "AUTO_COMMIT: Update DIRECTORY.md" --arg sha "$directory_sha" --arg branch "${GITHUB_REF#refs/heads/}" '{message: $message, content: $content, sha: $sha, branch: $branch}')"
+      env:
+        GITHUB_TOKEN: ${{ secrets.TOKEN }}
+
+    # ---------------------------------
+    # Checks and uploads swagger.json if changed
+    # ---------------------------------
+    - name: Upload swagger.json
+      id: upload-swagger-json
+      if: env.is_primary == 'true'
+      run: |
+        BASE64_SWAGGER_JSON=$(base64 -w 0 openapi/swagger.json)
+        curl -X PUT \
+          -H "Authorization: Bearer ${{ secrets.TOKEN }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          https://api.github.com/repos/${{ github.repository }}/contents/openapi/swagger.json \
+          -d "$(jq -nc --arg content "$BASE64_SWAGGER_JSON" --arg message "AUTO_COMMIT: Update swagger.json" --arg sha "$swagger_json_sha" --arg branch "${GITHUB_REF#refs/heads/}" '{message: $message, content: $content, sha: $sha, branch: $branch}')"
+      env:
+        GITHUB_TOKEN: ${{ secrets.TOKEN }}
+
+    # ---------------------------------
+    # Checks and uploads swagger.yaml if changed
+    # ---------------------------------
+    - name: Upload swagger.yaml
+      id: upload-swagger-yaml
+      if: env.is_primary == 'true'
+      run: |
+        BASE64_SWAGGER_YAML=$(base64 -w 0 openapi/swagger.yaml)
+        curl -X PUT \
+          -H "Authorization: Bearer ${{ secrets.TOKEN }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          https://api.github.com/repos/${{ github.repository }}/contents/openapi/swagger.yaml \
+          -d "$(jq -nc --arg content "$BASE64_SWAGGER_YAML" --arg message "AUTO_COMMIT: Update swagger.yaml" --arg sha "$swagger_yaml_sha" --arg branch "${GITHUB_REF#refs/heads/}" '{message: $message, content: $content, sha: $sha, branch: $branch}')"
+      env:
+        GITHUB_TOKEN: ${{ secrets.TOKEN }}
+
+  # ---------------------------------
+    # Check if is PlantUML upload SVG
+    # ---------------------------------
+    - name: Check if is PlantUML upload SVG
+      id: check-is-plantuml
+      run: |
+        COMMIT_MESSAGE=$(git log -1 --pretty=%B)
+        if [[ "$COMMIT_MESSAGE" == "Render PlantUML files" ]]; then
+          echo "is_plantuml=true" >> $GITHUB_ENV
+        else
+          echo "is_plantuml=false" >> $GITHUB_ENV
+        fi
+
+    # ---------------------------------
+    # Cleans up the local repository
+    # ---------------------------------
+    - name: Clean local repository
+      id: clean-local-repository
+      if: env.is_primary == 'true'
+      run: mvn dependency:purge-local-repository
+
+    # ---------------------------------
+    # Runs tests if no file needs to be updated
+    # ---------------------------------
+    - name: Run tests
+      id: run-tests
+      if: env.is_primary == 'true'
+      run: mvn test -Pci-cd

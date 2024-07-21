@@ -1,0 +1,23 @@
+# ---------------------------------
+#    _____ __         __                    ______                          _
+#   / ___// /_  ___  / /________  ____     / ____/__  ______________ ______(_)
+#   \__ \/ __ \/ _ \/ / ___/ __ \/ __ \   / /_  / _ \/ ___/ ___/ __ `/ ___/ /
+#  ___/ / / / /  __/ (__  ) /_/ / / / /  / __/ /  __/ /  / /  / /_/ / /  / /
+# /____/_/ /_/\___/_/____/\____/_/ /_/  /_/    \___/_/  /_/   \__,_/_/  /_/
+# ---------------------------------
+# Currency Conversion API
+# GitHub Labeler Configuration File
+# ---------------------------------
+# This file is used to automate the application of labels
+# to pull requests and issues in the GitHub repository based on the files that
+# have been modified.
+# ---------------------------------
+# - Defines the labels "bug" and "documentation".
+# - Applies the "bug" label to changes in "src/**/*".
+# - Applies the "documentation" label to changes in "docs/**/*".
+# ---------------------------------
+
+bug:
+  - "src/**/*"
+documentation:
+  - "docs/**/*"

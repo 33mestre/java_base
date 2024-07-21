@@ -1,0 +1,81 @@
+# ---------------------------------
+#    _____ __         __                    ______                          _
+#   / ___// /_  ___  / /________  ____     / ____/__  ______________ ______(_)
+#   \__ \/ __ \/ _ \/ / ___/ __ \/ __ \   / /_  / _ \/ ___/ ___/ __ `/ ___/ /
+#  ___/ / / / /  __/ (__  ) /_/ / / / /  / __/ /  __/ /  / /  / /_/ / /  / /
+# /____/_/ /_/\___/_/____/\____/_/ /_/  /_/    \___/_/  /_/   \__,_/_/  /_/
+# ---------------------------------
+# Currency Conversion API - db-docker.yml
+# ---------------------------------
+# This Dockerfile is responsible for:
+# - Installing, configuring, and starting the H2 Database server.
+# - Running a Java program that performs a SELECT query on the CURRENCY_CONVERSIONS table in the H2 database.
+# ---------------------------------
+
+# ---------------------------------
+# Use the JDK 17 slim base image
+# ---------------------------------
+FROM openjdk:17-slim
+
+# ---------------------------------
+# Install curl to download the H2 JAR
+# ---------------------------------
+RUN apt-get update && apt-get install -y curl
+
+# ---------------------------------
+# Download the H2 Database JAR
+# ---------------------------------
+RUN curl -L https://repo1.maven.org/maven2/com/h2database/h2/2.1.214/h2-2.1.214.jar -o /h2.jar
+
+# ---------------------------------
+# Create the Java program in real time
+# ---------------------------------
+RUN echo 'import java.sql.Connection;' > Test.java && \
+    echo 'import java.sql.DriverManager;' >> Test.java && \
+    echo 'import java.sql.ResultSet;' >> Test.java && \
+    echo 'import java.sql.Statement;' >> Test.java && \
+    echo 'import java.sql.SQLException;' >> Test.java && \
+    echo 'public class Test {' >> Test.java && \
+    echo '    public static void main(String[] args) {' >> Test.java && \
+    echo '        String url = "jdbc:h2:tcp://sognisport-app:8092/mem:sognisport";' >> Test.java && \
+    echo '        String user = "sa";' >> Test.java && \
+    echo '        String password = "";' >> Test.java && \
+    echo '        try (Connection conn = DriverManager.getConnection(url, user, password);' >> Test.java && \
+    echo '             Statement stmt = conn.createStatement()) {' >> Test.java && \
+    echo '            String sql = "SELECT COUNT(*) AS total FROM CURRENCY_CONVERSIONS";' >> Test.java && \
+    echo '            ResultSet rs = stmt.executeQuery(sql);' >> Test.java && \
+    echo '            rs.next();' >> Test.java && \
+    echo '            int numRecords = rs.getInt("total");' >> Test.java && \
+    echo '            if (numRecords == 0) {' >> Test.java && \
+    echo '                System.out.println("No records found");' >> Test.java && \
+    echo '            } else {' >> Test.java && \
+    echo '                System.out.println("NUMBER OF RECORDS: " + numRecords);' >> Test.java && \
+    echo '                System.out.println();' >> Test.java && \
+    echo '                sql = "SELECT * FROM CURRENCY_CONVERSIONS";' >> Test.java && \
+    echo '                rs = stmt.executeQuery(sql);' >> Test.java && \
+    echo '                while (rs.next()) {' >> Test.java && \
+    echo '                    System.out.println("ID: " + rs.getInt("ID"));' >> Test.java && \
+    echo '                    System.out.println("CONVERSION_RATE: " + rs.getDouble("CONVERSION_RATE"));' >> Test.java && \
+    echo '                    System.out.println("QUERY_DATE: " + rs.getTimestamp("QUERY_DATE"));' >> Test.java && \
+    echo '                    System.out.println("SOURCE_CURRENCY: " + rs.getString("SOURCE_CURRENCY"));' >> Test.java && \
+    echo '                    System.out.println("TARGET_CURRENCY: " + rs.getString("TARGET_CURRENCY"));' >> Test.java && \
+    echo '                    System.out.println();' >> Test.java && \
+    echo '                }' >> Test.java && \
+    echo '            }' >> Test.java && \
+    echo '        } catch (SQLException e) {' >> Test.java && \
+    echo '            System.out.println("Error connecting to the database server: " + url);' >> Test.java && \
+    echo '        } catch (Exception e) {' >> Test.java && \
+    echo '            e.printStackTrace();' >> Test.java && \
+    echo '        }' >> Test.java && \
+    echo '    }' >> Test.java && \
+    echo '}' >> Test.java
+
+# ---------------------------------
+# Compile the Java program
+# ---------------------------------
+RUN javac Test.java
+
+# ---------------------------------
+# Command to run the program, including the H2 JAR in the classpath
+# ---------------------------------
+CMD ["java", "-cp", ".:/h2.jar", "Test"]
