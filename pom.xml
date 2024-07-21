@@ -252,7 +252,7 @@ Configures:
             </plugin>
             
             <!-- Plugin for reading .env file -->
-            <plugin>
+            <!-- <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>properties-maven-plugin</artifactId>
                 <version>1.2.1</version>
@@ -269,7 +269,7 @@ Configures:
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin> -->
             <!-- Spring Boot plugin -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
