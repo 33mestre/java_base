@@ -109,7 +109,7 @@ fi
 # Packaging Docker project...
 # ---------------------------------
 echo "Packaging Docker project..."
-docker build -t shelson-app -f ../Dockerfile ..
+docker build -t shelson-app -f Dockerfile .
 
 # ---------------------------------
 # Running Docker project on port 8080...

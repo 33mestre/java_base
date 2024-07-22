@@ -31,46 +31,44 @@ echo ---------------------------------
 
 echo Checking Docker installation...
 
-REM Navigate to the project root directory
 cd /d "%~dp0\.."
 
 REM ---------------------------------
 REM Check if Docker is installed
 REM ---------------------------------
-where docker > nul
-if %errorlevel% neq 0 (
-  echo Docker not found. Installing Docker...
-  if exist "%PROGRAMFILES%\Docker\Docker\Docker Desktop.exe" (
-    echo Docker is already installed, but not in the PATH.
-    echo Please add Docker to the PATH or start Docker Desktop manually.
-    exit /b 1
-  ) else (
-    echo Please install Docker manually (https://docs.docker.com/desktop/install/windows-install/).
-    exit /b 1
-  )
-) else (
-  echo Docker previously installed.
+where docker >nul 2>nul
+IF %ERRORLEVEL% NEQ 0 (
+    echo Docker not found. Installing Docker...
+    IF "%OS%"=="Windows_NT" (
+        powershell -Command "Start-Process 'https://desktop.docker.com/win/stable/Docker%20Desktop%20Installer.exe' -Verb RunAs"
+        exit /b
+    ) ELSE (
+        echo Unsupported operating system. Please install Docker manually.
+        exit /b 1
+    )
+) ELSE (
+    echo Docker previously installed.
 )
 
 REM ---------------------------------
 REM Check if Docker daemon is running
 REM ---------------------------------
 echo Checking if Docker daemon is running...
-docker info > nul 2>&1
-if %errorlevel% neq 0 (
-  echo Docker daemon is not running. Please start the Docker daemon.
-  exit /b 1
+docker info >nul 2>nul
+IF %ERRORLEVEL% NEQ 0 (
+    echo Docker daemon is not running. Please start the Docker daemon.
+    exit /b 1
 )
 
 REM ---------------------------------
 REM Check if the Docker network already exists
 REM ---------------------------------
-docker network inspect shelson-network > nul 2>&1
-if %errorlevel% neq 0 (
-  echo Creating and Starting a Docker Network...
-  docker network create shelson-network
-) else (
-  echo Docker network 'shelson-network' already exists.
+docker network inspect shelson-network >nul 2>nul
+IF %ERRORLEVEL% NEQ 0 (
+    echo Creating and Starting a Docker Network...
+    docker network create shelson-network
+) ELSE (
+    echo Docker network 'shelson-network' already exists.
 )
 
 echo Checking existing containers...
@@ -78,26 +76,26 @@ echo Checking existing containers...
 REM ---------------------------------
 REM Check if the shelson-app container is running
 REM ---------------------------------
-for /f "tokens=*" %%i in ('docker ps -q -f name=shelson-app') do set SHELSON_APP_RUNNING=%%i
-if defined SHELSON_APP_RUNNING (
-  echo Stopping shelson-app container...
-  docker stop shelson-app
+docker ps -q -f name=shelson-app >nul
+IF %ERRORLEVEL% EQU 0 (
+    echo Stopping shelson-app container...
+    docker stop shelson-app
 )
 
 REM ---------------------------------
 REM Remove the shelson-app container if it exists
 REM ---------------------------------
-for /f "tokens=*" %%i in ('docker ps -aq -f name=shelson-app') do set SHELSON_APP_EXISTS=%%i
-if defined SHELSON_APP_EXISTS (
-  echo Removing shelson-app container...
-  docker rm shelson-app
+docker ps -aq -f name=shelson-app >nul
+IF %ERRORLEVEL% EQU 0 (
+    echo Removing shelson-app container...
+    docker rm shelson-app
 )
 
 REM ---------------------------------
 REM Packaging Docker project...
 REM ---------------------------------
 echo Packaging Docker project...
-docker build -t shelson-app -f Dockerfile ..
+docker build -t shelson-app -f Dockerfile .
 
 REM ---------------------------------
 REM Running Docker project on port 8080...
