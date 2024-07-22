@@ -16,76 +16,75 @@
 
 A Currency conversion project - server, database, access clients (input data and list data).
 
-## In a nutshell
+## In a Nutshell
 
-**Steps to download, install, configure, run and start the Java Rest API server, the database server, insert data into the database, as well as test and view the persisted data in the project:**
+Steps to download, install, configure, run and start the Java Rest API server, the database server, insert data into the database, as well as test and view the persisted data in the project:
 
-- **Open the Command Prompt**
-
-- **Clone the GitHub repository and access the project folder:**
+- **Open the Command Prompt and Clone the GitHub repository and access the project folder:**
     
 ```bash
 git clone https://github.com/33mestre/java_base.git
-cd shelson
+cd java_base
 ```
 
 ### Procedures for Unix / Linux Environment
 
-**Permissions:**
+**Define Scripts Permissions:**
 
 ```bash
 chmod +x index.sh
 chmod +x scripts/*.sh
 ```
 
-**Server:**
-
-```bash
-bash server.sh
-```
-
-**Access Client:**
-
-```bash
-bash console.sh
-```
-
-**Data Listing:**
-
-```bash
-bash db.sh
-```
-
 ### Procedures for MS Windows Environment
 
-```bash
-server.bat
-```
+No special permissions are required.
 
-**Access Client:**
+### Running the Project
 
-```bash
-console.bat
-```
+**Execute the main script:**
 
-**Data Listing:**
+For Unix / Linux:
 
 ```bash
-db.bat
+./index.sh
 ```
 
-It's Ready. With just these simple steps, you should have:
+For Windows:
 
-- A Java Spring server with the application running;
-- An H2 Database server running;
-- An access client to access the currency conversion application;
+```bash
+index.bat
+```
+
+**Menu Options:**
+
+When you run the main script (`index.sh` or `index.bat`), you will be presented with the following options:
+
+```bash
+Selecione uma opção:
+[1] - Server
+[2] - Console
+[3] - DB
+[4] - Directory
+[5] - Changelog
+```
+
+**Options Description:**
+
+- **Server:** Starts the Java Spring server with the application running.
+- **Console:** Launches the access client to interact with the currency conversion application.
+- **DB:** Runs the data lister to view the data persisted in the H2 database.
+- **Directory:** Generates the `DIRECTORY.md` file (used for testing purposes, as this is also automated in the CI/CD pipeline).
+- **Changelog:** Updates the `CHANGELOG.md` file (used for testing purposes, as this is also automated in the CI/CD pipeline).
+
+With just these simple steps, you should have:
+
+- A Java Spring server with the application running.
+- An H2 Database server running.
+- An access client to access the currency conversion application.
 - A data lister for the data persisted in the database.
 
-Only with Docker installed, without additional installations, working in MS Windows, Linux, and Unix environments.
-
-When running the scripts, Docker is installed via terminal by the scripts if it is not already installed; in the case of MS Windows, you will be notified that it is necessary to download manually.
-
-Next, an extensive documentation of all aspects of the project.
+This setup requires only Docker installed, without additional installations, working in MS Windows, Linux, and Unix environments. The scripts will handle the Docker installation if it's not already installed; for MS Windows, a notification will prompt you to download it manually.
 
 ## Project authorship
 
@@ -99,7 +98,7 @@ Next, an extensive documentation of all aspects of the project.
 
 > [Project Change Log](./CHANGELOG.md)
 
-The generation of `CHANGELOG.md` is automated and occurs with each new commit to the repository, thanks to a CI/CD pipeline. This pipeline uses a Docker container that runs a Groovy script to extract commit information, such as hash, date, author, and message, organizing them in an incremental version format. Commits containing the keyword `"AUTO_COMMIT"` are ignored. The `Groovy script` is responsible for generating the changelog, continuously updating it to reflect all changes made to the project in a precise and detailed manner. The process begins with the CI/CD pipeline calling the Groovy script inside the Docker container, ensuring the changelog is generated correctly.
+The generation of `CHANGELOG.md` is automated and occurs with each new commit to the repository, thanks to a CI/CD pipeline. This pipeline uses a Docker container that runs a Groovy script to extract commit information, such as hash, date, author, and message, organizing them in an incremental version format. Commits containing the keyword `"AUTO_COMMIT"` are ignored. The Groovy script is responsible for generating the changelog, continuously updating it to reflect all changes made to the project in a precise and detailed manner. The process begins with the CI/CD pipeline calling the Groovy script inside the Docker container, ensuring the changelog is generated correctly.
 
 ## Project JavaDoc (Markdown format)
 
