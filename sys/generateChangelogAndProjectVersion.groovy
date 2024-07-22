@@ -60,8 +60,8 @@ try {
     return
 }
 
-def projectTitle = i18nProperties['project.title']
-def projectDescription = i18nProperties['project.description']
+def projectTitle = i18nProperties['PROJECT_TITLE']
+def projectDescription = i18nProperties['PROJECT_DESCRIPTION']
 def projectChangeLogDescription = i18nProperties['label.project.change.log']
 def currenceVersionDescription = i18nProperties['label.current.version']
 
