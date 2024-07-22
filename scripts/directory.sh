@@ -26,6 +26,8 @@ EOF
 
 echo "Checking Docker installation..."
 
+cd "$(dirname "$0")/.."
+
 # ---------------------------------
 # Check if Docker is installed
 # ---------------------------------
@@ -62,10 +64,22 @@ if [ "$(docker ps -aq -f name=directory)" ]; then
 fi
 
 # ---------------------------------
+# Check if the Docker network already exists
+# ---------------------------------
+if ! docker network inspect shelson-network > /dev/null 2>&1; then
+    echo "Creating and Starting a Docker Network..."
+    docker network create shelson-network
+else
+    echo "Docker network 'shelson-network' already exists."
+fi
+
+echo "Checking existing containers..."
+
+# ---------------------------------
 # Packaging Docker project...
 # ---------------------------------
 echo "Packaging Docker project..."
-docker build -t directory -f ../directory-docker.yml ..
+docker build -t directory -f directory-docker.yml .
 
 # ---------------------------------
 # Adding permission to the script inside the container

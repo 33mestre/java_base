@@ -22,7 +22,8 @@
 
 # Load variables from the .env file
 . .env
+. project.properties
 
 # Start the application
 echo "The project version is $PROJECT_VERSION"
-exec java -Djava.security.egd=file:/dev/./urandom -jar /app/target/shelson-$PROJECT_VERSION.jar
+exec java -Djava.security.egd=file:/dev/./urandom -jar /app/target/$PROJECT_ID-$PROJECT_VERSION.jar

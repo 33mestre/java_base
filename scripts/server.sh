@@ -36,6 +36,8 @@ clear
 
 echo "Checking Docker installation..."
 
+cd "$(dirname "$0")/.."
+
 # ---------------------------------
 # Check if Docker is installed
 # ---------------------------------

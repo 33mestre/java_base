@@ -11,7 +11,7 @@
 # Project installation and execution script
 # ---------------------------------
 # This script checks for Docker installation, installs it if necessary,
-# creates a Docker network, packages, and runs the Docker project.
+# creates a Docker network, packages, e runs the Docker project.
 # ---------------------------------
 
 cat << "EOF"
@@ -31,6 +31,8 @@ EOF
 clear
 
 echo "Checking Docker installation..."
+
+cd "$(dirname "$0")/.."
 
 # ---------------------------------
 # Check if Docker is installed
@@ -99,14 +101,14 @@ if [ "$(docker ps -aq -f name=console-docker)" ]; then
   docker rm console-docker
 fi
 
-# ---------------------------------
-# Packaging Docker project...
-# ---------------------------------
-echo "Packaging Docker project..."
-docker build -t console-docker -f ../console-app-docker.yml ..
+# # ---------------------------------
+# # Packaging Docker project...
+# # ---------------------------------
+# echo "Packaging Docker project..."
+docker build -t console-docker -f console-app-docker.yml .
 
-# ---------------------------------
-# Running Docker project...
-# ---------------------------------
-echo "Running Docker project..."
+# # ---------------------------------
+# # Running Docker project...
+# # ---------------------------------
+# echo "Running Docker project..."
 docker run -it --rm --name console-docker --network shelson-network console-docker

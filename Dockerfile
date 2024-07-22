@@ -51,6 +51,11 @@ COPY pom.xml .
 COPY .env .env
 
 # ---------------------------------
+# Copies the project.properties file to the container
+# ---------------------------------
+COPY project.properties project.properties
+
+# ---------------------------------
 # Downloads Maven dependencies without running tests
 # ---------------------------------
 RUN mvn dependency:go-offline

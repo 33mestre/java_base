@@ -37,60 +37,16 @@ RUN apt-get update && apt-get install -y maven libx11-dev socat
 WORKDIR /app
 
 # ---------------------------------
-# Dynamically create the pom.xml file
+# Copy the project.properties, .env, and callJavaFromConsoleDocker.sh files into the container
 # ---------------------------------
-RUN echo '<?xml version="1.0" encoding="UTF-8"?>' > pom.xml && \
-    echo '<project xmlns="http://maven.apache.org/POM/4.0.0"' >> pom.xml && \
-    echo '         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"' >> pom.xml && \
-    echo '         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">' >> pom.xml && \
-    echo '    <modelVersion>4.0.0</modelVersion>' >> pom.xml && \
-    echo '    <groupId>com.shelson</groupId>' >> pom.xml && \
-    echo '    <artifactId>shelson-console</artifactId>' >> pom.xml && \
-    echo '    <version>1.0-SNAPSHOT</version>' >> pom.xml && \
-    echo '    <properties>' >> pom.xml && \
-    echo '        <maven.compiler.source>17</maven.compiler.source>' >> pom.xml && \
-    echo '        <maven.compiler.target>17</maven.compiler.target>' >> pom.xml && \
-    echo '    </properties>' >> pom.xml && \
-    echo '    <dependencies>' >> pom.xml && \
-    echo '        <dependency>' >> pom.xml && \
-    echo '            <groupId>org.json</groupId>' >> pom.xml && \
-    echo '            <artifactId>json</artifactId>' >> pom.xml && \
-    echo '            <version>20231013</version>' >> pom.xml && \
-    echo '        </dependency>' >> pom.xml && \
-    echo '        <dependency>' >> pom.xml && \
-    echo '            <groupId>org.slf4j</groupId>' >> pom.xml && \
-    echo '            <artifactId>slf4j-api</artifactId>' >> pom.xml && \
-    echo '            <version>1.7.32</version>' >> pom.xml && \
-    echo '        </dependency>' >> pom.xml && \
-    echo '        <dependency>' >> pom.xml && \
-    echo '            <groupId>org.slf4j</groupId>' >> pom.xml && \
-    echo '            <artifactId>slf4j-simple</artifactId>' >> pom.xml && \
-    echo '            <version>1.7.32</version>' >> pom.xml && \
-    echo '        </dependency>' >> pom.xml && \
-    echo '    </dependencies>' >> pom.xml && \
-    echo '    <build>' >> pom.xml && \
-    echo '        <plugins>' >> pom.xml && \
-    echo '            <plugin>' >> pom.xml && \
-    echo '                <groupId>org.apache.maven.plugins</groupId>' >> pom.xml && \
-    echo '                <artifactId>maven-shade-plugin</artifactId>' >> pom.xml && \
-    echo '                <version>3.2.4</version>' >> pom.xml && \
-    echo '                <executions>' >> pom.xml && \
-    echo '                    <execution>' >> pom.xml && \
-    echo '                        <phase>package</phase>' >> pom.xml && \
-    echo '                        <goals><goal>shade</goal></goals>' >> pom.xml && \
-    echo '                        <configuration>' >> pom.xml && \
-    echo '                            <transformers>' >> pom.xml && \
-    echo '                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">' >> pom.xml && \
-    echo '                                    <mainClass>com.shelson.console.CurrencyConverterConsoleApp</mainClass>' >> pom.xml && \
-    echo '                                </transformer>' >> pom.xml && \
-    echo '                            </transformers>' >> pom.xml && \
-    echo '                        </configuration>' >> pom.xml && \
-    echo '                    </execution>' >> pom.xml && \
-    echo '                </executions>' >> pom.xml && \
-    echo '            </plugin>' >> pom.xml && \
-    echo '        </plugins>' >> pom.xml && \
-    echo '    </build>' >> pom.xml && \
-    echo '</project>' >> pom.xml
+COPY project.properties /app/project.properties
+COPY .env /app/.env
+COPY sys/callJavaFromConsoleDocker.sh /app/sys/callJavaFromConsoleDocker.sh
+
+# ---------------------------------
+# Make the callJavaFromConsoleDocker.sh script executable
+# ---------------------------------
+RUN chmod +x /app/sys/callJavaFromConsoleDocker.sh
 
 # ---------------------------------
 # Copy specific project files
@@ -99,16 +55,6 @@ COPY src/main/java/com/shelson/console/CurrencyConverterConsoleApp.java ./src/ma
 COPY src/main/java/com/shelson/domain/model/Currency.java ./src/main/java/com/shelson/domain/model/Currency.java
 
 # ---------------------------------
-# Run mvn dependency:go-offline to download dependencies
-# ---------------------------------
-RUN mvn dependency:go-offline
-
-# ---------------------------------
-# Run the Maven command to compile the project and skip tests
-# ---------------------------------
-RUN mvn clean package -DskipTests
-
-# ---------------------------------
 # Set the default command to start the application
 # ---------------------------------
-CMD ["java", "-cp", "target/shelson-console-1.0-SNAPSHOT.jar", "com.shelson.console.CurrencyConverterConsoleApp"]
+CMD ["/app/sys/callJavaFromConsoleDocker.sh"]

@@ -28,6 +28,8 @@ EOF
 
 echo "Checking Docker installation..."
 
+cd "$(dirname "$0")/.."
+
 # Check if Docker is installed
 if ! [ -x "$(command -v docker)" ]; then
   echo "Docker not found. Installing Docker..."
@@ -95,7 +97,7 @@ fi
 # Packaging Docker project...
 # ---------------------------------
 echo "Packaging Docker project..."
-docker build -t db-docker -f ../db-docker.yml ..
+docker build -t db-docker -f db-docker.yml .
 
 # ---------------------------------
 # Running Docker project on port 8083...

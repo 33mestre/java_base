@@ -46,8 +46,8 @@ try {
 // ---------------------------------
 // user, repo and i18n from properties
 // ---------------------------------
-def user = projectProperties['github.repo.user']
-def repo = projectProperties['github.repo.name']
+def user = projectProperties['GITHUB_REPO_USER']
+def repo = projectProperties['GITHUB_REPO_NAME']
 def i18n = projectProperties['i18n']
 
 def i18nPropertiesPath = Paths.get(projectDir, 'i18n', "${i18n}.properties")
