@@ -32,10 +32,10 @@ import org.springframework.stereotype.Component;
  * This class initializes the Spring Boot application.
  */
 @SpringBootApplication
-public class shelsonApplication {
+public class ShelsonApplication {
 
     private static org.h2.tools.Server server;
-    private static final Logger logger = LoggerFactory.getLogger(shelsonApplication.class);
+    private static final Logger logger = LoggerFactory.getLogger(ShelsonApplication.class);
 
     /**
      * Main method to start the Spring Boot application.
@@ -43,7 +43,7 @@ public class shelsonApplication {
      * @param args Command line arguments.
      */
     public static void main(String[] args) {
-        SpringApplication.run(shelsonApplication.class, args);
+        SpringApplication.run(ShelsonApplication.class, args);
 
         final String[] h2ServerConfiguration = new String[] {
             "-tcpPort", "8092",
