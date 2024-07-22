@@ -10,8 +10,8 @@
           * exception
               * [BusinessException](https://github.com/33mestre/shelson/tree/master/src/main/java/com/shelson/infrastructure/exception/BusinessException.java)
               * [ResourceNotFoundException](https://github.com/33mestre/shelson/tree/master/src/main/java/com/shelson/infrastructure/exception/ResourceNotFoundException.java)
+          * [ShelsonApplication](https://github.com/33mestre/shelson/tree/master/src/main/java/com/shelson/ShelsonApplication.java)
           * [MethodValidationConfig](https://github.com/33mestre/shelson/tree/master/src/main/java/com/shelson/MethodValidationConfig.java)
-          * [shelsonApplication](https://github.com/33mestre/shelson/tree/master/src/main/java/com/shelson/shelsonApplication.java)
         * application
           * controller
               * [HomeController](https://github.com/33mestre/shelson/tree/master/src/main/java/com/shelson/application/controller/HomeController.java)
