@@ -1,15 +1,15 @@
-//[java_base](../../../index.md)/[com.sognisport.domain.service](../index.md)/[CurrencyConversionDomainService](index.md)/[performConversion](perform-conversion.md)
+//[java_base](../../../index.md)/[com.shelson.domain.service](../index.md)/[CurrencyConversionDomainService](index.md)/[performConversion](perform-conversion.md)
 
 # performConversion
 
 [JVM]\
-open fun [performConversion](perform-conversion.md)(sourceCurrency: [Currency](../../com.sognisport.domain.model/-currency/index.md), targetCurrency: [Currency](../../com.sognisport.domain.model/-currency/index.md), rate: [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)): [CurrencyConversion](../../com.sognisport.domain.model/-currency-conversion/index.md)
+open fun [performConversion](perform-conversion.md)(sourceCurrency: [Currency](../../com.shelson.domain.model/-currency/index.md), targetCurrency: [Currency](../../com.shelson.domain.model/-currency/index.md), rate: [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)): [CurrencyConversion](../../com.shelson.domain.model/-currency-conversion/index.md)
 
-Performs currency conversion based on the provided rate and records the transaction. This function creates a new [CurrencyConversion](../../com.sognisport.domain.model/-currency-conversion/index.md) object, sets its properties, including the query date and time, and saves the object to the repository.
+Performs currency conversion based on the provided rate and records the transaction. This function creates a new [CurrencyConversion](../../com.shelson.domain.model/-currency-conversion/index.md) object, sets its properties, including the query date and time, and saves the object to the repository.
 
 #### Return
 
-A [CurrencyConversion](../../com.sognisport.domain.model/-currency-conversion/index.md) object containing the conversion details.
+A [CurrencyConversion](../../com.shelson.domain.model/-currency-conversion/index.md) object containing the conversion details.
 
 #### Parameters
 

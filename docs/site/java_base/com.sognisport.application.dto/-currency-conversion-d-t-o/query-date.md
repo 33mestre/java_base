@@ -1,4 +1,4 @@
-//[java_base](../../../index.md)/[com.sognisport.application.dto](../index.md)/[CurrencyConversionDTO](index.md)/[queryDate](query-date.md)
+//[java_base](../../../index.md)/[com.shelson.application.dto](../index.md)/[CurrencyConversionDTO](index.md)/[queryDate](query-date.md)
 
 # queryDate
 

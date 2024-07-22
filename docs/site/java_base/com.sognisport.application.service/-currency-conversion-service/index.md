@@ -1,4 +1,4 @@
-//[java_base](../../../index.md)/[com.sognisport.application.service](../index.md)/[CurrencyConversionService](index.md)
+//[java_base](../../../index.md)/[com.shelson.application.service](../index.md)/[CurrencyConversionService](index.md)
 
 # CurrencyConversionService
 
@@ -25,4 +25,4 @@ Service responsible for currency conversion operations.
 
 | Name | Summary |
 |---|---|
-| [convertCurrency](convert-currency.md) | [JVM]<br>open fun [convertCurrency](convert-currency.md)(sourceCurrency: [Currency](../../com.sognisport.domain.model/-currency/index.md), targetCurrency: [Currency](../../com.sognisport.domain.model/-currency/index.md), amount: [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)): [CurrencyConversionDTO](../../com.sognisport.application.dto/-currency-conversion-d-t-o/index.md)<br>Converts an amount from a source currency to a target currency. |
+| [convertCurrency](convert-currency.md) | [JVM]<br>open fun [convertCurrency](convert-currency.md)(sourceCurrency: [Currency](../../com.shelson.domain.model/-currency/index.md), targetCurrency: [Currency](../../com.shelson.domain.model/-currency/index.md), amount: [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)): [CurrencyConversionDTO](../../com.shelson.application.dto/-currency-conversion-d-t-o/index.md)<br>Converts an amount from a source currency to a target currency. |

@@ -1,4 +1,4 @@
-//[java_base](../../../index.md)/[com.sognisport.domain.model](../index.md)/[CurrencyConversion](index.md)/[queryDate](query-date.md)
+//[java_base](../../../index.md)/[com.shelson.domain.model](../index.md)/[CurrencyConversion](index.md)/[queryDate](query-date.md)
 
 # queryDate
 

@@ -1,4 +1,4 @@
-//[java_base](../../../index.md)/[com.sognisport.infrastructure.config](../index.md)/[WebConfig](index.md)/[addInterceptors](add-interceptors.md)
+//[java_base](../../../index.md)/[com.shelson.infrastructure.config](../index.md)/[WebConfig](index.md)/[addInterceptors](add-interceptors.md)
 
 # addInterceptors
 

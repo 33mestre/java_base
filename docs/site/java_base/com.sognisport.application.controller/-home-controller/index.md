@@ -1,4 +1,4 @@
-//[java_base](../../../index.md)/[com.sognisport.application.controller](../index.md)/[HomeController](index.md)
+//[java_base](../../../index.md)/[com.shelson.application.controller](../index.md)/[HomeController](index.md)
 
 # HomeController
 

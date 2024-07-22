@@ -1,4 +1,4 @@
-//[java_base](../../../index.md)/[com.sognisport.application.dto](../index.md)/[CurrencyConversionDTO](index.md)/[conversionRate](conversion-rate.md)
+//[java_base](../../../index.md)/[com.shelson.application.dto](../index.md)/[CurrencyConversionDTO](index.md)/[conversionRate](conversion-rate.md)
 
 # conversionRate
 

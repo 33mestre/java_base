@@ -1,4 +1,4 @@
-//[java_base](../../../index.md)/[com.sognisport.logging](../index.md)/[LoggingInterceptor](index.md)/[afterCompletion](after-completion.md)
+//[java_base](../../../index.md)/[com.shelson.logging](../index.md)/[LoggingInterceptor](index.md)/[afterCompletion](after-completion.md)
 
 # afterCompletion
 

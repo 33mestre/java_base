@@ -41,33 +41,33 @@
 
 ## Package Documentation
 
-- [com.sognisport.infrastructure.config](https://github.com/33mestre/sognisport/tree/master/src/main/java/com/sognisport/com/sognisport/infrastructure/config)
+- [com.shelson.infrastructure.config](https://github.com/33mestre/sognisport/tree/master/src/main/java/com/sognisport/com/sognisport/infrastructure/config)
 This package contains the configuration settings for the application infrastructure.
 
-- [com.sognisport.infrastructure.exception](https://github.com/33mestre/sognisport/tree/master/src/main/java/com/sognisport/com/sognisport/infrastructure/exception)
+- [com.shelson.infrastructure.exception](https://github.com/33mestre/sognisport/tree/master/src/main/java/com/sognisport/com/sognisport/infrastructure/exception)
 This package contains the exception classes for the application infrastructure.
 
-- [com.sognisport.application.controller](https://github.com/33mestre/sognisport/tree/master/src/main/java/com/sognisport/com/sognisport/application/controller)
+- [com.shelson.application.controller](https://github.com/33mestre/sognisport/tree/master/src/main/java/com/sognisport/com/sognisport/application/controller)
 This package contains the REST controllers for the application.  <p> Controllers are responsible for receiving HTTP requests, processing those requests, and returning HTTP responses. </p>
 
-- [com.sognisport.application.service](https://github.com/33mestre/sognisport/tree/master/src/main/java/com/sognisport/com/sognisport/application/service)
+- [com.shelson.application.service](https://github.com/33mestre/sognisport/tree/master/src/main/java/com/sognisport/com/sognisport/application/service)
 This package contains the services of the application, responsible for business logic.
 
-- [com.sognisport.application.dto](https://github.com/33mestre/sognisport/tree/master/src/main/java/com/sognisport/com/sognisport/application/dto)
+- [com.shelson.application.dto](https://github.com/33mestre/sognisport/tree/master/src/main/java/com/sognisport/com/sognisport/application/dto)
 This package contains the Data Transfer Objects (DTOs) used to transfer data between the layers of the application.
 
-- [com.sognisport.domain.service](https://github.com/33mestre/sognisport/tree/master/src/main/java/com/sognisport/com/sognisport/domain/service)
+- [com.shelson.domain.service](https://github.com/33mestre/sognisport/tree/master/src/main/java/com/sognisport/com/sognisport/domain/service)
 This package contains the domain services of the application.  <p> Domain services are responsible for business logic and for implementing the application's business rules. </p>
 
-- [com.sognisport.domain.model](https://github.com/33mestre/sognisport/tree/master/src/main/java/com/sognisport/com/sognisport/domain/model)
+- [com.shelson.domain.model](https://github.com/33mestre/sognisport/tree/master/src/main/java/com/sognisport/com/sognisport/domain/model)
 This package contains the domain model classes of the application.
 
-- [com.sognisport.domain.repository](https://github.com/33mestre/sognisport/tree/master/src/main/java/com/sognisport/com/sognisport/domain/repository)
+- [com.shelson.domain.repository](https://github.com/33mestre/sognisport/tree/master/src/main/java/com/sognisport/com/sognisport/domain/repository)
 This package contains the repositories for the application, responsible for communication with the database.
 
-- [com.sognisport.logging](https://github.com/33mestre/sognisport/tree/master/src/main/java/com/sognisport/com/sognisport/logging)
+- [com.shelson.logging](https://github.com/33mestre/sognisport/tree/master/src/main/java/com/sognisport/com/sognisport/logging)
 This package contains classes related to logging in the application.
 
-- [com.sognisport.console](https://github.com/33mestre/sognisport/tree/master/src/main/java/com/sognisport/com/sognisport/console)
+- [com.shelson.console](https://github.com/33mestre/sognisport/tree/master/src/main/java/com/sognisport/com/sognisport/console)
 This package contains the console application for currency conversion.
 

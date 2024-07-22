@@ -13,7 +13,7 @@ skinparam class {
     BorderThickness 1
 }
 
-package "com.sognisport.application.controller" {
+package "com.shelson.application.controller" {
     class CurrencyConversionController {
         +convertCurrency(Currency source, Currency target, double amount): CurrencyConversionDTO
     }
@@ -22,14 +22,14 @@ package "com.sognisport.application.controller" {
     }
 }
 
-package "com.sognisport.application.dto" {
+package "com.shelson.application.dto" {
     class CurrencyConversionDTO {
         +CurrencyConversionDTO()
         +CurrencyConversionDTO(Currency sourceCurrency, Currency targetCurrency, double conversionRate, LocalDateTime queryDate, double amount, double convertedAmount)
     }
 }
 
-package "com.sognisport.application.service" {
+package "com.shelson.application.service" {
     class CurrencyConversionService {
         +convertCurrency(Currency sourceCurrency, Currency targetCurrency, double amount): CurrencyConversionDTO
     }
@@ -39,7 +39,7 @@ package "com.sognisport.application.service" {
     }
 }
 
-package "com.sognisport.domain.model" {
+package "com.shelson.domain.model" {
     class Currency
     class CurrencyConversion {
         +CurrencyConversion()
@@ -47,11 +47,11 @@ package "com.sognisport.domain.model" {
     }
 }
 
-package "com.sognisport.domain.repository" {
+package "com.shelson.domain.repository" {
     interface CurrencyConversionRepository
 }
 
-package "com.sognisport.domain.service" {
+package "com.shelson.domain.service" {
     class CurrencyConversionDomainService {
         +performConversion(Currency sourceCurrency, Currency targetCurrency, double rate): CurrencyConversion
     }

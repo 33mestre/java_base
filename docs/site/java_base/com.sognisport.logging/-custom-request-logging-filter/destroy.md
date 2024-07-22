@@ -1,4 +1,4 @@
-//[java_base](../../../index.md)/[com.sognisport.logging](../index.md)/[CustomRequestLoggingFilter](index.md)/[destroy](destroy.md)
+//[java_base](../../../index.md)/[com.shelson.logging](../index.md)/[CustomRequestLoggingFilter](index.md)/[destroy](destroy.md)
 
 # destroy
 

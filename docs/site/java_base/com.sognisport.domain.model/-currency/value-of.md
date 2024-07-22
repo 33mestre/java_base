@@ -1,4 +1,4 @@
-//[java_base](../../../index.md)/[com.sognisport.domain.model](../index.md)/[Currency](index.md)/[valueOf](value-of.md)
+//[java_base](../../../index.md)/[com.shelson.domain.model](../index.md)/[Currency](index.md)/[valueOf](value-of.md)
 
 # valueOf
 

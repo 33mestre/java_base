@@ -1,4 +1,4 @@
-//[java_base](../../index.md)/[com.sognisport.application.dto](index.md)
+//[java_base](../../index.md)/[com.shelson.application.dto](index.md)
 
 # Package-level declarations
 

@@ -1,4 +1,4 @@
-//[java_base](../../../index.md)/[com.sognisport.application.dto](../index.md)/[CurrencyConversionDTO](index.md)/[hashCode](hash-code.md)
+//[java_base](../../../index.md)/[com.shelson.application.dto](../index.md)/[CurrencyConversionDTO](index.md)/[hashCode](hash-code.md)
 
 # hashCode
 

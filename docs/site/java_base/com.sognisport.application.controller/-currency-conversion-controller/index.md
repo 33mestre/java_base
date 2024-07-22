@@ -1,4 +1,4 @@
-//[java_base](../../../index.md)/[com.sognisport.application.controller](../index.md)/[CurrencyConversionController](index.md)
+//[java_base](../../../index.md)/[com.shelson.application.controller](../index.md)/[CurrencyConversionController](index.md)
 
 # CurrencyConversionController
 
@@ -21,4 +21,4 @@ Controller responsible for currency conversion operations. Provides endpoints fo
 
 | Name | Summary |
 |---|---|
-| [convertCurrency](convert-currency.md) | [JVM]<br>@GetMapping(value = &quot;/convert&quot;)<br>open fun [convertCurrency](convert-currency.md)(@RequestParamsource: [Currency](../../com.sognisport.domain.model/-currency/index.md), @RequestParamtarget: [Currency](../../com.sognisport.domain.model/-currency/index.md), @RequestParamamount: [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)): [CurrencyConversionDTO](../../com.sognisport.application.dto/-currency-conversion-d-t-o/index.md)<br>Converts the source currency to the target currency. |
+| [convertCurrency](convert-currency.md) | [JVM]<br>@GetMapping(value = &quot;/convert&quot;)<br>open fun [convertCurrency](convert-currency.md)(@RequestParamsource: [Currency](../../com.shelson.domain.model/-currency/index.md), @RequestParamtarget: [Currency](../../com.shelson.domain.model/-currency/index.md), @RequestParamamount: [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)): [CurrencyConversionDTO](../../com.shelson.application.dto/-currency-conversion-d-t-o/index.md)<br>Converts the source currency to the target currency. |

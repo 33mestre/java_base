@@ -37,7 +37,7 @@ Configures:
     <modelVersion>4.0.0</modelVersion>
 
     <!-- Project identification -->
-    <groupId>com.sognisport</groupId> <!-- Project group -->
+    <groupId>com.shelson</groupId> <!-- Project group -->
     <artifactId>java_base</artifactId> <!-- Artifact identifier -->
     <version>${PROJECT_VERSION}</version>
     <!-- Project version -->
@@ -219,7 +219,7 @@ Configures:
                     <apiSources>
                         <apiSource>
                             <springmvc>true</springmvc>
-                            <locations>com.sognisport.application</locations>
+                            <locations>com.shelson.application</locations>
                             <schemes>http,https</schemes>
                             <host>localhost:8080</host>
                             <basePath>/api-doc</basePath>

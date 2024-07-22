@@ -1,4 +1,4 @@
-//[java_base](../../../index.md)/[com.sognisport.domain.repository](../index.md)/[CurrencyConversionRepository](index.md)
+//[java_base](../../../index.md)/[com.shelson.domain.repository](../index.md)/[CurrencyConversionRepository](index.md)
 
 # CurrencyConversionRepository
 
@@ -7,7 +7,7 @@
 
 interface [CurrencyConversionRepository](index.md) : JpaRepository&lt;T, ID&gt; 
 
-Repository for the entity [CurrencyConversion](../../com.sognisport.domain.model/-currency-conversion/index.md). This repository extends JpaRepository, providing CRUD methods for the entity [CurrencyConversion](../../com.sognisport.domain.model/-currency-conversion/index.md).
+Repository for the entity [CurrencyConversion](../../com.shelson.domain.model/-currency-conversion/index.md). This repository extends JpaRepository, providing CRUD methods for the entity [CurrencyConversion](../../com.shelson.domain.model/-currency-conversion/index.md).
 
 ## Functions
 

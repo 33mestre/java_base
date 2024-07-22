@@ -1,4 +1,4 @@
-//[java_base](../../index.md)/[com.sognisport.infrastructure.exception](index.md)
+//[java_base](../../index.md)/[com.shelson.infrastructure.exception](index.md)
 
 # Package-level declarations
 

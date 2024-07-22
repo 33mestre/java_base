@@ -1,4 +1,4 @@
-//[java_base](../../../index.md)/[com.sognisport.domain.model](../index.md)/[CurrencyConversion](index.md)/[CurrencyConversion](-currency-conversion.md)
+//[java_base](../../../index.md)/[com.shelson.domain.model](../index.md)/[CurrencyConversion](index.md)/[CurrencyConversion](-currency-conversion.md)
 
 # CurrencyConversion
 

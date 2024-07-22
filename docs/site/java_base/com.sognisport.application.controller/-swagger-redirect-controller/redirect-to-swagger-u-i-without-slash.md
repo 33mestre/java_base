@@ -1,4 +1,4 @@
-//[java_base](../../../index.md)/[com.sognisport.application.controller](../index.md)/[SwaggerRedirectController](index.md)/[redirectToSwaggerUIWithoutSlash](redirect-to-swagger-u-i-without-slash.md)
+//[java_base](../../../index.md)/[com.shelson.application.controller](../index.md)/[SwaggerRedirectController](index.md)/[redirectToSwaggerUIWithoutSlash](redirect-to-swagger-u-i-without-slash.md)
 
 # redirectToSwaggerUIWithoutSlash
 
