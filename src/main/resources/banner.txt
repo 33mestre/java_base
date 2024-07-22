@@ -7,7 +7,7 @@
 ---------------------------------
 Project Name: ${project.name}
 Project Phase: ${project.phase}
-Description: ${PROJECT_DESCRIPTION}
+Description: ${project.description}
 Java Version: ${java.version}
 ---------------------------------
 Swagger Documentation: http://localhost:8080/swagger-ui
