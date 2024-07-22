@@ -1,7 +1,12 @@
 
 # Currency Conversion API - Project Change Log
 
-**Current version:** [0.3.1](https://github.com/33mestre/java_base/commit/e7869b6) (Shelson Ferrari) - 21/07/2024 23:05h
+**Current version:** [0.3.2](https://github.com/33mestre/java_base/commit/a263020) (Shelson Ferrari) - 21/07/2024 23:14h
+
+---
+
+[0.3.2](https://github.com/33mestre/java_base/commit/a263020) - 21/07/2024 23:14h - a263020 - Shelson Ferrari
+- ajuste para remoca pasta docs/site antes do mvn dokka
 
 ---
 
