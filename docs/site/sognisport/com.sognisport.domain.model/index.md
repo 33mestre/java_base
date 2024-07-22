@@ -3,7 +3,7 @@
 # Package-level declarations
 
 [JVM]\
-This package contains the domain model classes of the Sognisport application.
+This package contains the domain model classes of the application.
 
 ## Types
 

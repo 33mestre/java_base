@@ -7,7 +7,7 @@
 
 open class [SognisportApplication](index.md)
 
-Main class for the Sognisport application. This class initializes the Spring Boot application.
+Main class for the application. This class initializes the Spring Boot application.
 
 ## Constructors
 

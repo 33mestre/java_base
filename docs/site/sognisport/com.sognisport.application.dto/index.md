@@ -3,7 +3,7 @@
 # Package-level declarations
 
 [JVM]\
-This package contains the Data Transfer Objects (DTOs) used to transfer data between the layers of the Sognisport application.
+This package contains the Data Transfer Objects (DTOs) used to transfer data between the layers of the application.
 
 ## Types
 

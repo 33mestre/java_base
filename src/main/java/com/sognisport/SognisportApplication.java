@@ -28,7 +28,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 /**
- * Main class for the Sognisport application.
+ * Main class for the application.
  * This class initializes the Spring Boot application.
  */
 @SpringBootApplication

@@ -3,7 +3,7 @@
 # Package-level declarations
 
 [JVM]\
-This package contains the exception classes for the Sognisport application infrastructure.
+This package contains the exception classes for the application infrastructure.
 
 ## Types
 

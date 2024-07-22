@@ -4,7 +4,7 @@
 
 ### Description
 
-The Sognisport project is a currency conversion API based on Spring Boot. It utilizes Domain-Driven Design (DDD) to structure the code, facilitating system maintenance and scalability.
+The project is a currency conversion API based on Spring Boot. It utilizes Domain-Driven Design (DDD) to structure the code, facilitating system maintenance and scalability.
 
 ### Objectives
 

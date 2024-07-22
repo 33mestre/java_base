@@ -1,5 +1,5 @@
 /**
- * This package contains the REST controllers for the Sognisport application.
+ * This package contains the REST controllers for the application.
  * 
  * <p>
  * Controllers are responsible for receiving HTTP requests,

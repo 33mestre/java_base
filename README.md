@@ -1,12 +1,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-[![Build and Test For PR](https://github.com/33mestre/sognisport/actions/workflows/main.yml/badge.svg)](https://github.com/33mestre/sognisport/actions/workflows/main.yml)
+[![Build and Test For PR](https://github.com/33mestre/java_base/actions/workflows/main.yml/badge.svg)](https://github.com/33mestre/java_base/actions/workflows/main.yml)
 
-[![Known Vulnerabilities](https://snyk.io/test/github/33mestre/sognisport/badge.svg?targetFile=pom.xml)](https://snyk.io/test/github/33mestre/sognisport?targetFile=pom.xml) 
+[![Known Vulnerabilities](https://snyk.io/test/github/33mestre/java_base/badge.svg?targetFile=pom.xml)](https://snyk.io/test/github/33mestre/java_base?targetFile=pom.xml) 
 
-![GitHub repo size](https://img.shields.io/github/repo-size/33mestre/sognisport.svg) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/33mestre/sognisport.svg) ![GitHub top language](https://img.shields.io/github/languages/top/33mestre/sognisport.svg) ![GitHub language count](https://img.shields.io/github/languages/count/33mestre/sognisport.svg) ![GitHub last commit](https://img.shields.io/github/last-commit/33mestre/sognisport.svg)
+![GitHub repo size](https://img.shields.io/github/repo-size/33mestre/java_base.svg) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/33mestre/java_base.svg) ![GitHub top language](https://img.shields.io/github/languages/top/33mestre/java_base.svg) ![GitHub language count](https://img.shields.io/github/languages/count/33mestre/java_base.svg) ![GitHub last commit](https://img.shields.io/github/last-commit/33mestre/java_base.svg)
 
-[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/33mestre/sognisport.svg)](http://isitmaintained.com/project/33mestre/sognisport "Average time to resolve an issue") [![Percentage of issues still open](http://isitmaintained.com/badge/open/33mestre/sognisport.svg)](http://isitmaintained.com/project/33mestre/sognisport "Percentage of issues still open")
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/33mestre/java_base.svg)](http://isitmaintained.com/project/33mestre/"Average time to resolve an issue") [![Percentage of issues still open](http://isitmaintained.com/badge/open/33mestre/java_base.svg)](http://isitmaintained.com/project/33mestre/"Percentage of issues still open")
 
 --- 
 
@@ -25,7 +25,7 @@ A Currency conversion project - server, database, access clients (input data and
 - **Clone the GitHub repository and access the project folder:**
     
 ```bash
-git clone https://github.com/33mestre/sognisport.git
+git clone https://github.com/33mestre/java_base.git
 cd sognisport
 ```
 
@@ -87,56 +87,67 @@ When running the scripts, Docker is installed via terminal by the scripts if it 
 
 Next, an extensive documentation of all aspects of the project.
 
-
-
-
 ## Wiki
 
-
 ### 1. Introduction to the Project
-- [Overview](overview.md): Presentation of the project, highlighting its purpose and the context in which it is embedded.
-- [Project Objectives](project-objectives.md): Enumeration of the main objectives that the project aims to achieve.
-- [Scope and Functionalities](scope-and-functionalities.md): Description of the main functionalities offered by the project and its scope of operation.
+- [Overview](https://github.com/33mestre/java_base/wiki/overview): Presentation of the project, highlighting its purpose and the context in which it is embedded.
+- [Project Objectives](https://github.com/33mestre/java_base/wiki/project-objectives): Enumeration of the main objectives that the project aims to achieve.
+- [Scope and Functionalities](https://github.com/33mestre/java_base/wiki/scope-and-functionalities): Description of the main functionalities offered by the project and its scope of operation.
+
 ### 2. Configuration and Installation
-- Initial Configurations: Steps required to set up the development or production environment.
-- Installation Instructions: Detailed procedures for installing the project in different environments.
-- Docker Configuration: Specifications on how to configure and use Docker for the project.
+- [Initial Configurations](https://github.com/33mestre/java_base/wiki/initial-configurations): Steps required to set up the development or production environment.
+- [Installation Instructions](https://github.com/33mestre/java_base/wiki/installation-instructions): Detailed procedures for installing the project in different environments.
+- [Docker Configuration](https://github.com/33mestre/java_base/wiki/docker-configuration): Specifications on how to configure and use Docker for the project.
+
 ### 3. Project Structure
-- Folder Structure: Description of the organization of the project directories.
-- Project Architecture: Explanation of the architecture used, including design patterns and technical decisions.
+- [Folder Structure](https://github.com/33mestre/java_base/wiki/folder-structure): Description of the organization of the project directories.
+- [Project Architecture](https://github.com/33mestre/java_base/wiki/project-architecture): Explanation of the architecture used, including design patterns and technical decisions.
+
 ### 4. Development
-- Development Flow: Description of the development process adopted, including planning, coding, and review stages.
-- Contributions: Guidelines on how to contribute to the project, including code standards and pull request requirements.
-- Guide for Contributors: Tips and best practices for new contributors.
+- [Development Flow](https://github.com/33mestre/java_base/wiki/development-flow): Description of the development process adopted, including planning, coding, and review stages.
+- [Contributions](https://github.com/33mestre/java_base/wiki/contributions): Guidelines on how to contribute to the project, including code standards and pull request requirements.
+- [Guide for Contributors](https://github.com/33mestre/java_base/wiki/guide-for-contributors): Tips and best practices for new contributors.
+
 ### 5. API and Documentation
-- OpenAPI Specification: Details about the OpenAPI specification used to document the API endpoints.
-- API Documentation with Swagger: Information on how to access and use the interactive API documentation generated by Swagger.
+- [OpenAPI Specification](https://github.com/33mestre/java_base/wiki/openapi-specification): Details about the OpenAPI specification used to document the API endpoints.
+- [API Documentation with Swagger](https://github.com/33mestre/java_base/wiki/api-documentation-with-swagger): Information on how to access and use the interactive API documentation generated by Swagger.
+
 ### 6. Endpoints and Database
-- Endpoint Description: Details of the available API endpoints, including methods, parameters, and usage examples.
-- Database Management: Strategies and practices for efficient management of the database used by the project.
+- [Endpoint Description](https://github.com/33mestre/java_base/wiki/endpoint-description): Details of the available API endpoints, including methods, parameters, and usage examples.
+- [Database Management](https://github.com/33mestre/java_base/wiki/database-management): Strategies and practices for efficient management of the database used by the project.
+
 ### 7. Testing
-- Testing Strategies: Approach and methods used to test the software, including unit, integration, and E2E tests.
-- Testing Tools: Description of the testing tools used in the project and how to configure them.
+- [Testing Strategies](https://github.com/33mestre/java_base/wiki/testing-strategies): Approach and methods used to test the software, including unit, integration, and E2E tests.
+- [Testing Tools](https://github.com/33mestre/java_base/wiki/testing-tools): Description of the testing tools used in the project and how to configure them.
+
 ### 8. CI/CD and Automations
-- CI/CD Pipeline: Explanation of the continuous integration and delivery pipeline, detailing each stage and its function.
-- Automations and Artifact Generation: Description of the automations incorporated into the CI/CD, including documentation generation and build artifacts.
+- [CI/CD Pipeline](https://github.com/33mestre/java_base/wiki/ci-cd-pipeline): Explanation of the continuous integration and delivery pipeline, detailing each stage and its function.
+- [Automations and Artifact Generation](https://github.com/33mestre/java_base/wiki/automations-and-artifact-generation): Description of the automations incorporated into the CI/CD, including documentation generation and build artifacts.
+
 ### 9. Configuration Files
-- .gitignore and .editorconfig: Utility of these files to maintain code consistency and quality.
-- Maven Wrapper and application.properties: Explanation of how these files help standardize the development environment.
-- .env File and Travis CI Settings: Use of these files to configure the environment and CI integrations.
+- [.gitignore and .editorconfig](https://github.com/33mestre/java_base/wiki/gitignore-and-editorconfig): Utility of these files to maintain code consistency and quality.
+- [Maven Wrapper and application.properties](https://github.com/33mestre/java_base/wiki/maven-wrapper-and-application-properties): Explanation of how these files help standardize the development environment.
+- [.env File and Travis CI Settings](https://github.com/33mestre/java_base/wiki/env-file-and-travis-ci-settings): Use of these files to configure the environment and CI integrations.
+
 ### 10. Best Practices
-- Code Standards and Security: Guidelines for maintaining code quality and security.
-- Monitoring and Logging Practices: Recommended techniques for monitoring and logging in the project.
+- [Code Standards and Security](https://github.com/33mestre/java_base/wiki/code-standards-and-security): Guidelines for maintaining code quality and security.
+- [Monitoring and Logging Practices](https://github.com/33mestre/java_base/wiki/monitoring-and-logging-practices): Recommended techniques for monitoring and logging in the project.
+
 ### 11. Legal and Licensing
-- Licensing and Terms of Use: Information about the rights and restrictions associated with the use of the software.
+- [Licensing and Terms of Use](https://github.com/33mestre/java_base/wiki/licensing-and-terms-of-use): Information about the rights and restrictions associated with the use of the software.
+
 ### 12. Community and Acknowledgments
-- Contributors and Authors: Recognition of the contributors to the project.
-- Code of Conduct: Behavioral guidelines expected for the project community.
+- [Contributors and Authors](https://github.com/33mestre/java_base/wiki/contributors-and-authors): Recognition of the contributors to the project.
+- [Code of Conduct](https://github.com/33mestre/java_base/wiki/code-of-conduct): Behavioral guidelines expected for the project community.
+
 ### 13. Projections and Innovations
-- Future Plans: Discussion on functionalities and improvements considered for future versions of the project.
-- Improvement Proposals: Space for the community to suggest and debate improvements and innovations.
+- [Future Plans](https://github.com/33mestre/java_base/wiki/future-plans): Discussion on functionalities and improvements considered for future versions of the project.
+- [Improvement Proposals](https://github.com/33mestre/java_base/wiki/improvement-proposals): Space for the community to suggest and debate improvements and innovations.
+
 ### 14. Attachments and Useful Links
-- External Links and References: Additional resources and external documentation relevant to the project.
+- [External Links and References](https://github.com/33mestre/java_base/wiki/external-links-and-references): Additional resources and external documentation relevant to the project.
+
+
 
 
 
@@ -160,23 +171,23 @@ The generation of `CHANGELOG.md` is automated and occurs with each new commit to
 
 ## Wiki
 
-- [Presentation](https://github.com/33mestre/sognisport/wiki/presentation)
-- [Project](https://github.com/33mestre/sognisport/wiki/project)
-- [Technical Definitions](https://github.com/33mestre/sognisport/wiki/technical-definitions)
-- [Project Structure](https://github.com/33mestre/sognisport/wiki/project-structure)
-- [Project Components](https://github.com/33mestre/sognisport/wiki/project-components)
-- [Testing](https://github.com/33mestre/sognisport/wiki/testing)
-- [Documentation and Swagger](https://github.com/33mestre/sognisport/wiki/documentation-and-swagger)
-- [Application Execution](https://github.com/33mestre/sognisport/wiki/application-execution)
-- [H2 Database](https://github.com/33mestre/sognisport/wiki/h2-database)
-- [CI/CD Pipeline](https://github.com/33mestre/sognisport/wiki/ci-cd-pipeline)
-- [Configuration Files](https://github.com/33mestre/sognisport/wiki/configuration-files)
-- [Logs and Best Practices](https://github.com/33mestre/sognisport/wiki/logs-and-best-practices)
-- [Differentials](https://github.com/33mestre/sognisport/wiki/differentials)
+- [Presentation](https://github.com/33mestre/java_base/wiki/presentation)
+- [Project](https://github.com/33mestre/java_base/wiki/project)
+- [Technical Definitions](https://github.com/33mestre/java_base/wiki/technical-definitions)
+- [Project Structure](https://github.com/33mestre/java_base/wiki/project-structure)
+- [Project Components](https://github.com/33mestre/java_base/wiki/project-components)
+- [Testing](https://github.com/33mestre/java_base/wiki/testing)
+- [Documentation and Swagger](https://github.com/33mestre/java_base/wiki/documentation-and-swagger)
+- [Application Execution](https://github.com/33mestre/java_base/wiki/application-execution)
+- [H2 Database](https://github.com/33mestre/java_base/wiki/h2-database)
+- [CI/CD Pipeline](https://github.com/33mestre/java_base/wiki/ci-cd-pipeline)
+- [Configuration Files](https://github.com/33mestre/java_base/wiki/configuration-files)
+- [Logs and Best Practices](https://github.com/33mestre/java_base/wiki/logs-and-best-practices)
+- [Differentials](https://github.com/33mestre/java_base/wiki/differentials)
 - [Project Architecture Documentation](/ARCHITECTURE.md)
-- [Attachments](https://github.com/33mestre/sognisport/wiki/attachments)
-- [Licensing](https://github.com/33mestre/sognisport/wiki/licensing)
-- [Useful Links](https://github.com/33mestre/sognisport/wiki/useful-links)
+- [Attachments](https://github.com/33mestre/java_base/wiki/attachments)
+- [Licensing](https://github.com/33mestre/java_base/wiki/licensing)
+- [Useful Links](https://github.com/33mestre/java_base/wiki/useful-links)
 - [Authors](/AUTHORS.md)
 - [Code of Conduct](/CODE_OF_CONDUCT.md)
 - [Project Change Log](/CHANGELOG.md)

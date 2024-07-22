@@ -3,7 +3,7 @@
 # Package-level declarations
 
 [JVM]\
-This package contains the REST controllers for the Sognisport application. 
+This package contains the REST controllers for the application. 
 
  Controllers are responsible for receiving HTTP requests, processing those requests, and returning HTTP responses.
 
