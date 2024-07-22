@@ -33,22 +33,22 @@ def projectDir = Paths.get("").toAbsolutePath().normalize().toString()
 // ---------------------------------
 // Read properties from project.properties
 // ---------------------------------
-def propertiesPath = Paths.get(projectDir, '.', 'project.properties')
-def properties = new Properties()
+def projectPropertiesPath = Paths.get(projectDir, '.', 'project.properties')
+def projectProperties = new Properties()
 
 try {
-    properties.load(Files.newInputStream(propertiesPath))
+    projectProperties.load(Files.newInputStream(projectPropertiesPath))
 } catch (IOException e) {
-    println("Error: Unable to load 'project.properties'. Please ensure the file exists at ${propertiesPath}.")
+    println("Error: Unable to load 'project.properties'. Please ensure the file exists at ${projectPropertiesPath}.")
     return
 }
 
 // ---------------------------------
 // user, repo and i18n from properties
 // ---------------------------------
-def user = properties['github.repo.user']
-def repo = properties['github.repo.name']
-def i18n = properties['i18n']
+def user = projectProperties['github.repo.user']
+def repo = projectProperties['github.repo.name']
+def i18n = projectProperties['i18n']
 
 def i18nPropertiesPath = Paths.get(projectDir, 'i18n', "${i18n}.properties")
 def i18nProperties = new Properties()
@@ -62,9 +62,8 @@ try {
 
 def projectTitle = i18nProperties['project.title']
 def projectDescription = i18nProperties['project.description']
-
-println("projectTitle:${projectTitle}")
-println("projectDescription:${projectDescription}")
+def projectChangeLogDescription = i18nProperties['label.project.change.log']
+def currenceVersionDescription = i18nProperties['label.current.version']
 
 // ---------------------------------
 // Executes the Git command to get the list of commits with hash, date, author, and message
@@ -129,12 +128,21 @@ commits.each { commit ->
     def commitUrl = "https://github.com/${user}/${repo}/commit/${commitHash}"
     lastCommitUrl = "https://github.com/${user}/${repo}/commit/${commitHash}"
 
-    // Ignore commits with the keyword "AUTO_COMMIT"
-    if (message.contains("AUTO_COMMIT") || message.contains("AUTO_CHANGELOG")) {
+    // ---------------------------------
+    // Array of keywords to ignore
+    // ---------------------------------
+    def ignoreKeywords = ["AUTO_COMMIT", "AUTO_CHANGELOG"]
+
+    // ---------------------------------
+    // Ignore commits with specified keywords
+    // ---------------------------------
+    if (ignoreKeywords.any { keyword -> message.contains(keyword) }) {
         return // Continue to next commit
     }
 
+    // ---------------------------------
     // Increment the version for each valid commit
+    // ---------------------------------
     def version = "[${major}.${minor}.${patch}](${commitUrl})"
     lastVersion = "${major}.${minor}.${patch}"
     lastDate = date
@@ -158,9 +166,10 @@ commits.each { commit ->
 // ---------------------------------
 def header = new StringBuilder()
 header.append("""
-# Project Change Log
+# ${projectTitle} - ${projectChangeLogDescription}
 
-**Current version:** [${lastVersion}](${lastCommitUrl}) (${lastAuthor}) - ${lastDate}
+**${currenceVersionDescription}:** [${lastVersion}](${lastCommitUrl}) (${lastAuthor}) - ${lastDate}
+
 ---
 """)
 
