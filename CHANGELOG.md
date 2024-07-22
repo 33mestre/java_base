@@ -1,7 +1,27 @@
 
 # Currency Conversion API - Project Change Log
 
-**Current version:** [0.2.7](https://github.com/33mestre/java_base/commit/0c97cc7) (Shelson Ferrari) - 21/07/2024 22:53h
+**Current version:** [0.3.1](https://github.com/33mestre/java_base/commit/e7869b6) (Shelson Ferrari) - 21/07/2024 23:05h
+
+---
+
+[0.3.1](https://github.com/33mestre/java_base/commit/e7869b6) - 21/07/2024 23:05h - e7869b6 - Shelson Ferrari
+- refatoracao de nome de pacote do projeto para com.shelson
+
+---
+
+[0.3.0](https://github.com/33mestre/java_base/commit/e9a1f36) - 21/07/2024 23:01h - e9a1f36 - Shelson Ferrari
+- refatoracao de nome de pacote do projeto para com.shelson
+
+---
+
+[0.2.9](https://github.com/33mestre/java_base/commit/5b9216f) - 21/07/2024 22:59h - 5b9216f - Shelson Ferrari
+- Render PlantUML files
+
+---
+
+[0.2.8](https://github.com/33mestre/java_base/commit/75131a8) - 21/07/2024 22:58h - 75131a8 - Shelson Ferrari
+- refatoracao de nome de pacote do projeto para com.shelson
 
 ---
 
