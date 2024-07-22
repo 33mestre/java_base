@@ -19,30 +19,30 @@ echo Console Terminal
 echo Main Menu
 echo ---------------------------------
 
-echo Selecione uma opcao:
+echo Select an option:
 echo [1] - Server
 echo [2] - Console
 echo [3] - DB
 echo [4] - Directory
 echo [5] - Changelog
 
-set /p option=Digite um numero de 1 a 5: 
+set /p option=Enter a number from 1 to 5:: 
 
 if "%option%"=="1" (
-    echo Executando o script Server...
+    echo Running the Server script...
     call scripts\server.bat
 ) else if "%option%"=="2" (
-    echo Executando o script Console...
+    echo Running the Console script...
     call scripts\console.bat
 ) else if "%option%"=="3" (
-    echo Executando o script DB...
+    echo Running the DB script...
     call scripts\db.bat
 ) else if "%option%"=="4" (
-    echo Executando o script Directory...
+    echo Running the Directory script...
     call scripts\directory.bat
 ) else if "%option%"=="5" (
-    echo Executando o script Changelog...
+    echo Running the Changelog script...
     call scripts\changelog.bat
 ) else (
-    echo Opcao invalida. Por favor, escolha um numero de 1 a 5.
+    echo Invalid option. Please choose a number from 1 to 5.
 )

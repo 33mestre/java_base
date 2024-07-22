@@ -22,38 +22,37 @@ Main Menu
 ---------------------------------
 EOF
 
-echo "Selecione uma opção:"
+echo "Select an option:"
 echo "[1] - Server"
 echo "[2] - Console"
 echo "[3] - DB"
 echo "[4] - Directory"
 echo "[5] - Changelog"
 
-read -p "Digite um número de 1 a 5: " option
+read -p "Enter a number from 1 to 5:" option
 
 case $option in
     1)
-        echo "Executando o script Server..."
+        echo "Running the Server script..."
         ./scripts/server.sh
         ;;
     2)
-        echo "Executando o script Console..."
+        echo "Running the Console script..."
         ./scripts/console.sh
         ;;
     3)
-        echo "Executando o script DB..."
+        echo "Running the DB script..."
         ./scripts/db.sh
         ;;
     4)
-        echo "Executando o script Directory..."
+        echo "Running the Directory script..."
         ./scripts/directory.sh
         ;;
     5)
-        echo "Executando o script Changelog..."
+        echo "Running the Changelog script..."
         ./scripts/changelog.sh
         ;;
-    
     *)
-        echo "Opção inválida. Por favor, escolha um número de 1 a 5."
+        echo "Invalid option. Please choose a number from 1 to 5."
         ;;
 esac

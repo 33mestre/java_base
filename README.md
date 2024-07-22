@@ -20,7 +20,7 @@ A Currency conversion project - server, database, access clients (input data and
 
 Steps to download, install, configure, run and start the Java Rest API server, the database server, insert data into the database, as well as test and view the persisted data in the project:
 
-- **Open the Command Prompt and Clone the GitHub repository and access the project folder:**
+**Open the Command Prompt and Clone the GitHub repository and access the project folder:**
     
 ```bash
 git clone https://github.com/33mestre/java_base.git
@@ -61,7 +61,7 @@ index.bat
 When you run the main script (`index.sh` or `index.bat`), you will be presented with the following options:
 
 ```bash
-Selecione uma opção:
+Select an option:
 [1] - Server
 [2] - Console
 [3] - DB
