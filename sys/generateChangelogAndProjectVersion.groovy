@@ -23,6 +23,7 @@ Versions are incremented based on valid commits, and the changelog is generated 
 import java.nio.file.Files
 import java.nio.file.Paths
 import java.nio.file.StandardOpenOption
+import java.util.Properties
 
 // ---------------------------------
 // Define the project directory
@@ -30,10 +31,40 @@ import java.nio.file.StandardOpenOption
 def projectDir = Paths.get("").toAbsolutePath().normalize().toString()
 
 // ---------------------------------
-// user and repo
+// Read properties from project.properties
 // ---------------------------------
-def user = '33mestre'
-def repo = 'sognisport'
+def propertiesPath = Paths.get(projectDir, '.', 'project.properties')
+def properties = new Properties()
+
+try {
+    properties.load(Files.newInputStream(propertiesPath))
+} catch (IOException e) {
+    println("Error: Unable to load 'project.properties'. Please ensure the file exists at ${propertiesPath}.")
+    return
+}
+
+// ---------------------------------
+// user, repo and i18n from properties
+// ---------------------------------
+def user = properties['github.repo.user']
+def repo = properties['github.repo.name']
+def i18n = properties['i18n']
+
+def i18nPropertiesPath = Paths.get(projectDir, 'i18n', "${i18n}.properties")
+def i18nProperties = new Properties()
+
+try {
+    i18nProperties.load(Files.newInputStream(i18nPropertiesPath))
+} catch (IOException e) {
+    println("Error: Unable to load 'project.properties'. Please ensure the file exists at ${propertiesPath}.")
+    return
+}
+
+def projectTitle = i18nProperties['project.title']
+def projectDescription = i18nProperties['project.description']
+
+println("projectTitle:${projectTitle}")
+println("projectDescription:${projectDescription}")
 
 // ---------------------------------
 // Executes the Git command to get the list of commits with hash, date, author, and message
@@ -97,7 +128,6 @@ commits.each { commit ->
 
     def commitUrl = "https://github.com/${user}/${repo}/commit/${commitHash}"
     lastCommitUrl = "https://github.com/${user}/${repo}/commit/${commitHash}"
-
 
     // Ignore commits with the keyword "AUTO_COMMIT"
     if (message.contains("AUTO_COMMIT") || message.contains("AUTO_CHANGELOG")) {
