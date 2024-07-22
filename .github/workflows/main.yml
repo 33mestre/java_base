@@ -21,7 +21,7 @@
 # ---------------------------------
 
 # ---------------------------------
-# Name of the workflow
+# workflow name
 # ---------------------------------
 name: Build and Test Java Project with Maven
 
@@ -39,6 +39,7 @@ permissions:
 
 jobs:
   build:
+
     # ---------------------------------
     # Defines that the job will run on the latest Ubuntu environment
     # ---------------------------------
@@ -92,7 +93,9 @@ jobs:
         distribution: 'adopt'
         java-version: '17'
 
+    # ---------------------------------
     # Step to cache Maven packages
+    # ---------------------------------
     - name: Cache Maven packages
       id: cache-maven-package
       if: env.is_primary == 'true'
@@ -101,6 +104,22 @@ jobs:
         path: ~/.m2/repository
         key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
         restore-keys: ${{ runner.os }}-maven
+
+    # ---------------------------------
+    # Set up Python
+    # ---------------------------------
+    - name: Set up Python
+      if: env.is_primary == 'true'
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'  # Especificando a versão 3.8 do Python
+
+    # ---------------------------------
+    # Install Python dependencies
+    # ---------------------------------
+    - name: Install Python dependencies
+      if: env.is_primary == 'true'
+      run: pip install requests
 
     # ---------------------------------
     # Installs Groovy if needed
@@ -132,43 +151,30 @@ jobs:
       run: mvn clean install -Pci-cd -DskipTests
 
     # ---------------------------------
-    # Gets the SHA of files if they exist
+    # Gets the SHA of specified files if they exist and sets them as environment variables
+    # Files: CHANGELOG.md, .env, DIRECTORY.md, openapi/swagger.json, openapi/swagger.yaml
     # ---------------------------------
     - name: Get SHA of files if they exist
       if: env.is_primary == 'true'
       id: get-sha
       run: |
-        CHANGELOG_SHA=$(curl -s -H "Authorization: Bearer ${{ secrets.TOKEN }}" -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/${{ github.repository }}/contents/CHANGELOG.md | jq -r .sha)
-        ENV_SHA=$(curl -s -H "Authorization: Bearer ${{ secrets.TOKEN }}" -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/${{ github.repository }}/contents/.env | jq -r .sha)
-        DIRECTORY_SHA=$(curl -s -H "Authorization: Bearer ${{ secrets.TOKEN }}" -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/${{ github.repository }}/contents/DIRECTORY.md | jq -r .sha)
-        SWAGGER_JSON_SHA=$(curl -s -H "Authorization: Bearer ${{ secrets.TOKEN }}" -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/${{ github.repository }}/contents/openapi/swagger.json | jq -r .sha)
-        SWAGGER_YAML_SHA=$(curl -s -H "Authorization: Bearer ${{ secrets.TOKEN }}" -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/${{ github.repository }}/contents/openapi/swagger.yaml | jq -r .sha)
+        # Function to get the SHA of a file and set it as an environment variable
+        get_sha() {
+          local file_path=$1
+          local var_name=$2
+          local sha=$(curl -s -H "Authorization: Bearer $GITHUB_TOKEN" -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/${{ github.repository }}/contents/$file_path | jq -r .sha)
+          if [ "$sha" != "null" ]; then
+            echo "${var_name}=${sha}" >> $GITHUB_ENV
+          else
+            echo "${var_name}=" >> $GITHUB_ENV
+          fi
+        }
 
-        if [ "$CHANGELOG_SHA" != "null" ]; then
-          echo "changelog_sha=$CHANGELOG_SHA" >> $GITHUB_ENV
-        else
-          echo "changelog_sha=" >> $GITHUB_ENV
-        fi
-        if [ "$ENV_SHA" != "null" ]; then
-          echo "env_sha=$ENV_SHA" >> $GITHUB_ENV
-        else
-          echo "env_sha=" >> $GITHUB_ENV
-        fi
-        if [ "$DIRECTORY_SHA" != "null" ]; then
-          echo "directory_sha=$DIRECTORY_SHA" >> $GITHUB_ENV
-        else
-          echo "directory_sha=" >> $GITHUB_ENV
-        fi
-        if [ "$SWAGGER_JSON_SHA" != "null" ]; then
-          echo "swagger_json_sha=$SWAGGER_JSON_SHA" >> $GITHUB_ENV
-        else
-          echo "swagger_json_sha=" >> $GITHUB_ENV
-        fi
-        if [ "$SWAGGER_YAML_SHA" != "null" ]; then
-          echo "swagger_yaml_sha=$SWAGGER_YAML_SHA" >> $GITHUB_ENV
-        else
-          echo "swagger_yaml_sha=" >> $GITHUB_ENV
-        fi
+        get_sha "CHANGELOG.md" "changelog_sha"
+        get_sha ".env" "env_sha"
+        get_sha "DIRECTORY.md" "directory_sha"
+        get_sha "openapi/swagger.json" "swagger_json_sha"
+        get_sha "openapi/swagger.yaml" "swagger_yaml_sha"
       env:
         GITHUB_TOKEN: ${{ secrets.TOKEN }}
 
@@ -179,36 +185,21 @@ jobs:
       if: env.is_primary == 'true'
       id: check-changes
       run: |
-        REMOTE_CHANGELOG=$(curl -s -H "Authorization: Bearer ${{ secrets.TOKEN }}" -H "Accept: application/vnd.github.v3.raw" https://api.github.com/repos/${{ github.repository }}/contents/CHANGELOG.md | base64 -d || echo "")
-        LOCAL_CHANGELOG=$(cat CHANGELOG.md)
-        if [ "$REMOTE_CHANGELOG" == "$LOCAL_CHANGELOG" ]; then
-          echo "No changes in CHANGELOG.md"
-          exit 0
-        fi
-        REMOTE_ENV=$(curl -s -H "Authorization: Bearer ${{ secrets.TOKEN }}" -H "Accept: application/vnd.github.v3.raw" https://api.github.com/repos/${{ github.repository }}/contents/.env | base64 -d || echo "")
-        LOCAL_ENV=$(cat .env)
-        if [ "$REMOTE_ENV" == "$LOCAL_ENV" ]; then
-          echo "No changes in .env"
-          exit 0
-        fi
-        REMOTE_DIRECTORY=$(curl -s -H "Authorization: Bearer ${{ secrets.TOKEN }}" -H "Accept: application/vnd.github.v3.raw" https://api.github.com/repos/${{ github.repository }}/contents/DIRECTORY.md | base64 -d || echo "")
-        LOCAL_DIRECTORY=$(cat DIRECTORY.md)
-        if [ "$REMOTE_DIRECTORY" == "$LOCAL_DIRECTORY" ]; then
-          echo "No changes in DIRECTORY.md"
-          exit 0
-        fi
-        REMOTE_SWAGGER_JSON=$(curl -s -H "Authorization: Bearer ${{ secrets.TOKEN }}" -H "Accept: application/vnd.github.v3.raw" https://api.github.com/repos/${{ github.repository }}/contents/openapi/swagger.json | base64 -d || echo "")
-        LOCAL_SWAGGER_JSON=$(cat openapi/swagger.json)
-        if [ "$REMOTE_SWAGGER_JSON" == "$LOCAL_SWAGGER_JSON" ]; then
-          echo "No changes in swagger.json"
-          exit 0
-        fi
-        REMOTE_SWAGGER_YAML=$(curl -s -H "Authorization: Bearer ${{ secrets.TOKEN }}" -H "Accept: application/vnd.github.v3.raw" https://api.github.com/repos/${{ github.repository }}/contents/openapi/swagger.yaml | base64 -d || echo "")
-        LOCAL_SWAGGER_YAML=$(cat openapi/swagger.yaml)
-        if [ "$REMOTE_SWAGGER_YAML" == "$LOCAL_SWAGGER_YAML" ]; then
-          echo "No changes in swagger.yaml"
-          exit 0
-        fi
+        check_change() {
+          local file_path=$1
+          local remote_file=$(curl -s -H "Authorization: Bearer ${{ secrets.TOKEN }}" -H "Accept: application/vnd.github.v3.raw" https://api.github.com/repos/${{ github.repository }}/contents/$file_path | base64 -d || echo "")
+          local local_file=$(cat $file_path)
+          if [ "$remote_file" == "$local_file" ]; then
+            echo "No changes in $file_path"
+            exit 0
+          fi
+        }
+
+        check_change "CHANGELOG.md"
+        check_change ".env"
+        check_change "DIRECTORY.md"
+        check_change "openapi/swagger.json"
+        check_change "openapi/swagger.yaml"
 
     # ---------------------------------
     # Generates CHANGELOG.md, .env, swagger.json, swagger.yaml, and DIRECTORY.md if needed
@@ -224,16 +215,6 @@ jobs:
         groovy sys/directory.groovy
         mvn clean install swagger:generate
         mvn dokka:dokka
-
-    - name: Set up Python
-      if: env.is_primary == 'true'
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.8'  # Especificando a versão 3.8 do Python
-
-    - name: Install Python dependencies
-      if: env.is_primary == 'true'
-      run: pip install requests
 
     # ---------------------------------
     # Adjust Markdown Table with Python
