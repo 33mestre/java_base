@@ -194,7 +194,9 @@ The architecture of this project is designed to be modular and scalable, using D
 
 - [README](./README.md)
 
-## Wiki
+---
+
+## Wiki Menu
 
 - [Presentation](https://github.com/33mestre/shelson/wiki/presentation)
 - [Project](https://github.com/33mestre/shelson/wiki/project)
