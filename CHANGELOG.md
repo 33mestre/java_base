@@ -1,7 +1,12 @@
 
 # Currency Conversion API - Project Change Log
 
-**Current version:** [0.3.4](https://github.com/33mestre/java_base/commit/f0828e1) (Shelson Ferrari) - 21/07/2024 23:32h
+**Current version:** [0.3.5](https://github.com/33mestre/java_base/commit/a07da33) (Shelson Ferrari) - 22/07/2024 05:07h
+
+---
+
+[0.3.5](https://github.com/33mestre/java_base/commit/a07da33) - 22/07/2024 05:07h - a07da33 - Shelson Ferrari
+- ajuste de todos os scripts
 
 ---
 
