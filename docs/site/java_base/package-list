@@ -255,12 +255,12 @@ $dokka.location:com.shelson.logging/LoggingInterceptor/preHandle/#jakarta.servle
 $dokka.location:com.shelson////PointingToDeclaration/java_base/com.shelson/index.md
 $dokka.location:com.shelson/MethodValidationConfig///PointingToDeclaration/java_base/com.shelson/-method-validation-config/index.md
 $dokka.location:com.shelson/MethodValidationConfig/MethodValidationConfig/#/PointingToDeclaration/java_base/com.shelson/-method-validation-config/-method-validation-config.md
-$dokka.location:com.shelson/shelsonApplication.ApplicationShutdownHook///PointingToDeclaration/java_base/com.shelson/-shelson-application/-application-shutdown-hook/index.md
-$dokka.location:com.shelson/shelsonApplication.ApplicationShutdownHook/ApplicationShutdownHook/#/PointingToDeclaration/java_base/com.shelson/-shelson-application/-application-shutdown-hook/-application-shutdown-hook.md
-$dokka.location:com.shelson/shelsonApplication.ApplicationShutdownHook/onShutdown/#/PointingToDeclaration/java_base/com.shelson/-shelson-application/-application-shutdown-hook/on-shutdown.md
-$dokka.location:com.shelson/shelsonApplication///PointingToDeclaration/java_base/com.shelson/-shelson-application/index.md
-$dokka.location:com.shelson/shelsonApplication/shelsonApplication/#/PointingToDeclaration/java_base/com.shelson/-shelson-application/-shelson-application.md
-$dokka.location:com.shelson/shelsonApplication/main/#java.lang.String[]/PointingToDeclaration/java_base/com.shelson/-shelson-application/main.md
+$dokka.location:com.shelson/ShelsonApplication.ApplicationShutdownHook///PointingToDeclaration/java_base/com.shelson/-shelson-application/-application-shutdown-hook/index.md
+$dokka.location:com.shelson/ShelsonApplication.ApplicationShutdownHook/ApplicationShutdownHook/#/PointingToDeclaration/java_base/com.shelson/-shelson-application/-application-shutdown-hook/-application-shutdown-hook.md
+$dokka.location:com.shelson/ShelsonApplication.ApplicationShutdownHook/onShutdown/#/PointingToDeclaration/java_base/com.shelson/-shelson-application/-application-shutdown-hook/on-shutdown.md
+$dokka.location:com.shelson/ShelsonApplication///PointingToDeclaration/java_base/com.shelson/-shelson-application/index.md
+$dokka.location:com.shelson/ShelsonApplication/ShelsonApplication/#/PointingToDeclaration/java_base/com.shelson/-shelson-application/-shelson-application.md
+$dokka.location:com.shelson/ShelsonApplication/main/#java.lang.String[]/PointingToDeclaration/java_base/com.shelson/-shelson-application/main.md
 com.shelson
 com.shelson.application.controller
 com.shelson.application.dto

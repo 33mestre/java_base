@@ -1,11 +1,11 @@
-//[java_base](../../../index.md)/[com.shelson](../index.md)/[shelsonApplication](index.md)
+//[java_base](../../../index.md)/[com.shelson](../index.md)/[ShelsonApplication](index.md)
 
-# shelsonApplication
+# ShelsonApplication
 
 [JVM]\
 @SpringBootApplication
 
-open class [shelsonApplication](index.md)
+open class [ShelsonApplication](index.md)
 
 Main class for the application. This class initializes the Spring Boot application.
 
@@ -13,7 +13,7 @@ Main class for the application. This class initializes the Spring Boot applicati
 
 | | |
 |---|---|
-| [shelsonApplication](-shelson-application.md) | [JVM]<br>constructor() |
+| [ShelsonApplication](-shelson-application.md) | [JVM]<br>constructor() |
 
 ## Types
 
