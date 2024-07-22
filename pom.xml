@@ -38,7 +38,7 @@ Configures:
 
     <!-- Project identification -->
     <groupId>com.sognisport</groupId> <!-- Project group -->
-    <artifactId>sognisport</artifactId> <!-- Artifact identifier -->
+    <artifactId>java_base</artifactId> <!-- Artifact identifier -->
     <version>${PROJECT_VERSION}</version>
     <!-- Project version -->
 
@@ -46,9 +46,9 @@ Configures:
      <!-- Packaging type -->
 
     <!-- Additional project information -->
-    <name>sognisport</name> <!-- Project name -->
+    <name>java_base</name> <!-- Project name -->
     <description>Project for Currency Conversion API</description> <!-- Project description -->
-    <url>https://github.com/33mestre/sognisport</url> <!-- Project URL -->
+    <url>https://github.com/33mestre/java_base</url> <!-- Project URL -->
 
     <!-- Parent project definition -->
     <parent>
@@ -224,7 +224,7 @@ Configures:
                             <host>localhost:8080</host>
                             <basePath>/api-doc</basePath>
                             <info>
-                                <title>Sognisport Currency Conversion API</title>
+                                <title>Currency Conversion API</title>
                                 <version>v1</version>
                                 <description>API for converting currency rates</description>
                                 <contact>
