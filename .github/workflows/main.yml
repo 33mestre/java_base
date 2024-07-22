@@ -207,7 +207,7 @@ jobs:
     - name: Clean docs/site directory
       if: env.is_primary == 'true'
       run: |
-        rm -rf docs/site/*
+        rm -rf docs/site
         
     # ---------------------------------
     # Generates CHANGELOG.md, .env, swagger.json, swagger.yaml, and DIRECTORY.md if needed
