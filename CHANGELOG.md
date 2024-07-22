@@ -1,7 +1,12 @@
 
 # Project Change Log
 
-**Current version:** [0.2.5](https://github.com/33mestre/java_base/commit/5f8f7f7) (Shelson Ferrari) - 21/07/2024 22:26h
+**Current version:** [0.2.6](https://github.com/33mestre/java_base/commit/1a3af0d) (Shelson Ferrari) - 21/07/2024 22:35h
+---
+
+[0.2.6](https://github.com/33mestre/java_base/commit/1a3af0d) - 21/07/2024 22:35h - 1a3af0d - Shelson Ferrari
+- ci cd apaga a pasta docs/site antes de gerar a documentacao
+
 ---
 
 [0.2.5](https://github.com/33mestre/java_base/commit/5f8f7f7) - 21/07/2024 22:26h - 5f8f7f7 - Shelson Ferrari
