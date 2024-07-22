@@ -76,4 +76,4 @@ docker run --rm -v $(pwd):/app directory chmod +x /app/sys/callDirectory.sh
 # Running Docker project on port 4001...
 # ---------------------------------
 echo "Running Docker project on port 4001..."
-docker run --rm --name directory --network sognisport-network -v $(pwd):/app -p 4001:4001 directory
+docker run --rm --name directory --network shelson-network -v $(pwd):/app -p 4001:4001 directory

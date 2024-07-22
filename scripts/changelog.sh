@@ -82,4 +82,4 @@ docker run --rm -v $(pwd):/app changelog chmod +x /app/sys/callChangeLog.sh
 # Running Docker project on port 4010...
 # ---------------------------------
 echo "Running Docker project on port 4010..."
-docker run --rm --name changelog --network sognisport-network -v $(pwd):/app -p 4010:4010 changelog
+docker run --rm --name changelog --network shelson-network -v $(pwd):/app -p 4010:4010 changelog

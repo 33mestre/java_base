@@ -37,7 +37,7 @@ RUN echo 'import java.sql.Connection;' > Test.java && \
     echo 'import java.sql.SQLException;' >> Test.java && \
     echo 'public class Test {' >> Test.java && \
     echo '    public static void main(String[] args) {' >> Test.java && \
-    echo '        String url = "jdbc:h2:tcp://sognisport-app:8092/mem:sognisport";' >> Test.java && \
+    echo '        String url = "jdbc:h2:tcp://shelson-app:8092/mem:shelson";' >> Test.java && \
     echo '        String user = "sa";' >> Test.java && \
     echo '        String password = "";' >> Test.java && \
     echo '        try (Connection conn = DriverManager.getConnection(url, user, password);' >> Test.java && \

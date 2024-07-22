@@ -68,11 +68,11 @@ echo "Checking existing containers..."
 # ---------------------------------
 # Check if the Docker network already exists
 # ---------------------------------
-if ! docker network inspect sognisport-network > /dev/null 2>&1; then
+if ! docker network inspect shelson-network > /dev/null 2>&1; then
     echo "Creating and Starting a Docker Network..."
-    docker network create sognisport-network
+    docker network create shelson-network
 else
-    echo "Docker network 'sognisport-network' already exists."
+    echo "Docker network 'shelson-network' already exists."
 fi
 
 # ---------------------------------
@@ -108,4 +108,4 @@ echo "SELECT * FROM CURRENCY_CONVERSIONS;"
 echo ""
 echo ""
 
-docker run --rm --name db-docker --network sognisport-network -p 8083:8083 db-docker
+docker run --rm --name db-docker --network shelson-network -p 8083:8083 db-docker

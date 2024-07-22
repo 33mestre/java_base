@@ -105,7 +105,7 @@ public class CurrencyConverterConsoleApp {
      * @throws IOException If an error occurs connecting to the API.
      */
     private static JSONObject convertCurrency(String source, String target, double amount) throws IOException {
-        String apiUrl = "http://sognisport-app:8080/api/v1/conversions/convert?source=" + source + "&target=" + target + "&amount=" + amount;
+        String apiUrl = "http://shelson-app:8080/api/v1/conversions/convert?source=" + source + "&target=" + target + "&amount=" + amount;
         logger.debug("Calling API: " + apiUrl);
         URL url = new URL(apiUrl);
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();

@@ -233,7 +233,7 @@ Configures:
                                     <url>https://about.me/shelson</url>
                                 </contact>
                                     <license>
-                                        <url>https://github.com/33mestre/sognisport/blob/master/LICENSES</url>
+                                        <url>https://github.com/33mestre/shelson/blob/master/LICENSES</url>
                                         <name>Dual Licence - MIT License and Apache License 2.0</name>
                                     </license>
                             </info>
@@ -380,7 +380,7 @@ Configures:
                                 </goals>
                                 <configuration>
                                     <target>
-                                        <delete dir="src/main/java/com/sognisport/swing" /> <!-- Example of using Ant to delete a directory -->
+                                        <delete dir="src/main/java/com/shelson/swing" /> <!-- Example of using Ant to delete a directory -->
                                     </target>
                                 </configuration>
                             </execution>
@@ -397,7 +397,7 @@ Configures:
             <id>shelson</id>
             <name>Shelson Ferrari</name>
             <email>shelson@gmail.com</email>
-            <organization>Sognisport</organization>
+            <organization>shelson</organization>
             <roles>
                 <role>Developer</role>
             </roles>
@@ -408,13 +408,13 @@ Configures:
     <licenses>
         <license>
             <name>MIT License</name>
-            <url>https://github.com/33mestre/sognisport/blob/master/LICENSE-MIT</url>
+            <url>https://github.com/33mestre/shelson/blob/master/LICENSE-MIT</url>
             <distribution>repo</distribution>
             <comments>MIT License</comments>
         </license>
         <license>
             <name>Apache License</name>
-            <url>https://github.com/33mestre/sognisport/blob/master/LICENSE-APACHE</url>
+            <url>https://github.com/33mestre/shelson/blob/master/LICENSE-APACHE</url>
             <distribution>repo</distribution>
             <comments>Apache License</comments>
         </license>
@@ -422,8 +422,8 @@ Configures:
 
     <!-- SCM (Source Code Management) configuration -->
     <scm>
-        <connection>scm:git:git://github.com/33mestre/sognisport.git</connection>
-        <developerConnection>scm:git:ssh://github.com:33mestre/sognisport.git</developerConnection>
-        <url>https://github.com/33mestre/sognisport</url>
+        <connection>scm:git:git://github.com/33mestre/shelson.git</connection>
+        <developerConnection>scm:git:ssh://github.com:33mestre/shelson.git</developerConnection>
+        <url>https://github.com/33mestre/shelson</url>
     </scm>
 </project>

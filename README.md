@@ -26,7 +26,7 @@ A Currency conversion project - server, database, access clients (input data and
     
 ```bash
 git clone https://github.com/33mestre/java_base.git
-cd sognisport
+cd shelson
 ```
 
 ### Procedures for Unix / Linux Environment

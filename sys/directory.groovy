@@ -103,12 +103,12 @@ def generateDirectoryMarkdown(rootDirPath, baseUrl, outputFilePath) {
 // ---------------------------------
 // Root directory of the source code
 // ---------------------------------
-def rootDirPath = "src/main/java/com/sognisport"
+def rootDirPath = "src/main/java/com/shelson"
 
 // ---------------------------------
 // Base URL of the GitHub repository
 // ---------------------------------
-def baseUrl = "https://github.com/33mestre/sognisport/tree/master/src/main/java/com/sognisport"
+def baseUrl = "https://github.com/33mestre/shelson/tree/master/src/main/java/com/shelson"
 
 // ---------------------------------
 // Path to the output file

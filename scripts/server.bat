@@ -64,42 +64,42 @@ REM ---------------------------------
 REM Creating and Starting a Docker Network
 REM ---------------------------------
 echo Checking for existing Docker network...
-docker network inspect sognisport-network >nul 2>nul
+docker network inspect shelson-network >nul 2>nul
 if %errorlevel% neq 0 (
-    echo Network sognisport-network does not exist, creating...
-    docker network create sognisport-network
+    echo Network shelson-network does not exist, creating...
+    docker network create shelson-network
 ) else (
-    echo Network sognisport-network already exists, skipping creation.
+    echo Network shelson-network already exists, skipping creation.
 )
 
 echo Checking existing containers...
 
 REM ---------------------------------
-REM Check if the sognisport-app container is running
+REM Check if the shelson-app container is running
 REM ---------------------------------
-docker ps -q -f name=sognisport-app >nul 2>&1
+docker ps -q -f name=shelson-app >nul 2>&1
 IF NOT "%ERRORLEVEL%"=="0" (
-    echo Stopping sognisport-app container...
-    docker stop sognisport-app
+    echo Stopping shelson-app container...
+    docker stop shelson-app
 )
 
 REM ---------------------------------
-REM Remove the sognisport-app container if it exists
+REM Remove the shelson-app container if it exists
 REM ---------------------------------
-docker ps -aq -f name=sognisport-app >nul 2>&1
+docker ps -aq -f name=shelson-app >nul 2>&1
 IF NOT "%ERRORLEVEL%"=="0" (
-    echo Removing sognisport-app container...
-    docker rm sognisport-app
+    echo Removing shelson-app container...
+    docker rm shelson-app
 )
 
 REM ---------------------------------
 REM Packaging Docker project...
 REM ---------------------------------
 echo Packaging Docker project...
-docker build -t sognisport-app -f ..\docker\Dockerfile ..
+docker build -t shelson-app -f ..\docker\Dockerfile ..
 
 REM ---------------------------------
 REM Running Docker project on port 8080...
 REM ---------------------------------
 echo Running Docker project on port 8080...
-docker run --rm --name sognisport-app --network sognisport-network -p 8080:8080 sognisport-app
+docker run --rm --name shelson-app --network shelson-network -p 8080:8080 shelson-app

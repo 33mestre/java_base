@@ -1,12 +1,12 @@
 # Contributing to the Project
 
-Thank you for considering contributing to Sognisport! Here are some guidelines to help you get started.
+Thank you for considering contributing to shelson! Here are some guidelines to help you get started.
 
 ## How Can I Contribute?
 
 ### Reporting Bugs
 
-If you find a bug, please create an issue on [GitHub Issues](https://github.com/33mestre/sognisport/issues) and provide detailed information about the problem, including steps to reproduce, runtime environment, and any relevant error messages.
+If you find a bug, please create an issue on [GitHub Issues](https://github.com/33mestre/shelson/issues) and provide detailed information about the problem, including steps to reproduce, runtime environment, and any relevant error messages.
 
 ### Suggesting Improvements
 
@@ -33,7 +33,7 @@ Contributions to improve the documentation are always welcome! You can suggest i
 
 ## Code of Conduct
 
-Please read our [Code of Conduct](https://github.com/33mestre/sognisport/wiki/CODE_OF_CONDUCT) to understand the expectations for contributor behavior.
+Please read our [Code of Conduct](https://github.com/33mestre/shelson/wiki/CODE_OF_CONDUCT) to understand the expectations for contributor behavior.
 
 ## Acknowledgements
 
@@ -47,23 +47,23 @@ If you have any questions, contact [shelson@gmail.com](mailto:shelson@gmail.com)
 
 [Home Page](/README.md)
 
-- [Presentation](https://github.com/33mestre/sognisport/wiki/presentation)
-- [Project](https://github.com/33mestre/sognisport/wiki/project)
-- [Technical Definitions](https://github.com/33mestre/sognisport/wiki/technical-definitions)
-- [Project Structure](https://github.com/33mestre/sognisport/wiki/project-structure)
-- [Project Components](https://github.com/33mestre/sognisport/wiki/project-components)
-- [Testing](https://github.com/33mestre/sognisport/wiki/testing)
-- [Documentation and Swagger](https://github.com/33mestre/sognisport/wiki/documentation-and-swagger)
-- [Application Execution](https://github.com/33mestre/sognisport/wiki/application-execution)
-- [H2 Database](https://github.com/33mestre/sognisport/wiki/h2-database)
-- [CI/CD Pipeline](https://github.com/33mestre/sognisport/wiki/ci-cd-pipeline)
-- [Configuration Files](https://github.com/33mestre/sognisport/wiki/configuration-files)
-- [Logs and Best Practices](https://github.com/33mestre/sognisport/wiki/logs-and-best-practices)
-- [Differentials](https://github.com/33mestre/sognisport/wiki/differentials)
-- [Project Architecture Documentation](https://github.com/33mestre/sognisport/wiki/architecture)
-- [Attachments](https://github.com/33mestre/sognisport/wiki/attachments)
-- [Licensing](https://github.com/33mestre/sognisport/wiki/licensing)
-- [Useful Links](https://github.com/33mestre/sognisport/wiki/useful-links)
+- [Presentation](https://github.com/33mestre/shelson/wiki/presentation)
+- [Project](https://github.com/33mestre/shelson/wiki/project)
+- [Technical Definitions](https://github.com/33mestre/shelson/wiki/technical-definitions)
+- [Project Structure](https://github.com/33mestre/shelson/wiki/project-structure)
+- [Project Components](https://github.com/33mestre/shelson/wiki/project-components)
+- [Testing](https://github.com/33mestre/shelson/wiki/testing)
+- [Documentation and Swagger](https://github.com/33mestre/shelson/wiki/documentation-and-swagger)
+- [Application Execution](https://github.com/33mestre/shelson/wiki/application-execution)
+- [H2 Database](https://github.com/33mestre/shelson/wiki/h2-database)
+- [CI/CD Pipeline](https://github.com/33mestre/shelson/wiki/ci-cd-pipeline)
+- [Configuration Files](https://github.com/33mestre/shelson/wiki/configuration-files)
+- [Logs and Best Practices](https://github.com/33mestre/shelson/wiki/logs-and-best-practices)
+- [Differentials](https://github.com/33mestre/shelson/wiki/differentials)
+- [Project Architecture Documentation](https://github.com/33mestre/shelson/wiki/architecture)
+- [Attachments](https://github.com/33mestre/shelson/wiki/attachments)
+- [Licensing](https://github.com/33mestre/shelson/wiki/licensing)
+- [Useful Links](https://github.com/33mestre/shelson/wiki/useful-links)
 - [Authors](/AUTHORS.md)
 - [Code of Conduct](/CODE_OF_CONDUCT.md)
 - [Project Change Log](/CHANGELOG.md)

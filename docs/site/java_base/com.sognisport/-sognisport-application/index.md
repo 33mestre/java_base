@@ -1,11 +1,11 @@
-//[java_base](../../../index.md)/[com.shelson](../index.md)/[SognisportApplication](index.md)
+//[java_base](../../../index.md)/[com.shelson](../index.md)/[shelsonApplication](index.md)
 
-# SognisportApplication
+# shelsonApplication
 
 [JVM]\
 @SpringBootApplication
 
-open class [SognisportApplication](index.md)
+open class [shelsonApplication](index.md)
 
 Main class for the application. This class initializes the Spring Boot application.
 
@@ -13,7 +13,7 @@ Main class for the application. This class initializes the Spring Boot applicati
 
 | | |
 |---|---|
-| [SognisportApplication](-sognisport-application.md) | [JVM]<br>constructor() |
+| [shelsonApplication](-shelson-application.md) | [JVM]<br>constructor() |
 
 ## Types
 

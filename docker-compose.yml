@@ -13,18 +13,18 @@
 # 
 # Docker Compose Features:
 # - Uses Docker Compose version 3.8.
-# - Defines a service called sognisport-app.
+# - Defines a service called shelson-app.
 # - Builds the Docker image from the Dockerfile in the current directory.
 # - Maps port 8080 of the container to port 8080 of the host.
 # - Maps port 1521 of the container to port 1521 of the host (H2 TCP connection).
 # - Maps port 81 of the container to port 81 of the host (H2 web console).
 # - Sets environment variables to configure the active profile, datasource URL, JDBC driver, and H2 web console settings.
-# - Maps the ./data directory on the host to /var/lib/sognisport-app in the container.
+# - Maps the ./data directory on the host to /var/lib/shelson-app in the container.
 # ---------------------------------
 version: '3.8'
 
 services:
-  sognisport-app:
+  shelson-app:
     build: .
     # Maps port 8080 of the container to port 8080 of the host
     ports:
@@ -35,7 +35,7 @@ services:
       # Sets the active profile to 'dev'
       - SPRING_PROFILES_ACTIVE=dev
       # H2 in-memory datasource URL
-      - SPRING_DATASOURCE_URL=jdbc:h2:mem:sognisport;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+      - SPRING_DATASOURCE_URL=jdbc:h2:mem:shelson;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
       # JDBC driver class for H2
       - SPRING_DATASOURCE_DRIVER_CLASS_NAME=org.h2.Driver
       # H2 database username
@@ -48,6 +48,6 @@ services:
       - SPRING_H2_CONSOLE_PATH=/h2-console
       # Allows access to the H2 console from other machines on the network
       - SPRING_H2_CONSOLE_SETTINGS_WEB_ALLOW_OTHERS=true
-    # Maps the ./data directory on the host to /var/lib/sognisport-app in the container
+    # Maps the ./data directory on the host to /var/lib/shelson-app in the container
     volumes:
-      - ./data:/var/lib/sognisport-app
+      - ./data:/var/lib/shelson-app

@@ -53,12 +53,12 @@ REM ---------------------------------
 REM Creating and Starting a Docker Network
 REM ---------------------------------
 echo Checking for existing Docker network...
-docker network inspect sognisport-network >nul 2>nul
+docker network inspect shelson-network >nul 2>nul
 if %errorlevel% neq 0 (
-    echo Network sognisport-network does not exist, creating...
-    docker network create sognisport-network
+    echo Network shelson-network does not exist, creating...
+    docker network create shelson-network
 ) else (
-    echo Network sognisport-network already exists, skipping creation.
+    echo Network shelson-network already exists, skipping creation.
 )
 
 echo Checking existing containers...
@@ -89,4 +89,4 @@ REM ---------------------------------
 REM Running Docker project...
 REM ---------------------------------
 echo Running Docker project...
-docker run -it --rm --name console-docker --network sognisport-network console-docker
+docker run -it --rm --name console-docker --network shelson-network console-docker

@@ -3,7 +3,7 @@
   "info" : {
     "description" : "API for converting currency rates",
     "version" : "v1",
-    "title" : "Sognisport Currency Conversion API",
+    "title" : "shelson Currency Conversion API",
     "contact" : {
       "name" : "Shelson Ferrari",
       "url" : "https://about.me/shelson",
@@ -11,7 +11,7 @@
     },
     "license" : {
       "name" : "Dual Licence - MIT License and Apache License 2.0",
-      "url" : "https://github.com/33mestre/sognisport/blob/master/LICENSES"
+      "url" : "https://github.com/33mestre/shelson/blob/master/LICENSES"
     }
   },
   "host" : "localhost:8080",

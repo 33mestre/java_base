@@ -25,4 +25,4 @@
 
 # Start the application
 echo "The project version is $PROJECT_VERSION"
-exec java -Djava.security.egd=file:/dev/./urandom -jar /app/target/sognisport-$PROJECT_VERSION.jar
+exec java -Djava.security.egd=file:/dev/./urandom -jar /app/target/shelson-$PROJECT_VERSION.jar

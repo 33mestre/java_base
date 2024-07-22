@@ -1,6 +1,6 @@
-//[java_base](../../../index.md)/[com.shelson](../index.md)/[SognisportApplication](index.md)/[SognisportApplication](-sognisport-application.md)
+//[java_base](../../../index.md)/[com.shelson](../index.md)/[shelsonApplication](index.md)/[shelsonApplication](-shelson-application.md)
 
-# SognisportApplication
+# shelsonApplication
 
 [JVM]\
 constructor()

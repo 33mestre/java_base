@@ -74,11 +74,11 @@ fi
 # ---------------------------------
 # Check if the Docker network already exists
 # ---------------------------------
-if ! docker network inspect sognisport-network > /dev/null 2>&1; then
+if ! docker network inspect shelson-network > /dev/null 2>&1; then
     echo "Creating and Starting a Docker Network..."
-    docker network create sognisport-network
+    docker network create shelson-network
 else
-    echo "Docker network 'sognisport-network' already exists."
+    echo "Docker network 'shelson-network' already exists."
 fi
 
 echo "Checking existing containers..."
@@ -109,4 +109,4 @@ docker build -t console-docker -f ../console-app-docker.yml ..
 # Running Docker project...
 # ---------------------------------
 echo "Running Docker project..."
-docker run -it --rm --name console-docker --network sognisport-network console-docker
+docker run -it --rm --name console-docker --network shelson-network console-docker

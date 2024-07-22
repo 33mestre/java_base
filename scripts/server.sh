@@ -78,39 +78,39 @@ fi
 # ---------------------------------
 # Check if the Docker network already exists
 # ---------------------------------
-if ! docker network inspect sognisport-network > /dev/null 2>&1; then
+if ! docker network inspect shelson-network > /dev/null 2>&1; then
     echo "Creating and Starting a Docker Network..."
-    docker network create sognisport-network
+    docker network create shelson-network
 else
-    echo "Docker network 'sognisport-network' already exists."
+    echo "Docker network 'shelson-network' already exists."
 fi
 
 echo "Checking existing containers..."
 
 # ---------------------------------
-# Check if the sognisport-app container is running
+# Check if the shelson-app container is running
 # ---------------------------------
-if [ "$(docker ps -q -f name=sognisport-app)" ]; then
-  echo "Stopping sognisport-app container..."
-  docker stop sognisport-app
+if [ "$(docker ps -q -f name=shelson-app)" ]; then
+  echo "Stopping shelson-app container..."
+  docker stop shelson-app
 fi
 
 # ---------------------------------
-# Remove the sognisport-app container if it exists
+# Remove the shelson-app container if it exists
 # ---------------------------------
-if [ "$(docker ps -aq -f name=sognisport-app)" ]; then
-  echo "Removing sognisport-app container..."
-  docker rm sognisport-app
+if [ "$(docker ps -aq -f name=shelson-app)" ]; then
+  echo "Removing shelson-app container..."
+  docker rm shelson-app
 fi
 
 # ---------------------------------
 # Packaging Docker project...
 # ---------------------------------
 echo "Packaging Docker project..."
-docker build -t sognisport-app -f ../Dockerfile ..
+docker build -t shelson-app -f ../Dockerfile ..
 
 # ---------------------------------
 # Running Docker project on port 8080...
 # ---------------------------------
 echo "Running Docker project on port 8080..."
-docker run --rm --name sognisport-app --network sognisport-network -p 8080:8080 sognisport-app
+docker run --rm --name shelson-app --network shelson-network -p 8080:8080 shelson-app
