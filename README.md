@@ -6,7 +6,7 @@
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/33mestre/java_base.svg) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/33mestre/java_base.svg) ![GitHub top language](https://img.shields.io/github/languages/top/33mestre/java_base.svg) ![GitHub language count](https://img.shields.io/github/languages/count/33mestre/java_base.svg) ![GitHub last commit](https://img.shields.io/github/last-commit/33mestre/java_base.svg)
 
-[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/33mestre/java_base.svg)](http://isitmaintained.com/project/33mestre/"Average time to resolve an issue") [![Percentage of issues still open](http://isitmaintained.com/badge/open/33mestre/java_base.svg)](http://isitmaintained.com/project/33mestre/"Percentage of issues still open")
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/33mestre/java_base.svg)](http://isitmaintained.com/project/33mestre/java_base) [![Percentage of issues still open](http://isitmaintained.com/badge/open/33mestre/java_base.svg)](http://isitmaintained.com/project/33mestre/java_base)
 
 --- 
 
