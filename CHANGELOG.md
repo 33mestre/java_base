@@ -1,7 +1,13 @@
 
-# Project Change Log
+# Currency Conversion API - Project Change Log
 
-**Current version:** [0.2.6](https://github.com/33mestre/java_base/commit/1a3af0d) (Shelson Ferrari) - 21/07/2024 22:35h
+**Current version:** [0.2.7](https://github.com/33mestre/java_base/commit/0c97cc7) (Shelson Ferrari) - 21/07/2024 22:53h
+
+---
+
+[0.2.7](https://github.com/33mestre/java_base/commit/0c97cc7) - 21/07/2024 22:53h - 0c97cc7 - Shelson Ferrari
+- refatoracao script generateChangelogAndProjectVersion.groovy, remocao so script python q fazia a mesma coisa e insercao de i18n pt_br
+
 ---
 
 [0.2.6](https://github.com/33mestre/java_base/commit/1a3af0d) - 21/07/2024 22:35h - 1a3af0d - Shelson Ferrari
