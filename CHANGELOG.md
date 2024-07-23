@@ -1,7 +1,12 @@
 
 # API de ConversÃ£o de Moedas - Registro de AlteraÃ§Ãµes do Projeto
 
-**VersÃ£o atual:** [0.5.2](https://github.com/33mestre/java_base/commit/b7b5415) (Shelson Ferrari) - 23/07/2024 16:34h
+**VersÃ£o atual:** [0.5.3](https://github.com/33mestre/java_base/commit/abc34c1) (Shelson Ferrari) - 23/07/2024 17:34h
+
+---
+
+[0.5.3](https://github.com/33mestre/java_base/commit/abc34c1) - 23/07/2024 17:34h - abc34c1 - Shelson Ferrari
+- Add comprehensive .gitignore with header and detailed comments
 
 ---
 
