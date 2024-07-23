@@ -12,6 +12,8 @@
 
 # Currency Conversion API
 
+![Currency Symbol](sys/symbol.jpg)
+
 ## Goal
 
 A Currency conversion project - server, database, access clients (input data and list data).
