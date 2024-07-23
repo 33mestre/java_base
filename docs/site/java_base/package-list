@@ -31,6 +31,15 @@ $dokka.location:com.shelson.application.service/CurrencyConversionService.ApiRes
 $dokka.location:com.shelson.application.service/CurrencyConversionService///PointingToDeclaration/java_base/com.shelson.application.service/-currency-conversion-service/index.md
 $dokka.location:com.shelson.application.service/CurrencyConversionService/CurrencyConversionService/#/PointingToDeclaration/java_base/com.shelson.application.service/-currency-conversion-service/-currency-conversion-service.md
 $dokka.location:com.shelson.application.service/CurrencyConversionService/convertCurrency/#com.shelson.domain.model.Currency#com.shelson.domain.model.Currency#double/PointingToDeclaration/java_base/com.shelson.application.service/-currency-conversion-service/convert-currency.md
+$dokka.location:com.shelson.application.service/CurrencyConversionServiceApiResponse///PointingToDeclaration/java_base/com.shelson.application.service/-currency-conversion-service-api-response/index.md
+$dokka.location:com.shelson.application.service/CurrencyConversionServiceApiResponse/CurrencyConversionServiceApiResponse/#/PointingToDeclaration/java_base/com.shelson.application.service/-currency-conversion-service-api-response/-currency-conversion-service-api-response.md
+$dokka.location:com.shelson.application.service/CurrencyConversionServiceApiResponse/rates/#/PointingToDeclaration/java_base/com.shelson.application.service/-currency-conversion-service-api-response/rates.md
+$dokka.location:com.shelson.config////PointingToDeclaration/java_base/com.shelson.config/index.md
+$dokka.location:com.shelson.config/CamelConfig///PointingToDeclaration/java_base/com.shelson.config/-camel-config/index.md
+$dokka.location:com.shelson.config/CamelConfig/CamelConfig/#/PointingToDeclaration/java_base/com.shelson.config/-camel-config/-camel-config.md
+$dokka.location:com.shelson.config/CamelConfig/camelContext/#/PointingToDeclaration/java_base/com.shelson.config/-camel-config/camel-context.md
+$dokka.location:com.shelson.config/CamelConfig/producerTemplate/#org.apache.camel.CamelContext/PointingToDeclaration/java_base/com.shelson.config/-camel-config/producer-template.md
+$dokka.location:com.shelson.config/CamelConfig/routeBuilder/#/PointingToDeclaration/java_base/com.shelson.config/-camel-config/route-builder.md
 $dokka.location:com.shelson.console////PointingToDeclaration/java_base/com.shelson.console/index.md
 $dokka.location:com.shelson.console/CurrencyConverterConsoleApp///PointingToDeclaration/java_base/com.shelson.console/-currency-converter-console-app/index.md
 $dokka.location:com.shelson.console/CurrencyConverterConsoleApp/CurrencyConverterConsoleApp/#/PointingToDeclaration/java_base/com.shelson.console/-currency-converter-console-app/-currency-converter-console-app.md
@@ -261,10 +270,19 @@ $dokka.location:com.shelson/ShelsonApplication.ApplicationShutdownHook/onShutdow
 $dokka.location:com.shelson/ShelsonApplication///PointingToDeclaration/java_base/com.shelson/-shelson-application/index.md
 $dokka.location:com.shelson/ShelsonApplication/ShelsonApplication/#/PointingToDeclaration/java_base/com.shelson/-shelson-application/-shelson-application.md
 $dokka.location:com.shelson/ShelsonApplication/main/#java.lang.String[]/PointingToDeclaration/java_base/com.shelson/-shelson-application/main.md
+$dokka.location:com.sognisport.infrastructure.processor////PointingToDeclaration/java_base/com.sognisport.infrastructure.processor/index.md
+$dokka.location:com.sognisport.infrastructure.processor/CurrencyConversionProcessor///PointingToDeclaration/java_base/com.sognisport.infrastructure.processor/-currency-conversion-processor/index.md
+$dokka.location:com.sognisport.infrastructure.processor/CurrencyConversionProcessor/CurrencyConversionProcessor/#/PointingToDeclaration/java_base/com.sognisport.infrastructure.processor/-currency-conversion-processor/-currency-conversion-processor.md
+$dokka.location:com.sognisport.infrastructure.processor/CurrencyConversionProcessor/process/#org.apache.camel.Exchange/PointingToDeclaration/java_base/com.sognisport.infrastructure.processor/-currency-conversion-processor/process.md
+$dokka.location:com.sognisport.infrastructure.route////PointingToDeclaration/java_base/com.sognisport.infrastructure.route/index.md
+$dokka.location:com.sognisport.infrastructure.route/CurrencyConversionRoute///PointingToDeclaration/java_base/com.sognisport.infrastructure.route/-currency-conversion-route/index.md
+$dokka.location:com.sognisport.infrastructure.route/CurrencyConversionRoute/CurrencyConversionRoute/#/PointingToDeclaration/java_base/com.sognisport.infrastructure.route/-currency-conversion-route/-currency-conversion-route.md
+$dokka.location:com.sognisport.infrastructure.route/CurrencyConversionRoute/configure/#/PointingToDeclaration/java_base/com.sognisport.infrastructure.route/-currency-conversion-route/configure.md
 com.shelson
 com.shelson.application.controller
 com.shelson.application.dto
 com.shelson.application.service
+com.shelson.config
 com.shelson.console
 com.shelson.domain.model
 com.shelson.domain.repository
@@ -272,4 +290,6 @@ com.shelson.domain.service
 com.shelson.infrastructure.config
 com.shelson.infrastructure.exception
 com.shelson.logging
+com.sognisport.infrastructure.processor
+com.sognisport.infrastructure.route
 
