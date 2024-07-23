@@ -88,24 +88,6 @@ With just these simple steps, you should have:
 
 This setup requires only Docker installed, without additional installations, working in MS Windows, Linux, and Unix environments. The scripts will handle the Docker installation if it's not already installed; for MS Windows, a notification will prompt you to download it manually.
 
-## Project authorship
-
-> [Authors](./AUTHORS.md)
-
-## Code of Conduct
-
-> [Project Contributor Code of Conduct](./CODE_OF_CONDUCT.md)
-
-## Project version history
-
-> [Project Change Log](./CHANGELOG.md)
-
-The generation of `CHANGELOG.md` is automated and occurs with each new commit to the repository, thanks to a CI/CD pipeline. This pipeline uses a Docker container that runs a Groovy script to extract commit information, such as hash, date, author, and message, organizing them in an incremental version format. Commits containing the keyword `"AUTO_COMMIT"` are ignored. The Groovy script is responsible for generating the changelog, continuously updating it to reflect all changes made to the project in a precise and detailed manner. The process begins with the CI/CD pipeline calling the Groovy script inside the Docker container, ensuring the changelog is generated correctly.
-
-## Project JavaDoc (Markdown format)
-
-[Project JavaDoc](docs/site/index.md)
-
 ---
 
 ## Wiki Menu
