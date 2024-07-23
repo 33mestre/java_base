@@ -1,7 +1,12 @@
 
-# Currency Conversion API - Project Change Log
+# API de ConversÃ£o de Moedas - Registro de AlteraÃ§Ãµes do Projeto
 
-**Current version:** [0.4.1](https://github.com/33mestre/java_base/commit/7fdc56c) (Shelson Ferrari) - 22/07/2024 20:21h
+**VersÃ£o atual:** [0.4.2](https://github.com/33mestre/java_base/commit/50532c2) (Shelson Ferrari) - 22/07/2024 22:27h
+
+---
+
+[0.4.2](https://github.com/33mestre/java_base/commit/50532c2) - 22/07/2024 22:27h - 50532c2 - Shelson Ferrari
+- internacionalizacao e melhoria significativa da documentacao dos scripts
 
 ---
 
