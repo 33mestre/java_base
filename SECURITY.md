@@ -100,4 +100,4 @@ Thank you for helping us keep our project secure.
 - [External Links and References](https://github.com/33mestre/java_base/wiki/external-links-and-references): Additional resources and external documentation relevant to the project.
 
 ### 14. Security
-- [Security Policy](/SECURITY.md): Details on the supported versions, reporting vulnerabilities, and general security practices.
+- **Security Policy**.

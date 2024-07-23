@@ -66,7 +66,7 @@ If you have any questions, contact [shelson@gmail.com](mailto:shelson@gmail.com)
 ### 4. Development
 - [Development Flow](https://github.com/33mestre/java_base/wiki/development-flow): Description of the development process adopted, including planning, coding, and review stages.
 - [Contributors and Authors](/AUTHORS.md): Recognition of the contributors to the project.
-- [Contributions](/CONTRIBUTING.md): Guidelines on how to contribute to the project, including code standards and pull request requirements, tips and best practices.
+- **Contributions**.
 - [Code of Conduct](/CODE_OF_CONDUCT.md): Behavioral guidelines expected for the project community.
 
 ### 5. API and Documentation

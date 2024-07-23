@@ -68,7 +68,7 @@ The items mentioned here do not have a set timeline for if and when they will be
 - [Terms of Use](https://github.com/33mestre/java_base/wiki/terms-of-use): Information about the terms and conditions for using the software.
 
 ### 12. Projections and Innovations
-- [Future Plans](/FUTURE.md): Discussion on functionalities and improvements considered for future versions of the project.
+- **Future Plans**.
 - [Improvement Proposals](https://github.com/33mestre/java_base/wiki/improvement-proposals): Space for the community to suggest and debate improvements and innovations.
 
 ### 13. Attachments and Useful Links

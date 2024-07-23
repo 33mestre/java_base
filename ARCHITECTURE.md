@@ -212,7 +212,7 @@ The architecture of this project is designed to be modular and scalable, using D
 
 ### 3. Project Structure
 - [Folder Structure](/DIRECTORY.md): Description of the organization of the project directories.
-- [Project Architecture](/ARCHITECTURE.md): Explanation of the architecture used, including design patterns and technical decisions.
+- **Project Architecture**.
 
 ### 4. Development
 - [Development Flow](https://github.com/33mestre/java_base/wiki/development-flow): Description of the development process adopted, including planning, coding, and review stages.
