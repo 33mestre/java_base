@@ -18,5 +18,3 @@
 | [com.shelson.infrastructure.config](java_base/com.shelson.infrastructure.config/index.md) | This package contains the configuration settings for the application infrastructure. | |
 | [com.shelson.infrastructure.exception](java_base/com.shelson.infrastructure.exception/index.md) | This package contains the exception classes for the application infrastructure. | |
 | [com.shelson.logging](java_base/com.shelson.logging/index.md) | This package contains classes related to logging in the application. | |
-| [com.sognisport.infrastructure.processor](java_base/com.sognisport.infrastructure.processor/index.md) |  |
-| [com.sognisport.infrastructure.route](java_base/com.sognisport.infrastructure.route/index.md) |  |

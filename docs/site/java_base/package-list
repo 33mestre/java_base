@@ -270,14 +270,6 @@ $dokka.location:com.shelson/ShelsonApplication.ApplicationShutdownHook/onShutdow
 $dokka.location:com.shelson/ShelsonApplication///PointingToDeclaration/java_base/com.shelson/-shelson-application/index.md
 $dokka.location:com.shelson/ShelsonApplication/ShelsonApplication/#/PointingToDeclaration/java_base/com.shelson/-shelson-application/-shelson-application.md
 $dokka.location:com.shelson/ShelsonApplication/main/#java.lang.String[]/PointingToDeclaration/java_base/com.shelson/-shelson-application/main.md
-$dokka.location:com.sognisport.infrastructure.processor////PointingToDeclaration/java_base/com.sognisport.infrastructure.processor/index.md
-$dokka.location:com.sognisport.infrastructure.processor/CurrencyConversionProcessor///PointingToDeclaration/java_base/com.sognisport.infrastructure.processor/-currency-conversion-processor/index.md
-$dokka.location:com.sognisport.infrastructure.processor/CurrencyConversionProcessor/CurrencyConversionProcessor/#/PointingToDeclaration/java_base/com.sognisport.infrastructure.processor/-currency-conversion-processor/-currency-conversion-processor.md
-$dokka.location:com.sognisport.infrastructure.processor/CurrencyConversionProcessor/process/#org.apache.camel.Exchange/PointingToDeclaration/java_base/com.sognisport.infrastructure.processor/-currency-conversion-processor/process.md
-$dokka.location:com.sognisport.infrastructure.route////PointingToDeclaration/java_base/com.sognisport.infrastructure.route/index.md
-$dokka.location:com.sognisport.infrastructure.route/CurrencyConversionRoute///PointingToDeclaration/java_base/com.sognisport.infrastructure.route/-currency-conversion-route/index.md
-$dokka.location:com.sognisport.infrastructure.route/CurrencyConversionRoute/CurrencyConversionRoute/#/PointingToDeclaration/java_base/com.sognisport.infrastructure.route/-currency-conversion-route/-currency-conversion-route.md
-$dokka.location:com.sognisport.infrastructure.route/CurrencyConversionRoute/configure/#/PointingToDeclaration/java_base/com.sognisport.infrastructure.route/-currency-conversion-route/configure.md
 com.shelson
 com.shelson.application.controller
 com.shelson.application.dto
@@ -290,6 +282,4 @@ com.shelson.domain.service
 com.shelson.infrastructure.config
 com.shelson.infrastructure.exception
 com.shelson.logging
-com.sognisport.infrastructure.processor
-com.sognisport.infrastructure.route
 
