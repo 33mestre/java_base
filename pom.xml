@@ -75,6 +75,17 @@ Configures:
     
     <!-- Project dependencies -->
     <dependencies>
+        <!-- Apache Camel dependencies -->
+        <dependency>
+            <groupId>org.apache.camel.springboot</groupId>
+            <artifactId>camel-spring-boot-starter</artifactId>
+            <version>4.0.0</version> <!-- ou a versão mais recente -->
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel.springboot</groupId>
+            <artifactId>camel-servlet-starter</artifactId>
+            <version>4.0.0</version> <!-- ou a versão mais recente -->
+        </dependency>
         <!-- springdoc dependencies -->
         <dependency>
             <groupId>org.springdoc</groupId>

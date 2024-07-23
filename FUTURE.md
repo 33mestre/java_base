@@ -33,6 +33,7 @@ The items mentioned here do not have a set timeline for if and when they will be
 
 ### 4. Development
 - [Development Flow](https://github.com/33mestre/java_base/wiki/development-flow): Description of the development process adopted, including planning, coding, and review stages.
+- [Apache Camel Integration](https://github.com/33mestre/java_base/wiki/apache-camel-integration): Guide on integrating Apache Camel into the project, including configuration and usage.
 - [Contributors and Authors](/AUTHORS.md): Recognition of the contributors to the project.
 - [Contributions](/CONTRIBUTING.md): Guidelines on how to contribute to the project, including code standards and pull request requirements, tips and best practices.
 - [Code of Conduct](/CODE_OF_CONDUCT.md): Behavioral guidelines expected for the project community.

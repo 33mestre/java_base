@@ -115,7 +115,8 @@ def generateDirectoryMarkdown(rootDirPath, baseUrl, outputFilePath) {
         .append("- [Project Architecture](/ARCHITECTURE.md): Explanation of the architecture used, including design patterns and technical decisions.\n")
         .append("\n")
         .append("### 4. Development\n")
-        .append("- [Development Flow](https://github.com/33mestre/java_base/wiki/development-flow): Description of the development process adopted, including planning, coding, and review stages.\n")
+        .append("- [Development Flow](https://github.com/33mestre/java_base/wiki/development-flow): Description of the development process adopted, including planning, coding, and review stages.
+- [Apache Camel Integration](https://github.com/33mestre/java_base/wiki/apache-camel-integration): Guide on integrating Apache Camel into the project, including configuration and usage.\n")
         .append("- [Contributors and Authors](/AUTHORS.md): Recognition of the contributors to the project.\n")
         .append("- [Contributions](/CONTRIBUTING.md): Guidelines on how to contribute to the project, including code standards and pull request requirements, tips and best practices.\n")
         .append("- [Code of Conduct](/CODE_OF_CONDUCT.md): Behavioral guidelines expected for the project community.\n")

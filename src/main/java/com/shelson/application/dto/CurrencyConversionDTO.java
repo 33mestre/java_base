@@ -1,11 +1,12 @@
 package com.shelson.application.dto;
 
 import java.time.LocalDateTime;
+
+import com.shelson.domain.model.Currency;
+
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.PastOrPresent;
 import jakarta.validation.constraints.Positive;
-
-import com.shelson.domain.model.Currency;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
