@@ -8,28 +8,101 @@
 # /____/_/ /_/\___/_/____/\____/_/ /_/  /_/    \___/_/  /_/   \__,_/_/  /_/
 # ---------------------------------
 # Currency Conversion API - Unix / Linux Version
-# Project changelog generation script
+# Project changelog generation script with i18n support
 # ---------------------------------
-# This script is executed by the Docker change log.
-# This script checks for Docker installation, ensures the Docker daemon
-# is running, creates a Docker network, packages the project into a Docker image,
-# and runs a Docker container to generate the project changelog.
+# This script generates the project's changelog by setting up a Docker environment.
+# It performs the following steps:
+# 1. Checks for the existence of the project.properties file.
+# 2. Reads the i18n key from project.properties to determine the language.
+# 3. Loads the corresponding internationalization file for messages.
+# 4. Verifies Docker installation and ensures the Docker daemon is running.
+# 5. Checks for and creates a Docker network if necessary.
+# 6. Packages the project into a Docker image.
+# 7. Runs a Docker container to generate the project changelog.
 # ---------------------------------
+# Calls changelog-docker.yml Dockerfile
+# ---------------------------------
+# The changelog-docker.yml Dockerfile is responsible for:
+# - Setting up a Docker environment to run a Groovy application
+# - For the purpose of generating the project's changelog.
+# ---------------------------------
+
+# ---------------------------------
+# Function to read properties file
+# ---------------------------------
+function prop {
+    grep "^${1}=" "$2" | cut -d'=' -f2
+}
+
+# ---------------------------------
+# Check if project.properties exists
+# ---------------------------------
+if [ ! -f project.properties ]; then
+    echo "Error: project.properties file not found."
+    exit 1
+fi
+
+# ---------------------------------
+# Read i18n value from project.properties
+# ---------------------------------
+i18n=$(prop 'i18n' project.properties)
+
+# ---------------------------------
+# Check if i18n is empty
+# ---------------------------------
+if [ -z "$i18n" ]; then
+    echo "Error: i18n key not found in project.properties."
+    exit 1
+fi
+
+# ---------------------------------
+# Set path to the i18n properties file
+# ---------------------------------
+i18n_file="i18n/script_change_log_${i18n}.properties"
+
+# ---------------------------------
+# Check if the i18n properties file exists
+# ---------------------------------
+if [ ! -f "$i18n_file" ]; then
+    echo "Error: Internationalization file $i18n_file not found."
+    exit 1
+fi
+
+# ---------------------------------
+# Read properties from the i18n file
+# ---------------------------------
+header=$(prop 'header' "$i18n_file")
+menu_title=$(prop 'menu_title' "$i18n_file")
+checking_docker=$(prop 'checking_docker' "$i18n_file")
+docker_not_found=$(prop 'docker_not_found' "$i18n_file")
+docker_installed=$(prop 'docker_installed' "$i18n_file")
+checking_daemon=$(prop 'checking_daemon' "$i18n_file")
+daemon_not_running=$(prop 'daemon_not_running' "$i18n_file")
+stopping_container=$(prop 'stopping_container' "$i18n_file")
+removing_container=$(prop 'removing_container' "$i18n_file")
+creating_network=$(prop 'creating_network' "$i18n_file")
+network_exists=$(prop 'network_exists' "$i18n_file")
+packaging_project=$(prop 'packaging_project' "$i18n_file")
+adding_permission=$(prop 'adding_permission' "$i18n_file")
+running_project=$(prop 'running_project' "$i18n_file")
+
+clear
 
 cat << "EOF"
 ---------------------------------
-    _____ __         __                    ______                          _
-   / ___// /_  ___  / /________  ____     / ____/__  ______________ ______(_)
-   \__ \/ __ \/ _ \/ / ___/ __ \/ __ \   / /_  / _ \/ ___/ ___/ __ \`/ ___/ /
-  ___/ / / / /  __/ (__  ) /_/ / / / /  / __/ /  __/ /  / /  / /_/ / /  / /
- /____/_/ /_/\___/_/____/\____/_/ /_/  /_/    \___/_/  /_/   \__,_/_/  /_/
----------------------------------
-Currency Conversion API - Unix / Linux Version
-Project changelog generation script
+   _____ __         __                    ______                          _
+  / ___// /_  ___  / /________  ____     / ____/__  ______________ ______(_)
+  \__ \/ __ \/ _ \/ / ___/ __ \/ __ \   / /_  / _ \/ ___/ ___/ __ `/ ___/ /
+ ___/ / / / /  __/ (__  ) /_/ / / / /  / __/ /  __/ /  / /  / /_/ / /  / /
+/____/_/ /_/\___/_/____/\____/_/ /_/  /_/    \___/_/  /_/   \__,_/_/  /_/
 ---------------------------------
 EOF
 
-echo "Checking Docker installation..."
+echo "$header"
+echo "$menu_title"
+echo "---------------------------------"
+
+echo "$checking_docker"
 
 cd "$(dirname "$0")/.."
 
@@ -37,19 +110,19 @@ cd "$(dirname "$0")/.."
 # Check if Docker is installed
 # ---------------------------------
 if ! [ -x "$(command -v docker)" ]; then
-  echo "Docker not found. Please install Docker manually (https://docs.docker.com/desktop/install/windows-install/)."
+  echo "$docker_not_found"
   exit 1
 else
-  echo "Docker previously installed."
+  echo "$docker_installed"
 fi
 
 # ---------------------------------
 # Check if Docker daemon is running
 # ---------------------------------
-echo "Checking if Docker daemon is running..."
+echo "$checking_daemon"
 
 if ! docker info > /dev/null 2>&1; then
-  echo "Docker daemon is not running. Please start the Docker daemon."
+  echo "$daemon_not_running"
   exit 1
 fi
 
@@ -57,7 +130,7 @@ fi
 # Check if the changelog container is running
 # ---------------------------------
 if [ "$(docker ps -q -f name=changelog)" ]; then
-  echo "Stopping changelog container..."
+  echo "$stopping_container"
   docker stop changelog
 fi
 
@@ -65,7 +138,7 @@ fi
 # Remove the changelog container if it exists
 # ---------------------------------
 if [ "$(docker ps -aq -f name=changelog)" ]; then
-  echo "Removing changelog container..."
+  echo "$removing_container"
   docker rm changelog
 fi
 
@@ -73,25 +146,26 @@ fi
 # Check if the Docker network already exists
 # ---------------------------------
 if ! docker network inspect shelson-network > /dev/null 2>&1; then
-    echo "Creating and Starting a Docker Network..."
+    echo "$creating_network"
     docker network create shelson-network
 else
-    echo "Docker network 'shelson-network' already exists."
+    echo "$network_exists"
 fi
 
 # ---------------------------------
 # Packaging Docker project...
 # ---------------------------------
-echo "Packaging Docker project..."
+echo "$packaging_project"
 docker build --no-cache -t changelog -f changelog-docker.yml .
 
 # ---------------------------------
 # Adding permission to the script inside the container
 # ---------------------------------
-docker run --rm -v $(pwd):/app changelog chmod +x /app/sys/callChangeLog.sh
+echo "$adding_permission"
+docker run --rm -v "$(pwd)":/app changelog chmod +x /app/sys/callChangeLog.sh
 
 # ---------------------------------
 # Running Docker project on port 4010...
 # ---------------------------------
-echo "Running Docker project on port 4010..."
-docker run --rm --name changelog --network shelson-network -v $(pwd):/app -p 4010:4010 changelog
+echo "$running_project"
+docker run --rm --name changelog --network shelson-network -v "$(pwd)":/app -p 4010:4010 changelog
