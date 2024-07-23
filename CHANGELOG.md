@@ -1,7 +1,12 @@
 
 # API de ConversÃ£o de Moedas - Registro de AlteraÃ§Ãµes do Projeto
 
-**VersÃ£o atual:** [0.4.9](https://github.com/33mestre/java_base/commit/5f3d5c5) (Shelson Ferrari) - 23/07/2024 05:07h
+**VersÃ£o atual:** [0.5.0](https://github.com/33mestre/java_base/commit/012d609) (Shelson Ferrari) - 23/07/2024 05:26h
+
+---
+
+[0.5.0](https://github.com/33mestre/java_base/commit/012d609) - 23/07/2024 05:26h - 012d609 - Shelson Ferrari
+- geracao de directory.md com menu wiki e ajustes dos menus
 
 ---
 
