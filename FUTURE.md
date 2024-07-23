@@ -9,7 +9,7 @@ The items mentioned here do not have a set timeline for if and when they will be
 
 ## TODO
 
-- Testing Bat Scripts.
+- Test Bat Scripts.
 
 ---
 
