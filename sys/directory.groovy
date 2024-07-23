@@ -108,7 +108,7 @@ def rootDirPath = "src/main/java/com/shelson"
 // ---------------------------------
 // Base URL of the GitHub repository
 // ---------------------------------
-def baseUrl = "https://github.com/33mestre/shelson/tree/master/src/main/java/com/shelson"
+def baseUrl = "https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson"
 
 // ---------------------------------
 // Path to the output file

@@ -10,7 +10,7 @@ info:
     email: "shelson@gmail.com"
   license:
     name: "Dual Licence - MIT License and Apache License 2.0"
-    url: "https://github.com/33mestre/shelson/blob/master/LICENSES"
+    url: "https://github.com/33mestre/java_base/blob/master/LICENSES"
 host: "localhost:8080"
 basePath: "/api-doc"
 tags:

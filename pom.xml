@@ -233,7 +233,7 @@ Configures:
                                     <url>https://about.me/shelson</url>
                                 </contact>
                                     <license>
-                                        <url>https://github.com/33mestre/shelson/blob/master/LICENSES</url>
+                                        <url>https://github.com/33mestre/java_base/blob/master/LICENSES</url>
                                         <name>Dual Licence - MIT License and Apache License 2.0</name>
                                     </license>
                             </info>
@@ -408,13 +408,13 @@ Configures:
     <licenses>
         <license>
             <name>MIT License</name>
-            <url>https://github.com/33mestre/shelson/blob/master/LICENSE-MIT</url>
+            <url>https://github.com/33mestre/java_base/blob/master/LICENSE-MIT</url>
             <distribution>repo</distribution>
             <comments>MIT License</comments>
         </license>
         <license>
             <name>Apache License</name>
-            <url>https://github.com/33mestre/shelson/blob/master/LICENSE-APACHE</url>
+            <url>https://github.com/33mestre/java_base/blob/master/LICENSE-APACHE</url>
             <distribution>repo</distribution>
             <comments>Apache License</comments>
         </license>
@@ -422,8 +422,8 @@ Configures:
 
     <!-- SCM (Source Code Management) configuration -->
     <scm>
-        <connection>scm:git:git://github.com/33mestre/shelson.git</connection>
-        <developerConnection>scm:git:ssh://github.com:33mestre/shelson.git</developerConnection>
-        <url>https://github.com/33mestre/shelson</url>
+        <connection>scm:git:git://github.com/33mestre/java_base.git</connection>
+        <developerConnection>scm:git:ssh://github.com:33mestre/java_base.git</developerConnection>
+        <url>https://github.com/33mestre/java_base</url>
     </scm>
 </project>

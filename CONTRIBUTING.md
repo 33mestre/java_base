@@ -6,7 +6,7 @@ Thank you for considering contributing to shelson! Here are some guidelines to h
 
 ### Reporting Bugs
 
-If you find a bug, please create an issue on [GitHub Issues](https://github.com/33mestre/shelson/issues) and provide detailed information about the problem, including steps to reproduce, runtime environment, and any relevant error messages.
+If you find a bug, please create an issue on [GitHub Issues](https://github.com/33mestre/java_base/issues) and provide detailed information about the problem, including steps to reproduce, runtime environment, and any relevant error messages.
 
 ### Suggesting Improvements
 
@@ -33,7 +33,7 @@ Contributions to improve the documentation are always welcome! You can suggest i
 
 ## Code of Conduct
 
-Please read our [Code of Conduct](https://github.com/33mestre/shelson/wiki/CODE_OF_CONDUCT) to understand the expectations for contributor behavior.
+Please read our [Code of Conduct](https://github.com/33mestre/java_base/wiki/CODE_OF_CONDUCT) to understand the expectations for contributor behavior.
 
 ## Acknowledgements
 
