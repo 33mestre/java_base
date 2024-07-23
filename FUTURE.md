@@ -3,8 +3,13 @@
 The items mentioned here do not have a set timeline for if and when they will be implemented.
 
 - Create a branch to use [Quarkus](https://quarkus.io/);
-- Create a branch to use Feature Flags;
-- Create a branch to use [Apache Camel](https://camel.apache.org/).
+- Create a branch to use [Feature Flags](https://pt.wikipedia.org/wiki/Feature_toggle);
+- Create a branch to use [Apache Camel](https://camel.apache.org/);
+- CD for Heroku App.
+
+## TODO
+
+- Testing Bat Scripts.
 
 ---
 
