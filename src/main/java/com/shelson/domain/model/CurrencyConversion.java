@@ -30,9 +30,11 @@ public class CurrencyConversion {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Enumerated(EnumType.STRING)
     @Column(name = "source_currency")
     private Currency sourceCurrency;
 
+    @Enumerated(EnumType.STRING)
     @Column(name = "target_currency")
     private Currency targetCurrency;
 
@@ -63,50 +65,118 @@ public class CurrencyConversion {
         this.queryDate = queryDate;
     }
 
-    // Getters and setters
-
+    /**
+     * Gets the conversion ID.
+     *
+     * @return The conversion ID.
+     */
     public Long getId() {
         return id;
     }
 
+    /**
+     * Sets the conversion ID.
+     *
+     * @param id The conversion ID.
+     */
     public void setId(Long id) {
         this.id = id;
     }
 
+    /**
+     * Gets the source currency.
+     *
+     * @return The source currency.
+     */
     public Currency getSourceCurrency() {
         return sourceCurrency;
     }
 
+    /**
+     * Sets the source currency.
+     *
+     * @param sourceCurrency The source currency.
+     */
     public void setSourceCurrency(Currency sourceCurrency) {
         this.sourceCurrency = sourceCurrency;
     }
 
+    /**
+     * Gets the target currency.
+     *
+     * @return The target currency.
+     */
     public Currency getTargetCurrency() {
         return targetCurrency;
     }
 
+    /**
+     * Sets the target currency.
+     *
+     * @param targetCurrency The target currency.
+     */
     public void setTargetCurrency(Currency targetCurrency) {
         this.targetCurrency = targetCurrency;
     }
 
+    /**
+     * Gets the conversion rate.
+     *
+     * @return The conversion rate.
+     */
     public double getConversionRate() {
         return conversionRate;
     }
 
+    /**
+     * Sets the conversion rate.
+     *
+     * @param conversionRate The conversion rate.
+     */
     public void setConversionRate(double conversionRate) {
         this.conversionRate = conversionRate;
     }
 
+    /**
+     * Gets the query date and time.
+     *
+     * @return The query date and time.
+     */
     public LocalDateTime getQueryDate() {
         return queryDate;
     }
 
+    /**
+     * Sets the query date and time.
+     *
+     * @param queryDate The query date and time.
+     */
     public void setQueryDate(LocalDateTime queryDate) {
         this.queryDate = queryDate;
     }
 
-    // Override equals and hashCode methods
+    /**
+     * Returns a string representation of the currency conversion.
+     *
+     * @return A string representing the currency conversion.
+     */
+    @Override
+    public String toString() {
+        return "CurrencyConversion{" +
+                "id=" + id +
+                ", sourceCurrency=" + sourceCurrency +
+                ", targetCurrency=" + targetCurrency +
+                ", conversionRate=" + conversionRate +
+                ", queryDate=" + queryDate +
+                '}';
+    }
 
+    /**
+     * Checks if two instances of CurrencyConversion are equal.
+     *
+     * @param o The object to be compared.
+     * @return {@code true} if the objects are equal; {@code false} otherwise.
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -121,6 +191,11 @@ public class CurrencyConversion {
         return queryDate.equals(that.queryDate);
     }
 
+    /**
+     * Computes the hash code of the instance.
+     *
+     * @return The hash code of the instance.
+     */
     @Override
     public int hashCode() {
         int result;
@@ -132,18 +207,5 @@ public class CurrencyConversion {
         result = 31 * result + (int) (temp ^ (temp >>> 32));
         result = 31 * result + queryDate.hashCode();
         return result;
-    }
-
-    // Override toString method
-
-    @Override
-    public String toString() {
-        return "CurrencyConversion{" +
-                "id=" + id +
-                ", sourceCurrency=" + sourceCurrency +
-                ", targetCurrency=" + targetCurrency +
-                ", conversionRate=" + conversionRate +
-                ", queryDate=" + queryDate +
-                '}';
     }
 }

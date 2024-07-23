@@ -1,3 +1,19 @@
+/*
+ * Copyright (c) 2024, Shelson Ferrari
+ *
+ * Licensed under the MIT License and the Apache License, Version 2.0 (the "Licenses"); you may not use this file except in
+ * compliance with the Licenses. You may obtain a copy of the Licenses at
+ *
+ * MIT License:
+ * https://opensource.org/licenses/MIT
+ *
+ * Apache License, Version 2.0:
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under the Licenses is
+ * distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See
+ * the Licenses for the specific language governing permissions and limitations under the Licenses.
+ */
 package com.shelson.application.service;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -12,7 +28,6 @@ import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.apache.camel.ProducerTemplate;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -20,6 +35,8 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.web.client.HttpClientErrorException;
+import org.springframework.web.client.RestTemplate;
 
 import com.shelson.application.dto.CurrencyConversionDTO;
 import com.shelson.domain.model.Currency;
@@ -37,7 +54,7 @@ public class CurrencyConversionServiceTest {
     private static final Logger logger = LoggerFactory.getLogger(CurrencyConversionServiceTest.class);
 
     @Mock
-    private ProducerTemplate producerTemplate;
+    private RestTemplate restTemplate;
 
     @Mock
     private CurrencyConversionRepository repository;
@@ -61,10 +78,12 @@ public class CurrencyConversionServiceTest {
         LocalDateTime now = LocalDateTime.now();
 
         // Mock response from API
+        CurrencyConversionService.ApiResponse mockResponse = new CurrencyConversionService.ApiResponse();
         Map<String, Double> rates = new HashMap<>();
         rates.put(target.getCode(), rate);
-        when(producerTemplate.requestBodyAndHeaders(anyString(), any(), any(), eq(Map.class))).thenReturn(rates);
-        logger.debug("Mock response from API: {}", rates);
+        mockResponse.setRates(rates);
+        when(restTemplate.getForObject(anyString(), eq(CurrencyConversionService.ApiResponse.class))).thenReturn(mockResponse);
+        logger.debug("Mock response from API: {}", mockResponse);
 
         // Mock saving to repository
         CurrencyConversion savedConversion = new CurrencyConversion(source, target, rate, now);
@@ -132,12 +151,12 @@ public class CurrencyConversionServiceTest {
     @Test
     public void testConvertCurrencyWithApiError() {
         logger.info("Iniciando teste para conversão de moeda com erro da API");
-        when(producerTemplate.requestBodyAndHeaders(anyString(), any(), any(), eq(Map.class)))
-            .thenThrow(RuntimeException.class);
+        when(restTemplate.getForObject(anyString(), eq(CurrencyConversionService.ApiResponse.class)))
+            .thenThrow(HttpClientErrorException.class);
 
         assertThatThrownBy(() -> service.convertCurrency(Currency.USD, Currency.EUR, 100.0))
             .isInstanceOf(ResourceNotFoundException.class)
-            .hasMessageContaining("Unable to fetch exchange rates from API");
+            .hasMessageContaining("Error fetching exchange rates from API");
         logger.info("Teste para conversão de moeda com erro da API concluído");
     }
 }
