@@ -1,7 +1,17 @@
 
 # API de ConversÃ£o de Moedas - Registro de AlteraÃ§Ãµes do Projeto
 
-**VersÃ£o atual:** [0.5.9](https://github.com/33mestre/java_base/commit/fe6cd86) (Shelson Ferrari) - 24/07/2024 01:41h
+**VersÃ£o atual:** [0.6.1](https://github.com/33mestre/java_base/commit/ff81f65) (Shelson Ferrari) - 24/07/2024 02:05h
+
+---
+
+[0.6.1](https://github.com/33mestre/java_base/commit/ff81f65) - 24/07/2024 02:05h - ff81f65 - Shelson Ferrari
+- ajuste future md
+
+---
+
+[0.6.0](https://github.com/33mestre/java_base/commit/0ebf465) - 24/07/2024 01:41h - 0ebf465 - Shelson Ferrari
+- Render PlantUML files
 
 ---
 
