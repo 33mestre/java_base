@@ -1,5 +1,5 @@
 ```plantuml:md-diagrama-classe
-@startuml
+@startuml 
 
 !define BACKGROUND_COLOR #FEF9EF
 !define BLOCK_COLOR #F9E79F
@@ -57,6 +57,31 @@ package "com.shelson.domain.service" {
     }
 }
 
+package "com.shelson.infrastructure.exception" {
+    class BusinessException extends RuntimeException
+    class ResourceNotFoundException extends RuntimeException
+}
+
+package "com.shelson.logging" {
+    class CustomRequestLoggingFilter
+}
+
+package "com.shelson.console" {
+    class CurrencyConverterConsoleApp
+}
+
+package "com.shelson.config" {
+    class CamelConfig {
+        +configureCamelContext(CamelContext camelContext): void
+    }
+    class ProducerConfig {
+        +producerTemplate(CamelContext camelContext): ProducerTemplate
+    }
+    class SharedConfig {
+        +camelContext(): CamelContext
+    }
+}
+
 ' Relationships
 CurrencyConversionController --> CurrencyConversionService
 CurrencyConversionService --> CurrencyConversionDTO
@@ -66,6 +91,10 @@ CurrencyConversionDTO --> Currency
 CurrencyConversion --> Currency
 CurrencyConversionDomainService --> CurrencyConversionRepository
 CurrencyConversionDomainService --> CurrencyConversion
+CamelConfig --> CurrencyConversionService
+ProducerConfig --> CamelContext
+SharedConfig --> CamelContext
 
 @enduml
+
 ```
