@@ -2,12 +2,29 @@
 
 # CurrencyConversionService
 
-[JVM]\
 @Service
 
 open class [CurrencyConversionService](index.md)
 
-Service class for handling currency conversion operations. This class uses a Camel route to fetch the latest exchange rates and performs conversions between different currencies.
+Camel route for handling currency conversion requests. This route takes the source currency, target currency, and amount as headers, processes the conversion using the [CurrencyConversionService](index.md), and returns the conversion details.
+
+#### Since
+
+2024-07-24
+
+#### Author
+
+Shelson Ferrari
+
+#### See also
+
+| |
+|---|
+| [CurrencyConversionDTO](../../com.shelson.application.dto/-currency-conversion-d-t-o/index.md) |
+| [CurrencyConversionService](index.md) |
+| [ExchangeRateProcessor](../../com.shelson.application.processors/-exchange-rate-processor/index.md) |
+| ProducerTemplate |
+| [Currency](../../com.shelson.domain.model/-currency/index.md) |
 
 ## Constructors
 

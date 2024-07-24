@@ -2,10 +2,25 @@
 
 # CurrencyConversionServiceApiResponse
 
-[JVM]\
 open class [CurrencyConversionServiceApiResponse](index.md)
 
 Represents the response from the currency conversion API. This class is used to map the JSON response from the currency conversion API to a Java object. The expected JSON should contain exchange rates.
+
+#### Since
+
+2024-07-24
+
+#### Author
+
+Shelson Ferrari
+
+#### See also
+
+| |
+|---|
+| [CurrencyConversionService](../-currency-conversion-service/index.md) |
+| ProducerTemplate |
+| JsonIgnoreProperties |
 
 ## Constructors
 

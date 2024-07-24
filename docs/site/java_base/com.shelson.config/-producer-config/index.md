@@ -2,7 +2,6 @@
 
 # ProducerConfig
 
-[JVM]\
 @Configuration
 
 open class [ProducerConfig](index.md)
@@ -10,6 +9,23 @@ open class [ProducerConfig](index.md)
 Configuration class for creating a ProducerTemplate bean. 
 
  This class defines the configuration for the Camel ProducerTemplate used for sending messages through Camel routes.
+
+#### Since
+
+2024-07-24
+
+#### Author
+
+Shelson Ferrari
+
+#### See also
+
+| |
+|---|
+| ProducerTemplate |
+| CamelContext |
+| Bean |
+| Configuration |
 
 ## Constructors
 

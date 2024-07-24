@@ -2,12 +2,30 @@
 
 # LoggingInterceptor
 
-[JVM]\
 @Component
 
 open class [LoggingInterceptor](index.md) : HandlerInterceptor
 
 Interceptor for logging HTTP request details. This interceptor logs the details of the request before, during, and after the handler processing.
+
+#### Since
+
+2024-07-24
+
+#### Author
+
+Shelson Ferrari
+
+#### See also
+
+| |
+|---|
+| HandlerInterceptor |
+| ModelAndView |
+| HttpServletRequest |
+| HttpServletResponse |
+| Logger |
+| LoggerFactory |
 
 ## Constructors
 

@@ -2,7 +2,6 @@
 
 # SwaggerConfig
 
-[JVM]\
 @Configuration
 
 @EnableWebSecurity
@@ -20,6 +19,22 @@ Main configured features:
 - Modular configuration that can be adjusted without code changes.
 
 This configuration supports building robust API documentation and is ideal for applications that require clarity and detail in their endpoint specifications.
+
+#### Since
+
+2024-07-24
+
+#### Author
+
+Shelson Ferrari
+
+#### See also
+
+| |
+|---|
+| GroupedOpenApi |
+| OpenAPI |
+| EnableWebSecurity |
 
 ## Constructors
 

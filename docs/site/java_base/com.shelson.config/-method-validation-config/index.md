@@ -2,12 +2,27 @@
 
 # MethodValidationConfig
 
-[JVM]\
 @Configuration
 
 open class [MethodValidationConfig](index.md)
 
 Configuration for method validation. This class sets up a bean for method validation using Bean Validation.
+
+#### Since
+
+2024-07-24
+
+#### Author
+
+Shelson Ferrari
+
+#### See also
+
+| |
+|---|
+| MethodValidationPostProcessor |
+| Logger |
+| LoggerFactory |
 
 ## Constructors
 

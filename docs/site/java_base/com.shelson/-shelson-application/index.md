@@ -2,12 +2,29 @@
 
 # ShelsonApplication
 
-[JVM]\
 @SpringBootApplication
 
 open class [ShelsonApplication](index.md)
 
 Main class for the application. This class initializes the Spring Boot application.
+
+#### Since
+
+2024-07-24
+
+#### Author
+
+Shelson Ferrari
+
+#### See also
+
+| |
+|---|
+| SpringApplication |
+| SpringBootApplication |
+| Logger |
+| LoggerFactory |
+| PreDestroy |
 
 ## Constructors
 

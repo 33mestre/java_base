@@ -2,12 +2,25 @@
 
 # RestTemplateConfig
 
-[JVM]\
 @Configuration
 
 open class [RestTemplateConfig](index.md)
 
 Spring configuration to instantiate and provide a RestTemplate bean.
+
+#### Since
+
+2024-07-24
+
+#### Author
+
+Shelson Ferrari
+
+#### See also
+
+| |
+|---|
+| RestTemplate |
 
 ## Constructors
 

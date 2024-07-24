@@ -2,10 +2,23 @@
 
 # ResourceNotFoundException
 
-[JVM]\
 open class [ResourceNotFoundException](index.md) : [RuntimeException](https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html)
 
 Exception thrown when a requested resource is not found.
+
+#### Since
+
+2024-07-24
+
+#### Author
+
+Shelson Ferrari
+
+#### See also
+
+| |
+|---|
+| [RuntimeException](https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html) |
 
 ## Constructors
 

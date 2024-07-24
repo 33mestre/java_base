@@ -2,10 +2,27 @@
 
 # CurrencyConverterConsoleApp
 
-[JVM]\
 open class [CurrencyConverterConsoleApp](index.md)
 
-Console application for currency conversion.
+Console application for currency conversion. This application allows users to convert amounts from one currency to another using a command-line interface. It interacts with a currency conversion API to fetch the latest exchange rates and perform the conversion.
+
+#### Since
+
+2024-07-24
+
+#### Author
+
+Shelson Ferrari
+
+#### See also
+
+| |
+|---|
+| JSONObject |
+| Logger |
+| LoggerFactory |
+| [HttpURLConnection](https://docs.oracle.com/javase/8/docs/api/java/net/HttpURLConnection.html) |
+| [Currency](../../com.shelson.domain.model/-currency/index.md) |
 
 ## Constructors
 

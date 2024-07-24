@@ -2,12 +2,22 @@
 
 # CurrencyConversionRepository
 
-[JVM]\
 @Repository
 
 interface [CurrencyConversionRepository](index.md) : JpaRepository&lt;T, ID&gt; 
 
 Repository for the entity [CurrencyConversion](../../com.shelson.domain.model/-currency-conversion/index.md). This repository extends JpaRepository, providing CRUD methods for the entity [CurrencyConversion](../../com.shelson.domain.model/-currency-conversion/index.md).
+
+#### Since
+
+2024-07-24
+
+#### See also
+
+| |
+|---|
+| [CurrencyConversion](../../com.shelson.domain.model/-currency-conversion/index.md) |
+| JpaRepository |
 
 ## Functions
 

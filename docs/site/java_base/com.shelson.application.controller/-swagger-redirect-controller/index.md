@@ -9,6 +9,14 @@ open class [SwaggerRedirectController](index.md)
 
 Controller responsible for redirecting to the Swagger UI interface. This controller handles two different routes to redirect the user to the Swagger UI.
 
+#### Since
+
+2024-07-24
+
+#### Author
+
+Shelson Ferrari
+
 ## Constructors
 
 | | |

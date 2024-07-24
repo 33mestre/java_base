@@ -7,7 +7,22 @@
 
 open class [HomeController](index.md)
 
-Controller responsible for the application's home page. This controller redirects root application requests to the Swagger UI interface, allowing API exploration.
+Controller responsible for the application's home page. This controller redirects root application requests to the Swagger UI interface, allowing API exploration. Example usage: 
+
+```kotlin
+
+// URL: /
+// This will redirect to /swagger-ui.html
+
+```
+
+#### Author
+
+Shelson Ferrari
+
+#### Since
+
+2024-07-24
 
 ## Constructors
 

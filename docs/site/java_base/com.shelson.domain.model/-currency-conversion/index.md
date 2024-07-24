@@ -2,12 +2,26 @@
 
 # CurrencyConversion
 
-[JVM]\
 @Entity
 
 open class [CurrencyConversion](index.md)
 
 Entity that represents a currency conversion.
+
+#### Since
+
+2024-07-24
+
+#### Author
+
+Shelson Ferrari
+
+#### See also
+
+| |
+|---|
+| [LocalDateTime](https://docs.oracle.com/javase/8/docs/api/java/time/LocalDateTime.html) |
+| [Currency](../-currency/index.md) |
 
 ## Constructors
 

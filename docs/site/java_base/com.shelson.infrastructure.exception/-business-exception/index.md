@@ -2,14 +2,28 @@
 
 # BusinessException
 
-[JVM]\
 @ResponseStatus(code = HttpStatus.BAD_REQUEST)
 
 open class [BusinessException](index.md) : [RuntimeException](https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html)
 
 Custom exception for business errors. 
 
- This exception is thrown when a business logic error occurs in the application. It is annotated with ResponseStatus to return a 400 Bad Request HTTP status code when the exception is thrown.
+ This exception is thrown when a business logic error occurs in the application. It is annotated with ResponseStatus to return a 400 Bad Request HTTP status code when the exception is thrown. 
+
+#### Since
+
+2024-07-24
+
+#### Author
+
+Shelson Ferrari
+
+#### See also
+
+| |
+|---|
+| HttpStatus |
+| ResponseStatus |
 
 ## Constructors
 

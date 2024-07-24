@@ -2,12 +2,27 @@
 
 # WebConfig
 
-[JVM]\
 @Configuration
 
 open class [WebConfig](index.md) : WebMvcConfigurer
 
 Web MVC configuration for the application. Includes configuration for CORS, interceptors, and filters.
+
+#### Since
+
+2024-07-24
+
+#### Author
+
+Shelson Ferrari
+
+#### See also
+
+| |
+|---|
+| WebMvcConfigurer |
+| [CustomRequestLoggingFilter](../../com.shelson.logging/-custom-request-logging-filter/index.md) |
+| [LoggingInterceptor](../../com.shelson.logging/-logging-interceptor/index.md) |
 
 ## Constructors
 

@@ -2,7 +2,6 @@
 
 # SecurityConfig
 
-[JVM]\
 @Configuration
 
 @EnableWebSecurity
@@ -34,6 +33,21 @@ http
 ```
 
 This configuration ensures that the application is using up-to-date and recommended security practices, aligned with the latest versions and security practices of Spring Security.
+
+#### Since
+
+2024-07-24
+
+#### Author
+
+Shelson Ferrari
+
+#### See also
+
+| |
+|---|
+| HttpSecurity |
+| SecurityFilterChain |
 
 ## Constructors
 

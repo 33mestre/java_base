@@ -2,12 +2,29 @@
 
 # CurrencyConversionRoute
 
-[JVM]\
 @Component
 
 open class [CurrencyConversionRoute](index.md) : RouteBuilder
 
 Camel route for handling currency conversion requests. This route takes the source currency, target currency, and amount as headers, processes the conversion using the [CurrencyConversionService](../../com.shelson.application.service/-currency-conversion-service/index.md), and returns the conversion details.
+
+#### Since
+
+2024-07-24
+
+#### Author
+
+Shelson Ferrari
+
+#### See also
+
+| |
+|---|
+| [CurrencyConversionDTO](../../com.shelson.application.dto/-currency-conversion-d-t-o/index.md) |
+| [CurrencyConversionService](../../com.shelson.application.service/-currency-conversion-service/index.md) |
+| [ExchangeRateProcessor](../../com.shelson.application.processors/-exchange-rate-processor/index.md) |
+| ProducerTemplate |
+| [Currency](../../com.shelson.domain.model/-currency/index.md) |
 
 ## Constructors
 

@@ -2,12 +2,31 @@
 
 # CustomRequestLoggingFilter
 
-[JVM]\
 open class [CustomRequestLoggingFilter](index.md) : HttpFilter
 
 Custom filter to log details of HTTP requests. 
 
- This filter logs various details about each HTTP request and response, including the request method, URI, protocol, response status, timestamp, user agent, and the duration of the request processing. It is useful for monitoring and debugging purposes.
+ This filter logs various details about each HTTP request and response, including the request method, URI, protocol, response status, timestamp, user agent, and the duration of the request processing. It is useful for monitoring and debugging purposes. 
+
+#### Since
+
+2024-07-24
+
+#### Author
+
+Shelson Ferrari
+
+#### See also
+
+| |
+|---|
+| FilterChain |
+| FilterConfig |
+| HttpFilter |
+| HttpServletRequest |
+| HttpServletResponse |
+| Logger |
+| LoggerFactory |
 
 ## Constructors
 

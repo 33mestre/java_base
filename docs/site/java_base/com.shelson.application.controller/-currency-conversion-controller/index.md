@@ -2,7 +2,6 @@
 
 # CurrencyConversionController
 
-[JVM]\
 @RestController
 
 @RequestMapping(value = &quot;/api/v1/conversions&quot;)
@@ -14,6 +13,30 @@ Controller responsible for handling currency conversion requests. This controlle
 - Ensures that the source and target currency codes are valid.
 - Ensures that the amount to be converted is greater than zero.
 - Checks for any unexpected parameters in the request and throws a BusinessException if found.
+
+ Example usage: ```kotlin
+
+// URL: /api/v1/conversions/convert?source=USD&target=EUR&amount=100
+CurrencyConversionDTO conversion = currencyConversionController.convertCurrency("USD", "EUR", 100.0);
+System.out.println(conversion);
+
+```
+
+#### Author
+
+Shelson Ferrari
+
+#### Since
+
+2024-07-24
+
+#### See also
+
+| |
+|---|
+| [CurrencyConversionDTO](../../com.shelson.application.dto/-currency-conversion-d-t-o/index.md) |
+| [CurrencyConversionService](../../com.shelson.application.service/-currency-conversion-service/index.md) |
+| ProducerTemplate |
 
 ## Constructors
 

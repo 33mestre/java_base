@@ -2,10 +2,29 @@
 
 # HttpLoggingFilter
 
-[JVM]\
 open class [HttpLoggingFilter](index.md) : HttpFilter
 
 HTTP filter for logging details of HTTP requests and responses. This filter intercepts all HTTP requests, logging information such as the HTTP method, destination URI, protocol, response status, user agent, and processing time.
+
+#### Since
+
+2024-07-24
+
+#### Author
+
+Shelson Ferrari
+
+#### See also
+
+| |
+|---|
+| FilterChain |
+| FilterConfig |
+| HttpFilter |
+| HttpServletRequest |
+| HttpServletResponse |
+| Logger |
+| LoggerFactory |
 
 ## Constructors
 

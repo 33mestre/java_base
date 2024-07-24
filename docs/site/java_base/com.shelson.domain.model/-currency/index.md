@@ -2,10 +2,23 @@
 
 # Currency
 
-[JVM]\
 enum [Currency](index.md)
 
 Enumeration that represents different types of currencies. Each currency has a code, a name, and the corresponding country.
+
+#### Since
+
+2024-07-24
+
+#### Author
+
+Shelson Ferrari
+
+#### See also
+
+| |
+|---|
+| [Enum](https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html) |
 
 ## Entries
 

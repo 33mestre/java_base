@@ -2,10 +2,25 @@
 
 # CurrencyConversionDTO
 
-[JVM]\
 open class [CurrencyConversionDTO](index.md)
 
 DTO that represents details about the currency conversion.
+
+#### Since
+
+2024-07-24
+
+#### Author
+
+Shelson Ferrari
+
+#### See also
+
+| |
+|---|
+| [Currency](../../com.shelson.domain.model/-currency/index.md) |
+| [CurrencyConversionService](../../com.shelson.application.service/-currency-conversion-service/index.md) |
+| ProducerTemplate |
 
 ## Constructors
 
