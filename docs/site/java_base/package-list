@@ -24,6 +24,10 @@ $dokka.location:com.shelson.application.dto/CurrencyConversionDTO/queryDate/#/Po
 $dokka.location:com.shelson.application.dto/CurrencyConversionDTO/sourceCurrency/#/PointingToDeclaration/java_base/com.shelson.application.dto/-currency-conversion-d-t-o/source-currency.md
 $dokka.location:com.shelson.application.dto/CurrencyConversionDTO/targetCurrency/#/PointingToDeclaration/java_base/com.shelson.application.dto/-currency-conversion-d-t-o/target-currency.md
 $dokka.location:com.shelson.application.dto/CurrencyConversionDTO/toString/#/PointingToDeclaration/java_base/com.shelson.application.dto/-currency-conversion-d-t-o/to-string.md
+$dokka.location:com.shelson.application.processors////PointingToDeclaration/java_base/com.shelson.application.processors/index.md
+$dokka.location:com.shelson.application.processors/ExchangeRateProcessor///PointingToDeclaration/java_base/com.shelson.application.processors/-exchange-rate-processor/index.md
+$dokka.location:com.shelson.application.processors/ExchangeRateProcessor/ExchangeRateProcessor/#/PointingToDeclaration/java_base/com.shelson.application.processors/-exchange-rate-processor/-exchange-rate-processor.md
+$dokka.location:com.shelson.application.processors/ExchangeRateProcessor/process/#org.apache.camel.Exchange/PointingToDeclaration/java_base/com.shelson.application.processors/-exchange-rate-processor/process.md
 $dokka.location:com.shelson.application.routes////PointingToDeclaration/java_base/com.shelson.application.routes/index.md
 $dokka.location:com.shelson.application.routes/CurrencyConversionRoute///PointingToDeclaration/java_base/com.shelson.application.routes/-currency-conversion-route/index.md
 $dokka.location:com.shelson.application.routes/CurrencyConversionRoute/CurrencyConversionRoute/#/PointingToDeclaration/java_base/com.shelson.application.routes/-currency-conversion-route/-currency-conversion-route.md
@@ -247,6 +251,7 @@ $dokka.location:com.shelson.infrastructure.exception////PointingToDeclaration/j
 $dokka.location:com.shelson.infrastructure.exception/BusinessException///PointingToDeclaration/java_base/com.shelson.infrastructure.exception/-business-exception/index.md
 $dokka.location:com.shelson.infrastructure.exception/BusinessException/BusinessException/#java.lang.String/PointingToDeclaration/java_base/com.shelson.infrastructure.exception/-business-exception/-business-exception.md
 $dokka.location:com.shelson.infrastructure.exception/ResourceNotFoundException///PointingToDeclaration/java_base/com.shelson.infrastructure.exception/-resource-not-found-exception/index.md
+$dokka.location:com.shelson.infrastructure.exception/ResourceNotFoundException/ResourceNotFoundException/#java.lang.String#java.lang.Throwable/PointingToDeclaration/java_base/com.shelson.infrastructure.exception/-resource-not-found-exception/-resource-not-found-exception.md
 $dokka.location:com.shelson.infrastructure.exception/ResourceNotFoundException/ResourceNotFoundException/#java.lang.String/PointingToDeclaration/java_base/com.shelson.infrastructure.exception/-resource-not-found-exception/-resource-not-found-exception.md
 $dokka.location:com.shelson.logging////PointingToDeclaration/java_base/com.shelson.logging/index.md
 $dokka.location:com.shelson.logging/CustomRequestLoggingFilter///PointingToDeclaration/java_base/com.shelson.logging/-custom-request-logging-filter/index.md
@@ -272,6 +277,7 @@ $dokka.location:com.shelson/ShelsonApplication/main/#java.lang.String[]/Pointing
 com.shelson
 com.shelson.application.controller
 com.shelson.application.dto
+com.shelson.application.processors
 com.shelson.application.routes
 com.shelson.application.service
 com.shelson.config

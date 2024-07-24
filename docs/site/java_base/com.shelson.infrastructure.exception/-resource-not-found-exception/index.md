@@ -3,19 +3,15 @@
 # ResourceNotFoundException
 
 [JVM]\
-@ResponseStatus(code = HttpStatus.NOT_FOUND)
-
 open class [ResourceNotFoundException](index.md) : [RuntimeException](https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html)
 
-Exception thrown when a requested resource is not found. 
-
- This exception is used to indicate that a specific resource was not found. It is annotated with ResponseStatus to return a 404 Not Found HTTP status code when the exception is thrown.
+Exception thrown when a requested resource is not found.
 
 ## Constructors
 
 | | |
 |---|---|
-| [ResourceNotFoundException](-resource-not-found-exception.md) | [JVM]<br>constructor(message: [String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html))<br>Constructor that accepts an error message. |
+| [ResourceNotFoundException](-resource-not-found-exception.md) | [JVM]<br>constructor(message: [String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html))<br>Constructs a new ResourceNotFoundException with the specified detail message.<br>constructor(message: [String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html), cause: [Throwable](https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html))<br>Constructs a new ResourceNotFoundException with the specified detail message and cause. |
 
 ## Properties
 

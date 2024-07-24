@@ -42,7 +42,7 @@ Camel route for handling currency conversion requests. This route takes the sour
 | [body](index.md#2000519074%2FFunctions%2F57259888) | [JVM]<br>open fun [body](index.md#2000519074%2FFunctions%2F57259888)(): ValueBuilder |
 | [bodyAs](index.md#-10482226%2FFunctions%2F57259888) | [JVM]<br>open fun &lt;[T](index.md#-10482226%2FFunctions%2F57259888)&gt; [bodyAs](index.md#-10482226%2FFunctions%2F57259888)(type: [Class](https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html)&lt;[T](index.md#-10482226%2FFunctions%2F57259888)&gt;): ValueBuilder |
 | [configuration](index.md#2072164482%2FFunctions%2F57259888) | [JVM]<br>open fun [configuration](index.md#2072164482%2FFunctions%2F57259888)() |
-| [configure](configure.md) | [JVM]<br>open fun [configure](configure.md)() |
+| [configure](configure.md) | [JVM]<br>open fun [configure](configure.md)()<br>Configures the Camel route for currency conversion. |
 | [configureRests](index.md#-1626191278%2FFunctions%2F57259888) | [JVM]<br>open fun [configureRests](index.md#-1626191278%2FFunctions%2F57259888)(context: CamelContext): RestsDefinition |
 | [configureRoutes](index.md#540391667%2FFunctions%2F57259888) | [JVM]<br>open fun [configureRoutes](index.md#540391667%2FFunctions%2F57259888)(context: CamelContext): RoutesDefinition |
 | [constant](index.md#-456412307%2FFunctions%2F57259888) | [JVM]<br>open fun [constant](index.md#-456412307%2FFunctions%2F57259888)(value: [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)): ValueBuilder |

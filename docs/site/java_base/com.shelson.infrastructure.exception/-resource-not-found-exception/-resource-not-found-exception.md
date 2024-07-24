@@ -5,7 +5,7 @@
 [JVM]\
 constructor(message: [String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html))
 
-Constructor that accepts an error message.
+Constructs a new ResourceNotFoundException with the specified detail message.
 
 #### Parameters
 
@@ -13,4 +13,18 @@ JVM
 
 | | |
 |---|---|
-| message | The error message detailing the cause of the exception. |
+| message | the detail message |
+
+[JVM]\
+constructor(message: [String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html), cause: [Throwable](https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html))
+
+Constructs a new ResourceNotFoundException with the specified detail message and cause.
+
+#### Parameters
+
+JVM
+
+| | |
+|---|---|
+| message | the detail message |
+| cause | the cause |
