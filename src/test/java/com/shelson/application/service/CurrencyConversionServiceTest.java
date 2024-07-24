@@ -10,9 +10,9 @@
  * Apache License, Version 2.0:
  * http://www.apache.org/licenses/LICENSE-2.0
  *
- * Unless required by applicable law or agreed to in writing, software distributed under the Licenses is
- * distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See
- * the Licenses for the specific language governing permissions and limitations under the Licenses.
+ * Unless required by applicable law or agreed to in writing, software distribuído sob os Licenses é
+ * distribuído em uma base "COMO ESTÁ", SEM GARANTIAS OU CONDIÇÕES DE QUALQUER TIPO, expressas ou implícitas. Veja
+ * os Licenses para a linguagem específica que rege permissões e limitações sob os Licenses.
  */
 
 package com.shelson.application.service;

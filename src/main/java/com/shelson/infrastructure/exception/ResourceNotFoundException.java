@@ -14,30 +14,32 @@
  * distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See
  * the Licenses for the specific language governing permissions and limitations under the Licenses.
  */
-package com.shelson.infrastructure.exception;
 
-import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.ResponseStatus;
+package com.shelson.infrastructure.exception;
 
 /**
  * Exception thrown when a requested resource is not found.
- * <p>
- * This exception is used to indicate that a specific resource was not found.
- * It is annotated with {@link ResponseStatus} to return a 404 Not Found HTTP status
- * code when the exception is thrown.
- * </p>
  */
-@ResponseStatus(code = HttpStatus.NOT_FOUND)
 public class ResourceNotFoundException extends RuntimeException {
-	
+
     private static final long serialVersionUID = 1L;
 
     /**
-     * Constructor that accepts an error message.
+     * Constructs a new ResourceNotFoundException with the specified detail message.
      *
-     * @param message The error message detailing the cause of the exception.
+     * @param message the detail message
      */
     public ResourceNotFoundException(String message) {
         super(message);
+    }
+
+    /**
+     * Constructs a new ResourceNotFoundException with the specified detail message and cause.
+     *
+     * @param message the detail message
+     * @param cause the cause
+     */
+    public ResourceNotFoundException(String message, Throwable cause) {
+        super(message, cause);
     }
 }

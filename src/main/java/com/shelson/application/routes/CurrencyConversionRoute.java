@@ -14,6 +14,7 @@
  * distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See
  * the Licenses for the specific language governing permissions and limitations under the Licenses.
  */
+
 package com.shelson.application.routes;
 
 import org.apache.camel.builder.RouteBuilder;
@@ -21,8 +22,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.shelson.application.dto.CurrencyConversionDTO;
+import com.shelson.application.processors.ExchangeRateProcessor;
 import com.shelson.application.service.CurrencyConversionService;
 import com.shelson.domain.model.Currency;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Camel route for handling currency conversion requests.
@@ -32,20 +36,32 @@ import com.shelson.domain.model.Currency;
 @Component
 public class CurrencyConversionRoute extends RouteBuilder {
 
+    private static final Logger logger = LoggerFactory.getLogger(CurrencyConversionRoute.class);
+
     @Autowired
     private CurrencyConversionService currencyConversionService;
 
+    @Autowired
+    private ExchangeRateProcessor exchangeRateProcessor;
+
+    /**
+     * Configures the Camel route for currency conversion.
+     * 
+     * @throws Exception if an error occurs during configuration
+     */
     @Override
     public void configure() throws Exception {
         from("direct:convertCurrency")
             .routeId("currencyConversionRoute")
             .log("Processing currency conversion: source=${header.source}, target=${header.target}, amount=${header.amount}")
+            .process(exchangeRateProcessor)
             .process(exchange -> {
                 String source = exchange.getIn().getHeader("source", String.class);
                 String target = exchange.getIn().getHeader("target", String.class);
                 Double amount = exchange.getIn().getHeader("amount", Double.class);
 
                 if (source == null || target == null || amount == null) {
+                    logger.error("Source, target, and amount must be provided");
                     throw new IllegalArgumentException("Source, target, and amount must be provided");
                 }
 
@@ -54,7 +70,8 @@ public class CurrencyConversionRoute extends RouteBuilder {
 
                 CurrencyConversionDTO conversionDTO = currencyConversionService.convertCurrency(sourceCurrency, targetCurrency, amount);
                 exchange.getIn().setBody(conversionDTO);
-            })
-            .log("Currency conversion completed: ${body}");
+
+                logger.info("Currency conversion completed: {}", conversionDTO);
+            });
     }
 }
