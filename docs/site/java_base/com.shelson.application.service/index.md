@@ -9,5 +9,5 @@ This package contains the services of the application, responsible for business 
 
 | Name | Summary |
 |---|---|
-| [CurrencyConversionService](-currency-conversion-service/index.md) | [JVM]<br>@Service<br>open class [CurrencyConversionService](-currency-conversion-service/index.md)<br>Service responsible for currency conversion operations. |
-| [CurrencyConversionServiceApiResponse](-currency-conversion-service-api-response/index.md) | [JVM]<br>open class [CurrencyConversionServiceApiResponse](-currency-conversion-service-api-response/index.md) |
+| [CurrencyConversionService](-currency-conversion-service/index.md) | [JVM]<br>@Service<br>open class [CurrencyConversionService](-currency-conversion-service/index.md)<br>Service class for handling currency conversion operations. |
+| [CurrencyConversionServiceApiResponse](-currency-conversion-service-api-response/index.md) | [JVM]<br>open class [CurrencyConversionServiceApiResponse](-currency-conversion-service-api-response/index.md)<br>Represents the response from the currency conversion API. |

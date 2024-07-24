@@ -7,7 +7,9 @@
 
 open class [ResourceNotFoundException](index.md) : [RuntimeException](https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html)
 
-Exception thrown when a requested resource is not found.
+Exception thrown when a requested resource is not found. 
+
+ This exception is used to indicate that a specific resource was not found. It is annotated with ResponseStatus to return a 404 Not Found HTTP status code when the exception is thrown.
 
 ## Constructors
 

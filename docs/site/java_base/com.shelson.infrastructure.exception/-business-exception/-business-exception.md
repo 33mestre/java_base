@@ -4,3 +4,13 @@
 
 [JVM]\
 constructor(message: [String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html))
+
+Constructs a new BusinessException with the specified detail message.
+
+#### Parameters
+
+JVM
+
+| | |
+|---|---|
+| message | the detail message |

@@ -9,7 +9,11 @@
 
 open class [CurrencyConversionController](index.md)
 
-Controller responsible for currency conversion operations. Provides endpoints for converting values between different currencies.
+Controller responsible for handling currency conversion requests. This controller provides an endpoint to convert a given amount from a source currency to a target currency. It utilizes Apache Camel routes for fetching the exchange rates and performing the conversion. Validations performed by this class: 
+
+- Ensures that the source and target currency codes are valid.
+- Ensures that the amount to be converted is greater than zero.
+- Checks for any unexpected parameters in the request and throws a BusinessException if found.
 
 ## Constructors
 
@@ -21,4 +25,4 @@ Controller responsible for currency conversion operations. Provides endpoints fo
 
 | Name | Summary |
 |---|---|
-| [convertCurrency](convert-currency.md) | [JVM]<br>@GetMapping(value = &quot;/convert&quot;)<br>open fun [convertCurrency](convert-currency.md)(@RequestParamsource: [Currency](../../com.shelson.domain.model/-currency/index.md), @RequestParamtarget: [Currency](../../com.shelson.domain.model/-currency/index.md), @RequestParamamount: [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)): [CurrencyConversionDTO](../../com.shelson.application.dto/-currency-conversion-d-t-o/index.md)<br>Converts the source currency to the target currency. |
+| [convertCurrency](convert-currency.md) | [JVM]<br>@GetMapping(value = &quot;/convert&quot;)<br>open fun [convertCurrency](convert-currency.md)(@RequestParamsource: [String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html), @RequestParamtarget: [String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html), @RequestParamamount: [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html), request: HttpServletRequest): [CurrencyConversionDTO](../../com.shelson.application.dto/-currency-conversion-d-t-o/index.md)<br>Converts the source currency to the target currency. |

@@ -5,7 +5,9 @@
 [JVM]\
 open fun [init](init.md)(filterConfig: FilterConfig)
 
-Initializes the filter.
+Initializes the filter. 
+
+ This method is called by the servlet container to indicate to the filter that it is being placed into service. The filter configuration object provides the filter with its initialization parameters. Here, any necessary setup can be done. 
 
 #### Parameters
 

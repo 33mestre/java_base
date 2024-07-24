@@ -7,6 +7,10 @@
 
 open class [CamelConfig](index.md)
 
+Configuration class for Apache Camel routes. 
+
+ This class sets up the Camel routes used for currency conversion and fetching exchange rates. It defines how the data flows through the routes and how the exchange rates are fetched from the API.
+
 ## Constructors
 
 | | |
@@ -17,6 +21,4 @@ open class [CamelConfig](index.md)
 
 | Name | Summary |
 |---|---|
-| [camelContext](camel-context.md) | [JVM]<br>@Bean<br>open fun [camelContext](camel-context.md)(): CamelContext |
-| [producerTemplate](producer-template.md) | [JVM]<br>@Bean<br>open fun [producerTemplate](producer-template.md)(camelContext: CamelContext): ProducerTemplate |
-| [routeBuilder](route-builder.md) | [JVM]<br>@Bean<br>open fun [routeBuilder](route-builder.md)(): RouteBuilder |
+| [configureCamelContext](configure-camel-context.md) | [JVM]<br>@Autowired<br>open fun [configureCamelContext](configure-camel-context.md)(camelContext: CamelContext)<br>Configures the Camel routes. |

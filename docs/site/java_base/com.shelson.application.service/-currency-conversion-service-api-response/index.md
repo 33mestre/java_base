@@ -5,6 +5,8 @@
 [JVM]\
 open class [CurrencyConversionServiceApiResponse](index.md)
 
+Represents the response from the currency conversion API. This class is used to map the JSON response from the currency conversion API to a Java object. The expected JSON should contain exchange rates.
+
 ## Constructors
 
 | | |
@@ -15,4 +17,4 @@ open class [CurrencyConversionServiceApiResponse](index.md)
 
 | Name | Summary |
 |---|---|
-| [rates](rates.md) | [JVM]<br>open var [rates](rates.md): [Map](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html)&lt;[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html), [Double](https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html)&gt; |
+| [rates](rates.md) | [JVM]<br>open var [rates](rates.md): [Map](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html)&lt;[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html), [Double](https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html)&gt;<br>Map containing exchange rates for different currencies. |

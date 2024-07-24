@@ -7,7 +7,7 @@
 
 open class [CurrencyConversionService](index.md)
 
-Service responsible for currency conversion operations.
+Service class for handling currency conversion operations. This class uses a Camel route to fetch the latest exchange rates and performs conversions between different currencies.
 
 ## Constructors
 
@@ -15,14 +15,8 @@ Service responsible for currency conversion operations.
 |---|---|
 | [CurrencyConversionService](-currency-conversion-service.md) | [JVM]<br>constructor() |
 
-## Types
-
-| Name | Summary |
-|---|---|
-| [ApiResponse](-api-response/index.md) | [JVM]<br>open class [ApiResponse](-api-response/index.md)<br>Inner class representing the exchange rates API response. |
-
 ## Functions
 
 | Name | Summary |
 |---|---|
-| [convertCurrency](convert-currency.md) | [JVM]<br>open fun [convertCurrency](convert-currency.md)(sourceCurrency: [Currency](../../com.shelson.domain.model/-currency/index.md), targetCurrency: [Currency](../../com.shelson.domain.model/-currency/index.md), amount: [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)): [CurrencyConversionDTO](../../com.shelson.application.dto/-currency-conversion-d-t-o/index.md)<br>Converts an amount from a source currency to a target currency. |
+| [convertCurrency](convert-currency.md) | [JVM]<br>open fun [convertCurrency](convert-currency.md)(sourceCurrency: [Currency](../../com.shelson.domain.model/-currency/index.md), targetCurrency: [Currency](../../com.shelson.domain.model/-currency/index.md), amount: [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)): [CurrencyConversionDTO](../../com.shelson.application.dto/-currency-conversion-d-t-o/index.md)<br>Converts the given amount from the source currency to the target currency. |

@@ -3,7 +3,7 @@ $dokka.linkExtension:md
 $dokka.location:com.shelson.application.controller////PointingToDeclaration/java_base/com.shelson.application.controller/index.md
 $dokka.location:com.shelson.application.controller/CurrencyConversionController///PointingToDeclaration/java_base/com.shelson.application.controller/-currency-conversion-controller/index.md
 $dokka.location:com.shelson.application.controller/CurrencyConversionController/CurrencyConversionController/#/PointingToDeclaration/java_base/com.shelson.application.controller/-currency-conversion-controller/-currency-conversion-controller.md
-$dokka.location:com.shelson.application.controller/CurrencyConversionController/convertCurrency/#com.shelson.domain.model.Currency#com.shelson.domain.model.Currency#double/PointingToDeclaration/java_base/com.shelson.application.controller/-currency-conversion-controller/convert-currency.md
+$dokka.location:com.shelson.application.controller/CurrencyConversionController/convertCurrency/#java.lang.String#java.lang.String#double#jakarta.servlet.http.HttpServletRequest/PointingToDeclaration/java_base/com.shelson.application.controller/-currency-conversion-controller/convert-currency.md
 $dokka.location:com.shelson.application.controller/HomeController///PointingToDeclaration/java_base/com.shelson.application.controller/-home-controller/index.md
 $dokka.location:com.shelson.application.controller/HomeController/HomeController/#/PointingToDeclaration/java_base/com.shelson.application.controller/-home-controller/-home-controller.md
 $dokka.location:com.shelson.application.controller/HomeController/home/#/PointingToDeclaration/java_base/com.shelson.application.controller/-home-controller/home.md
@@ -24,10 +24,11 @@ $dokka.location:com.shelson.application.dto/CurrencyConversionDTO/queryDate/#/Po
 $dokka.location:com.shelson.application.dto/CurrencyConversionDTO/sourceCurrency/#/PointingToDeclaration/java_base/com.shelson.application.dto/-currency-conversion-d-t-o/source-currency.md
 $dokka.location:com.shelson.application.dto/CurrencyConversionDTO/targetCurrency/#/PointingToDeclaration/java_base/com.shelson.application.dto/-currency-conversion-d-t-o/target-currency.md
 $dokka.location:com.shelson.application.dto/CurrencyConversionDTO/toString/#/PointingToDeclaration/java_base/com.shelson.application.dto/-currency-conversion-d-t-o/to-string.md
+$dokka.location:com.shelson.application.routes////PointingToDeclaration/java_base/com.shelson.application.routes/index.md
+$dokka.location:com.shelson.application.routes/CurrencyConversionRoute///PointingToDeclaration/java_base/com.shelson.application.routes/-currency-conversion-route/index.md
+$dokka.location:com.shelson.application.routes/CurrencyConversionRoute/CurrencyConversionRoute/#/PointingToDeclaration/java_base/com.shelson.application.routes/-currency-conversion-route/-currency-conversion-route.md
+$dokka.location:com.shelson.application.routes/CurrencyConversionRoute/configure/#/PointingToDeclaration/java_base/com.shelson.application.routes/-currency-conversion-route/configure.md
 $dokka.location:com.shelson.application.service////PointingToDeclaration/java_base/com.shelson.application.service/index.md
-$dokka.location:com.shelson.application.service/CurrencyConversionService.ApiResponse///PointingToDeclaration/java_base/com.shelson.application.service/-currency-conversion-service/-api-response/index.md
-$dokka.location:com.shelson.application.service/CurrencyConversionService.ApiResponse/ApiResponse/#/PointingToDeclaration/java_base/com.shelson.application.service/-currency-conversion-service/-api-response/-api-response.md
-$dokka.location:com.shelson.application.service/CurrencyConversionService.ApiResponse/rates/#/PointingToDeclaration/java_base/com.shelson.application.service/-currency-conversion-service/-api-response/rates.md
 $dokka.location:com.shelson.application.service/CurrencyConversionService///PointingToDeclaration/java_base/com.shelson.application.service/-currency-conversion-service/index.md
 $dokka.location:com.shelson.application.service/CurrencyConversionService/CurrencyConversionService/#/PointingToDeclaration/java_base/com.shelson.application.service/-currency-conversion-service/-currency-conversion-service.md
 $dokka.location:com.shelson.application.service/CurrencyConversionService/convertCurrency/#com.shelson.domain.model.Currency#com.shelson.domain.model.Currency#double/PointingToDeclaration/java_base/com.shelson.application.service/-currency-conversion-service/convert-currency.md
@@ -37,9 +38,13 @@ $dokka.location:com.shelson.application.service/CurrencyConversionServiceApiResp
 $dokka.location:com.shelson.config////PointingToDeclaration/java_base/com.shelson.config/index.md
 $dokka.location:com.shelson.config/CamelConfig///PointingToDeclaration/java_base/com.shelson.config/-camel-config/index.md
 $dokka.location:com.shelson.config/CamelConfig/CamelConfig/#/PointingToDeclaration/java_base/com.shelson.config/-camel-config/-camel-config.md
-$dokka.location:com.shelson.config/CamelConfig/camelContext/#/PointingToDeclaration/java_base/com.shelson.config/-camel-config/camel-context.md
-$dokka.location:com.shelson.config/CamelConfig/producerTemplate/#org.apache.camel.CamelContext/PointingToDeclaration/java_base/com.shelson.config/-camel-config/producer-template.md
-$dokka.location:com.shelson.config/CamelConfig/routeBuilder/#/PointingToDeclaration/java_base/com.shelson.config/-camel-config/route-builder.md
+$dokka.location:com.shelson.config/CamelConfig/configureCamelContext/#org.apache.camel.CamelContext/PointingToDeclaration/java_base/com.shelson.config/-camel-config/configure-camel-context.md
+$dokka.location:com.shelson.config/MethodValidationConfig///PointingToDeclaration/java_base/com.shelson.config/-method-validation-config/index.md
+$dokka.location:com.shelson.config/MethodValidationConfig/MethodValidationConfig/#/PointingToDeclaration/java_base/com.shelson.config/-method-validation-config/-method-validation-config.md
+$dokka.location:com.shelson.config/ProducerConfig///PointingToDeclaration/java_base/com.shelson.config/-producer-config/index.md
+$dokka.location:com.shelson.config/ProducerConfig/ProducerConfig/#/PointingToDeclaration/java_base/com.shelson.config/-producer-config/-producer-config.md
+$dokka.location:com.shelson.config/SharedConfig///PointingToDeclaration/java_base/com.shelson.config/-shared-config/index.md
+$dokka.location:com.shelson.config/SharedConfig/SharedConfig/#/PointingToDeclaration/java_base/com.shelson.config/-shared-config/-shared-config.md
 $dokka.location:com.shelson.console////PointingToDeclaration/java_base/com.shelson.console/index.md
 $dokka.location:com.shelson.console/CurrencyConverterConsoleApp///PointingToDeclaration/java_base/com.shelson.console/-currency-converter-console-app/index.md
 $dokka.location:com.shelson.console/CurrencyConverterConsoleApp/CurrencyConverterConsoleApp/#/PointingToDeclaration/java_base/com.shelson.console/-currency-converter-console-app/-currency-converter-console-app.md
@@ -226,10 +231,6 @@ $dokka.location:com.shelson.domain.model/CurrencyConversion/targetCurrency/#/Poi
 $dokka.location:com.shelson.domain.model/CurrencyConversion/toString/#/PointingToDeclaration/java_base/com.shelson.domain.model/-currency-conversion/to-string.md
 $dokka.location:com.shelson.domain.repository////PointingToDeclaration/java_base/com.shelson.domain.repository/index.md
 $dokka.location:com.shelson.domain.repository/CurrencyConversionRepository///PointingToDeclaration/java_base/com.shelson.domain.repository/-currency-conversion-repository/index.md
-$dokka.location:com.shelson.domain.service////PointingToDeclaration/java_base/com.shelson.domain.service/index.md
-$dokka.location:com.shelson.domain.service/CurrencyConversionDomainService///PointingToDeclaration/java_base/com.shelson.domain.service/-currency-conversion-domain-service/index.md
-$dokka.location:com.shelson.domain.service/CurrencyConversionDomainService/CurrencyConversionDomainService/#com.shelson.domain.repository.CurrencyConversionRepository/PointingToDeclaration/java_base/com.shelson.domain.service/-currency-conversion-domain-service/-currency-conversion-domain-service.md
-$dokka.location:com.shelson.domain.service/CurrencyConversionDomainService/performConversion/#com.shelson.domain.model.Currency#com.shelson.domain.model.Currency#double/PointingToDeclaration/java_base/com.shelson.domain.service/-currency-conversion-domain-service/perform-conversion.md
 $dokka.location:com.shelson.infrastructure.config////PointingToDeclaration/java_base/com.shelson.infrastructure.config/index.md
 $dokka.location:com.shelson.infrastructure.config/RestTemplateConfig///PointingToDeclaration/java_base/com.shelson.infrastructure.config/-rest-template-config/index.md
 $dokka.location:com.shelson.infrastructure.config/RestTemplateConfig/RestTemplateConfig/#/PointingToDeclaration/java_base/com.shelson.infrastructure.config/-rest-template-config/-rest-template-config.md
@@ -262,8 +263,6 @@ $dokka.location:com.shelson.logging/LoggingInterceptor/afterCompletion/#jakarta.
 $dokka.location:com.shelson.logging/LoggingInterceptor/postHandle/#jakarta.servlet.http.HttpServletRequest#jakarta.servlet.http.HttpServletResponse#java.lang.Object#org.springframework.web.servlet.ModelAndView/PointingToDeclaration/java_base/com.shelson.logging/-logging-interceptor/post-handle.md
 $dokka.location:com.shelson.logging/LoggingInterceptor/preHandle/#jakarta.servlet.http.HttpServletRequest#jakarta.servlet.http.HttpServletResponse#java.lang.Object/PointingToDeclaration/java_base/com.shelson.logging/-logging-interceptor/pre-handle.md
 $dokka.location:com.shelson////PointingToDeclaration/java_base/com.shelson/index.md
-$dokka.location:com.shelson/MethodValidationConfig///PointingToDeclaration/java_base/com.shelson/-method-validation-config/index.md
-$dokka.location:com.shelson/MethodValidationConfig/MethodValidationConfig/#/PointingToDeclaration/java_base/com.shelson/-method-validation-config/-method-validation-config.md
 $dokka.location:com.shelson/ShelsonApplication.ApplicationShutdownHook///PointingToDeclaration/java_base/com.shelson/-shelson-application/-application-shutdown-hook/index.md
 $dokka.location:com.shelson/ShelsonApplication.ApplicationShutdownHook/ApplicationShutdownHook/#/PointingToDeclaration/java_base/com.shelson/-shelson-application/-application-shutdown-hook/-application-shutdown-hook.md
 $dokka.location:com.shelson/ShelsonApplication.ApplicationShutdownHook/onShutdown/#/PointingToDeclaration/java_base/com.shelson/-shelson-application/-application-shutdown-hook/on-shutdown.md
@@ -273,12 +272,12 @@ $dokka.location:com.shelson/ShelsonApplication/main/#java.lang.String[]/Pointing
 com.shelson
 com.shelson.application.controller
 com.shelson.application.dto
+com.shelson.application.routes
 com.shelson.application.service
 com.shelson.config
 com.shelson.console
 com.shelson.domain.model
 com.shelson.domain.repository
-com.shelson.domain.service
 com.shelson.infrastructure.config
 com.shelson.infrastructure.exception
 com.shelson.logging
