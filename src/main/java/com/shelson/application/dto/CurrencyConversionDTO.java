@@ -14,7 +14,6 @@
  * distribuído em uma base "COMO ESTÁ", SEM GARANTIAS OU CONDIÇÕES DE QUALQUER TIPO, expressas ou implícitas. Veja
  * os Licenses para a linguagem específica que rege permissões e limitações sob os Licenses.
  */
-
 package com.shelson.application.dto;
 
 import java.time.LocalDateTime;
