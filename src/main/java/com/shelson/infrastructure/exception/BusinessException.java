@@ -26,6 +26,14 @@ import org.springframework.web.bind.annotation.ResponseStatus;
  * It is annotated with {@link ResponseStatus} to return a 400 Bad Request HTTP status
  * code when the exception is thrown.
  * </p>
+ * 
+ * @version 0.6.3
+ * @since 2024-07-24
+ * 
+ * @author Shelson Ferrari
+ * 
+ * @see org.springframework.http.HttpStatus
+ * @see org.springframework.web.bind.annotation.ResponseStatus
  */
 @ResponseStatus(code = HttpStatus.BAD_REQUEST)
 public class BusinessException extends RuntimeException {

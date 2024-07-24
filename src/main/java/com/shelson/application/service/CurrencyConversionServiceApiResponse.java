@@ -21,9 +21,17 @@ import java.util.Map;
 
 /**
  * Represents the response from the currency conversion API.
- * 
  * This class is used to map the JSON response from the currency conversion API to a Java object.
  * The expected JSON should contain exchange rates.
+ * 
+ * @version 0.6.3
+ * @since 2024-07-24
+ * 
+ * @author Shelson Ferrari
+ * 
+ * @see com.shelson.application.service.CurrencyConversionService
+ * @see org.apache.camel.ProducerTemplate
+ * @see com.fasterxml.jackson.annotation.JsonIgnoreProperties
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class CurrencyConversionServiceApiResponse {

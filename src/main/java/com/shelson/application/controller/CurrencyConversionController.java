@@ -14,6 +14,7 @@
  * distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See
  * the Licenses for the specific language governing permissions and limitations under the Licenses.
  */
+
 package com.shelson.application.controller;
 
 import java.util.Enumeration;
@@ -51,6 +52,23 @@ import jakarta.servlet.http.HttpServletRequest;
  *     <li>Ensures that the amount to be converted is greater than zero.</li>
  *     <li>Checks for any unexpected parameters in the request and throws a BusinessException if found.</li>
  * </ul>
+ * 
+ * Example usage:
+ * <pre>
+ * {@code
+ * // URL: /api/v1/conversions/convert?source=USD&target=EUR&amount=100
+ * CurrencyConversionDTO conversion = currencyConversionController.convertCurrency("USD", "EUR", 100.0);
+ * System.out.println(conversion);
+ * }
+ * </pre>
+ * 
+ * @author Shelson Ferrari
+ * @version 0.6.3
+ * @since 2024-07-24
+ * 
+ * @see com.shelson.application.dto.CurrencyConversionDTO
+ * @see com.shelson.application.service.CurrencyConversionService
+ * @see org.apache.camel.ProducerTemplate
  */
 @RestController
 @RequestMapping("/api/v1/conversions")

@@ -19,6 +19,13 @@ package com.shelson.infrastructure.exception;
 
 /**
  * Exception thrown when a requested resource is not found.
+ * 
+ * @version 0.6.3
+ * @since 2024-07-24
+ * 
+ * @author Shelson Ferrari
+ * 
+ * @see java.lang.RuntimeException
  */
 public class ResourceNotFoundException extends RuntimeException {
 

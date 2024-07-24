@@ -26,6 +26,16 @@ import org.springframework.context.annotation.Configuration;
  * <p>
  * This class provides a {@link CamelContext} bean that is shared across the application.
  * It initializes and starts the Camel context.
+ * 
+ * @version 0.6.3
+ * @since 2024-07-24
+ * 
+ * @author Shelson Ferrari
+ * 
+ * @see org.apache.camel.CamelContext
+ * @see org.apache.camel.impl.DefaultCamelContext
+ * @see org.springframework.context.annotation.Bean
+ * @see org.springframework.context.annotation.Configuration
  */
 @Configuration
 public class SharedConfig {

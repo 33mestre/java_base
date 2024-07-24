@@ -41,6 +41,18 @@ import com.shelson.infrastructure.exception.BusinessException;
 
 /**
  * Tests for {@link CurrencyConversionController}.
+ * 
+ * @version 0.6.3
+ * @since 2024-07-24
+ * 
+ * @author Shelson Ferrari
+ * 
+ * @see org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest
+ * @see org.springframework.boot.test.mock.mockito.MockBean
+ * @see org.springframework.test.web.servlet.MockMvc
+ * @see com.shelson.application.service.CurrencyConversionService
+ * @see com.shelson.domain.model.Currency
+ * @see org.apache.camel.ProducerTemplate
  */
 @WebMvcTest(CurrencyConversionController.class)
 public class CurrencyConversionControllerTest {

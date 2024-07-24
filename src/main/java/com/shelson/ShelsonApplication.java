@@ -30,6 +30,17 @@ import org.springframework.stereotype.Component;
 /**
  * Main class for the application.
  * This class initializes the Spring Boot application.
+ * 
+ * @version 0.6.3
+ * @since 2024-07-24
+ * 
+ * @author Shelson Ferrari
+ * 
+ * @see org.springframework.boot.SpringApplication
+ * @see org.springframework.boot.autoconfigure.SpringBootApplication
+ * @see org.slf4j.Logger
+ * @see org.slf4j.LoggerFactory
+ * @see jakarta.annotation.PreDestroy
  */
 @SpringBootApplication
 public class ShelsonApplication {

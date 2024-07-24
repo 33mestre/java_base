@@ -14,7 +14,6 @@
  * distribuído em uma base "COMO ESTÁ", SEM GARANTIAS OU CONDIÇÕES DE QUALQUER TIPO, expressas ou implícitas. Veja
  * os Licenses para a linguagem específica que rege permissões e limitações sob os Licenses.
  */
-
 package com.shelson.application.service;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -46,8 +45,21 @@ import com.shelson.infrastructure.exception.BusinessException;
 import com.shelson.infrastructure.exception.ResourceNotFoundException;
 
 /**
- * Tests for {@link CurrencyConversionService}.
+ * Unit tests for {@link CurrencyConversionService}.
+ * 
+ * @version 0.6.3
+ * @since 2024-07-24
+ * 
+ * @author Shelson Ferrari
+ * 
+ * @see com.shelson.application.dto.CurrencyConversionDTO
+ * @see com.shelson.domain.model.Currency
+ * @see com.shelson.domain.repository.CurrencyConversionRepository
+ * @see org.apache.camel.ProducerTemplate
+ * @see com.shelson.infrastructure.exception.BusinessException
+ * @see com.shelson.infrastructure.exception.ResourceNotFoundException
  */
+
 @ExtendWith(MockitoExtension.class)
 public class CurrencyConversionServiceTest {
 

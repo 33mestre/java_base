@@ -22,6 +22,13 @@ import org.springframework.web.client.RestTemplate;
 
 /**
  * Spring configuration to instantiate and provide a {@link RestTemplate} bean.
+ * 
+ * @version 0.6.3
+ * @since 2024-07-24
+ * 
+ * @author Shelson Ferrari
+ * 
+ * @see org.springframework.web.client.RestTemplate
  */
 @Configuration
 public class RestTemplateConfig {

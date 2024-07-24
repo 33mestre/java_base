@@ -28,11 +28,23 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.shelson.application.service.CurrencyConversionService;
 import com.shelson.application.service.CurrencyConversionServiceApiResponse;
 
+
 /**
  * Configuration class for Apache Camel routes.
  * <p>
  * This class sets up the Camel routes used for currency conversion and fetching exchange rates.
  * It defines how the data flows through the routes and how the exchange rates are fetched from the API.
+ * 
+ * @version 0.6.3
+ * @since 2024-07-24
+ * 
+ * @author Shelson Ferrari
+ * 
+ * @see com.shelson.application.service.CurrencyConversionService
+ * @see com.shelson.application.service.CurrencyConversionServiceApiResponse
+ * @see org.apache.camel.CamelContext
+ * @see org.apache.camel.builder.RouteBuilder
+ * @see org.springframework.context.annotation.Configuration
  */
 @Configuration
 public class CamelConfig {

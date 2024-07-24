@@ -6,8 +6,8 @@ We only support the latest version of the project. Make sure to update to the la
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 0.5.1   | :white_check_mark: |
-| < 0.5.1 | :x:                |
+| 0.6.2   | :white_check_mark: |
+| < 0.6.2 | :x:                |
 
 ## Reporting a Vulnerability
 

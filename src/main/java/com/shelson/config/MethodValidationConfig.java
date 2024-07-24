@@ -25,6 +25,15 @@ import org.springframework.validation.beanvalidation.MethodValidationPostProcess
 /**
  * Configuration for method validation.
  * This class sets up a bean for method validation using Bean Validation.
+ * 
+ * @version 0.6.3
+ * @since 2024-07-24
+ * 
+ * @author Shelson Ferrari
+ * 
+ * @see org.springframework.validation.beanvalidation.MethodValidationPostProcessor
+ * @see org.slf4j.Logger
+ * @see org.slf4j.LoggerFactory
  */
 @Configuration
 public class MethodValidationConfig {

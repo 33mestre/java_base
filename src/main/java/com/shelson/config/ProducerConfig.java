@@ -26,6 +26,16 @@ import org.springframework.context.annotation.Configuration;
  * <p>
  * This class defines the configuration for the Camel {@link ProducerTemplate} used for sending messages
  * through Camel routes.
+ * 
+ * @version 0.6.3
+ * @since 2024-07-24
+ * 
+ * @author Shelson Ferrari
+ * 
+ * @see org.apache.camel.ProducerTemplate
+ * @see org.apache.camel.CamelContext
+ * @see org.springframework.context.annotation.Bean
+ * @see org.springframework.context.annotation.Configuration
  */
 @Configuration
 public class ProducerConfig {

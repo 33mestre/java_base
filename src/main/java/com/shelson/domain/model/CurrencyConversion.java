@@ -34,6 +34,14 @@ import jakarta.persistence.Table;
 
 /**
  * Entity that represents a currency conversion.
+ * 
+ * @version 0.6.3
+ * @since 2024-07-24
+ * 
+ * @author Shelson Ferrari
+ * 
+ * @see java.time.LocalDateTime
+ * @see com.shelson.domain.model.Currency
  */
 @Entity
 @Table(name = "CURRENCY_CONVERSIONS")

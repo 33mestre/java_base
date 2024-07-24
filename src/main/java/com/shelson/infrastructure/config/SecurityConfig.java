@@ -54,6 +54,14 @@ import org.springframework.security.web.SecurityFilterChain;
  *
  * <p>This configuration ensures that the application is using up-to-date and recommended security practices,
  * aligned with the latest versions and security practices of Spring Security.</p>
+ * 
+ * @version 0.6.3
+ * @since 2024-07-24
+ * 
+ * @author Shelson Ferrari
+ * 
+ * @see org.springframework.security.config.annotation.web.builders.HttpSecurity
+ * @see org.springframework.security.web.SecurityFilterChain
  */
 @Configuration
 @EnableWebSecurity

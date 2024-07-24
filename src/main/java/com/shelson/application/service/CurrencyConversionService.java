@@ -36,9 +36,20 @@ import com.shelson.infrastructure.exception.BusinessException;
 import com.shelson.infrastructure.exception.ResourceNotFoundException;
 
 /**
- * Service class for handling currency conversion operations.
- * This class uses a Camel route to fetch the latest exchange rates and performs
- * conversions between different currencies.
+ * Camel route for handling currency conversion requests.
+ * This route takes the source currency, target currency, and amount as headers,
+ * processes the conversion using the {@link CurrencyConversionService}, and returns the conversion details.
+ * 
+ * @version 0.6.3
+ * @since 2024-07-24
+ * 
+ * @author Shelson Ferrari
+ * 
+ * @see com.shelson.application.dto.CurrencyConversionDTO
+ * @see com.shelson.application.service.CurrencyConversionService
+ * @see com.shelson.application.processors.ExchangeRateProcessor
+ * @see org.apache.camel.ProducerTemplate
+ * @see com.shelson.domain.model.Currency
  */
 @Service
 public class CurrencyConversionService {

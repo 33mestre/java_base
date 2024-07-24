@@ -32,6 +32,23 @@ import com.fasterxml.jackson.databind.ObjectMapper;
  * Processor to handle exchange rates.
  * This processor reads the exchange rate data from the message body,
  * parses it, and sets the parsed rates back into the message body.
+ * 
+ * @version 0.6.3
+ * @since 2024-07-24
+ * @see org.apache.camel.Processor
+ * @see org.apache.camel.Exchange
+ * @see com.fasterxml.jackson.databind.ObjectMapper
+ * @see com.fasterxml.jackson.core.type.TypeReference
+ * @see org.slf4j.Logger
+ * @see org.slf4j.LoggerFactory
+ * @see com.shelson.application.service.CurrencyConversionService
+ * @see com.shelson.application.routes.CurrencyConversionRoute
+ * @see com.shelson.application.dto.CurrencyConversionDTO
+ * @see com.shelson.domain.model.Currency
+ * @see com.shelson.domain.repository.CurrencyConversionRepository
+ * @see com.shelson.infrastructure.exception.BusinessException
+ * @see com.shelson.infrastructure.exception.ResourceNotFoundException
+ * @author Shelson Ferrari
  */
 @Component
 public class ExchangeRateProcessor implements Processor {

@@ -27,6 +27,10 @@ import io.swagger.v3.oas.annotations.Hidden;
  * Controller responsible for redirecting to the Swagger UI interface.
  * This controller handles two different routes to redirect the user
  * to the Swagger UI.
+ * 
+ * @version 0.6.3
+ * @since 2024-07-24
+ * @author Shelson Ferrari
  */
 @Controller
 @Hidden

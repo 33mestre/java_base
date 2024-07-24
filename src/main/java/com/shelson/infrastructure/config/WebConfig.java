@@ -33,6 +33,15 @@ import com.shelson.logging.LoggingInterceptor;
 /**
  * Web MVC configuration for the application.
  * Includes configuration for CORS, interceptors, and filters.
+ * 
+ * @version 0.6.3
+ * @since 2024-07-24
+ * 
+ * @author Shelson Ferrari
+ * 
+ * @see org.springframework.web.servlet.config.annotation.WebMvcConfigurer
+ * @see com.shelson.logging.CustomRequestLoggingFilter
+ * @see com.shelson.logging.LoggingInterceptor
  */
 @Configuration
 public class WebConfig implements WebMvcConfigurer {

@@ -31,6 +31,21 @@ import com.shelson.domain.model.Currency;
 
 /**
  * Console application for currency conversion.
+ * 
+ * This application allows users to convert amounts from one currency to another
+ * using a command-line interface. It interacts with a currency conversion API
+ * to fetch the latest exchange rates and perform the conversion.
+ * 
+ * @version 0.6.3
+ * @since 2024-07-24
+ * 
+ * @author Shelson Ferrari
+ * 
+ * @see org.json.JSONObject
+ * @see org.slf4j.Logger
+ * @see org.slf4j.LoggerFactory
+ * @see java.net.HttpURLConnection
+ * @see com.shelson.domain.model.Currency
  */
 public class CurrencyConverterConsoleApp {
 

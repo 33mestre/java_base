@@ -32,6 +32,18 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Unit tests for the {@link ExchangeRateProcessor} class.
+ * 
+ * @version 0.6.3
+ * @since 2024-07-24
+ * 
+ * @author Shelson Ferrari
+ * 
+ * @see com.shelson.application.processors.ExchangeRateProcessor
+ * @see org.apache.camel.Exchange
+ * @see org.apache.camel.impl.DefaultCamelContext
+ * @see org.apache.camel.support.DefaultExchange
+ * @see org.junit.jupiter.api.Test
+ * @see org.junit.jupiter.api.BeforeEach
  */
 public class ExchangeRateProcessorTest {
 

@@ -44,6 +44,15 @@ import io.swagger.v3.oas.models.info.Info;
  *
  * <p>This configuration supports building robust API documentation and is ideal for applications
  * that require clarity and detail in their endpoint specifications.</p>
+ * 
+ * @version 0.6.3
+ * @since 2024-07-24
+ * 
+ * @author Shelson Ferrari
+ * 
+ * @see org.springdoc.core.GroupedOpenApi
+ * @see io.swagger.v3.oas.models.OpenAPI
+ * @see org.springframework.security.config.annotation.web.configuration.EnableWebSecurity
  */
 @Configuration
 @EnableWebSecurity

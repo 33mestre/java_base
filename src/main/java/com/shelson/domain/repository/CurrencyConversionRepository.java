@@ -24,6 +24,12 @@ import org.springframework.stereotype.Repository;
  * Repository for the entity {@link CurrencyConversion}.
  * 
  * This repository extends {@link JpaRepository}, providing CRUD methods for the entity {@link CurrencyConversion}.
+ * 
+ * @version 0.6.3
+ * @since 2024-07-24
+ * 
+ * @see com.shelson.domain.model.CurrencyConversion
+ * @see org.springframework.data.jpa.repository.JpaRepository
  */
 @Repository
 public interface CurrencyConversionRepository extends JpaRepository<CurrencyConversion, Long> {

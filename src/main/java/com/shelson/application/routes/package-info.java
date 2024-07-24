@@ -8,8 +8,5 @@
  * which processes the conversion by extracting headers from the request, validating them,
  * and invoking the service to perform the conversion.
  * </p>
- *
- * @since 1.0
- * @version 1.0
  */
 package com.shelson.application.routes;

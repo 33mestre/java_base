@@ -19,6 +19,13 @@ package com.shelson.domain.model;
 /**
  * Enumeration that represents different types of currencies.
  * Each currency has a code, a name, and the corresponding country.
+ * 
+ * @version 0.6.3
+ * @since 2024-07-24
+ * 
+ * @author Shelson Ferrari
+ * 
+ * @see java.lang.Enum
  */
 public enum Currency {
     AED("AED", "UAE Dirham", "United Arab Emirates"),

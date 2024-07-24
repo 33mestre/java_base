@@ -14,6 +14,7 @@
  * distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See
  * the Licenses for the specific language governing permissions and limitations under the Licenses.
  */
+
 package com.shelson.application.controller;
 
 import org.slf4j.Logger;
@@ -26,6 +27,18 @@ import io.swagger.v3.oas.annotations.Hidden;
  * Controller responsible for the application's home page.
  * This controller redirects root application requests to the Swagger UI interface,
  * allowing API exploration.
+ * 
+ * Example usage:
+ * <pre>
+ * {@code
+ * // URL: /
+ * // This will redirect to /swagger-ui.html
+ * }
+ * </pre>
+ * 
+ * @author Shelson Ferrari
+ * @version 0.6.3
+ * @since 2024-07-24
  */
 @Controller
 @Hidden // Ignores this controller in Swagger documentation

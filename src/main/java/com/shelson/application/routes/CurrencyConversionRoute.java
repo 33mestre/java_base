@@ -32,6 +32,17 @@ import org.slf4j.LoggerFactory;
  * Camel route for handling currency conversion requests.
  * This route takes the source currency, target currency, and amount as headers,
  * processes the conversion using the {@link CurrencyConversionService}, and returns the conversion details.
+ * 
+ * @version 0.6.3
+ * @since 2024-07-24
+ * 
+ * @author Shelson Ferrari
+ * 
+ * @see com.shelson.application.dto.CurrencyConversionDTO
+ * @see com.shelson.application.service.CurrencyConversionService
+ * @see com.shelson.application.processors.ExchangeRateProcessor
+ * @see org.apache.camel.ProducerTemplate
+ * @see com.shelson.domain.model.Currency
  */
 @Component
 public class CurrencyConversionRoute extends RouteBuilder {

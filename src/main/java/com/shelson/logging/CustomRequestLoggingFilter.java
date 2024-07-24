@@ -36,6 +36,19 @@ import org.slf4j.LoggerFactory;
  * including the request method, URI, protocol, response status, timestamp, user agent,
  * and the duration of the request processing. It is useful for monitoring and debugging purposes.
  * </p>
+ * 
+ * @version 0.6.3
+ * @since 2024-07-24
+ * 
+ * @author Shelson Ferrari
+ * 
+ * @see jakarta.servlet.FilterChain
+ * @see jakarta.servlet.FilterConfig
+ * @see jakarta.servlet.http.HttpFilter
+ * @see jakarta.servlet.http.HttpServletRequest
+ * @see jakarta.servlet.http.HttpServletResponse
+ * @see org.slf4j.Logger
+ * @see org.slf4j.LoggerFactory
  */
 public class CustomRequestLoggingFilter extends HttpFilter {
 

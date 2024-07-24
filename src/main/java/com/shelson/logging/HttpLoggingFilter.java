@@ -32,6 +32,19 @@ import org.slf4j.LoggerFactory;
  * HTTP filter for logging details of HTTP requests and responses.
  * This filter intercepts all HTTP requests, logging information such as the HTTP method,
  * destination URI, protocol, response status, user agent, and processing time.
+ * 
+ * @version 0.6.3
+ * @since 2024-07-24
+ * 
+ * @author Shelson Ferrari
+ * 
+ * @see jakarta.servlet.FilterChain
+ * @see jakarta.servlet.FilterConfig
+ * @see jakarta.servlet.http.HttpFilter
+ * @see jakarta.servlet.http.HttpServletRequest
+ * @see jakarta.servlet.http.HttpServletResponse
+ * @see org.slf4j.Logger
+ * @see org.slf4j.LoggerFactory
  */
 public class HttpLoggingFilter extends HttpFilter {
 

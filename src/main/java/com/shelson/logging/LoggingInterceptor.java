@@ -29,6 +29,18 @@ import java.util.Enumeration;
 /**
  * Interceptor for logging HTTP request details.
  * This interceptor logs the details of the request before, during, and after the handler processing.
+ * 
+ * @version 0.6.3
+ * @since 2024-07-24
+ * 
+ * @author Shelson Ferrari
+ * 
+ * @see org.springframework.web.servlet.HandlerInterceptor
+ * @see org.springframework.web.servlet.ModelAndView
+ * @see jakarta.servlet.http.HttpServletRequest
+ * @see jakarta.servlet.http.HttpServletResponse
+ * @see org.slf4j.Logger
+ * @see org.slf4j.LoggerFactory
  */
 @Component
 public class LoggingInterceptor implements HandlerInterceptor {
