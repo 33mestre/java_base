@@ -1,45 +1,46 @@
 ## src
   * main
     * java
-          * [ShelsonApplication](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/ShelsonApplication.java)
+        * config
+            * [CamelConfig](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/config/CamelConfig.java)
+            * [MethodValidationConfig](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/config/MethodValidationConfig.java)
+            * [SharedConfig](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/config/SharedConfig.java)
+            * [ProducerConfig](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/config/ProducerConfig.java)
         * infrastructure
           * config
-              * [SecurityConfig](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/infrastructure/config/SecurityConfig.java)
               * [WebConfig](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/infrastructure/config/WebConfig.java)
-              * [RestTemplateConfig](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/infrastructure/config/RestTemplateConfig.java)
               * [SwaggerConfig](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/infrastructure/config/SwaggerConfig.java)
+              * [SecurityConfig](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/infrastructure/config/SecurityConfig.java)
+              * [RestTemplateConfig](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/infrastructure/config/RestTemplateConfig.java)
           * exception
+              * [RestExceptionHandler](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/infrastructure/exception/RestExceptionHandler.java)
               * [BusinessException](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/infrastructure/exception/BusinessException.java)
               * [ResourceNotFoundException](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/infrastructure/exception/ResourceNotFoundException.java)
-        * logging
-            * [HttpLoggingFilter](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/logging/HttpLoggingFilter.java)
-            * [LoggingInterceptor](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/logging/LoggingInterceptor.java)
-            * [CustomRequestLoggingFilter](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/logging/CustomRequestLoggingFilter.java)
+          * [ShelsonApplication](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/ShelsonApplication.java)
         * application
           * controller
-              * [CurrencyConversionController](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/application/controller/CurrencyConversionController.java)
               * [HomeController](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/application/controller/HomeController.java)
+              * [CurrencyConversionController](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/application/controller/CurrencyConversionController.java)
               * [SwaggerRedirectController](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/application/controller/SwaggerRedirectController.java)
-          * dto
-              * [CurrencyConversionDTO](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/application/dto/CurrencyConversionDTO.java)
-          * routes
-              * [CurrencyConversionRoute](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/application/routes/CurrencyConversionRoute.java)
           * service
               * [CurrencyConversionService](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/application/service/CurrencyConversionService.java)
               * [CurrencyConversionServiceApiResponse](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/application/service/CurrencyConversionServiceApiResponse.java)
           * processors
               * [ExchangeRateProcessor](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/application/processors/ExchangeRateProcessor.java)
-        * config
-            * [SharedConfig](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/config/SharedConfig.java)
-            * [MethodValidationConfig](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/config/MethodValidationConfig.java)
-            * [ProducerConfig](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/config/ProducerConfig.java)
-            * [CamelConfig](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/config/CamelConfig.java)
+          * dto
+              * [CurrencyConversionDTO](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/application/dto/CurrencyConversionDTO.java)
+          * routes
+              * [CurrencyConversionRoute](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/application/routes/CurrencyConversionRoute.java)
         * domain
-          * repository
-              * [CurrencyConversionRepository](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/domain/repository/CurrencyConversionRepository.java)
           * model
               * [Currency](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/domain/model/Currency.java)
               * [CurrencyConversion](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/domain/model/CurrencyConversion.java)
+          * repository
+              * [CurrencyConversionRepository](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/domain/repository/CurrencyConversionRepository.java)
+        * logging
+            * [HttpLoggingFilter](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/logging/HttpLoggingFilter.java)
+            * [CustomRequestLoggingFilter](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/logging/CustomRequestLoggingFilter.java)
+            * [LoggingInterceptor](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/logging/LoggingInterceptor.java)
         * console
             * [CurrencyConverterConsoleApp](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/console/CurrencyConverterConsoleApp.java)
 
@@ -48,35 +49,35 @@
 
 ## Package Documentation
 
+- [com.shelson.config](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/com/shelson/config)
+This package contains the configuration classes for the application. It includes configuration for Camel routes, shared application settings, and any other necessary configurations.
+
 - [com.shelson.infrastructure.config](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/com/shelson/infrastructure/config)
 This package contains the configuration settings for the application infrastructure.
 
 - [com.shelson.infrastructure.exception](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/com/shelson/infrastructure/exception)
 This package contains the exception classes for the application infrastructure.
 
-- [com.shelson.logging](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/com/shelson/logging)
-This package contains classes related to logging in the application.
-
 - [com.shelson.application.controller](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/com/shelson/application/controller)
 This package contains the REST controllers for the application.  <p> Controllers are responsible for receiving HTTP requests, processing those requests, and returning HTTP responses. </p>
+
+- [com.shelson.application.service](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/com/shelson/application/service)
+This package contains the services of the application, responsible for business logic.
 
 - [com.shelson.application.dto](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/com/shelson/application/dto)
 This package contains the Data Transfer Objects (DTOs) used to transfer data between the layers of the application.
 
 - [com.shelson.application.routes](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/com/shelson/application/routes)
-This package contains Camel routes for the currency conversion application. The routes handle incoming requests for currency conversion, process them using the CurrencyConversionService, and return the conversion results.  <p> The main route in this package is {@link com.shelson.application.routes.CurrencyConversionRoute}, which processes the conversion by extracting headers from the request, validating them, and invoking the service to perform the conversion. </p>  @since 1.0 @version 1.0
+This package contains Camel routes for the currency conversion application. The routes handle incoming requests for currency conversion, process them using the CurrencyConversionService, and return the conversion results.  <p> The main route in this package is {@link com.shelson.application.routes.CurrencyConversionRoute}, which processes the conversion by extracting headers from the request, validating them, and invoking the service to perform the conversion. </p>
 
-- [com.shelson.application.service](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/com/shelson/application/service)
-This package contains the services of the application, responsible for business logic.
-
-- [com.shelson.config](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/com/shelson/config)
-This package contains the configuration classes for the application. It includes configuration for Camel routes, shared application settings, and any other necessary configurations.
+- [com.shelson.domain.model](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/com/shelson/domain/model)
+This package contains the domain model classes of the application.
 
 - [com.shelson.domain.repository](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/com/shelson/domain/repository)
 This package contains the repositories for the application, responsible for communication with the database.
 
-- [com.shelson.domain.model](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/com/shelson/domain/model)
-This package contains the domain model classes of the application.
+- [com.shelson.logging](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/com/shelson/logging)
+This package contains classes related to logging in the application.
 
 - [com.shelson.console](https://github.com/33mestre/java_base/tree/master/src/main/java/com/shelson/com/shelson/console)
 This package contains the console application for currency conversion.
