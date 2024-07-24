@@ -1,32 +1,16 @@
-/*
- * Copyright (c) 2024, Shelson Ferrari
- *
- * Licensed under the MIT License and the Apache License, Version 2.0 (the "Licenses"); you may not use this file except in
- * compliance with the Licenses. You may obtain a copy of the Licenses at
- *
- * MIT License:
- * https://opensource.org/licenses/MIT
- *
- * Apache License, Version 2.0:
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software distributed under the Licenses is
- * distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See
- * the Licenses for the specific language governing permissions and limitations under the Licenses.
- */
 package com.shelson.application.service;
 
 import java.time.LocalDateTime;
 import java.util.Map;
 
+import org.apache.camel.ProducerTemplate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.HttpClientErrorException;
-import org.springframework.web.client.HttpServerErrorException;
-import org.springframework.web.client.RestTemplate;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.shelson.application.dto.CurrencyConversionDTO;
 import com.shelson.domain.model.Currency;
 import com.shelson.domain.model.CurrencyConversion;
@@ -35,89 +19,70 @@ import com.shelson.infrastructure.exception.BusinessException;
 import com.shelson.infrastructure.exception.ResourceNotFoundException;
 
 /**
- * Service responsible for currency conversion operations.
+ * Service class for handling currency conversion operations.
+ * This class uses a Camel route to fetch the latest exchange rates and performs
+ * conversions between different currencies.
  */
 @Service
 public class CurrencyConversionService {
 
     @Autowired
-    private RestTemplate restTemplate;
+    private ProducerTemplate producerTemplate;
 
     @Autowired
     private CurrencyConversionRepository repository;
-    
+
     private static final Logger logger = LoggerFactory.getLogger(CurrencyConversionService.class);
 
+    private final ObjectMapper objectMapper = new ObjectMapper();
+
     /**
-     * Converts an amount from a source currency to a target currency.
+     * Converts the given amount from the source currency to the target currency.
      *
-     * @param sourceCurrency The source currency.
-     * @param targetCurrency The target currency.
+     * @param sourceCurrency The source {@link Currency} to convert from.
+     * @param targetCurrency The target {@link Currency} to convert to.
      * @param amount The amount to be converted.
      * @return A {@link CurrencyConversionDTO} containing the conversion details.
-     * @throws BusinessException if the source or target currency is null, or if the amount is less than or equal to zero.
-     * @throws ResourceNotFoundException if an error occurs when fetching exchange rates from the API, or if the target currency is invalid.
+     * @throws BusinessException if sourceCurrency or targetCurrency is null, or if the amount is less than or equal to zero.
+     * @throws ResourceNotFoundException if an error occurs while fetching the exchange rates.
      */
-    public CurrencyConversionDTO convertCurrency(Currency sourceCurrency, Currency targetCurrency, double amount) throws BusinessException {
+    public CurrencyConversionDTO convertCurrency(Currency sourceCurrency, Currency targetCurrency, double amount) {
+        logger.info("Starting currency conversion: source={}, target={}, amount={}", sourceCurrency, targetCurrency, amount);
+
         if (sourceCurrency == null || targetCurrency == null) {
+            logger.error("Source or target currency is null");
             throw new BusinessException("Source and target currencies must not be null");
         }
-
         if (amount <= 0) {
+            logger.error("Invalid amount: {}", amount);
             throw new BusinessException("Amount must be greater than zero");
         }
 
-        logger.info("Starting currency conversion from {} to {}", sourceCurrency, targetCurrency);
-
-        String apiUrl = "https://api.exchangerate-api.com/v4/latest/" + sourceCurrency.getCode();
-        ApiResponse response;
+        Map<String, Double> rates = null;
         try {
-            response = restTemplate.getForObject(apiUrl, ApiResponse.class);
-        } catch (HttpClientErrorException | HttpServerErrorException ex) {
+            Object response = producerTemplate.requestBodyAndHeader("direct:fetchRate", null, "sourceCurrency", sourceCurrency.getCode());
+            if (response != null) {
+                rates = objectMapper.convertValue(response, new TypeReference<Map<String, Double>>() {});
+                logger.info("Fetched exchange rates: {}", rates);
+            }
+        } catch (Exception ex) {
+            logger.error("Error fetching exchange rates from API: {}", ex.getMessage());
             throw new ResourceNotFoundException("Error fetching exchange rates from API: " + ex.getMessage());
         }
 
-        if (response == null || response.getRates() == null) {
-            throw new ResourceNotFoundException("Unable to fetch exchange rates from API");
+        if (rates == null || !rates.containsKey(targetCurrency.getCode())) {
+            logger.error("Invalid or missing target currency rate: {}", targetCurrency);
+            throw new BusinessException("Invalid or missing target currency rate");
         }
 
-        Double rate = response.getRates().get(targetCurrency.getCode());
-
-        if (rate == null) {
-            throw new ResourceNotFoundException("Invalid target currency");
-        }
-
+        Double rate = rates.get(targetCurrency.getCode());
         double convertedAmount = amount * rate;
         CurrencyConversion conversion = new CurrencyConversion(sourceCurrency, targetCurrency, rate, LocalDateTime.now());
         repository.save(conversion);
+        logger.info("Currency conversion saved: {}", conversion);
 
-        logger.info("Conversion completed successfully");
-
-        return new CurrencyConversionDTO(sourceCurrency, targetCurrency, rate, LocalDateTime.now(), amount, convertedAmount);
-    }
-
-    /**
-     * Inner class representing the exchange rates API response.
-     */
-    public static class ApiResponse {
-        private Map<String, Double> rates;
-
-        /**
-         * Gets the exchange rates.
-         * 
-         * @return A map where the keys are currency codes and the values are exchange rates.
-         */
-        public Map<String, Double> getRates() {
-            return rates;
-        }
-
-        /**
-         * Sets the exchange rates.
-         * 
-         * @param rates A map where the keys are currency codes and the values are exchange rates.
-         */
-        public void setRates(Map<String, Double> rates) {
-            this.rates = rates;
-        }
+        CurrencyConversionDTO result = new CurrencyConversionDTO(sourceCurrency, targetCurrency, rate, LocalDateTime.now(), amount, convertedAmount);
+        logger.info("Conversion result: {}", result);
+        return result;
     }
 }

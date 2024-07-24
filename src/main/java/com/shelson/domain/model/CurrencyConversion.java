@@ -16,8 +16,21 @@
  */
 package com.shelson.domain.model;
 
-import jakarta.persistence.*;
 import java.time.LocalDateTime;
+
+import org.apache.commons.lang3.builder.EqualsBuilder;
+import org.apache.commons.lang3.builder.HashCodeBuilder;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 /**
  * Entity that represents a currency conversion.
@@ -162,14 +175,14 @@ public class CurrencyConversion {
      */
     @Override
     public String toString() {
-        return "CurrencyConversion{" +
-                "id=" + id +
-                ", sourceCurrency=" + sourceCurrency +
-                ", targetCurrency=" + targetCurrency +
-                ", conversionRate=" + conversionRate +
-                ", queryDate=" + queryDate +
-                '}';
-    }
+      return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
+              .append("id", id)
+              .append("sourceCurrency", sourceCurrency)
+              .append("targetCurrency", targetCurrency)
+              .append("conversionRate", conversionRate)
+              .append("queryDate", queryDate)
+              .toString();
+  }
 
     /**
      * Checks if two instances of CurrencyConversion are equal.
@@ -179,17 +192,19 @@ public class CurrencyConversion {
      */
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+      if (this == o) return true;
+      if (o == null || getClass() != o.getClass()) return false;
 
-        CurrencyConversion that = (CurrencyConversion) o;
+      CurrencyConversion that = (CurrencyConversion) o;
 
-        if (Double.compare(that.conversionRate, conversionRate) != 0) return false;
-        if (!id.equals(that.id)) return false;
-        if (!sourceCurrency.equals(that.sourceCurrency)) return false;
-        if (!targetCurrency.equals(that.targetCurrency)) return false;
-        return queryDate.equals(that.queryDate);
-    }
+      return new EqualsBuilder()
+              .append(conversionRate, that.conversionRate)
+              .append(id, that.id)
+              .append(sourceCurrency, that.sourceCurrency)
+              .append(targetCurrency, that.targetCurrency)
+              .append(queryDate, that.queryDate)
+              .isEquals();
+  }
 
     /**
      * Computes the hash code of the instance.
@@ -198,14 +213,12 @@ public class CurrencyConversion {
      */
     @Override
     public int hashCode() {
-        int result;
-        long temp;
-        result = id.hashCode();
-        result = 31 * result + sourceCurrency.hashCode();
-        result = 31 * result + targetCurrency.hashCode();
-        temp = Double.doubleToLongBits(conversionRate);
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
-        result = 31 * result + queryDate.hashCode();
-        return result;
-    }
+      return new HashCodeBuilder(17, 37)
+              .append(id)
+              .append(sourceCurrency)
+              .append(targetCurrency)
+              .append(conversionRate)
+              .append(queryDate)
+              .toHashCode();
+  }
 }

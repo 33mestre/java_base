@@ -14,12 +14,12 @@
  * distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See
  * the Licenses for the specific language governing permissions and limitations under the Licenses.
  */
+
 package com.shelson.application.service;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
@@ -28,6 +28,8 @@ import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.apache.camel.ProducerTemplate;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -35,8 +37,6 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.web.client.HttpClientErrorException;
-import org.springframework.web.client.RestTemplate;
 
 import com.shelson.application.dto.CurrencyConversionDTO;
 import com.shelson.domain.model.Currency;
@@ -46,15 +46,13 @@ import com.shelson.infrastructure.exception.BusinessException;
 import com.shelson.infrastructure.exception.ResourceNotFoundException;
 
 /**
- * Testes para a classe {@link CurrencyConversionService}.
+ * Tests for {@link CurrencyConversionService}.
  */
 @ExtendWith(MockitoExtension.class)
 public class CurrencyConversionServiceTest {
 
-    private static final Logger logger = LoggerFactory.getLogger(CurrencyConversionServiceTest.class);
-
     @Mock
-    private RestTemplate restTemplate;
+    private ProducerTemplate producerTemplate;
 
     @Mock
     private CurrencyConversionRepository repository;
@@ -62,13 +60,20 @@ public class CurrencyConversionServiceTest {
     @InjectMocks
     private CurrencyConversionService service;
 
+    private static final Logger logger = LoggerFactory.getLogger(CurrencyConversionServiceTest.class);
+
+    @BeforeEach
+    public void setUp() {
+        logger.info("Setting up mocks for tests");
+    }
+
     /**
-     * Testa a conversão de moeda com dados válidos.
-     * @throws BusinessException 
-     */ 
+     * Tests currency conversion with valid data.
+     * @throws BusinessException if a business error occurs
+     */
     @Test
     public void testConvertCurrency() throws BusinessException {
-        logger.info("Iniciando teste para conversão de moeda com dados válidos");
+        logger.info("Starting test for valid currency conversion");
 
         // Mock data
         Currency source = Currency.USD;
@@ -78,21 +83,18 @@ public class CurrencyConversionServiceTest {
         LocalDateTime now = LocalDateTime.now();
 
         // Mock response from API
-        CurrencyConversionService.ApiResponse mockResponse = new CurrencyConversionService.ApiResponse();
         Map<String, Double> rates = new HashMap<>();
         rates.put(target.getCode(), rate);
-        mockResponse.setRates(rates);
-        when(restTemplate.getForObject(anyString(), eq(CurrencyConversionService.ApiResponse.class))).thenReturn(mockResponse);
-        logger.debug("Mock response from API: {}", mockResponse);
+        when(producerTemplate.requestBodyAndHeader(eq("direct:fetchRate"), eq(null), eq("sourceCurrency"), eq(source.getCode())))
+            .thenReturn(rates);
 
         // Mock saving to repository
         CurrencyConversion savedConversion = new CurrencyConversion(source, target, rate, now);
         when(repository.save(any(CurrencyConversion.class))).thenReturn(savedConversion);
-        logger.debug("Mock saving to repository: {}", savedConversion);
 
         // Perform the service method call
         CurrencyConversionDTO resultDTO = service.convertCurrency(source, target, amount);
-        logger.info("Resultado da conversão: {}", resultDTO);
+        logger.info("Conversion result: {}", resultDTO);
 
         // Assert results
         assertThat(resultDTO.getSourceCurrency()).isEqualTo(source);
@@ -103,60 +105,60 @@ public class CurrencyConversionServiceTest {
         LocalDateTime expectedQueryDate = now.withNano(0);
         LocalDateTime actualQueryDate = resultDTO.getQueryDate().withNano(0);
         assertThat(actualQueryDate).isEqualTo(expectedQueryDate);
-        
+
         // Verify repository method was called
         verify(repository).save(any(CurrencyConversion.class));
-        logger.info("Teste para conversão de moeda com dados válidos concluído com sucesso");
+        logger.info("Test for valid currency conversion completed successfully");
     }
 
     /**
-     * Testa a conversão de moeda com uma moeda de origem nula.
+     * Tests currency conversion with null source currency.
      */
     @Test
     public void testConvertCurrencyWithNullSource() {
-        logger.info("Iniciando teste para conversão de moeda com moeda de origem nula");
+        logger.info("Starting test for currency conversion with null source");
         assertThatThrownBy(() -> service.convertCurrency(null, Currency.EUR, 100.0))
             .isInstanceOf(BusinessException.class)
             .hasMessageContaining("Source and target currencies must not be null");
-        logger.info("Teste para conversão de moeda com moeda de origem nula concluído");
+        logger.info("Test for currency conversion with null source completed");
     }
 
     /**
-     * Testa a conversão de moeda com uma moeda de destino nula.
+     * Tests currency conversion with null target currency.
      */
     @Test
     public void testConvertCurrencyWithNullTarget() {
-        logger.info("Iniciando teste para conversão de moeda com moeda de destino nula");
+        logger.info("Starting test for currency conversion with null target");
         assertThatThrownBy(() -> service.convertCurrency(Currency.USD, null, 100.0))
             .isInstanceOf(BusinessException.class)
             .hasMessageContaining("Source and target currencies must not be null");
-        logger.info("Teste para conversão de moeda com moeda de destino nula concluído");
+        logger.info("Test for currency conversion with null target completed");
     }
 
     /**
-     * Testa a conversão de moeda com uma moeda inválida.
+     * Tests currency conversion with an invalid currency.
      */
     @Test
     public void testConvertCurrencyWithInvalidCurrency() {
-        logger.info("Iniciando teste para conversão de moeda com moeda inválida");
+        logger.info("Starting test for currency conversion with invalid currency");
         assertThatThrownBy(() -> service.convertCurrency(Currency.USD, Currency.valueOf("INVALID"), 100.0))
             .isInstanceOf(IllegalArgumentException.class)
             .hasMessageContaining("No enum constant com.shelson.domain.model.Currency.INVALID");
-        logger.info("Teste para conversão de moeda com moeda inválida concluído");
+        logger.info("Test for currency conversion with invalid currency completed");
     }
 
     /**
-     * Testa a conversão de moeda com um erro da API.
+     * Tests currency conversion with an API error.
      */
     @Test
     public void testConvertCurrencyWithApiError() {
-        logger.info("Iniciando teste para conversão de moeda com erro da API");
-        when(restTemplate.getForObject(anyString(), eq(CurrencyConversionService.ApiResponse.class)))
-            .thenThrow(HttpClientErrorException.class);
+        logger.info("Starting test for currency conversion with API error");
+        when(producerTemplate.requestBodyAndHeader(eq("direct:fetchRate"), eq(null), eq("sourceCurrency"), eq(Currency.USD.getCode())))
+            .thenThrow(RuntimeException.class);
 
         assertThatThrownBy(() -> service.convertCurrency(Currency.USD, Currency.EUR, 100.0))
             .isInstanceOf(ResourceNotFoundException.class)
             .hasMessageContaining("Error fetching exchange rates from API");
-        logger.info("Teste para conversão de moeda com erro da API concluído");
+        logger.info("Test for currency conversion with API error completed");
     }
 }

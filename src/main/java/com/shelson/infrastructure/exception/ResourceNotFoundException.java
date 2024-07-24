@@ -21,6 +21,11 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 /**
  * Exception thrown when a requested resource is not found.
+ * <p>
+ * This exception is used to indicate that a specific resource was not found.
+ * It is annotated with {@link ResponseStatus} to return a 404 Not Found HTTP status
+ * code when the exception is thrown.
+ * </p>
  */
 @ResponseStatus(code = HttpStatus.NOT_FOUND)
 public class ResourceNotFoundException extends RuntimeException {

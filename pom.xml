@@ -43,7 +43,7 @@ Configures:
     <!-- Project version -->
 
     <packaging>jar</packaging>
-     <!-- Packaging type -->
+    <!-- Packaging type -->
 
     <!-- Additional project information -->
     <name>java_base</name> <!-- Project name -->
@@ -62,36 +62,52 @@ Configures:
     <properties>
         <!-- Defining a single property for the Java version -->
         <java.version>17</java.version>
-    
+
         <!-- Using java.version property to define compile and run versions -->
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
-    
+
         <!-- Other general project properties -->
         <project.phase>Development</project.phase>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
-    
+
+
     <!-- Project dependencies -->
     <dependencies>
+
+        <!-- apache commons -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.15.0</version>
+        </dependency>
+
         <!-- Apache Camel dependencies -->
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-http</artifactId>
+            <version>4.0.2</version>
+        </dependency>
         <dependency>
             <groupId>org.apache.camel.springboot</groupId>
             <artifactId>camel-spring-boot-starter</artifactId>
-            <version>4.0.0</version> <!-- ou a versão mais recente -->
+            <version>4.0.2</version>
         </dependency>
         <dependency>
             <groupId>org.apache.camel.springboot</groupId>
             <artifactId>camel-servlet-starter</artifactId>
-            <version>4.0.0</version> <!-- ou a versão mais recente -->
+            <version>4.0.2</version>
         </dependency>
-        <!-- springdoc dependencies -->
+
+        <!-- Springdoc dependencies -->
         <dependency>
             <groupId>org.springdoc</groupId>
             <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-            <version>2.3.0</version> <!-- or the latest compatible version -->
+            <version>2.3.0</version>
         </dependency>
+
         <!-- Spring Boot dependencies -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -101,21 +117,26 @@ Configures:
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
+
         <!-- H2 database dependency -->
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <version>2.1.214</version>
         </dependency>
+
+        <!-- OpenAPI documentation dependency -->
         <dependency>
             <groupId>org.springdoc</groupId>
             <artifactId>springdoc-openapi-ui</artifactId>
-            <version>1.8.0</version> <!-- OpenAPI documentation dependency -->
+            <version>1.8.0</version>
         </dependency>
+
+        <!-- Spring Boot testing dependency -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope> <!-- Spring Boot testing dependency -->
+            <scope>test</scope>
             <exclusions>
                 <exclusion>
                     <groupId>org.junit.vintage</groupId>
@@ -123,10 +144,13 @@ Configures:
                 </exclusion>
             </exclusions>
         </dependency>
+
+        <!-- Spring Security -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
+
         <!-- Testing dependencies -->
         <dependency>
             <groupId>org.mockito</groupId>
@@ -153,16 +177,20 @@ Configures:
             <artifactId>assertj-core</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!-- Hibernate Validator -->
         <dependency>
             <groupId>org.hibernate.validator</groupId>
             <artifactId>hibernate-validator</artifactId>
         </dependency>
+
         <!-- JSON handling dependency -->
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
             <version>20231013</version>
         </dependency>
+
         <!-- FlatLaf (Look and Feel) dependency -->
         <dependency>
             <groupId>com.formdev</groupId>
@@ -170,6 +198,7 @@ Configures:
             <version>2.1</version>
         </dependency>
 
+        <!-- JAXB dependencies -->
         <dependency>
             <groupId>javax.xml.bind</groupId>
             <artifactId>jaxb-api</artifactId>
@@ -181,6 +210,7 @@ Configures:
             <version>2.3.1</version>
         </dependency>
 
+        <!-- Swagger dependencies -->
         <dependency>
             <groupId>io.swagger</groupId>
             <artifactId>swagger-annotations</artifactId>
@@ -191,7 +221,6 @@ Configures:
             <artifactId>swagger-models</artifactId>
             <version>1.5.21</version>
         </dependency>
-        
     </dependencies>
 
     <!-- Build configuration -->
@@ -243,10 +272,10 @@ Configures:
                                     <name>Shelson Ferrari</name>
                                     <url>https://about.me/shelson</url>
                                 </contact>
-                                    <license>
-                                        <url>https://github.com/33mestre/java_base/blob/master/LICENSES</url>
-                                        <name>Dual Licence - MIT License and Apache License 2.0</name>
-                                    </license>
+                                <license>
+                                    <url>https://github.com/33mestre/java_base/blob/master/LICENSES</url>
+                                    <name>Dual Licence - MIT License and Apache License 2.0</name>
+                                </license>
                             </info>
                             <outputFormats>json,yaml</outputFormats>
                             <outputPath>sys/swagger</outputPath>
@@ -261,7 +290,7 @@ Configures:
                     </apiSources>
                 </configuration>
             </plugin>
-            
+
             <!-- Plugin for reading .env file -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -292,7 +321,8 @@ Configures:
                 <artifactId>maven-checkstyle-plugin</artifactId>
                 <version>3.1.0</version>
                 <configuration>
-                    <configLocation>src/main/resources/checkstyle.xml</configLocation> <!-- Location of Checkstyle configuration file -->
+                    <configLocation>src/main/resources/checkstyle.xml</configLocation> <!-- Location
+                    of Checkstyle configuration file -->
                     <encoding>UTF-8</encoding>
                     <consoleOutput>true</consoleOutput> <!-- Console output -->
                     <failsOnError>true</failsOnError> <!-- Fail on errors -->
@@ -391,7 +421,8 @@ Configures:
                                 </goals>
                                 <configuration>
                                     <target>
-                                        <delete dir="src/main/java/com/shelson/swing" /> <!-- Example of using Ant to delete a directory -->
+                                        <delete dir="src/main/java/com/shelson/swing" /> <!-- Example
+                                        of using Ant to delete a directory -->
                                     </target>
                                 </configuration>
                             </execution>

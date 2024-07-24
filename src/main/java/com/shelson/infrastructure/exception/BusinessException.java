@@ -21,11 +21,21 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 /**
  * Custom exception for business errors.
+ * <p>
+ * This exception is thrown when a business logic error occurs in the application.
+ * It is annotated with {@link ResponseStatus} to return a 400 Bad Request HTTP status
+ * code when the exception is thrown.
+ * </p>
  */
 @ResponseStatus(code = HttpStatus.BAD_REQUEST)
 public class BusinessException extends RuntimeException {
     private static final long serialVersionUID = 1L;
 
+    /**
+     * Constructs a new BusinessException with the specified detail message.
+     *
+     * @param message the detail message
+     */
     public BusinessException(String message) {
         super(message);
     }

@@ -31,6 +31,11 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Custom filter to log details of HTTP requests.
+ * <p>
+ * This filter logs various details about each HTTP request and response,
+ * including the request method, URI, protocol, response status, timestamp, user agent,
+ * and the duration of the request processing. It is useful for monitoring and debugging purposes.
+ * </p>
  */
 public class CustomRequestLoggingFilter extends HttpFilter {
 
@@ -39,6 +44,11 @@ public class CustomRequestLoggingFilter extends HttpFilter {
 
     /**
      * Initializes the filter.
+     * <p>
+     * This method is called by the servlet container to indicate to the filter that it is being
+     * placed into service. The filter configuration object provides the filter with its
+     * initialization parameters. Here, any necessary setup can be done.
+     * </p>
      *
      * @param filterConfig The filter configuration.
      * @throws ServletException If an error occurs during initialization.
@@ -51,6 +61,11 @@ public class CustomRequestLoggingFilter extends HttpFilter {
 
     /**
      * Executes the filter, logging details of the HTTP request and response.
+     * <p>
+     * This method performs the actual logging. It captures the start time of the request,
+     * allows the request to proceed through the filter chain, then logs the request details,
+     * response status, and the time taken to process the request.
+     * </p>
      *
      * @param request  The HttpServletRequest object that contains the client request.
      * @param response The HttpServletResponse object that contains the server response.
@@ -94,6 +109,10 @@ public class CustomRequestLoggingFilter extends HttpFilter {
 
     /**
      * Destroys the filter, performing necessary cleanup.
+     * <p>
+     * This method is called by the servlet container to indicate to the filter that it is being
+     * taken out of service. Here, any necessary cleanup can be done.
+     * </p>
      */
     @Override
     public void destroy() {

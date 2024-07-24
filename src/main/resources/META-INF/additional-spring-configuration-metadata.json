@@ -1,0 +1,199 @@
+{
+  "properties": [
+    {
+      "name": "project.name",
+      "type": "java.lang.String",
+      "description": "A description for 'project.name'"
+    },
+    {
+      "name": "project.description",
+      "type": "java.lang.String",
+      "description": "A description for 'project.description'"
+    },
+    {
+      "name": "project.phase",
+      "type": "java.lang.String",
+      "description": "The current phase of the project"
+    },
+    {
+      "name": "spring.banner.location",
+      "type": "java.lang.String",
+      "description": "Defines the location of the custom banner file"
+    },
+    {
+      "name": "spring.banner.variable.app_version",
+      "type": "java.lang.String",
+      "description": "Defines a banner variable for the application version"
+    },
+    {
+      "name": "spring.datasource.url",
+      "type": "java.lang.String",
+      "description": "URL of the H2 datasource"
+    },
+    {
+      "name": "spring.datasource.driverClassName",
+      "type": "java.lang.String",
+      "description": "Driver class name for H2 datasource"
+    },
+    {
+      "name": "spring.datasource.username",
+      "type": "java.lang.String",
+      "description": "Username for the H2 datasource"
+    },
+    {
+      "name": "spring.datasource.password",
+      "type": "java.lang.String",
+      "description": "Password for the H2 datasource"
+    },
+    {
+      "name": "spring.h2.console.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Enables the H2 console"
+    },
+    {
+      "name": "spring.h2.console.path",
+      "type": "java.lang.String",
+      "description": "Path for the H2 console"
+    },
+    {
+      "name": "spring.h2.console.settings.web-allow-others",
+      "type": "java.lang.Boolean",
+      "description": "Allows access to the H2 console from other hosts"
+    },
+    {
+      "name": "spring.jpa.database-platform",
+      "type": "java.lang.String",
+      "description": "JPA/Hibernate database platform"
+    },
+    {
+      "name": "spring.jpa.hibernate.ddl-auto",
+      "type": "java.lang.String",
+      "description": "Hibernate DDL auto configuration"
+    },
+    {
+      "name": "spring.jpa.show-sql",
+      "type": "java.lang.Boolean",
+      "description": "Shows SQL statements in the log"
+    },
+    {
+      "name": "spring.jpa.properties.hibernate.format_sql",
+      "type": "java.lang.Boolean",
+      "description": "Formats SQL statements in the log"
+    },
+    {
+      "name": "logging.level.org.hibernate.SQL",
+      "type": "java.lang.String",
+      "description": "Logging level for Hibernate SQL"
+    },
+    {
+      "name": "logging.level.org.hibernate.type.descriptor.sql.BasicBinder",
+      "type": "java.lang.String",
+      "description": "Logging level for Hibernate SQL parameter binding"
+    },
+    {
+      "name": "logging.level.org.springframework.web",
+      "type": "java.lang.String",
+      "description": "Logging level for Spring Web"
+    },
+    {
+      "name": "logging.level.org.springframework.boot",
+      "type": "java.lang.String",
+      "description": "Logging level for Spring Boot"
+    },
+    {
+      "name": "logging.level.root",
+      "type": "java.lang.String",
+      "description": "Root logging level"
+    },
+    {
+      "name": "server.port",
+      "type": "java.lang.Integer",
+      "description": "Server port"
+    },
+    {
+      "name": "springdoc.api-docs.path",
+      "type": "java.lang.String",
+      "description": "Path for Springdoc API docs"
+    },
+    {
+      "name": "springdoc.swagger-ui.path",
+      "type": "java.lang.String",
+      "description": "Path for Swagger UI"
+    },
+    {
+      "name": "springdoc.swagger-ui.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Enables Swagger UI"
+    },
+    {
+      "name": "api.title",
+      "type": "java.lang.String",
+      "description": "Title of the API"
+    },
+    {
+      "name": "api.description",
+      "type": "java.lang.String",
+      "description": "Description of the API"
+    },
+    {
+      "name": "api.version",
+      "type": "java.lang.String",
+      "description": "Version of the API"
+    },
+    {
+      "name": "swagger.group",
+      "type": "java.lang.String",
+      "description": "Swagger group name"
+    },
+    {
+      "name": "swagger.packages-to-scan",
+      "type": "java.lang.String",
+      "description": "Packages to scan for Swagger"
+    },
+    {
+      "name": "swagger.paths-to-match",
+      "type": "java.lang.String",
+      "description": "Paths to match for Swagger"
+    },
+    {
+      "name": "camel.springboot.name",
+      "type": "java.lang.String",
+      "description": "Name of the Camel application"
+    },
+    {
+      "name": "camel.springboot.main-run-controller",
+      "type": "java.lang.Boolean",
+      "description": "Controls if Camel's main run controller is enabled"
+    },
+    {
+      "name": "camel.springboot.java-routes-include-pattern",
+      "type": "java.lang.String",
+      "description": "Pattern for including Java routes"
+    },
+    {
+      "name": "camel.springboot.auto-startup",
+      "type": "java.lang.Boolean",
+      "description": "Automatically starts Camel context"
+    },
+    {
+      "name": "logging.level.org.apache.camel",
+      "type": "java.lang.String",
+      "description": "Logging level for Apache Camel"
+    },
+    {
+      "name": "logging.level.org.apache.camel.impl",
+      "type": "java.lang.String",
+      "description": "Logging level for Camel implementation"
+    },
+    {
+      "name": "logging.level.org.apache.camel.spring.boot",
+      "type": "java.lang.String",
+      "description": "Logging level for Camel Spring Boot integration"
+    },
+    {
+      "name": "currency.conversion.url",
+      "type": "java.lang.String",
+      "description": "URL for currency conversion API"
+    }
+  ]
+}

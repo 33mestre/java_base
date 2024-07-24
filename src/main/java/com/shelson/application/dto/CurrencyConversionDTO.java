@@ -10,11 +10,12 @@
  * Apache License, Version 2.0:
  * http://www.apache.org/licenses/LICENSE-2.0
  *
- * Unless required by applicable law or agreed to in writing, software distributed under the Licenses is
- * distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See
- * the Licenses for the specific language governing permissions and limitations under the Licenses.
+ * Unless required by applicable law or agreed to in writing, software distributed under the Licenses é
+ * distribuído em uma base "COMO ESTÁ", SEM GARANTIAS OU CONDIÇÕES DE QUALQUER TIPO, expressas ou implícitas. Veja
+ * os Licenses para a linguagem específica que rege permissões e limitações sob os Licenses.
  */
- package com.shelson.application.dto;
+
+package com.shelson.application.dto;
 
 import java.time.LocalDateTime;
 import jakarta.validation.constraints.NotNull;
@@ -25,6 +26,10 @@ import com.shelson.domain.model.Currency;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import org.apache.commons.lang3.builder.EqualsBuilder;
+import org.apache.commons.lang3.builder.HashCodeBuilder;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 
 /**
  * DTO that represents details about the currency conversion.
@@ -121,14 +126,14 @@ public class CurrencyConversionDTO {
 
     @Override
     public String toString() {
-        return "CurrencyConversionDTO{" +
-                "sourceCurrency=" + sourceCurrency +
-                ", targetCurrency=" + targetCurrency +
-                ", conversionRate=" + conversionRate +
-                ", queryDate=" + queryDate +
-                ", amount=" + amount +
-                ", convertedAmount=" + convertedAmount +
-                '}';
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
+                .append("sourceCurrency", sourceCurrency)
+                .append("targetCurrency", targetCurrency)
+                .append("conversionRate", conversionRate)
+                .append("queryDate", queryDate)
+                .append("amount", amount)
+                .append("convertedAmount", convertedAmount)
+                .toString();
     }
 
     @Override
@@ -138,27 +143,25 @@ public class CurrencyConversionDTO {
 
         CurrencyConversionDTO that = (CurrencyConversionDTO) o;
 
-        if (Double.compare(that.conversionRate, conversionRate) != 0) return false;
-        if (Double.compare(that.amount, amount) != 0) return false;
-        if (Double.compare(that.convertedAmount, convertedAmount) != 0) return false;
-        if (!sourceCurrency.equals(that.sourceCurrency)) return false;
-        if (!targetCurrency.equals(that.targetCurrency)) return false;
-        return queryDate.equals(that.queryDate);
+        return new EqualsBuilder()
+                .append(conversionRate, that.conversionRate)
+                .append(amount, that.amount)
+                .append(convertedAmount, that.convertedAmount)
+                .append(sourceCurrency, that.sourceCurrency)
+                .append(targetCurrency, that.targetCurrency)
+                .append(queryDate, that.queryDate)
+                .isEquals();
     }
 
     @Override
     public int hashCode() {
-        int result;
-        long temp;
-        result = sourceCurrency.hashCode();
-        result = 31 * result + targetCurrency.hashCode();
-        temp = Double.doubleToLongBits(conversionRate);
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
-        result = 31 * result + queryDate.hashCode();
-        temp = Double.doubleToLongBits(amount);
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
-        temp = Double.doubleToLongBits(convertedAmount);
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
-        return result;
+        return new HashCodeBuilder(17, 37)
+                .append(sourceCurrency)
+                .append(targetCurrency)
+                .append(conversionRate)
+                .append(queryDate)
+                .append(amount)
+                .append(convertedAmount)
+                .toHashCode();
     }
 }
