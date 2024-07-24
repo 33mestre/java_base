@@ -1,7 +1,12 @@
 
 # API de ConversÃ£o de Moedas - Registro de AlteraÃ§Ãµes do Projeto
 
-**VersÃ£o atual:** [0.6.1](https://github.com/33mestre/java_base/commit/ff81f65) (Shelson Ferrari) - 24/07/2024 02:05h
+**VersÃ£o atual:** [0.6.2](https://github.com/33mestre/java_base/commit/a614f6c) (Shelson Ferrari) - 24/07/2024 04:14h
+
+---
+
+[0.6.2](https://github.com/33mestre/java_base/commit/a614f6c) - 24/07/2024 04:14h - a614f6c - Shelson Ferrari
+- Refactor and improve Camel integration with better error handling, logging, and documentation
 
 ---
 
