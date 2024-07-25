@@ -2,13 +2,13 @@
 <tr><th width="150" class="avatar">
 <img class="avatar" src="https://avatars.githubusercontent.com/u/5073958?v=4" alt="Shelson Ferrari's GitHub Profile Picture" width="100" height="100"></th>
 <th align="left" class="name"><p>SHELSON FERRARI</p>
-<p class="cert">70+ certificaciones | 23 años de exp.</p>
+<p class="cert">70+ certificaciones <small class="separator">|</small> 23 años de exp.</p>
 <p class="about">47 años — soltero — brasileño — São Paulo, Brasil</p>
 <p class="links">
 <a href="https://www.linkedin.com/in/shelson/">LinkedIn</a> 
-| <a href="https://wa.me/5511916257345">WhatsApp</a>
-| <a href="mailto:shelson@gmail.com">E-mail</a>
-| <a href="https://github.com/33mestre">GitHub</a>
+<small class="separator">|</small> <a href="https://wa.me/5511916257345">WhatsApp</a>
+<small class="separator">|</small> <a href="mailto:shelson@gmail.com">E-mail</a>
+<small class="separator">|</small> <a href="https://github.com/33mestre">GitHub</a>
 </p>
 </th>
 </tr>
@@ -373,7 +373,7 @@ porque todo lo que realmente quiero es escudriñar y orquestar soluciones de neg
 
 <table class="company">
   <tr>
-    <th>Desarrollador Back-End Java / Camunda Sr</th>
+    <th>Desarrollador Back-End<br>Java / Camunda Sr</th>
     <th>NTConsult</th>
     <th>May 2023 – Dec 2023</th>
   </tr>
@@ -571,7 +571,7 @@ porque todo lo que realmente quiero es escudriñar y orquestar soluciones de neg
 
 <table class="company">
   <tr>
-    <th>Desarrollador Back-End Java / Líder Técnico</th>
+    <th>Desarrollador Back-End Java<br>Líder Técnico</th>
     <th>Valemobi</th>
     <th>Apr 2018 – Aug 2018</th>
   </tr>

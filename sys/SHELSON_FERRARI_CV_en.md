@@ -2,13 +2,13 @@
 <tr><th width="150" class="avatar">
 <img class="avatar" src="https://avatars.githubusercontent.com/u/5073958?v=4" alt="Shelson Ferrari's GitHub Profile Picture" width="100" height="100"></th>
 <th align="left" class="name"><p>SHELSON FERRARI</p>
-<p class="cert">70+ certifications | 23 yrs. exp.</p>
+<p class="cert">70+ certifications <small class="separator">|</small> 23 yrs. exp.</p>
 <p class="about">47 yrs — single — Brazilian — São Paulo, Brazil</p>
 <p class="links">
 <a href="https://www.linkedin.com/in/shelson/">LinkedIn</a> 
-| <a href="https://wa.me/5511916257345">WhatsApp</a>
-| <a href="mailto:shelson@gmail.com">Email</a>
-| <a href="https://github.com/33mestre">GitHub</a>
+<small class="separator">|</small> <a href="https://wa.me/5511916257345">WhatsApp</a>
+<small class="separator">|</small> <a href="mailto:shelson@gmail.com">Email</a>
+<small class="separator">|</small> <a href="https://github.com/33mestre">GitHub</a>
 </p>
 </th>
 </tr>
@@ -36,7 +36,7 @@ Because what I really want is to design and orchestrate creative, efficient, and
   </tr>
   <tr>
     <td><strong>Language Proficiency</strong></td>
-    <td>English C1 Level, Spanish B2 and Portuguese Native (mother tongue).</td>
+    <td>English C1 Level, Spanish B2 Level and Portuguese Native (mother tongue).</td>
   </tr>
   <tr>
     <td><strong>Programming Languages</strong></td>
@@ -335,7 +335,7 @@ Because what I really want is to design and orchestrate creative, efficient, and
 
 - **Course**: Electronics.
 - **Period**: 1992 – 1995.
-- **Qualification Awarded**: Technical Course in Electronics;
+- **Qualification Awarded**: Technical Course in Electronics.
 
 ### Language Skills
 
@@ -430,7 +430,7 @@ Because what I really want is to design and orchestrate creative, efficient, and
   - Development: Building reactive web applications and automated testing.
 - **Technologies and Tools**:
   - Languages / Servers: Java 8, JavaScript, Java Spring, Node.js;
-  - OpenAPI: Modeling RESTful Web APIs with Swagger.
+  - OpenAPI: Modeling RESTful Web APIs with Swagger;
   - AWS: EC2, ECS, RDS, S3, SNS, SQS, API Gateway, Lambda, DynamoDB;
   - Databases: DynamoDB, PostgreSQL, Redis.
 
@@ -523,7 +523,7 @@ Because what I really want is to design and orchestrate creative, efficient, and
   - Architecture and programming of computer systems, developing solutions for multi-brand transaction issuance and bank slips;
   - Project management as a technical leader, collaborating with other leaders and partners;
   - Development and migration of service components, optimizing stored procedures in the database;
-  - Ensuring efficient processing of financial transactions with a focus on security and compliance with banking requirements;
+  - Ensuring efficient processing of financial transactions with a focus on security and compliance with banking requirements.
 - **Technologies and Tools**:
   - Languages and Frameworks: Java 8, JavaScript, Shell Script;
   - Databases: Relational databases, SQL Stored Procedures, Pure JDBC;
