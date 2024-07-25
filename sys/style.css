@@ -1,3 +1,27 @@
+table.details{
+}
+
+table.company{
+  margin-bottom:10px;
+  /* margin-top:20px !important; */
+}
+
+table.details td:first-child{
+  background-color: #f6faff !important;
+  width: 150px;
+  border-left: 4px solid rgba(221, 221, 221, 0.74);
+}
+
+table.details td:first-child(2){
+  text-align: justify;
+  padding-left: 0px;
+}
+
+table.ref td:nth-child(2){
+  text-align: justify;
+  /* background-color: #fff9f1; */
+}
+
 .green{
   color: #006400;
 }
@@ -152,6 +176,12 @@ p.cert{
 }
 p.about{
   font-size: 14px;
+  text-transform: uppercase;
+  font-weight: normal !important;
+  font-family: 'Fira Code', Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+p.links{
+  font-size: 16px;
   text-transform: uppercase;
   font-weight: normal !important;
   font-family: 'Fira Code', Consolas, "Liberation Mono", Menlo, Courier, monospace;

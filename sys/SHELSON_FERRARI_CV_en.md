@@ -4,6 +4,12 @@
 <th align="left" class="name"><p>SHELSON FERRARI</p>
 <p class="cert">70+ certifications | 23 yrs. exp.</p>
 <p class="about">47 yrs — single — Brazilian — São Paulo, Brazil</p>
+<p class="links">
+<a href="https://www.linkedin.com/in/shelson/">LinkedIn</a> 
+| <a href="https://wa.me/5511916257345">WhatsApp</a>
+| <a href="mailto:shelson@gmail.com">Email</a>
+| <a href="https://github.com/33mestre">GitHub</a>
+</p>
 </th>
 </tr>
 <tr>
@@ -24,17 +30,9 @@ Because what I really want is to design and orchestrate creative, efficient, and
 ## Professional Summary
 
 <table class="ref">
-  <tr>
-    <td><strong>Total Certificates</strong></td>
-    <td>70+ certifications</td>
   </tr>
-  <tr>
-    <td><strong>Total Experience</strong></td>
-    <td>23 years of experience</td>
-  </tr>
-  <tr>
     <td><strong>Sectors</strong></td>
-    <td>IT, Financial, Banking, Services, Retail and Insurance</td>
+    <td>IT, Financial, Banking, Services, Retail and Insurance.</td>
   </tr>
   <tr>
     <td><strong>Language Proficiency</strong></td>
@@ -42,48 +40,41 @@ Because what I really want is to design and orchestrate creative, efficient, and
   </tr>
   <tr>
     <td><strong>Programming Languages</strong></td>
-    <td>Java, JavaScript, Python, Go</td>
+    <td>Java, JavaScript, Python, Go.</td>
   </tr>
   <tr>
     <td><strong>Process Management</strong></td>
-    <td>BPMN, Camunda</td>
+    <td>BPMN, Camunda.</td>
   </tr>
   <tr>
     <td><strong>Cloud Computing</strong></td>
-    <td>GCP, AWS, IBM Cloud</td>
+    <td>GCP, AWS, IBM Cloud.</td>
   </tr>
   <tr>
     <td><strong>Front End</strong></td>
-    <td>JavaScript, Angular, React</td>
+    <td>JavaScript, Angular, React.</td>
   </tr>
   <tr>
     <td><strong>Frameworks</strong></td>
-    <td>Java Spring, Node.JS</td>
+    <td>Java Spring, Node.JS.</td>
   </tr>
   <tr>
     <td><strong>BPM</strong></td>
-    <td>Process Automation, Workflow Management, BPMN 2.0, Process Design, Process Auditing, Decision Modeling, BPM Tools Integration, Process Optimization</td>
+    <td>Process Automation, Workflow Management, BPMN 2.0, Process Design, Process Auditing, Decision Modeling, BPM Tools Integration, Process Optimization.</td>
   </tr>
   <tr>
     <td><strong>BPMS Camunda</strong></td>
-    <td>Platform, Cockpit, Modeler, Optimize, Tasklist</td>
+    <td>Platform, Cockpit, Modeler, Optimize, Tasklist.</td>
   </tr>
   <tr>
     <td><strong>Architecture</strong></td>
-    <td>Microservices, Domain-Driven Design (DDD), Distributed Systems</td>
+    <td>Microservices, Domain-Driven Design (DDD), Distributed Systems.</td>
   </tr>
   <tr>
     <td><strong>SQL, NoSql, In-Memory DB</strong></td>
-    <td>Oracle, PostgreSQL, MongoDB, DynamoDB, DocumentDB, Redis</td>
+    <td>Oracle, PostgreSQL, MongoDB, DynamoDB, DocumentDB, Redis.</td>
   </tr>
 </table>
-
-## Contacts
-
-- [LinkedIn](https://www.linkedin.com/in/shelson/)
-- [WhatsApp](https://wa.me/5511916257345)
-- [Email](mailto:shelson@gmail.com)
-- [GitHub](https://github.com/33mestre)
 
 ## Specialization Certificates
 
@@ -295,9 +286,9 @@ Because what I really want is to design and orchestrate creative, efficient, and
 
 ### Technologies and Tools
 
-- **Amazon Web Services**: EC2, ECS, Fargate, Lambda, S3, Glacier, RDS, DynamoDB, ElastiCache for Redis, QLDB, Route 53, VPC, SQS, SNS, SES, CloudWatch, API Gateway, CloudFormation, Elastic Beanstalk
-- **Google Cloud Platform**: Compute Engine, GKE, Cloud Run, Cloud Storage, Cloud Storage Coldline, Cloud SQL, MemoryStore for Redis, BigQuery, Cloud DNS, Cloud Pub/Sub, Operations Suite, API Gateway, Cloud Functions
-- **IBM Cloud**: Virtual Servers, Kubernetes Service, Code Engine, Cloud Object Storage, Cold Vault, Db2 on Cloud, IBM Cloud Databases for Redis, IBM Cloud SQL Query, IBM Cloud Internet Services, VPC, IBM Event Streams, IBM Cloud Monitoring with Sysdig, API Connect, IBM Cloud Functions
+- **Amazon Web Services**: EC2, ECS, Fargate, Lambda, S3, Glacier, RDS, DynamoDB, ElastiCache for Redis, QLDB, Route 53, VPC, SQS, SNS, SES, CloudWatch, API Gateway, CloudFormation, Elastic Beanstalk.
+- **Google Cloud Platform**: Compute Engine, GKE, Cloud Run, Cloud Storage, Cloud Storage Coldline, Cloud SQL, MemoryStore for Redis, BigQuery, Cloud DNS, Cloud Pub/Sub, Operations Suite, API Gateway, Cloud Functions.
+- **IBM Cloud**: Virtual Servers, Kubernetes Service, Code Engine, Cloud Object Storage, Cold Vault, Db2 on Cloud, IBM Cloud Databases for Redis, IBM Cloud SQL Query, IBM Cloud Internet Services, VPC, IBM Event Streams, IBM Cloud Monitoring with Sysdig, API Connect, IBM Cloud Functions.
 - **BPMS Camunda**:
   - **Camunda Platform**: Experience with implementation and configuration of the Camunda Platform for business process automation;
   - **Camunda Cockpit**: Advanced use of Camunda Cockpit for monitoring, managing, and analyzing running processes;
@@ -320,42 +311,42 @@ Because what I really want is to design and orchestrate creative, efficient, and
   - **Decision Modeling**: Application of DMN (Decision Model and Notation) for modeling and automating business decisions;
   - **BPM Tools Integration**: Integration of BPM tools with other corporate systems for more robust process management;
   - **Process Optimization**: Application of process optimization techniques to improve the efficiency and effectiveness of business processes.
-- **Digital Security**: Management of 2048-bit private keys, TLS v1.2 and v1.3, HTTP/2, Public key pinning, DNSSEC, DANE, SSL Labs Server Test
-- **Development Tools**: Git (GitHub, BitBucket), Jira, Trello, Confluence, Slack, Swagger, Postman, Visual Studio Code, Eclipse, JetBrains IDE, NPM, Maven, PM2, JWT, Serverless, SAM, Gulp, Mongoose, DynaMoose
-- **Distributed Systems**: Amazon SQS, Amazon SNS, Google Cloud Pub/Sub, IBM MQ, IBM Event Streams
-- **DevOps**: GitHub Actions, Jenkins, GitLab CI, CircleCI, Ansible, Puppet, Chef, AWS CloudFormation, Google Cloud Deployment Manager, IBM Cloud Automation Manager, Prometheus, Grafana, Nagios, Zabbix, ELK Stack, Splunk, Graylog, IBM Log Analysis with LogDNA, Docker, Kubernetes, Terraform, JUnit, TestNG, Selenium, Postman, pytest, unittest, Jenkins, GitLab CI/CD, IBM UrbanCode, Bamboo
-- **Java**: Spring Core, Boot, Data JPA, Security, Web MVC, JUnit, Mockito, Apache Tomcat, JBoss / WildFly
-- **JavaScript**: ReactJS, Angular, Jasmine, Mocha, Node.js, Express.js, NestJS
-- **Python**: Django, Flask, pytest, unittest, Django, Flask, FastAPI
-- **SQL**: PostgreSQL
-- **NoSQL**: MongoDB, DynamoDB
-- **In-Memory Databases**: Redis
-- **Geospatial Databases**: Postgis
+- **Digital Security**: Management of 2048-bit private keys, TLS v1.2 and v1.3, HTTP/2, Public key pinning, DNSSEC, DANE, SSL Labs Server Test.
+- **Development Tools**: Git (GitHub, BitBucket), Jira, Trello, Confluence, Slack, Swagger, Postman, Visual Studio Code, Eclipse, JetBrains IDE, NPM, Maven, PM2, JWT, Serverless, SAM, Gulp, Mongoose, DynaMoose.
+- **Distributed Systems**: Amazon SQS, Amazon SNS, Google Cloud Pub/Sub, IBM MQ, IBM Event Streams.
+- **DevOps**: GitHub Actions, Jenkins, GitLab CI, CircleCI, Ansible, Puppet, Chef, AWS CloudFormation, Google Cloud Deployment Manager, IBM Cloud Automation Manager, Prometheus, Grafana, Nagios, Zabbix, ELK Stack, Splunk, Graylog, IBM Log Analysis with LogDNA, Docker, Kubernetes, Terraform, JUnit, TestNG, Selenium, Postman, pytest, unittest, Jenkins, GitLab CI/CD, IBM UrbanCode, Bamboo.
+- **Java**: Spring Core, Boot, Data JPA, Security, Web MVC, JUnit, Mockito, Apache Tomcat, JBoss / WildFly.
+- **JavaScript**: ReactJS, Angular, Jasmine, Mocha, Node.js, Express.js, NestJS.
+- **Python**: Django, Flask, pytest, unittest, Django, Flask, FastAPI.
+- **SQL**: PostgreSQL.
+- **NoSQL**: MongoDB, DynamoDB.
+- **In-Memory Databases**: Redis.
+- **Geospatial Databases**: Postgis.
 
 ## Education
 
 ### PUC – Pontifical Catholic University of SP
 
-- **Course**: Business Administration
-- **Period**: 2017 – 2020
-- **Qualification Awarded**: Bachelor's degree in Business Administration (Incomplete)
+- **Course**: Business Administration.
+- **Period**: 2017 – 2020.
+- **Qualification Awarded**: Bachelor's degree in Business Administration (Incomplete).
 
 ### Bradesco Foundation
 
-- **Course**: Electronics
-- **Period**: 1992 – 1995
-- **Qualification Awarded**: Technical Course in Electronics
+- **Course**: Electronics.
+- **Period**: 1992 – 1995.
+- **Qualification Awarded**: Technical Course in Electronics;
 
 ### Language Skills
 
-- **Mother Tongue**: Portuguese
+- **Mother Tongue**: Portuguese.
 - **Other Languages**:
-  - **English**: C2 (Listening, Reading), C1 (Oral interaction, Oral production), B2 (Writing)
-  - **Spanish**: C1 (Listening, Reading), B2 (Oral interaction, Oral production, Writing)
+  - **English**: C2 (Listening, Reading), C1 (Oral interaction, Oral production), B2 (Writing);
+  - **Spanish**: C1 (Listening, Reading), B2 (Oral interaction, Oral production, Writing).
 
 ### Language Certification – English (C1)
 
-- **[EFSET English Certificate](https://cert.efset.org/CpUPqt)**: Level C1, 27 Jun 2024
+- **[EFSET English Certificate](https://cert.efset.org/CpUPqt)**: Level C1, 27 Jun 2024.
 
 ## Professional Experience
 
@@ -367,17 +358,17 @@ Because what I really want is to design and orchestrate creative, efficient, and
   </tr>
 </table>
 
-- **Client**: CERC
-- **Project**: Command Center Automation
-- **Location**: São Paulo – Brazil
-- **Sectors**: IT, Financial, Banking
-- **Work Arrangement**: Hybrid
+- **Client**: CERC.
+- **Project**: Command Center Automation.
+- **Location**: São Paulo – Brazil.
+- **Sectors**: IT, Financial, Banking.
+- **Work Arrangement**: Hybrid.
 - **Activities**:
-  - Development of applications: building cloud automation microservices
-  - Systems analysis: data modeling, systems documentation
+  - Development of applications: building cloud automation microservices;
+  - Systems analysis: data modeling, systems documentation.
 - **Technologies and Tools**:
-  - Languages: Node.js, Java 17, Python
-  - GCP: Storage, Functions, pub/sub, SQL, Firestore
+  - Languages: Node.js, Java 17, Python;
+  - GCP: Storage, Functions, pub/sub, SQL, Firestore.
 
 <table class="company">
   <tr>
@@ -387,17 +378,17 @@ Because what I really want is to design and orchestrate creative, efficient, and
   </tr>
 </table>
 
-- **Client**: Banco Macro
-- **Project**: Bank Innovation
-- **Location**: São Paulo – Brazil
-- **Sectors**: IT, Financial, Banking
-- **Work Arrangement**: Home Office
+- **Client**: Banco Macro.
+- **Project**: Bank Innovation.
+- **Location**: São Paulo – Brazil.
+- **Sectors**: IT, Financial, Banking.
+- **Work Arrangement**: Home Office.
 - **Activities**:
-  - Business Processes: Development of advanced resources for the orchestration and automation of business processes, focusing on creating efficient workflows
-  - Architecture and Development: Design and implementation of robust and scalable architectures for complex systems
+  - Business Processes: Development of advanced resources for the orchestration and automation of business processes, focusing on creating efficient workflows;
+  - Architecture and Development: Design and implementation of robust and scalable architectures for complex systems.
 - **Technologies and Tools**:
-  - Languages: Java 17
-  - BPMS Camunda: Platform, Cockpit, Modeler, Optimize, Tasklist
+  - Languages: Java 17;
+  - BPMS Camunda: Platform, Cockpit, Modeler, Optimize, Tasklist.
 
 <table class="company">
   <tr>
@@ -407,19 +398,19 @@ Because what I really want is to design and orchestrate creative, efficient, and
   </tr>
 </table>
 
-- **Client**: Vitplay
-- **Project**: Low-Code System
-- **Location**: São Paulo – Brazil
-- **Sectors**: IT, Services
-- **Work Arrangement**: Home Office
+- **Client**: Vitplay.
+- **Project**: Low-Code System.
+- **Location**: São Paulo – Brazil.
+- **Sectors**: IT, Services.
+- **Work Arrangement**: Home Office.
 - **Activities**:
-  - System Analysis and Architecture: Creation of an exclusive architecture, design and implementation of diagrams, data modeling, creation of user stories, product documentation
+  - System Analysis and Architecture: Creation of an exclusive architecture, design and implementation of diagrams, data modeling, creation of user stories, product documentation;
   - Development: Low-code and no-code system with a unique cognitive interface
-  - UX/UI: Hypothesis collection, desk research, customer journeys, usability testing, wireframes, accessibility, prototyping, documentation
+  - UX/UI: Hypothesis collection, desk research, customer journeys, usability testing, wireframes, accessibility, prototyping, documentation.
 - **Technologies and Tools**:
-  - Language / Server: JavaScript, Node.js
-  - OpenAPI: Modeling RESTful Web APIs with Swagger
-  - AWS: EC2, ECS, RDS, S3, SNS, SQS, API Gateway, Lambda, DynamoDB
+  - Language / Server: JavaScript, Node.js;
+  - OpenAPI: Modeling RESTful Web APIs with Swagger;
+  - AWS: EC2, ECS, RDS, S3, SNS, SQS, API Gateway, Lambda, DynamoDB.
 
 <table class="company">
   <tr>
@@ -429,19 +420,19 @@ Because what I really want is to design and orchestrate creative, efficient, and
   </tr>
 </table>
 
-- **Client**: Favo
-- **Project**: Core System
-- **Location**: São Paulo – Brazil
-- **Sectors**: IT, Retail
-- **Work Arrangement**: Home Office
+- **Client**: Favo.
+- **Project**: Core System.
+- **Location**: São Paulo – Brazil.
+- **Sectors**: IT, Retail.
+- **Work Arrangement**: Home Office.
 - **Activities**:
-  - System Analysis and Architecture: Collaboration with other teams to ensure consistent implementation of architecture, integration problem solving, design and implementation of diagrams, data modeling, creation of user stories, product documentation
-  - Development: Building reactive web applications and automated testing
+  - System Analysis and Architecture: Collaboration with other teams to ensure consistent implementation of architecture, integration problem solving, design and implementation of diagrams, data modeling, creation of user stories, product documentation;
+  - Development: Building reactive web applications and automated testing.
 - **Technologies and Tools**:
-  - Languages / Servers: Java 8, JavaScript, Java Spring, Node.js
-  - OpenAPI: Modeling RESTful Web APIs with Swagger
-  - AWS: EC2, ECS, RDS, S3, SNS, SQS, API Gateway, Lambda, DynamoDB
-  - Databases: DynamoDB, PostgreSQL, Redis
+  - Languages / Servers: Java 8, JavaScript, Java Spring, Node.js;
+  - OpenAPI: Modeling RESTful Web APIs with Swagger.
+  - AWS: EC2, ECS, RDS, S3, SNS, SQS, API Gateway, Lambda, DynamoDB;
+  - Databases: DynamoDB, PostgreSQL, Redis.
 
 <table class="company">
   <tr>
@@ -452,20 +443,20 @@ Because what I really want is to design and orchestrate creative, efficient, and
 </table>
 
 - **Employer**: Wayon
-- **Project**: Core Integration
-- **Location**: São Paulo – Brazil
-- **Sectors**: IT, Insurance
-- **Work Arrangement**: Home Office
+- **Project**: Core Integration.
+- **Location**: São Paulo – Brazil.
+- **Sectors**: IT, Insurance.
+- **Work Arrangement**: Home Office.
 - **Activities**:
-  - Development of integrations for associated insurance companies
-  - Design of business flows using BPMN
-  - Building applications using microservices
-  - Application Server Management
+  - Development of integrations for associated insurance companies;
+  - Design of business flows using BPMN;
+  - Building applications using microservices;
+  - Application Server Management.
 - **Technologies and Tools**:
-  - Languages and Frameworks: Java 8, Spring [Core, Boot, Batch], JPA, JSF, JSP, Servlet, AX-WS, JAX-RS, JavaScript
-  - Databases: Oracle DB, SQL Server, MongoDB
-  - Technologies and Tools: GIT, APIs [REST, SOAP], Docker, Kubernetes
-  - Application Servers: JBoss, WildFly, Spring
+  - Languages and Frameworks: Java 8, Spring [Core, Boot, Batch], JPA, JSF, JSP, Servlet, AX-WS, JAX-RS, JavaScript;
+  - Databases: Oracle DB, SQL Server, MongoDB;
+  - Technologies and Tools: GIT, APIs [REST, SOAP], Docker, Kubernetes;
+  - Application Servers: JBoss, WildFly, Spring.
 
 <table class="company">
   <tr>
@@ -475,21 +466,21 @@ Because what I really want is to design and orchestrate creative, efficient, and
   </tr>
 </table>
 
-- **Client**: Banco BV
-- **Project**: Migração BV
-- **Location**: São Paulo – Brazil
-- **Sectors**: IT, Finance, Banking
-- **Work Arrangement**: Onsite
+- **Client**: Banco BV.
+- **Project**: Migração BV.
+- **Location**: São Paulo – Brazil.
+- **Sectors**: IT, Finance, Banking.
+- **Work Arrangement**: Onsite.
 - **Activities**:
-  - Development and architecture of microservices for multi-brand transaction issuance (acquirer) and bank slips
-  - Development and migration of service components
-  - Adjustment and optimization of stored procedures in the database
-  - Efficient processing of multi-brand transactions (acquirer)
+  - Development and architecture of microservices for multi-brand transaction issuance (acquirer) and bank slips;
+  - Development and migration of service components;
+  - Adjustment and optimization of stored procedures in the database;
+  - Efficient processing of multi-brand transactions (acquirer).
 - **Technologies and Tools**:
-  - Languages and Frameworks: Java 8, JavaScript, Shell Script
-  - Databases: Relational databases, SQL SP's, Pure JDBC
-  - Version Control: GIT, GitLab
-  - Application Servers: IBM WebSphere, Apache Tomcat 8
+  - Languages and Frameworks: Java 8, JavaScript, Shell Script;
+  - Databases: Relational databases, SQL SP's, Pure JDBC;
+  - Version Control: GIT, GitLab;
+  - Application Servers: IBM WebSphere, Apache Tomcat 8.
 
 <table class="company">
   <tr>
@@ -499,21 +490,21 @@ Because what I really want is to design and orchestrate creative, efficient, and
   </tr>
 </table>
 
-- **Client**: Santander
-- **Project**: Bank slip
-- **Location**: São Paulo – Brazil
-- **Sectors**: IT, Banking
-- **Work Arrangement**: Onsite
+- **Client**: Santander.
+- **Project**: Bank slip.
+- **Location**: São Paulo – Brazil.
+- **Sectors**: IT, Banking.
+- **Work Arrangement**: Onsite.
 - **Activities**:
-  - Development and architecture of microservices for multi-brand transaction issuance (acquirer) and bank slips
-  - Development and migration of service components
-  - Adjustment and optimization of stored procedures in the database
-  - Implementation of DevOps practices, including process automation and source code management
+  - Development and architecture of microservices for multi-brand transaction issuance (acquirer) and bank slips;
+  - Development and migration of service components;
+  - Adjustment and optimization of stored procedures in the database;
+  - Implementation of DevOps practices, including process automation and source code management.
 - **Technologies and Tools**:
-  - Languages and Frameworks: Java 8, JavaScript, Shell Script
-  - Databases: Relational databases, SQL SP's, Pure JDBC
-  - Services and APIs: Apache Kafka, SOAP, REST
-  - Application Servers: IBM WebSphere, Apache Tomcat 8
+  - Languages and Frameworks: Java 8, JavaScript, Shell Script;
+  - Databases: Relational databases, SQL SP's, Pure JDBC;
+  - Services and APIs: Apache Kafka, SOAP, REST;
+  - Application Servers: IBM WebSphere, Apache Tomcat 8.
 
 <table class="company">
   <tr>
@@ -523,22 +514,22 @@ Because what I really want is to design and orchestrate creative, efficient, and
   </tr>
 </table>
 
-- **Client**: CIELO
-- **Project**: Multi-Brand Project
-- **Location**: São Paulo – Brazil
-- **Sectors**: IT, Banking
-- **Work Arrangement**: Onsite
+- **Client**: CIELO.
+- **Project**: Multi-Brand Project.
+- **Location**: São Paulo – Brazil.
+- **Sectors**: IT, Banking.
+- **Work Arrangement**: Onsite.
 - **Activities**:
-  - Architecture and programming of computer systems, developing solutions for multi-brand transaction issuance and bank slips
-  - Project management as a technical leader, collaborating with other leaders and partners
-  - Development and migration of service components, optimizing stored procedures in the database
-  - Ensuring efficient processing of financial transactions with a focus on security and compliance with banking requirements
+  - Architecture and programming of computer systems, developing solutions for multi-brand transaction issuance and bank slips;
+  - Project management as a technical leader, collaborating with other leaders and partners;
+  - Development and migration of service components, optimizing stored procedures in the database;
+  - Ensuring efficient processing of financial transactions with a focus on security and compliance with banking requirements;
 - **Technologies and Tools**:
-  - Languages and Frameworks: Java 8, JavaScript, Shell Script
-  - Databases: Relational databases, SQL Stored Procedures, Pure JDBC
-  - Services and APIs: Apache Kafka, REST, SOAP
-  - Application Servers: IBM WebSphere, Apache Tomcat 8
-  - Cloud Platform: Amazon Web Services
+  - Languages and Frameworks: Java 8, JavaScript, Shell Script;
+  - Databases: Relational databases, SQL Stored Procedures, Pure JDBC;
+  - Services and APIs: Apache Kafka, REST, SOAP;
+  - Application Servers: IBM WebSphere, Apache Tomcat 8;
+  - Cloud Platform: Amazon Web Services.
 
 <table class="company">
   <tr>
@@ -548,15 +539,15 @@ Because what I really want is to design and orchestrate creative, efficient, and
   </tr>
 </table>
 
-- **Client**: Saferocket
-- **Project**: Swift Project
-- **Location**: São Paulo – Brazil
-- **Sectors**: IT, Finance
-- **Work Arrangement**: Hybrid
+- **Client**: Saferocket.
+- **Project**: Swift Project.
+- **Location**: São Paulo – Brazil.
+- **Sectors**: IT, Finance.
+- **Work Arrangement**: Hybrid.
 - **Activities**:
-  - Development of a money transfer system for international transactions, ensuring a seamless user experience and compliance with global standards, including integration with Swift and IBAN
+  - Development of a money transfer system for international transactions, ensuring a seamless user experience and compliance with global standards, including integration with Swift and IBAN.
 - **Technologies and Tools**:
-  - Node.js, Heroku, MongoDB, React, Vanilla JavaScript, Swift
+  - Node.js, Heroku, MongoDB, React, Vanilla JavaScript, Swift.
 
 <table class="company">
   <tr>
@@ -566,16 +557,16 @@ Because what I really want is to design and orchestrate creative, efficient, and
   </tr>
 </table>
 
-- **Client**: C&A Modas
-- **Project**: Migração de Sistemas POS
-- **Location**: São Paulo – Brazil
-- **Sectors**: IT, Retail
-- **Work Arrangement**: Onsite
+- **Client**: C&A Modas.
+- **Project**: Migração de Sistemas POS.
+- **Location**: São Paulo – Brazil.
+- **Sectors**: IT, Retail.
+- **Work Arrangement**: Onsite.
 - **Activities**:
-  - Migration project of POS systems for hundreds of stores in an international clothing retail chain, utilizing Oracle technologies and extensive knowledge of Oracle industry solutions (retail)
-  - Development of all platform systems, integration with acquirers, CPF and CNPJ verification services, geolocation services, credit and debit card payment systems, and improvement of technical processes
+  - Migration project of POS systems for hundreds of stores in an international clothing retail chain, utilizing Oracle technologies and extensive knowledge of Oracle industry solutions (retail);
+  - Development of all platform systems, integration with acquirers, CPF and CNPJ verification services, geolocation services, credit and debit card payment systems, and improvement of technical processes.
 - **Technologies and Tools**:
-  - Oracle Retail, Java 8, Java Swing, Java Spring, Oracle DB
+  - Oracle Retail, Java 8, Java Swing, Java Spring, Oracle DB.
 
 <table class="company">
   <tr>
@@ -585,21 +576,21 @@ Because what I really want is to design and orchestrate creative, efficient, and
   </tr>
 </table>
 
-- **Client**: Valemobi
-- **Project**: Home Broker and Investment Funds
-- **Location**: São Paulo – Brazil
-- **Sectors**: IT, Finance, Banking
-- **Work Arrangement**: Onsite
+- **Client**: Valemobi.
+- **Project**: Home Broker and Investment Funds.
+- **Location**: São Paulo – Brazil.
+- **Sectors**: IT, Finance, Banking.
+- **Work Arrangement**: Onsite.
 - **Activities**:
-  - Development of Home Broker and multi-market investment fund projects
-  - Technical leadership of a small team
-  - System analysis across various projects
-  - Development of customized solutions for the platform
-  - Migration of the front-end framework to a more updated version, improving performance and functionality
-  - Bug fixing and performance optimization using bug tracking tools
-  - Definition of best practices for developers
+  - Development of Home Broker and multi-market investment fund projects;
+  - Technical leadership of a small team;
+  - System analysis across various projects;
+  - Development of customized solutions for the platform;
+  - Migration of the front-end framework to a more updated version, improving performance and functionality;
+  - Bug fixing and performance optimization using bug tracking tools;
+  - Definition of best practices for developers.
 - **Technologies and Tools**:
-  - Java 8, Node.js, Angular 2 and 4, TypeScript, Sentry, VSC, Eclipse, GIT
+  - Java 8, Node.js, Angular 2 and 4, TypeScript, Sentry, VSC, Eclipse, GIT.
 
 <table class="company">
   <tr>
@@ -609,16 +600,16 @@ Because what I really want is to design and orchestrate creative, efficient, and
   </tr>
 </table>
 
-- **Client**: Santander
-- **Project**: Santander Improvements
-- **Location**: São Paulo – Brazil
-- **Sectors**: IT, Services
-- **Work Arrangement**: Onsite
+- **Client**: Santander.
+- **Project**: Santander Improvements.
+- **Location**: São Paulo – Brazil.
+- **Sectors**: IT, Services.
+- **Work Arrangement**: Onsite.
 - **Activities**:
-  - Creation of internal systems for resource and employee management
-  - Platform migration, business process management, system analysis, and development of REST microservices
+  - Creation of internal systems for resource and employee management;
+  - Platform migration, business process management, system analysis, and development of REST microservices;
 - **Technologies and Tools**:
-  - Java 8, Node.js, Angular 4 with TypeScript, Linux CentOS, Linux CentOS RPM, PostgreSQL, GIT, Jira, Apache Maven, JUnit, Spring (security, core container, AOP and instrumentation, data access/integration, Web, testing), RESTful web services, JavaScript, VSC, Eclipse, GIT
+  - Java 8, Node.js, Angular 4 with TypeScript, Linux CentOS, Linux CentOS RPM, PostgreSQL, GIT, Jira, Apache Maven, JUnit, Spring (security, core container, AOP and instrumentation, data access/integration, Web, testing), RESTful web services, JavaScript, VSC, Eclipse, GIT.
 
 <table class="company">
   <tr>
@@ -628,18 +619,18 @@ Because what I really want is to design and orchestrate creative, efficient, and
   </tr>
 </table>
 
-- **Client**: Diebold
-- **Project**: POS SAT / SEFAZ
-- **Location**: São Paulo – Brazil
-- **Sectors**: IT, Retail
-- **Work Arrangement**: Onsite
+- **Client**: Diebold.
+- **Project**: POS SAT / SEFAZ.
+- **Location**: São Paulo – Brazil.
+- **Sectors**: IT, Retail.
+- **Work Arrangement**: Onsite.
 - **Activities**:
-  - Migration project of POS systems, including POS for hypermarkets, pharmacies, gas stations, and customer service counters
-  - System development and analysis
-  - Application of tax, legal, and electronic invoice rules
-  - Integration with SAT and SEFAZ
+  - Migration project of POS systems, including POS for hypermarkets, pharmacies, gas stations, and customer service counters;
+  - System development and analysis;
+  - Application of tax, legal, and electronic invoice rules;
+  - Integration with SAT and SEFAZ.
 - **Technologies and Tools**:
-  - Linux CentOS, C, C++, Java 8, Node.js, PostgreSQL, GIT, Bamboo, Jira, Apache Maven, Mockito, JUnit, Spring (security, core container, AOP and instrumentation, data access/integration, Web, testing), RESTful web services, Angular 4 with TypeScript, JavaScript, Eclipse
+  - Linux CentOS, C, C++, Java 8, Node.js, PostgreSQL, GIT, Bamboo, Jira, Apache Maven, Mockito, JUnit, Spring (security, core container, AOP and instrumentation, data access/integration, Web, testing), RESTful web services, Angular 4 with TypeScript, JavaScript, Eclipse.
 
 <table class="company">
   <tr>
@@ -649,18 +640,18 @@ Because what I really want is to design and orchestrate creative, efficient, and
   </tr>
 </table>
 
-- **Client**: Itaú
-- **Project**: Artificial Intelligence Project
-- **Location**: São Paulo – Brazil
-- **Sectors**: IT, Finance, Banking
-- **Work Arrangement**: Onsite
+- **Client**: Itaú.
+- **Project**: Artificial Intelligence Project.
+- **Location**: São Paulo – Brazil.
+- **Sectors**: IT, Finance, Banking.
+- **Work Arrangement**: Onsite.
 - **Activities**:
-  - Development of an AI project for Java source code enhancement
-  - System analysis to identify improvements and affinities
-  - Development of the core code generation
-  - Identification of problems and opportunities, interaction with the client to gather requirements and process details, and production of specification documents
+  - Development of an AI project for Java source code enhancement;
+  - System analysis to identify improvements and affinities;
+  - Development of the core code generation;
+  - Identification of problems and opportunities, interaction with the client to gather requirements and process details, and production of specification documents.
 - **Technologies and Tools**:
-  - WebSphere, Java 5, SQL
+  - WebSphere, Java 5, SQL.
 
 <table class="company">
   <tr>
@@ -670,15 +661,15 @@ Because what I really want is to design and orchestrate creative, efficient, and
   </tr>
 </table>
 
-- **Client**: Itaú
-- **Project**: Thermometer Project
-- **Location**: São Paulo – Brazil
-- **Sectors**: IT, Finance, Banking
-- **Work Arrangement**: Onsite
+- **Client**: Itaú.
+- **Project**: Thermometer Project.
+- **Location**: São Paulo – Brazil.
+- **Sectors**: IT, Finance, Banking.
+- **Work Arrangement**: Onsite.
 - **Activities**:
-  - Development, architecture, and analysis of the Java system for the client's project – a system aimed at evaluating the satisfaction of all client professionals
+  - Development, architecture, and analysis of the Java system for the client's project – a system aimed at evaluating the satisfaction of all client professionals.
 - **Technologies and Tools**:
-  - Java EE 5, Eclipse 3.2, IBM WebSphere, Struts, Hibernate, Oracle DB, XML and XSL, JBoss Seam, JSF, JPA, RichFaces, JUnit, DBUnit, Selenium, DHTML
+  - Java EE 5, Eclipse 3.2, IBM WebSphere, Struts, Hibernate, Oracle DB, XML and XSL, JBoss Seam, JSF, JPA, RichFaces, JUnit, DBUnit, Selenium, DHTML.
 
 <table class="company">
   <tr>
@@ -688,15 +679,15 @@ Because what I really want is to design and orchestrate creative, efficient, and
   </tr>
 </table>
 
-- **Client**: Bradesco
-- **Project**: Bradesco IT Improvements Project
-- **Location**: São Paulo – Brazil
-- **Sectors**: IT, Finance, Banking
-- **Work Arrangement**: Onsite
+- **Client**: Bradesco.
+- **Project**: Bradesco IT Improvements Project.
+- **Location**: São Paulo – Brazil.
+- **Sectors**: IT, Finance, Banking.
+- **Work Arrangement**: Onsite.
 - **Activities**:
-  - Development, architecture, and analysis of the Java system for the client's project – a system for partners within IT development standards
+  - Development, architecture, and analysis of the Java system for the client's project – a system for partners within IT development standards.
 - **Technologies and Tools**:
-  - Java, IBM WebSphere, IBM DB2
+  - Java, IBM WebSphere, IBM DB2.
 
 <table class="company">
   <tr>
@@ -706,15 +697,15 @@ Because what I really want is to design and orchestrate creative, efficient, and
   </tr>
 </table>
 
-- **Client**: Bradesco
-- **Project**: Financial Dashboard Project
-- **Location**: São Paulo – Brazil
-- **Sectors**: IT, Finance, Banking
-- **Work Arrangement**: Onsite
+- **Client**: Bradesco.
+- **Project**: Financial Dashboard Project.
+- **Location**: São Paulo – Brazil.
+- **Sectors**: IT, Finance, Banking.
+- **Work Arrangement**: Onsite.
 - **Activities**:
-  - Development of the client's financial management system
+  - Development of the client's financial management system.
 - **Technologies and Tools**:
-  - Java 5, Eclipse, Struts, JDBC, IBM DB2, DHTML
+  - Java 5, Eclipse, Struts, JDBC, IBM DB2, DHTML.
 
 <table class="company">
   <tr>
@@ -724,14 +715,14 @@ Because what I really want is to design and orchestrate creative, efficient, and
   </tr>
 </table>
 
-- **Client**: Bradesco
-- **Project**: Financial Dashboard
-- **Location**: São Paulo – Brazil
-- **Sectors**: IT, Finance, Banking
-- **Work Arrangement**: Onsite
+- **Client**: Bradesco.
+- **Project**: Financial Dashboard.
+- **Location**: São Paulo – Brazil.
+- **Sectors**: IT, Finance, Banking.
+- **Work Arrangement**: Onsite.
 - **Activities**:
-  - Development of Java systems for the client's project – a financial management system
+  - Development of Java systems for the client's project – a financial management system.
 - **Technologies and Tools**:
-  - Java 5, Eclipse, Struts, JDBC, DB2, DHTML
+  - Java 5, Eclipse, Struts, JDBC, DB2, DHTML.
 
 ---

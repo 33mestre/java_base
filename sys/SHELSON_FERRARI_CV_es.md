@@ -4,6 +4,12 @@
 <th align="left" class="name"><p>SHELSON FERRARI</p>
 <p class="cert">70+ certificaciones | 23 años de exp.</p>
 <p class="about">47 años — soltero — brasileño — São Paulo, Brasil</p>
+<p class="links">
+<a href="https://www.linkedin.com/in/shelson/">LinkedIn</a> 
+| <a href="https://wa.me/5511916257345">WhatsApp</a>
+| <a href="mailto:shelson@gmail.com">E-mail</a>
+| <a href="https://github.com/33mestre">GitHub</a>
+</p>
 </th>
 </tr>
 <tr>
@@ -25,16 +31,8 @@ porque todo lo que realmente quiero es escudriñar y orquestar soluciones de neg
 
 <table class="ref">
   <tr>
-    <td><strong>Total de Certificaciones</strong></td>
-    <td>70+ certificaciones</td>
-  </tr>
-  <tr>
-    <td><strong>Total de Experiencia</strong></td>
-    <td>23 años de experiencia</td>
-  </tr>
-  <tr>
     <td><strong>Sectores</strong></td>
-    <td>TI, Financiero, Bancario, Servicios, Retail y Seguros</td>
+    <td>TI, Financiero, Bancario, Servicios, Retail y Seguros.</td>
   </tr>
   <tr>
     <td><strong>Proficiencia en Idiomas</strong></td>
@@ -43,55 +41,41 @@ porque todo lo que realmente quiero es escudriñar y orquestar soluciones de neg
 
   <tr>
     <td><strong>Lenguajes de Programación</strong></td>
-    <td>Java, JavaScript, Python, Go</td>
+    <td>Java, JavaScript, Python, Go.</td>
   </tr>
   <tr>
     <td><strong>Gestión de Procesos</strong></td>
-    <td>BPMN, Camunda</td>
+    <td>BPMN, Camunda.</td>
   </tr>
   <tr>
     <td><strong>Computación en la Nube</strong></td>
-    <td>GCP, AWS, IBM Cloud</td>
+    <td>GCP, AWS, IBM Cloud.</td>
   </tr>
   <tr>
     <td><strong>Front End</strong></td>
-    <td>JavaScript, Angular, React</td>
+    <td>JavaScript, Angular, React.</td>
   </tr>
   <tr>
     <td><strong>Frameworks</strong></td>
-    <td>Java Spring, Node.JS</td>
+    <td>Java Spring, Node.JS.</td>
   </tr>
   <tr>
     <td><strong>BPM</strong></td>
-    <td>Automatización de Procesos, Gestión de Workflow, BPMN 2.0, Diseño de Procesos, Auditoría de Procesos, Modelado de Decisiones, Integración de Herramientas BPM, Optimización de Procesos</td>
+    <td>Automatización de Procesos, Gestión de Workflow, BPMN 2.0, Diseño de Procesos, Auditoría de Procesos, Modelado de Decisiones, Integración de Herramientas BPM, Optimización de Procesos.</td>
   </tr>
   <tr>
     <td><strong>BPMS Camunda</strong></td>
-    <td>Plataforma, Cockpit, Modelador, Optimize, Tasklist</td>
+    <td>Plataforma, Cockpit, Modelador, Optimize, Tasklist.</td>
   </tr>
   <tr>
     <td><strong>Arquitectura</strong></td>
-    <td>Microservicios, Diseño Orientado por Dominios (DDD), Sistemas Distribuidos</td>
+    <td>Microservicios, Diseño Orientado por Dominios (DDD), Sistemas Distribuidos.</td>
   </tr>
   <tr>
     <td><strong>SQL, NoSql, In-Memory DB</strong></td>
-    <td>Oracle, PostgreSQL, MongoDB, DynamoDB, DocumentDB, Redis</td>
+    <td>Oracle, PostgreSQL, MongoDB, DynamoDB, DocumentDB, Redis.</td>
   </tr>
 </table>
-
-## Información Personal
-
-- **Edad**: 47 años
-- **Estado civil**: Soltero
-- **Nacionalidad**: Brasileño
-- **Ubicación**: São Paulo, Brasil
-
-## Contactos
-
-- [LinkedIn](https://www.linkedin.com/in/shelson/)
-- [WhatsApp](https://wa.me/5511916257345)
-- [Correo Electrónico](mailto:shelson@gmail.com)
-- [GitHub](https://github.com/33mestre)
 
 ## Certificados de Especialización
 
@@ -303,9 +287,9 @@ porque todo lo que realmente quiero es escudriñar y orquestar soluciones de neg
 
 ### Tecnologías y Herramientas
 
-- **Amazon Web Services**: EC2, ECS, Fargate, Lambda, S3, Glacier, RDS, DynamoDB, ElastiCache para Redis, QLDB, Route 53, VPC, SQS, SNS, SES, CloudWatch, API Gateway, CloudFormation, Elastic Beanstalk
-- **Google Cloud Platform**: Compute Engine, GKE, Cloud Run, Cloud Storage, Cloud Storage Coldline, Cloud SQL, MemoryStore para Redis, BigQuery, Cloud DNS, Cloud Pub/Sub, Operations Suite, API Gateway, Cloud Functions
-- **IBM Cloud**: Servidores Virtuales, Servicio de Kubernetes, Code Engine, Almacenamiento de Objetos en la Nube, Cold Vault, Db2 en la Nube, Bases de Datos en la Nube para Redis, IBM Cloud SQL Query, Servicios de Internet de IBM Cloud, VPC, IBM Event Streams, IBM Cloud Monitoring con Sysdig, API Connect, IBM Cloud Functions
+- **Amazon Web Services**: EC2, ECS, Fargate, Lambda, S3, Glacier, RDS, DynamoDB, ElastiCache para Redis, QLDB, Route 53, VPC, SQS, SNS, SES, CloudWatch, API Gateway, CloudFormation, Elastic Beanstalk.
+- **Google Cloud Platform**: Compute Engine, GKE, Cloud Run, Cloud Storage, Cloud Storage Coldline, Cloud SQL, MemoryStore para Redis, BigQuery, Cloud DNS, Cloud Pub/Sub, Operations Suite, API Gateway, Cloud Functions.
+- **IBM Cloud**: Servidores Virtuales, Servicio de Kubernetes, Code Engine, Almacenamiento de Objetos en la Nube, Cold Vault, Db2 en la Nube, Bases de Datos en la Nube para Redis, IBM Cloud SQL Query, Servicios de Internet de IBM Cloud, VPC, IBM Event Streams, IBM Cloud Monitoring con Sysdig, API Connect, IBM Cloud Functions.
 - **BPMS Camunda**:
   - **Camunda Platform**: Experiencia en la implementación y configuración de la Camunda Platform para la automatización de procesos empresariales;
   - **Camunda Cockpit**: Uso avanzado de Cockpit de Camunda para la monitorización, gestión y análisis de procesos en ejecución;
@@ -328,42 +312,42 @@ porque todo lo que realmente quiero es escudriñar y orquestar soluciones de neg
   - **Modelado de Decisiones**: Aplicación de DMN (Decision Model and Notation) para modelar y automatizar decisiones empresariales;
   - **Integración con Herramientas BPM**: Integración de herramientas BPM con otros sistemas corporativos para una gestión de procesos más robusta;
   - **Optimización de Procesos**: Aplicación de técnicas de optimización de procesos para mejorar la eficiencia y efectividad de los procesos empresariales.
-- **Seguridad Digital**: Gestión de claves privadas de 2048 bits, TLS v1.2 y v1.3, HTTP/2, Fijación de claves públicas, DNSSEC, DANE, Prueba del Servidor SSL Labs
-- **Herramientas de Desarrollo**: Git (GitHub, BitBucket), Jira, Trello, Confluence, Slack, Swagger, Postman, Visual Studio Code, Eclipse, JetBrains IDE, NPM, Maven, PM2, JWT, Serverless, SAM, Gulp, Mongoose, DynaMoose
-- **Sistemas Distribuidos**: Amazon SQS, Amazon SNS, Google Cloud Pub/Sub, IBM MQ, IBM Event Streams
-- **DevOps**: GitHub Actions, Jenkins, GitLab CI, CircleCI, Ansible, Puppet, Chef, AWS CloudFormation, Google Cloud Deployment Manager, IBM Cloud Automation Manager, Prometheus, Grafana, Nagios, Zabbix, ELK Stack, Splunk, Graylog, IBM Log Analysis con LogDNA, Docker, Kubernetes, Terraform, JUnit, TestNG, Selenium, Postman, pytest, unittest, Jenkins, GitLab CI/CD, IBM UrbanCode, Bamboo
-- **Java**: Spring Core, Boot, Data JPA, Security, Web MVC, JUnit, Mockito, Apache Tomcat, JBoss / WildFly
-- **JavaScript**: ReactJS, Angular, Jasmine, Mocha, Node.js, Express.js, NestJS
-- **Python**: Django, Flask, pytest, unittest, Django, Flask, FastAPI
-- **SQL**: PostgreSQL
-- **NoSQL**: MongoDB, DynamoDB
-- **Bases de Datos en Memoria**: Redis
-- **Bases de Datos Geoespaciales**: Postgis
+- **Seguridad Digital**: Gestión de claves privadas de 2048 bits, TLS v1.2 y v1.3, HTTP/2, Fijación de claves públicas, DNSSEC, DANE, Prueba del Servidor SSL Labs.
+- **Herramientas de Desarrollo**: Git (GitHub, BitBucket), Jira, Trello, Confluence, Slack, Swagger, Postman, Visual Studio Code, Eclipse, JetBrains IDE, NPM, Maven, PM2, JWT, Serverless, SAM, Gulp, Mongoose, DynaMoose.
+- **Sistemas Distribuidos**: Amazon SQS, Amazon SNS, Google Cloud Pub/Sub, IBM MQ, IBM Event Streams.
+- **DevOps**: GitHub Actions, Jenkins, GitLab CI, CircleCI, Ansible, Puppet, Chef, AWS CloudFormation, Google Cloud Deployment Manager, IBM Cloud Automation Manager, Prometheus, Grafana, Nagios, Zabbix, ELK Stack, Splunk, Graylog, IBM Log Analysis con LogDNA, Docker, Kubernetes, Terraform, JUnit, TestNG, Selenium, Postman, pytest, unittest, Jenkins, GitLab CI/CD, IBM UrbanCode, Bamboo.
+- **Java**: Spring Core, Boot, Data JPA, Security, Web MVC, JUnit, Mockito, Apache Tomcat, JBoss / WildFly.
+- **JavaScript**: ReactJS, Angular, Jasmine, Mocha, Node.js, Express.js, NestJS.
+- **Python**: Django, Flask, pytest, unittest, Django, Flask, FastAPI.
+- **SQL**: PostgreSQL.
+- **NoSQL**: MongoDB, DynamoDB.
+- **Bases de Datos en Memoria**: Redis.
+- **Bases de Datos Geoespaciales**: Postgis.
 
 ## Educación
 
 ### PUC – Pontificia Universidad Católica de SP
 
-- **Curso**: Administración de Empresas
-- **Período**: 2017 – 2020
-- **Título Obtenido**: Grado en Administración de Empresas (Incompleto)
+- **Curso**: Administración de Empresas.
+- **Período**: 2017 – 2020.
+- **Título Obtenido**: Grado en Administración de Empresas (Incompleto).
 
 ### Fundación Bradesco
 
-- **Curso**: Electrónica
-- **Período**: 1992 – 1995
-- **Título Obtenido**: Curso Técnico en Electrónica
+- **Curso**: Electrónica.
+- **Período**: 1992 – 1995.
+- **Título Obtenido**: Curso Técnico en Electrónica.
 
 ### Habilidades Lingüísticas
 
-- **Lengua Materna**: Portugués
+- **Lengua Materna**: Portugués.
 - **Otros Idiomas**:
-  - **Inglés**: C2 (Comprensión auditiva, Lectura), C1 (Interacción oral, Producción oral), B2 (Escritura)
-  - **Español**: C1 (Comprensión auditiva, Lectura), B2 (Interacción oral, Producción oral, Escritura)
+  - **Inglés**: C2 (Comprensión auditiva, Lectura), C1 (Interacción oral, Producción oral), B2 (Escritura);
+  - **Español**: C1 (Comprensión auditiva, Lectura), B2 (Interacción oral, Producción oral, Escritura).
 
 ### Certificación de Idiomas – Inglés (C1)
 
-- **[Certificado de Inglés EFSET](https://cert.efset.org/CpUPqt)**: Nivel C1, 27 Jun 2024
+- **[Certificado de Inglés EFSET](https://cert.efset.org/CpUPqt)**: Nivel C1, 27 Jun 2024.
 
 ## Experiencia Profesional
 
@@ -375,17 +359,17 @@ porque todo lo que realmente quiero es escudriñar y orquestar soluciones de neg
   </tr>
 </table>
 
-- **Cliente**: CERC
-- **Proyecto**: Automatización del Centro de Comando
-- **Localización**: São Paulo – Brasil
-- **Sectores**: TI, Financiero, Bancario
-- **Régimen de Trabajo**: Híbrido
+- **Cliente**: CERC.
+- **Proyecto**: Automatización del Centro de Comando.
+- **Localización**: São Paulo – Brasil.
+- **Sectores**: TI, Financiero, Bancario.
+- **Régimen de Trabajo**: Híbrido.
 - **Actividades**:
-  - Desarrollo de aplicaciones: creación de microservicios de automatización en la nube
-  - Análisis de sistemas: modelado de datos, documentación de sistemas
+  - Desarrollo de aplicaciones: creación de microservicios de automatización en la nube;
+  - Análisis de sistemas: modelado de datos, documentación de sistemas.
 - **Tecnologías y Herramientas**:
-  - Lenguajes: Node.js, Java 17, Python
-  - GCP: Almacenamiento, Funciones, pub/sub, SQL, Firestore
+  - Lenguajes: Node.js, Java 17, Python;
+  - GCP: Almacenamiento, Funciones, pub/sub, SQL, Firestore.
 
 <table class="company">
   <tr>
@@ -395,17 +379,17 @@ porque todo lo que realmente quiero es escudriñar y orquestar soluciones de neg
   </tr>
 </table>
 
-- **Cliente**: Banco Macro
-- **Proyecto**: Innovación Bancaria
-- **Localización**: São Paulo – Brasil
-- **Sectores**: TI, Financiero, Bancario
-- **Régimen de Trabajo**: Trabajo a distancia
+- **Cliente**: Banco Macro.
+- **Proyecto**: Innovación Bancaria.
+- **Localización**: São Paulo – Brasil.
+- **Sectores**: TI, Financiero, Bancario.
+- **Régimen de Trabajo**: Trabajo a distancia.
 - **Actividades**:
-  - Procesos de Negocios: Desarrollo de recursos avanzados para la orquestación y automatización de procesos de negocios, enfocándose en la creación de flujos de trabajo eficientes
-  - Arquitectura y Desarrollo: Diseño e implementación de arquitecturas robustas y escalables para sistemas complejos
+  - Procesos de Negocios: Desarrollo de recursos avanzados para la orquestación y automatización de procesos de negocios, enfocándose en la creación de flujos de trabajo eficientes;
+  - Arquitectura y Desarrollo: Diseño e implementación de arquitecturas robustas y escalables para sistemas complejos.
 - **Tecnologías y Herramientas**:
-  - Lenguajes: Java 17
-  - BPMS Camunda: Plataforma, Cockpit, Modelador, Optimize, Lista de Tareas
+  - Lenguajes: Java 17;
+  - BPMS Camunda: Plataforma, Cockpit, Modelador, Optimize, Lista de Tareas.
 
 <table class="company">
   <tr>
@@ -415,19 +399,19 @@ porque todo lo que realmente quiero es escudriñar y orquestar soluciones de neg
   </tr>
 </table>
 
-- **Cliente**: Vitplay
-- **Proyecto**: Sistema Low-Code
-- **Localización**: São Paulo – Brasil
-- **Sectores**: TI, Servicios
-- **Régimen de Trabajo**: Trabajo a distancia
+- **Cliente**: Vitplay.
+- **Proyecto**: Sistema Low-Code.
+- **Localización**: São Paulo – Brasil.
+- **Sectores**: TI, Servicios.
+- **Régimen de Trabajo**: Trabajo a distancia.
 - **Actividades**:
-  - Análisis y Arquitectura de Sistemas: Creación de una arquitectura exclusiva, diseño e implementación de diagramas, modelado de datos, creación de historias de usuario, documentación de productos
-  - Desarrollo: Sistema de low-code y no-code con una interfaz cognitiva única
-  - UX/UI: Recolección de hipótesis, investigación de escritorio, viajes del cliente, pruebas de usabilidad, wireframes, accesibilidad, prototipos, documentación
+  - Análisis y Arquitectura de Sistemas: Creación de una arquitectura exclusiva, diseño e implementación de diagramas, modelado de datos, creación de historias de usuario, documentación de productos;
+  - Desarrollo: Sistema de low-code y no-code con una interfaz cognitiva única;
+  - UX/UI: Recolección de hipótesis, investigación de escritorio, viajes del cliente, pruebas de usabilidad, wireframes, accesibilidad, prototipos, documentación.
 - **Tecnologías y Herramientas**:
-  - Lenguaje / Servidor: JavaScript, Node.js
-  - OpenAPI: Modelado de APIs Web RESTful con Swagger
-  - AWS: EC2, ECS, RDS, S3, SNS, SQS, API Gateway, Lambda, DynamoDB
+  - Lenguaje / Servidor: JavaScript, Node.js.
+  - OpenAPI: Modelado de APIs Web RESTful con Swagger;
+  - AWS: EC2, ECS, RDS, S3, SNS, SQS, API Gateway, Lambda, DynamoDB.
 
 <table class="company">
   <tr>
@@ -437,19 +421,19 @@ porque todo lo que realmente quiero es escudriñar y orquestar soluciones de neg
   </tr>
 </table>
 
-- **Cliente**: Favo
-- **Proyecto**: Sistema Core
-- **Localización**: São Paulo – Brasil
-- **Sectores**: TI, Retail
-- **Régimen de Trabajo**: Trabajo a distancia
+- **Cliente**: Favo.
+- **Proyecto**: Sistema Core.
+- **Localización**: São Paulo – Brasil.
+- **Sectores**: TI, Retail.
+- **Régimen de Trabajo**: Trabajo a distancia.
 - **Actividades**:
-  - Análisis y Arquitectura de Sistemas: Colaboración con otros equipos para asegurar la implementación coherente de la arquitectura, resolución de problemas de integración, diseño e implementación de diagramas, modelado de datos, creación de historias de usuario, documentación de productos
-  - Desarrollo: Construcción de aplicaciones web reactivas y pruebas automatizadas
+  - Análisis y Arquitectura de Sistemas: Colaboración con otros equipos para asegurar la implementación coherente de la arquitectura, resolución de problemas de integración, diseño e implementación de diagramas, modelado de datos, creación de historias de usuario, documentación de productos;
+  - Desarrollo: Construcción de aplicaciones web reactivas y pruebas automatizadas.
 - **Tecnologías y Herramientas**:
-  - Lenguajes / Servidores: Java 8, JavaScript, Java Spring, Node.js
-  - OpenAPI: Modelado de APIs Web RESTful con Swagger
-  - AWS: EC2, ECS, RDS, S3, SNS, SQS, API Gateway, Lambda, DynamoDB
-  - Bases de Datos: DynamoDB, PostgreSQL, Redis
+  - Lenguajes / Servidores: Java 8, JavaScript, Java Spring, Node.js;
+  - OpenAPI: Modelado de APIs Web RESTful con Swagger.
+  - AWS: EC2, ECS, RDS, S3, SNS, SQS, API Gateway, Lambda, DynamoDB;
+  - Bases de Datos: DynamoDB, PostgreSQL, Redis.
 
 <table class="company">
   <tr>
@@ -459,21 +443,21 @@ porque todo lo que realmente quiero es escudriñar y orquestar soluciones de neg
   </tr>
 </table>
 
-- **Cliente**: Tokio Marine
-- **Proyecto**: Integración Core
-- **Localización**: São Paulo – Brasil
-- **Sectores**: TI, Seguros
-- **Régimen de Trabajo**: Trabajo a distancia
+- **Cliente**: Tokio Marine.
+- **Proyecto**: Integración Core.
+- **Localización**: São Paulo – Brasil.
+- **Sectores**: TI, Seguros.
+- **Régimen de Trabajo**: Trabajo a distancia.
 - **Actividades**:
-  - Desarrollo de integraciones para compañías de seguros asociadas
-  - Diseño de flujos de negocio utilizando BPMN
-  - Construcción de aplicaciones utilizando microservicios
-  - Gestión de Servidores de Aplicaciones
+  - Desarrollo de integraciones para compañías de seguros asociadas;
+  - Diseño de flujos de negocio utilizando BPMN;
+  - Construcción de aplicaciones utilizando microservicios;
+  - Gestión de Servidores de Aplicaciones.
 - **Tecnologías y Herramientas**:
-  - Lenguajes y Frameworks: Java 8, Spring [Core, Boot, Batch], JPA, JSF, JSP, Servlet, AX-WS, JAX-RS, JavaScript
-  - Bases de Datos: Oracle DB, SQL Server, MongoDB
-  - Tecnologías y Herramientas: GIT, APIs [REST, SOAP], Docker, Kubernetes
-  - Servidores de Aplicaciones: JBoss, WildFly, Spring
+  - Lenguajes y Frameworks: Java 8, Spring [Core, Boot, Batch], JPA, JSF, JSP, Servlet, AX-WS, JAX-RS, JavaScript;
+  - Bases de Datos: Oracle DB, SQL Server, MongoDB;
+  - Tecnologías y Herramientas: GIT, APIs [REST, SOAP], Docker, Kubernetes;
+  - Servidores de Aplicaciones: JBoss, WildFly, Spring.
 
 <table class="company">
   <tr>
@@ -483,21 +467,21 @@ porque todo lo que realmente quiero es escudriñar y orquestar soluciones de neg
   </tr>
 </table>
 
-- **Cliente**: Banco BV
-- **Proyecto**: Migración BV
-- **Localización**: São Paulo – Brasil
-- **Sectores**: TI, Finanzas, Bancario
-- **Régimen de Trabajo**: Presencial
+- **Cliente**: Banco BV.
+- **Proyecto**: Migración BV.
+- **Localización**: São Paulo – Brasil.
+- **Sectores**: TI, Finanzas, Bancario.
+- **Régimen de Trabajo**: Presencial.
 - **Actividades**:
-  - Desarrollo y arquitectura de microservicios para la emisión de transacciones multi-marca (adquirente) y boletos bancarios
-  - Desarrollo y migración de componentes de servicio
-  - Ajuste y optimización de procedimientos almacenados en la base de datos
-  - Procesamiento eficiente de transacciones multi-marca (adquirente)
+  - Desarrollo y arquitectura de microservicios para la emisión de transacciones multi-marca (adquirente) y boletos bancarios;
+  - Desarrollo y migración de componentes de servicio;
+  - Ajuste y optimización de procedimientos almacenados en la base de datos;
+  - Procesamiento eficiente de transacciones multi-marca (adquirente).
 - **Tecnologías y Herramientas**:
-  - Lenguajes y Frameworks: Java 8, JavaScript, Shell Script
-  - Bases de Datos: Bases de datos relacionales, SP's SQL, Pure JDBC
-  - Control de Versiones: GIT, GitLab
-  - Servidores de Aplicaciones: IBM WebSphere, Apache Tomcat 8
+  - Lenguajes y Frameworks: Java 8, JavaScript, Shell Script;
+  - Bases de Datos: Bases de datos relacionales, SP's SQL, Pure JDBC;
+  - Control de Versiones: GIT, GitLab;
+  - Servidores de Aplicaciones: IBM WebSphere, Apache Tomcat 8.
 
 <table class="company">
   <tr>
@@ -507,21 +491,21 @@ porque todo lo que realmente quiero es escudriñar y orquestar soluciones de neg
   </tr>
 </table>
 
-- **Cliente**: Santander
-- **Proyecto**: Boleto Bancario
-- **Localización**: São Paulo – Brasil
-- **Sectores**: TI, Bancario
-- **Régimen de Trabajo**: Presencial
+- **Cliente**: Santander.
+- **Proyecto**: Boleto Bancario.
+- **Localización**: São Paulo – Brasil.
+- **Sectores**: TI, Bancario.
+- **Régimen de Trabajo**: Presencial.
 - **Actividades**:
-  - Desarrollo y arquitectura de microservicios para la emisión de transacciones multi-marca (adquirente) y boletos bancarios
-  - Desarrollo y migración de componentes de servicio
-  - Ajuste y optimización de procedimientos almacenados en la base de datos
-  - Implementación de prácticas DevOps, incluyendo automatización de procesos y gestión de código fuente
+  - Desarrollo y arquitectura de microservicios para la emisión de transacciones multi-marca (adquirente) y boletos bancarios;
+  - Desarrollo y migración de componentes de servicio;
+  - Ajuste y optimización de procedimientos almacenados en la base de datos;
+  - Implementación de prácticas DevOps, incluyendo automatización de procesos y gestión de código fuente.
 - **Tecnologías y Herramientas**:
-  - Lenguajes y Frameworks: Java 8, JavaScript, Shell Script
-  - Bases de Datos: Bases de datos relacionales, SP's SQL, Pure JDBC
-  - Servicios y APIs: Apache Kafka, SOAP, REST
-  - Servidores de Aplicaciones: IBM WebSphere, Apache Tomcat 8
+  - Lenguajes y Frameworks: Java 8, JavaScript, Shell Script;
+  - Bases de Datos: Bases de datos relacionales, SP's SQL, Pure JDBC;
+  - Servicios y APIs: Apache Kafka, SOAP, REST;
+  - Servidores de Aplicaciones: IBM WebSphere, Apache Tomcat 8.
 
 <table class="company">
   <tr>
@@ -531,22 +515,22 @@ porque todo lo que realmente quiero es escudriñar y orquestar soluciones de neg
   </tr>
 </table>
 
-- **Cliente**: CIELO
-- **Proyecto**: Proyecto Multi-Marca
-- **Localización**: São Paulo – Brasil
-- **Sectores**: TI, Bancario
-- **Régimen de Trabajo**: Presencial
+- **Cliente**: CIELO.
+- **Proyecto**: Proyecto Multi-Marca.
+- **Localización**: São Paulo – Brasil.
+- **Sectores**: TI, Bancario.
+- **Régimen de Trabajo**: Presencial.
 - **Actividades**:
-  - Arquitectura y programación de sistemas informáticos, desarrollando soluciones para la emisión de transacciones multi-marca y boletos bancarios
-  - Gestión de proyectos como líder técnico, colaborando con otros líderes y socios
-  - Desarrollo y migración de componentes de servicio, optimización de procedimientos almacenados en la base de datos
-  - Asegurando el procesamiento eficiente de transacciones financieras con un enfoque en la seguridad y el cumplimiento de los requisitos bancarios
+  - Arquitectura y programación de sistemas informáticos, desarrollando soluciones para la emisión de transacciones multi-marca y boletos bancarios;
+  - Gestión de proyectos como líder técnico, colaborando con otros líderes y socios;
+  - Desarrollo y migración de componentes de servicio, optimización de procedimientos almacenados en la base de datos;
+  - Asegurando el procesamiento eficiente de transacciones financieras con un enfoque en la seguridad y el cumplimiento de los requisitos bancarios.
 - **Tecnologías y Herramientas**:
-  - Lenguajes y Frameworks: Java 8, JavaScript, Shell Script
-  - Bases de Datos: Bases de datos relacionales, Procedimientos Almacenados SQL, Pure JDBC
-  - Servicios y APIs: Apache Kafka, REST, SOAP
-  - Servidores de Aplicaciones: IBM WebSphere, Apache Tomcat 8
-  - Plataforma en la Nube: Amazon Web Services
+  - Lenguajes y Frameworks: Java 8, JavaScript, Shell Script;
+  - Bases de Datos: Bases de datos relacionales, Procedimientos Almacenados SQL, Pure JDBC;
+  - Servicios y APIs: Apache Kafka, REST, SOAP;
+  - Servidores de Aplicaciones: IBM WebSphere, Apache Tomcat 8;
+  - Plataforma en la Nube: Amazon Web Services.
 
 <table class="company">
   <tr>
@@ -556,15 +540,15 @@ porque todo lo que realmente quiero es escudriñar y orquestar soluciones de neg
   </tr>
 </table>
 
-- **Cliente**: Saferocket
-- **Proyecto**: Proyecto Swift
-- **Localización**: São Paulo – Brasil
-- **Sectores**: TI, Finanzas
-- **Régimen de Trabajo**: Híbrido
+- **Cliente**: Saferocket.
+- **Proyecto**: Proyecto Swift.
+- **Localización**: São Paulo – Brasil.
+- **Sectores**: TI, Finanzas.
+- **Régimen de Trabajo**: Híbrido.
 - **Actividades**:
-  - Desarrollo de un sistema de transferencia de dinero para transacciones internacionales, asegurando una experiencia de usuario sin problemas y el cumplimiento de estándares globales, incluyendo integración con Swift e IBAN
+  - Desarrollo de un sistema de transferencia de dinero para transacciones internacionales, asegurando una experiencia de usuario sin problemas y el cumplimiento de estándares globales, incluyendo integración con Swift e IBAN.
 - **Tecnologías y Herramientas**:
-  - Node.js, Heroku, MongoDB, React, JavaScript Puro, Swift
+  - Node.js, Heroku, MongoDB, React, JavaScript Puro, Swift.
 
 <table class="company">
   <tr>
@@ -574,16 +558,16 @@ porque todo lo que realmente quiero es escudriñar y orquestar soluciones de neg
   </tr>
 </table>
 
-- **Cliente**: C&A Modas
-- **Proyecto**: Migración de Sistemas POS
-- **Localización**: São Paulo – Brasil
-- **Sectores**: TI, Retail
-- **Régimen de Trabajo**: Presencial
+- **Cliente**: C&A Modas.
+- **Proyecto**: Migración de Sistemas POS.
+- **Localización**: São Paulo – Brasil.
+- **Sectores**: TI, Retail.
+- **Régimen de Trabajo**: Presencial.
 - **Actividades**:
-  - Proyecto de migración de sistemas POS para cientos de tiendas en una cadena de ropa internacional, utilizando tecnologías de Oracle y conocimientos extensivos de soluciones industriales de Oracle (retail)
-  - Desarrollo de todos los sistemas de la plataforma, integración con adquirentes, servicios de verificación de CPF y CNPJ, servicios de geolocalización, sistemas de pago con tarjeta de crédito y débito, y mejora de procesos técnicos
+  - Proyecto de migración de sistemas POS para cientos de tiendas en una cadena de ropa internacional, utilizando tecnologías de Oracle y conocimientos extensivos de soluciones industriales de Oracle (retail);
+  - Desarrollo de todos los sistemas de la plataforma, integración con adquirentes, servicios de verificación de CPF y CNPJ, servicios de geolocalización, sistemas de pago con tarjeta de crédito y débito, y mejora de procesos técnicos.
 - **Tecnologías y Herramientas**:
-  - Oracle Retail, Java 8, Java Swing, Java Spring, Oracle DB
+  - Oracle Retail, Java 8, Java Swing, Java Spring, Oracle DB.
 
 <table class="company">
   <tr>
@@ -593,21 +577,21 @@ porque todo lo que realmente quiero es escudriñar y orquestar soluciones de neg
   </tr>
 </table>
 
-- **Cliente**: Valemobi
-- **Proyecto**: Home Broker y Fondos de Inversión
-- **Localización**: São Paulo – Brasil
-- **Sectores**: TI, Finanzas, Bancario
-- **Régimen de Trabajo**: Presencial
+- **Cliente**: Valemobi.
+- **Proyecto**: Home Broker y Fondos de Inversión.
+- **Localización**: São Paulo – Brasil.
+- **Sectores**: TI, Finanzas, Bancario.
+- **Régimen de Trabajo**: Presencial.
 - **Actividades**:
-  - Desarrollo de proyectos de Home Broker y fondos de inversión multimercado
-  - Liderazgo técnico de un pequeño equipo
-  - Análisis de sistemas en varios proyectos
-  - Desarrollo de soluciones personalizadas para la plataforma
-  - Migración del framework frontend a una versión más actualizada, mejorando el rendimiento y la funcionalidad
-  - Resolución de errores y optimización del rendimiento utilizando herramientas de seguimiento de errores
-  - Definición de mejores prácticas para desarrolladores
+  - Desarrollo de proyectos de Home Broker y fondos de inversión multimercado;
+  - Liderazgo técnico de un pequeño equipo;
+  - Análisis de sistemas en varios proyectos;
+  - Desarrollo de soluciones personalizadas para la plataforma;
+  - Migración del framework frontend a una versión más actualizada, mejorando el rendimiento y la funcionalidad;
+  - Resolución de errores y optimización del rendimiento utilizando herramientas de seguimiento de errores;
+  - Definición de mejores prácticas para desarrolladores.
 - **Tecnologías y Herramientas**:
-  - Java 8, Node.js, Angular 2 y 4, TypeScript, Sentry, VSC, Eclipse, GIT
+  - Java 8, Node.js, Angular 2 y 4, TypeScript, Sentry, VSC, Eclipse, GIT.
 
 <table class="company">
   <tr>
@@ -617,16 +601,16 @@ porque todo lo que realmente quiero es escudriñar y orquestar soluciones de neg
   </tr>
 </table>
 
-- **Cliente**: Santander
-- **Proyecto**: Mejoras en Santander
-- **Localización**: São Paulo – Brasil
-- **Sectores**: TI, Servicios
-- **Régimen de Trabajo**: Presencial
+- **Cliente**: Santander.
+- **Proyecto**: Mejoras en Santander.
+- **Localización**: São Paulo – Brasil.
+- **Sectores**: TI, Servicios.
+- **Régimen de Trabajo**: Presencial.
 - **Actividades**:
-  - Creación de sistemas internos para la gestión de recursos y empleados
-  - Migración de la plataforma, gestión de procesos de negocio, análisis de sistemas y desarrollo de microservicios REST
+  - Creación de sistemas internos para la gestión de recursos y empleados;
+  - Migración de la plataforma, gestión de procesos de negocio, análisis de sistemas y desarrollo de microservicios REST.
 - **Tecnologías y Herramientas**:
-  - Java 8, Node.js, Angular 4 con TypeScript, Linux CentOS, Linux CentOS RPM, PostgreSQL, GIT, Jira, Apache Maven, JUnit, Spring (seguridad, contenedor principal, AOP e instrumentación, acceso a datos/integración, Web, pruebas), servicios web RESTful, JavaScript, VSC, Eclipse, GIT
+  - Java 8, Node.js, Angular 4 con TypeScript, Linux CentOS, Linux CentOS RPM, PostgreSQL, GIT, Jira, Apache Maven, JUnit, Spring (seguridad, contenedor principal, AOP e instrumentación, acceso a datos/integración, Web, pruebas), servicios web RESTful, JavaScript, VSC, Eclipse, GIT.
 
 <table class="company">
   <tr>
@@ -636,18 +620,18 @@ porque todo lo que realmente quiero es escudriñar y orquestar soluciones de neg
   </tr>
 </table>
 
-- **Cliente**: Diebold
-- **Proyecto**: POS SAT / SEFAZ
-- **Localización**: São Paulo – Brasil
-- **Sectores**: TI, Retail
-- **Régimen de Trabajo**: Presencial
+- **Cliente**: Diebold.
+- **Proyecto**: POS SAT / SEFAZ.
+- **Localización**: São Paulo – Brasil.
+- **Sectores**: TI, Retail.
+- **Régimen de Trabajo**: Presencial.
 - **Actividades**:
-  - Proyecto de migración de sistemas POS, incluyendo POS para hipermercados, farmacias, estaciones de servicio y mostradores de atención al cliente
-  - Desarrollo y análisis de sistemas
-  - Aplicación de normas fiscales, legales y de facturación electrónica
-  - Integración con SAT y SEFAZ
+  - Proyecto de migración de sistemas POS, incluyendo POS para hipermercados, farmacias, estaciones de servicio y mostradores de atención al cliente;
+  - Desarrollo y análisis de sistemas;
+  - Aplicación de normas fiscales, legales y de facturación electrónica;
+  - Integración con SAT y SEFAZ.
 - **Tecnologías y Herramientas**:
-  - Linux CentOS, C, C++, Java 8, Node.js, PostgreSQL, GIT, Bamboo, Jira, Apache Maven, Mockito, JUnit, Spring (seguridad, contenedor principal, AOP e instrumentación, acceso a datos/integración, Web, pruebas), servicios web RESTful, Angular 4 con TypeScript, JavaScript, Eclipse
+  - Linux CentOS, C, C++, Java 8, Node.js, PostgreSQL, GIT, Bamboo, Jira, Apache Maven, Mockito, JUnit, Spring (seguridad, contenedor principal, AOP e instrumentación, acceso a datos/integración, Web, pruebas), servicios web RESTful, Angular 4 con TypeScript, JavaScript, Eclipse.
 
 <table class="company">
   <tr>
@@ -657,18 +641,18 @@ porque todo lo que realmente quiero es escudriñar y orquestar soluciones de neg
   </tr>
 </table>
 
-- **Cliente**: Itaú
-- **Proyecto**: Proyecto de Inteligencia Artificial
-- **Localización**: São Paulo – Brasil
-- **Sectores**: TI, Finanzas, Bancario
-- **Régimen de Trabajo**: Presencial
+- **Cliente**: Itaú.
+- **Proyecto**: Proyecto de Inteligencia Artificial.
+- **Localización**: São Paulo – Brasil.
+- **Sectores**: TI, Finanzas, Bancario.
+- **Régimen de Trabajo**: Presencial.
 - **Actividades**:
-  - Desarrollo de un proyecto de IA para la mejora del código fuente de Java
-  - Análisis de sistemas para identificar mejoras y afinidades
-  - Desarrollo del núcleo de generación de código
-  - Identificación de problemas y oportunidades, interacción con el cliente para recopilar requisitos y detalles del proceso, y producción de documentos de especificación
+  - Desarrollo de un proyecto de IA para la mejora del código fuente de Java;
+  - Análisis de sistemas para identificar mejoras y afinidades;
+  - Desarrollo del núcleo de generación de código;
+  - Identificación de problemas y oportunidades, interacción con el cliente para recopilar requisitos y detalles del proceso, y producción de documentos de especificación.
 - **Tecnologías y Herramientas**:
-  - WebSphere, Java 5, SQL
+  - WebSphere, Java 5, SQL.
 
 <table class="company">
   <tr>
@@ -678,15 +662,15 @@ porque todo lo que realmente quiero es escudriñar y orquestar soluciones de neg
   </tr>
 </table>
 
-- **Cliente**: Itaú
-- **Proyecto**: Proyecto Termómetro
-- **Localización**: São Paulo – Brasil
-- **Sectores**: TI, Finanzas, Bancario
-- **Régimen de Trabajo**: Presencial
+- **Cliente**: Itaú.
+- **Proyecto**: Proyecto Termómetro.
+- **Localización**: São Paulo – Brasil.
+- **Sectores**: TI, Finanzas, Bancario.
+- **Régimen de Trabajo**: Presencial.
 - **Actividades**:
-  - Desarrollo, arquitectura y análisis del sistema Java para el proyecto del cliente – un sistema destinado a evaluar la satisfacción de todos los profesionales del cliente
+  - Desarrollo, arquitectura y análisis del sistema Java para el proyecto del cliente – un sistema destinado a evaluar la satisfacción de todos los profesionales del cliente;
 - **Tecnologías y Herramientas**:
-  - Java EE 5, Eclipse 3.2, IBM WebSphere, Struts, Hibernate, Oracle DB, XML y XSL, JBoss Seam, JSF, JPA, RichFaces, JUnit, DBUnit, Selenium, DHTML
+  - Java EE 5, Eclipse 3.2, IBM WebSphere, Struts, Hibernate, Oracle DB, XML y XSL, JBoss Seam, JSF, JPA, RichFaces, JUnit, DBUnit, Selenium, DHTML.
 
 <table class="company">
   <tr>
@@ -696,15 +680,15 @@ porque todo lo que realmente quiero es escudriñar y orquestar soluciones de neg
   </tr>
 </table>
 
-- **Cliente**: Bradesco
-- **Proyecto**: Proyecto de Mejoras de TI de Bradesco
-- **Localización**: São Paulo – Brasil
-- **Sectores**: TI, Finanzas, Bancario
-- **Régimen de Trabajo**: Presencial
+- **Cliente**: Bradesco.
+- **Proyecto**: Proyecto de Mejoras de TI de Bradesco.
+- **Localización**: São Paulo – Brasil.
+- **Sectores**: TI, Finanzas, Bancario.
+- **Régimen de Trabajo**: Presencial.
 - **Actividades**:
-  - Desarrollo, arquitectura y análisis del sistema Java para el proyecto del cliente – un sistema para socios dentro de los estándares de desarrollo de TI
+  - Desarrollo, arquitectura y análisis del sistema Java para el proyecto del cliente – un sistema para socios dentro de los estándares de desarrollo de TI.
 - **Tecnologías y Herramientas**:
-  - Java, IBM WebSphere, IBM DB2
+  - Java, IBM WebSphere, IBM DB2.
 
 <table class="company">
   <tr>
@@ -714,15 +698,15 @@ porque todo lo que realmente quiero es escudriñar y orquestar soluciones de neg
   </tr>
 </table>
 
-- **Cliente**: Bradesco
-- **Proyecto**: Proyecto de Tablero Financiero
-- **Localización**: São Paulo – Brasil
-- **Sectores**: TI, Finanzas, Bancario
-- **Régimen de Trabajo**: Presencial
+- **Cliente**: Bradesco.
+- **Proyecto**: Proyecto de Tablero Financiero.
+- **Localización**: São Paulo – Brasil.
+- **Sectores**: TI, Finanzas, Bancario.
+- **Régimen de Trabajo**: Presencial.
 - **Actividades**:
-  - Desarrollo del sistema de gestión financiera del cliente
+  - Desarrollo del sistema de gestión financiera del cliente.
 - **Tecnologías y Herramientas**:
-  - Java 5, Eclipse, Struts, JDBC, IBM DB2, DHTML
+  - Java 5, Eclipse, Struts, JDBC, IBM DB2, DHTML.
 
 <table class="company">
   <tr>
@@ -732,14 +716,14 @@ porque todo lo que realmente quiero es escudriñar y orquestar soluciones de neg
   </tr>
 </table>
 
-- **Cliente**: Bradesco
-- **Proyecto**: Tablero Financiero
-- **Localización**: São Paulo – Brasil
-- **Sectores**: TI, Finanzas, Bancario
-- **Régimen de Trabajo**: Presencial
+- **Cliente**: Bradesco.
+- **Proyecto**: Tablero Financiero.
+- **Localización**: São Paulo – Brasil.
+- **Sectores**: TI, Finanzas, Bancario.
+- **Régimen de Trabajo**: Presencial.
 - **Actividades**:
-  - Desarrollo de sistemas Java para el proyecto del cliente – un sistema de gestión financiera
+  - Desarrollo de sistemas Java para el proyecto del cliente – un sistema de gestión financiera.
 - **Tecnologías y Herramientas**:
-  - Java 5, Eclipse, Struts, JDBC, DB2, DHTML
+  - Java 5, Eclipse, Struts, JDBC, DB2, DHTML.
 
 ---
