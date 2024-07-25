@@ -1,0 +1,373 @@
+.green{
+  color: #006400;
+}
+small.mr33{
+  font-family:consolas;
+  color: #ffffff;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 5px; 
+}
+.mr33{
+  font-weight: normal;
+  color: rgba(244,244,244,0.1);
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+
+img.avatar{
+border-radius: 100%;
+margin: auto;
+display: block;
+border: 1px solid #333 !important;
+}
+table.ref{
+  margin-top: 10px;
+}
+
+table.ref td:first-child{
+  background-color: #f6faff !important;
+  width: 250px;
+  min-width: 250px;
+  max-width: 250px;
+}
+table.tech td:first-child{
+  background-color: #f6faff !important;
+}
+table.ref td:nth-child(2){
+  text-align: justify;
+  /* background-color: #fff9f1; */
+}
+table.tech td:nth-child(2), table.tech th:nth-child(2){
+  text-align: center;
+}
+table.tech td:nth-child(3),table.tech th:nth-child(3){
+  text-align: center;
+}
+
+
+p{
+  text-align: justify;
+}
+
+
+th.avatar{
+   background-color: #f6faff !important;
+
+  background-size: cover;
+  
+  border-right: 0px !important;
+  border-top: 1px solid #333;
+  border-left: 1px solid #333;
+}
+
+.cert{
+  /* font-size: 20px; */
+}
+
+ul.slogan > li {
+  list-style: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="utf-8"?><svg width="800px" height="800px" viewBox="0 0 1024 1024" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z" fill="#000000" /></svg>') no-repeat left center;
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+  text-align: justify;
+}
+
+td.slogan{
+  font-family: 'Fira Code', Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+  color: #333;
+  font-weight: normal;
+  /* background-color: #f6faff !important; */
+
+  /* background-color: #f2f2f2; */
+  background-color: #fff9f1;
+ 
+
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+  text-transform: uppercase;
+}
+
+td.main{
+  /* font-family: 'Fira Code', Consolas, "Liberation Mono", Menlo, Courier, monospace; */
+
+  font-size: 18px !important;
+  font-size: 25px;
+  font-weight: normal;
+  background-color: #333;
+  /* color: #f2f2f2; */
+  color: #f2f2f2;
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+  border-top: 1px solid #333;
+  text-transform: uppercase;
+  padding-left: 20px;
+  /* text-align: center; */
+}
+th.name{
+  /* background-color: #f2f2f2; */
+  /* background-color: #fff9f1; */
+  background-color: #f6faff !important;
+  border-left: 0px !important;
+  border-top: 1px solid #333;
+  border-right: 1px solid #333;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+
+
+/* th.name{
+  background-color: transparent !important;
+} */
+
+h2:not(.main){
+}
+
+/* h2:not(.main), h3, h4, h5, h6{
+  font-size: 17px;
+}
+h2.main{
+  font-size: 17px;
+} */
+
+/* Aplica a margem superior apenas ao primeiro nível de listas não ordenadas e ordenadas */
+ul, ol {
+  margin: 0px 0px 0px 0px;
+  padding-left: 20px;
+}
+
+p.cert{
+  font-family: 'Fira Code', Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-weight: normal !important;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+p.about{
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: normal !important;
+  font-family: 'Fira Code', Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+/* Remove a margem das listas aninhadas */
+ul ul, ol ol {
+  margin: 0px 0px 0px 0px;
+  padding-top: 0px;
+  padding-left: 20px; /* Mantém o padding para o alinhamento correto */
+}
+
+ul > li {
+  list-style: none;
+  padding-left: 20px;
+  background: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="utf-8"?><svg width="800px" height="800px" viewBox="0 0 1024 1024" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z" fill="#000000" /></svg>') no-repeat left 8px;
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+  text-align: justify;
+  padding-right: 20px;
+}
+
+/* Definindo o estilo para os itens de lista de segundo nível */
+ul > li > ul > li {
+  list-style: none;
+  padding-left: 20px;
+  background: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="utf-8"?><svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>') no-repeat left center;
+  background-size: 8px 8px;
+  background-repeat: no-repeat;
+}
+
+/* .codehilite code, .codehilite pre {
+  padding: 6px 0px 6px 12px;
+  margin-bottom: 16px;
+} */
+
+.codehilite{
+  font-size: 0.85em;
+}
+
+code {
+  background-color: #f4f4f4;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: 'Fira Code', Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  white-space: pre-wrap; /* Quebra de linha automática */
+}
+@page {
+  size: A4;
+  /* Add margin for the header */
+  margin-top: 4cm;
+
+  @top-center {
+      content: element(header);
+  }
+}
+
+thead {
+    display: table-header-group;
+}
+tfoot {
+    display: table-footer-group;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #222222;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+table.company{
+  margin-top: 20px;
+}
+
+table.company th:first-child {
+  text-align: left;
+  border-left: 4px solid rgba(221, 221, 221, 0.74);
+  text-transform: uppercase;
+  padding-left: 20px;
+  padding-right: 8px;
+}
+table.company th:nth-child(2) {
+  text-align: center;
+  border-left: 1px solid rgba(221, 221, 221, 0.74);
+  text-transform: uppercase;
+  background-color: #f2f2f274;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+table.company th:nth-child(3){
+  text-align: center;
+  font-family: 'Fira Code', Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-weight: normal !important;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: #f2f2f274;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+table.company th:nth-child(4){
+  text-align: center;
+  font-family: 'Fira Code', Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-weight: normal !important;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: #f2f2f274;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+
+table.company th{
+  border: 1px solid #ddd;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: left;
+  background-color: #f2f2f2;
+}
+
+h2.main {
+  background-color: #333;
+  color: #f2f2f2;
+}
+
+h2 {
+  border: 1px solid #ddd;
+  /* border-left: 4px solid rgba(221, 221, 221, 0.74); */
+  border-left: 4px solid #333;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 8px;
+  text-align: left;
+  background-color: #f2f2f2;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+h3 {
+  border: 1px solid rgba(221, 221, 221, 0.74);
+  /* border-left: 4px solid rgba(221, 221, 221, 0.74); */
+  border-left: 4px solid #333;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 20px;
+  padding-right: 4px;
+  text-align: left;
+  background-color: #f2f2f274;
+  font-weight: bold;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p {
+  margin: 10px 0;
+}
+
+pre {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 4px;
+  overflow: auto;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  white-space: pre-wrap; /* Quebra de linha automática */
+}
+
+a {
+  color: #0366d6;
+  /* color: #0366d6; */
+  text-decoration: underline; /* Underline sempre presente */
+}
+
+a:hover {
+  text-decoration: none; /* Remove o underline ao passar o mouse */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+img {
+  max-width: 100px;
+  height: auto;
+}
+
+blockquote {
+  border-left: 2px solid #dfe2e5;
+  color: #6a737d;
+  padding: 0 1em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 16px;
+  background-color: #f9f9f9;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #dfe2e5;
+  margin: 20px 0;
+}

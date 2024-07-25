@@ -13,4 +13,5 @@
 # ---------------------------------
 
 echo "Compiling and running the Groovy script..."
-groovy /app/sys/generateChangelogAndProjectVersion.groovy
+groovy /app/sys/makepdf.groovy
+# groovy /app/sys/generateChangelogAndProjectVersion.groovy
