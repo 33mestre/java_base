@@ -407,7 +407,7 @@ porque tudo o que eu realmente quero é esquadrinhar e orquestrar soluções de 
 - **Atividades**:
   - Análise e Arquitetura de Sistemas: Criação de uma arquitetura exclusiva, design e implementação de diagramas, modelagem de dados, criação de histórias de usuários, documentação do produto;
   - Desenv.olvimento: Sistema low-code e no-code com uma interface cognitiva única;
-  - UX/UI: Coleta de hipóteses, pesquisa de mesa, jornadas de clientes, testes de usabilidade, wireframes, acessibilidade, prototipagem, documentação;
+  - UX/UI: Coleta de hipóteses, pesquisa de mesa, jornadas de clientes, testes de usabilidade, wireframes, acessibilidade, prototipagem, documentação.
 - **Tecnologias e Ferramentas**:
   - Linguagem / Servidor: JavaScript, Node.js;
   - OpenAPI: Modelagem de APIs RESTful com Swagger;
@@ -451,7 +451,7 @@ porque tudo o que eu realmente quero é esquadrinhar e orquestrar soluções de 
 - **Atividades**:
   - Desenvolvimento de integrações para companhias de seguros associadas;
   - Design de fluxos de negócios usando BPMN;
-  - Construção de aplicações usando microsserviços.
+  - Construção de aplicações usando microsserviços;
   - Gerenciamento de Servidor de Aplicações.
 - **Tecnologias e Ferramentas**:
   - Linguagens e Frameworks: Java 8, Spring [Core, Boot, Batch], JPA, JSF, JSP, Servlet, AX-WS, JAX-RS, JavaScript;
@@ -521,7 +521,7 @@ porque tudo o que eu realmente quero é esquadrinhar e orquestrar soluções de 
 - **Setores**: TI, Bancário.
 - **Regime de Trabalho**: Presencial.
 - **Atividades**:
-  - Arquitetura e programação de sistemas de informática, desenvolvendo soluções para emissão de transações multibandeira e boletos ;bancários;
+  - Arquitetura e programação de sistemas de informática, desenvolvendo soluções para emissão de transações multibandeira e boletos bancários;
   - Gerenciamento de projetos como líder técnico, colaborando com outros líderes e parceiros;
   - Desenvolvimento e migração de componentes de serviço, otimizando procedimentos armazenados no banco de dados;
   - Garantir o processamento eficiente de transações financeiras com foco em segurança e conformidade com os requisitos bancários.
@@ -546,7 +546,7 @@ porque tudo o que eu realmente quero é esquadrinhar e orquestrar soluções de 
 - **Setores**: TI, Financeiro.
 - **Regime de Trabalho**: Híbrido.
 - **Atividades**:
-  - Desenvolvimento de um sistema de transferência de dinheiro para transações internacionais, garantindo uma experiência de usuário ;perfeita e conformidade com os padrões globais, incluindo integração com Swift e IBAN.
+  - Desenvolvimento de um sistema de transferência de dinheiro para transações internacionais, garantindo uma experiência de usuário perfeita e em conformidade com os padrões globais, incluindo integração com Swift e IBAN.
 - **Tecnologias e Ferramentas**:
   - Node.js, Heroku, MongoDB, React, JavaScript Puro, Swift.
 
@@ -626,7 +626,7 @@ porque tudo o que eu realmente quero é esquadrinhar e orquestrar soluções de 
 - **Setores**: TI, Varejo.
 - **Regime de Trabalho**: Presencial.
 - **Atividades**:
-  - Projeto de migração de sistemas POS, incluindo POS para hipermercados, farmácias, postos de gasolina e balcões de atendimento ao cliente
+  - Projeto de migração de sistemas POS, incluindo POS para hipermercados, farmácias, postos de gasolina e balcões de atendimento ao cliente;
   - Desenvolvimento e análise de sistemas;
   - Aplicação de regras fiscais, legais e de nota fiscal eletrônica;
   - Integração com SAT e SEFAZ.

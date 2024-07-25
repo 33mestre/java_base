@@ -409,7 +409,7 @@ porque todo lo que realmente quiero es escudriñar y orquestar soluciones de neg
   - Desarrollo: Sistema de low-code y no-code con una interfaz cognitiva única;
   - UX/UI: Recolección de hipótesis, investigación de escritorio, viajes del cliente, pruebas de usabilidad, wireframes, accesibilidad, prototipos, documentación.
 - **Tecnologías y Herramientas**:
-  - Lenguaje / Servidor: JavaScript, Node.js.
+  - Lenguaje / Servidor: JavaScript, Node.js;
   - OpenAPI: Modelado de APIs Web RESTful con Swagger;
   - AWS: EC2, ECS, RDS, S3, SNS, SQS, API Gateway, Lambda, DynamoDB.
 
@@ -431,7 +431,7 @@ porque todo lo que realmente quiero es escudriñar y orquestar soluciones de neg
   - Desarrollo: Construcción de aplicaciones web reactivas y pruebas automatizadas.
 - **Tecnologías y Herramientas**:
   - Lenguajes / Servidores: Java 8, JavaScript, Java Spring, Node.js;
-  - OpenAPI: Modelado de APIs Web RESTful con Swagger.
+  - OpenAPI: Modelado de APIs Web RESTful con Swagger;
   - AWS: EC2, ECS, RDS, S3, SNS, SQS, API Gateway, Lambda, DynamoDB;
   - Bases de Datos: DynamoDB, PostgreSQL, Redis.
 
