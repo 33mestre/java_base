@@ -1,7 +1,12 @@
 
 # Currency Conversion API - Project Change Log
 
-**Current version:** [0.6.5](https://github.com/33mestre/java_base/commit/7dcecac) (Shelson Ferrari) - 25/07/2024 06:18h
+**Current version:** [0.6.6](https://github.com/33mestre/java_base/commit/73a5736) (Shelson Ferrari) - 25/07/2024 06:19h
+
+---
+
+[0.6.6](https://github.com/33mestre/java_base/commit/73a5736) - 25/07/2024 06:19h - 73a5736 - Shelson Ferrari
+- Delete sys/myenv directory
 
 ---
 
