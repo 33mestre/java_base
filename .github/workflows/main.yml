@@ -241,7 +241,7 @@ jobs:
     - name: Generate CV PDFs
       run: |
         cd sys
-        python sys/markdown_to_pdf.py
+        python markdown_to_pdf.py
 
     # - name: Upload PDF artifacts
     #   uses: actions/upload-artifact@v2
