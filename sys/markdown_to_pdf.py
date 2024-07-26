@@ -84,17 +84,11 @@ documents = [
 ]
 
 # ---------------------------------
-# Function to get the project base directory
-# ---------------------------------
-def get_project_base_dir():
-    return os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-# ---------------------------------
 # Paths for input and output directories
 # ---------------------------------
-base_dir = get_project_base_dir()
-input_md_dir = os.path.join(base_dir, 'sys/cv/')
-output_pdf_dir = os.path.join(base_dir, 'sys/pdf')
+base_dir = './sys'
+input_md_dir = os.path.join(base_dir, 'cv/')
+output_pdf_dir = os.path.join(base_dir, 'pdf')
 
 if not os.path.exists(output_pdf_dir):
     os.makedirs(output_pdf_dir)
@@ -102,8 +96,8 @@ if not os.path.exists(output_pdf_dir):
 # ---------------------------------
 # Paths for CSS files
 # ---------------------------------
-css_file_path = os.path.join(base_dir, 'sys/style.css')
-css_file_theme_path = os.path.join(base_dir, 'sys/css/mdTheme/default.css')
+css_file_path = os.path.join(base_dir, 'style.css')
+css_file_theme_path = os.path.join(base_dir, 'css/mdTheme/default.css')
 
 # ---------------------------------
 # Read CSS file contents
