@@ -1,3 +1,7 @@
+.green33{
+  background-color: #098995;
+  color: #ffffff;
+} 
 /* Styles for links */
 .links {
   display: flex;
@@ -132,6 +136,7 @@ td.slogan {
   border-left: 1px solid #333;
   border-right: 0.5px solid #333;
   border-bottom: 0.5px solid #333;
+  background-color: rgba(9, 137, 149, 0.1);
   /* text-transform: uppercase; */
 }
 
@@ -159,7 +164,19 @@ td.main {
   border-bottom: 0.5px solid #333;
   border-top: 0.5px solid #333;
   text-transform: uppercase;
-  padding-left: 20px;
+  padding: 0px;
+}
+td.main div{
+  border-left: 10px solid #098995;
+    position: relative;
+    width: 100%;
+    display: block;
+    height: 100%;
+    margin: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /* Styles for name headers */

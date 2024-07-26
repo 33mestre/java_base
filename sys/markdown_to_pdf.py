@@ -109,6 +109,13 @@ with open(css_file_theme_path, 'r', encoding='utf-8') as css_file_theme:
     css_content_theme = css_file_theme.read()
 
 # ---------------------------------
+# Function to save HTML content to a file
+# ---------------------------------
+def save_html(content, file_path):
+    with open(file_path, 'w', encoding='utf-8') as html_file:
+        html_file.write(content)
+
+# ---------------------------------
 # Function to generate the PDF
 # ---------------------------------
 def gerar_pdf(document):
@@ -213,7 +220,6 @@ def gerar_pdf(document):
     # Convert HTML to PDF using WeasyPrint
     # ---------------------------------
     weasyprint.HTML(string=html_content).write_pdf(output_pdf_path)
-
     print(f"PDF gerado com sucesso em {output_pdf_path}")
 
     # ---------------------------------
@@ -229,6 +235,11 @@ def gerar_pdf(document):
     }
 
     add_metadata(output_pdf_path, output_pdf_path, metadata)
+
+    # output_html_path = os.path.join(output_pdf_dir, f"{document['nome']}.html")
+    # save_html(html_content, output_html_path)
+    # print(f"HTML gerado com sucesso em {output_html_path}")
+
 
 # ---------------------------------
 # Generate PDFs for each document

@@ -52,7 +52,10 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 </tr>
 
 <tr>
-<td colspan="2" class="main"><small class="mr33">:.</small>&nbsp;<strong>Ingeniero de Software Full Stack&nbsp;&nbsp;|&nbsp;&nbsp;Arquitecto de Nube</strong></td>
+<td colspan="2" class="main"><div>
+<small class="mr33">:.</small>&nbsp;<strong>Ingeniero de Software Full Stack&nbsp;&nbsp;|&nbsp;&nbsp;Arquitecto de Nube</strong>
+</div>
+</td>
 </tr>
 </table>
 

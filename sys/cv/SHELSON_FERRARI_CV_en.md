@@ -54,7 +54,9 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 </tr>
 
 <tr>
-<td colspan="2" class="main"><small class="mr33">:.</small>&nbsp;<strong>Full Stack Software Engineer&nbsp;&nbsp;|&nbsp;&nbsp;Cloud Architect</strong></td>
+<td colspan="2" class="main"><div>
+<small class="mr33">:.</small>&nbsp;<strong>Full Stack Software Engineer&nbsp;&nbsp;|&nbsp;&nbsp;Cloud Architect</strong>
+</div></td>
 </tr>
 </table>
 

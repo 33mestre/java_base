@@ -52,7 +52,10 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 </tr>
 
 <tr>
-<td colspan="2" class="main"><small class="mr33">:.</small>&nbsp;<strong>Engenheiro de Software Full Stack&nbsp;&nbsp;|&nbsp;&nbsp;Arquiteto de Nuvem</strong></td>
+<td colspan="2" class="main"><div>
+<small class="mr33">:.</small>&nbsp;<strong>Engenheiro de Software Full Stack&nbsp;&nbsp;|&nbsp;&nbsp;Arquiteto de Nuvem</strong>
+</div>
+</td>
 </tr>
 </table>
 
