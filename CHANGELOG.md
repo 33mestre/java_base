@@ -1,7 +1,47 @@
 
 # Currency Conversion API - Project Change Log
 
-**Current version:** [0.7.0](https://github.com/33mestre/java_base/commit/8b608a0) (Shelson Ferrari) - 26/07/2024 04:24h
+**Current version:** [0.7.8](https://github.com/33mestre/java_base/commit/05902ce) (Shelson Ferrari) - 26/07/2024 05:14h
+
+---
+
+[0.7.8](https://github.com/33mestre/java_base/commit/05902ce) - 26/07/2024 05:14h - 05902ce - Shelson Ferrari
+- ajuste ci cd para gerar pdf cv shelson
+
+---
+
+[0.7.7](https://github.com/33mestre/java_base/commit/da246fe) - 26/07/2024 05:06h - da246fe - Shelson Ferrari
+- ajuste ci cd para gerar pdf cv shelson
+
+---
+
+[0.7.6](https://github.com/33mestre/java_base/commit/d2a334d) - 26/07/2024 04:54h - d2a334d - Shelson Ferrari
+- ajuste ci cd para gerar pdf cv shelson
+
+---
+
+[0.7.5](https://github.com/33mestre/java_base/commit/a43908f) - 26/07/2024 04:47h - a43908f - Shelson Ferrari
+- ajuste ci cd para gerar pdf cv shelson
+
+---
+
+[0.7.4](https://github.com/33mestre/java_base/commit/0f3fda9) - 26/07/2024 04:43h - 0f3fda9 - Shelson Ferrari
+- ajuste ci cd para gerar pdf cv shelson
+
+---
+
+[0.7.3](https://github.com/33mestre/java_base/commit/77357e9) - 26/07/2024 04:35h - 77357e9 - Shelson Ferrari
+- ajuste ci cd para gerar pdf cv shelson
+
+---
+
+[0.7.2](https://github.com/33mestre/java_base/commit/25e540f) - 26/07/2024 04:33h - 25e540f - Shelson Ferrari
+- ajuste ci cd para gerar pdf cv shelson
+
+---
+
+[0.7.1](https://github.com/33mestre/java_base/commit/92d0a2d) - 26/07/2024 04:30h - 92d0a2d - Shelson Ferrari
+- ajuste ci cd para gerar pdf cv shelson
 
 ---
 
