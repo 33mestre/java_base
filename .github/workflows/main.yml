@@ -119,7 +119,10 @@ jobs:
     # ---------------------------------
     - name: Install Python dependencies
       if: env.is_primary == 'true'
-      run: pip install requests
+      run: |
+        python -m pip install --upgrade pip
+        pip install markdown2 weasyprint pygments pypdf2
+        pip install requests
 
     # ---------------------------------
     # Installs Groovy if needed
@@ -234,6 +237,35 @@ jobs:
         python sys/javadocmd.py
       env:
         PYTHONIOENCODING: UTF-8
+
+    - name: Generate CV PDFs
+      run: |
+        python sys/markdown_to_pdf.py
+
+    # - name: Upload PDF artifacts
+    #   uses: actions/upload-artifact@v2
+    #   with:
+    #     name: cv-pdfs
+    #     path: sys/pdf/*.pdf
+
+    - name: Upload all files from sys/pdf
+      if: env.is_primary == 'true'
+      run: |
+        # Navegar para o diretório correto
+        ( cd sys/pdf
+        # Adicionar todos os arquivos modificados ao staging area do Git
+        git add .
+        # Verificar se há mudanças; se sim, fazer commit e push
+        if git diff --staged --quiet; then
+          echo "No changes to commit."
+        else
+          git config --global user.email "shelson@gmail.com"
+          git config --global user.name "Shelson Ferrari"
+          git commit -m "AUTO_COMMIT: Bulk update of documentation"
+          git push
+        fi )
+      env:
+        GITHUB_TOKEN: ${{ secrets.TOKEN3 }}
 
     - name: Upload all files from docs/site
       if: env.is_primary == 'true'
