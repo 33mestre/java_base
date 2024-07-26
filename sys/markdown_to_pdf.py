@@ -84,15 +84,10 @@ documents = [
 ]
 
 # ---------------------------------
-# Determine the base directory of the project
-# ---------------------------------
-project_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-
-# ---------------------------------
 # Paths for input and output directories
 # ---------------------------------
-input_md_dir = os.path.join(project_dir, 'sys', 'cv')
-output_pdf_dir = os.path.join(project_dir, 'sys', 'pdf')
+input_md_dir = './cv/'
+output_pdf_dir = './pdf'
 
 if not os.path.exists(output_pdf_dir):
     os.makedirs(output_pdf_dir)
@@ -100,8 +95,8 @@ if not os.path.exists(output_pdf_dir):
 # ---------------------------------
 # Paths for CSS files
 # ---------------------------------
-css_file_path = os.path.join(project_dir, 'sys', 'style.css')
-css_file_theme_path = os.path.join(project_dir, 'sys', 'css', 'mdTheme', 'default.css')
+css_file_path = './style.css'
+css_file_theme_path = './css/mdTheme/default.css'
 
 # ---------------------------------
 # Read CSS file contents
@@ -120,8 +115,8 @@ def gerar_pdf(document):
     # ---------------------------------
     # Path for the Markdown file
     # ---------------------------------
-    markdown_file_path = os.path.join('sys', input_md_dir, f"{document['nome']}.md")
-    output_pdf_path = os.path.join('sys', output_pdf_dir, f"{document['nome']}.pdf")
+    markdown_file_path = os.path.join(input_md_dir, f"{document['nome']}.md")
+    output_pdf_path = os.path.join(output_pdf_dir, f"{document['nome']}.pdf")
 
     # ---------------------------------
     # Read the Markdown file
@@ -166,6 +161,8 @@ def gerar_pdf(document):
       @top-center {{
         margin-top: 14px;
       }}
+
+     
     }}
 
     @page {{

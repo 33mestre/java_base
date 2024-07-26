@@ -240,6 +240,7 @@ jobs:
 
     - name: Generate CV PDFs
       run: |
+        cd sys
         python sys/markdown_to_pdf.py
 
     # - name: Upload PDF artifacts
