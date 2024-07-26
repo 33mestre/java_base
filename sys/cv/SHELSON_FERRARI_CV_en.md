@@ -2,7 +2,7 @@
 <tr><th width="150" class="avatar">
 <img class="avatar" src="https://avatars.githubusercontent.com/u/5073958?v=4" alt="Shelson Ferrari's GitHub Profile Picture" width="100" height="100"></th>
 <th align="left" class="name"><p>SHELSON FERRARI</p>
-<p class="cert">70+ certifications <small class="separator">|</small> 23 yrs. exp. <small class="separator">|</small></p>
+<p class="cert">70+ certifications <small class="separator">|</small> 23 yrs. exp.</p>
 <p class="about">47 yrs — single — Brazilian — São Paulo, Brazil</p>
 
 <p class="links">
@@ -47,7 +47,7 @@
 <td colspan="2" class="slogan">
 <ul class="slogan">
 <li>
-Because what I really want is to design and orchestrate creative, efficient, and effective business solutions through technology.
+I'm intellectually inspired and have been online since 1999, and all I really want is to design and orchestrate creative, efficient, and effective business solutions through technology.
 </li>
 </ul>
 </td>
@@ -208,8 +208,8 @@ Because what I really want is to design and orchestrate creative, efficient, and
 <table class="tech">
   <tr>
     <th>Skill</th>
-    <th>Level <small class="tiny">( 1 to 6 )</small></th>
-    <th>Experience <small class="tiny">(years)</small></th>
+    <th>Level <small class="tiny">( 1 to 5 )</small></th>
+    <th>Experience <small class="tiny">( years )</small></th>
     <th>Type</th>
   </tr>
   <tr>

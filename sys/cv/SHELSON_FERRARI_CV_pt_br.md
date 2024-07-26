@@ -45,7 +45,7 @@
 <td colspan="2" class="slogan">
 <ul class="slogan">
 <li>
-Porque tudo o que eu realmente quero é esquadrinhar e orquestrar soluções de negócios criativas, eficientes e eficazes através da tecnologia.
+Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realmente quero é esquadrinhar e orquestrar soluções de negócios criativas, eficientes e eficazes através da tecnologia.
 </li>
 </ul>
 </td>
@@ -206,8 +206,8 @@ Porque tudo o que eu realmente quero é esquadrinhar e orquestrar soluções de 
 <table class="tech">
   <tr>
     <th>Habilidade</th>
-    <th>Nível (1 a 6)</th>
-    <th>Experiência (anos)</th>
+    <th>Nível <small class="tiny">( 1 to 5 )</small></th>
+    <th>Experiência <small class="tiny">( anos )</small></th>
     <th>Tipo</th>
   </tr>
   <tr>

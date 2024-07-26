@@ -45,7 +45,7 @@
 <td colspan="2" class="slogan">
 <ul class="slogan">
 <li>
-Porque todo lo que realmente quiero es escudriñar y orquestar soluciones de negocios creativas, eficientes y efectivas a través de la tecnología.
+Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente quiero es escudriñar y orquestar soluciones de negocios creativas, eficientes y efectivas a través de la tecnología.
 </li>
 </ul>
 </td>
@@ -206,8 +206,8 @@ Porque todo lo que realmente quiero es escudriñar y orquestar soluciones de neg
 <table class="tech">
   <tr>
     <th>Habilidad</th>
-    <th>Nivel (1 a 6)</th>
-    <th>Experiencia (años)</th>
+    <th>Nivel <small class="tiny">( 1 a 5 )</small></th>
+    <th>Experiencia <small class="tiny">( años )</small></th>
     <th>Tipo</th>
   </tr>
   <tr>
