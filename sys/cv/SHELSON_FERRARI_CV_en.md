@@ -2,7 +2,7 @@
 <tr><th width="150" class="avatar">
 <img class="avatar" src="https://avatars.githubusercontent.com/u/5073958?v=4" alt="Shelson Ferrari's GitHub Profile Picture" width="100" height="100"></th>
 <th align="left" class="name"><p>SHELSON FERRARI</p>
-<p class="cert">70+ certifications <small class="separator">|</small> 23 yrs. exp.</p>
+<p class="cert">70+ certifications <small class="separator">|</small> 23 yrs. exp. <small class="separator">|</small></p>
 <p class="about">47 yrs — single — Brazilian — São Paulo, Brazil</p>
 
 <p class="links">
