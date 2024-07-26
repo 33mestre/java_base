@@ -1,7 +1,12 @@
 
 # Currency Conversion API - Project Change Log
 
-**Current version:** [0.7.8](https://github.com/33mestre/java_base/commit/05902ce) (Shelson Ferrari) - 26/07/2024 05:14h
+**Current version:** [0.7.9](https://github.com/33mestre/java_base/commit/5135f2a) (Shelson Ferrari) - 26/07/2024 05:31h
+
+---
+
+[0.7.9](https://github.com/33mestre/java_base/commit/5135f2a) - 26/07/2024 05:31h - 5135f2a - Shelson Ferrari
+- ajuste ci cd para gerar pdf cv shelson
 
 ---
 
