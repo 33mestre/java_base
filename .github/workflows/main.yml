@@ -112,7 +112,7 @@ jobs:
       if: env.is_primary == 'true'
       uses: actions/setup-python@v2
       with:
-        python-version: '3.8'  # Especificando a versão 3.8 do Python
+        python-version: '3.12.4'  # Especificando a versão do Python
 
     # ---------------------------------
     # Install Python dependencies
@@ -239,6 +239,7 @@ jobs:
         PYTHONIOENCODING: UTF-8
 
     - name: Generate CV PDFs
+      if: env.is_primary == 'true'
       run: |
         python sys/markdown_to_pdf.py
 
