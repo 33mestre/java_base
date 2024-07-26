@@ -84,10 +84,17 @@ documents = [
 ]
 
 # ---------------------------------
+# Function to get the project base directory
+# ---------------------------------
+def get_project_base_dir():
+    return os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# ---------------------------------
 # Paths for input and output directories
 # ---------------------------------
-input_md_dir = './cv/'
-output_pdf_dir = './pdf'
+base_dir = get_project_base_dir()
+input_md_dir = os.path.join(base_dir, 'sys/cv/')
+output_pdf_dir = os.path.join(base_dir, 'sys/pdf')
 
 if not os.path.exists(output_pdf_dir):
     os.makedirs(output_pdf_dir)
@@ -95,8 +102,8 @@ if not os.path.exists(output_pdf_dir):
 # ---------------------------------
 # Paths for CSS files
 # ---------------------------------
-css_file_path = './style.css'
-css_file_theme_path = './css/mdTheme/default.css'
+css_file_path = os.path.join(base_dir, 'sys/style.css')
+css_file_theme_path = os.path.join(base_dir, 'sys/css/mdTheme/default.css')
 
 # ---------------------------------
 # Read CSS file contents
@@ -142,14 +149,6 @@ def gerar_pdf(document):
 
     html_content = '\n'.join(html_content_lines)
 
-#   @top-right {{
-#         content: '';
-#         content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAUCAMAAACtdX32AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAADMUExURQNGlQBElABDlQFElDFdegxKj1NvaCJVg3aCU3WBVCNWggtJjxNOipWSQz5kcxBMjA9MjD9kcpSSQxNNiwlJjxZPiQNFkwxKjgZHkQBElU5taZaTQJeTQE1sah9UhDxjdAVGkgVHkTxjcx5ThAJFkwBCli5cfHmDUhROii1bfS1bfHiDUhFNixJNiyxbfQFFkz5kck5sag5LjQ9LjJeUQExsagRGkhVOipSRQz9kcxFMjEBlcgpJj1FuaSFVg3iDU3eCUyJVgjBde////wzxLiAAAAABYktHRENn0A1iAAAAB3RJTUUH6AcaAwk30H74uwAAAM9JREFUKM+FkucWgjAMhUmKOFDBwVARFwhuxYUD1/s/lHqUgy2o+ZWcr7e9ScpxvwOoQKRrjmKE5wl14gOnhDTJZElOEJMw5gtFlGQslSsYx1VF1XTAGuiaqlRZjPWG/BahZDSRxWarHUo63R6LwbIjQ7bFXI59JzKErjNAGg9H4whPnCmNYQYf00Ag7NtmUQ9Tfd6LNbYwvLCx5Wodcy66qrd5JhtPdUVW/RBt/R3uJTz4bsJQAY7BiZwv5BocvywUgL8BfFnoa+V0/ecv3QHwgw6Bi4GI+QAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNC0wNy0yNlQwMzowOTozOSswMDowMMdmgq4AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjQtMDctMjZUMDM6MDk6MzkrMDA6MDC2OzoSAAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDI0LTA3LTI2VDAzOjA5OjU1KzAwOjAw4OF4PgAAAABJRU5ErkJggg==');
-#         width: 30px;
-#         height: 20px;
-#         padding-right: 12px;
-#         }}
-
     # ---------------------------------
     # Define styles and header/footer content
     # ---------------------------------
@@ -169,7 +168,7 @@ def gerar_pdf(document):
       @top-center {{
         text-transform: normal;
         content: "{document['header_content']}";
-        font-size: 13px;
+        font-size: 12px;
         color: #333;
         font-family: 'Lato', 'Fira Code', Consolas,  Courier, monospace;
       }}
