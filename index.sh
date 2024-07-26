@@ -84,6 +84,7 @@ echo "$(prop 'console_option')"
 echo "$(prop 'db_option')"
 echo "$(prop 'directory_option')"
 echo "$(prop 'changelog_option')"
+echo "$(prop 'cv_option')"
 
 read -p "$(prop 'enter_number') " option
 
@@ -120,6 +121,11 @@ case $option in
         check_script "./scripts/changelog.sh"
         echo "$(prop 'running_changelog')"
         ./scripts/changelog.sh
+        ;;
+    6)
+        check_script "./scripts/cv.sh"
+        echo "$(prop 'running_cv')"
+        ./scripts/cv.sh
         ;;
     *)
         echo "$(prop 'invalid_option')"

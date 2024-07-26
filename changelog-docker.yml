@@ -1,25 +1,25 @@
 # ---------------------------------
+#    _____ __         __                    ______                          _
+#   / ___// /_  ___  / /________  ____     / ____/__  ______________ ______(_)
+#   \__ \/ __ \/ _ \/ / ___/ __ \/ __ \   / /_  / _ \/ ___/ ___/ __ `/ ___/ /
+#  ___/ / / / /  __/ (__  ) /_/ / / / /  / __/ /  __/ /  / /  / /_/ / /  / /
+# /____/_/ /_/\___/_/____/\____/_/ /_/  /_/    \___/_/  /_/   \__,_/_/  /_/
+# ---------------------------------
+# Currency Conversion API - Dockerfile console-app
+# ---------------------------------
+# This Dockerfile sets up a Docker environment to run a Groovy application
+# for the purpose of generating the project's changelog.
+# ---------------------------------
+
+# ---------------------------------
 # Use the OpenJDK 17 base image
 # ---------------------------------
-FROM python:3.12
+FROM openjdk:17-slim
 
 # ---------------------------------
-# Install necessary packages
+# Install Groovy and Git
 # ---------------------------------
-RUN apt-get update && apt-get install -y \
-    # python3 \
-    # python3-pip \
-    # python3-bs4 \
-    libpango1.0-0 \
-    wkhtmltopdf \
-    libcairo2 \
-    libgdk-pixbuf2.0-0 \
-    libffi-dev
-
-# ---------------------------------
-# Install necessary Python packages
-# ---------------------------------
-RUN pip3 install markdown2 weasyprint pygments markdown pdfkit PyPDF2
+RUN apt-get update && apt-get install -y groovy git
 
 # ---------------------------------
 # Set the working directory inside the container
@@ -27,12 +27,16 @@ RUN pip3 install markdown2 weasyprint pygments markdown pdfkit PyPDF2
 WORKDIR /app
 
 # ---------------------------------
-# Copy the necessary files to the container
+# Copy the Groovy script and execution script to the container
 # ---------------------------------
 COPY sys ./sys
-COPY FUTURE2.md ./FUTURE2.md
 
 # ---------------------------------
-# Command to start the Python script
+# Give execution permission to the script
 # ---------------------------------
-CMD ["python3", "./sys/markdown_to_pdf.py"]
+RUN chmod +x ./sys/callChangeLog.sh
+
+# ---------------------------------
+# Command to start the script
+# ---------------------------------
+CMD ["./sys/callChangeLog.sh"]

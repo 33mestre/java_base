@@ -85,6 +85,7 @@ echo %console_option%
 echo %db_option%
 echo %directory_option%
 echo %changelog_option%
+echo %cv_option%
 
 set /p option=%enter_number%
 
@@ -120,6 +121,11 @@ switch "%option%" (
         call :check_script scripts\changelog.bat
         echo %running_changelog%
         call scripts\changelog.bat
+        exit /b
+    case "6":
+        call :check_script scripts\cv.bat
+        echo %running_cv%
+        call scripts\cv.bat
         exit /b
     default:
         echo %invalid_option%

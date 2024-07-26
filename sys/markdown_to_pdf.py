@@ -84,10 +84,15 @@ documents = [
 ]
 
 # ---------------------------------
+# Determine the base directory of the project
+# ---------------------------------
+project_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+
+# ---------------------------------
 # Paths for input and output directories
 # ---------------------------------
-input_md_dir = './'
-output_pdf_dir = './pdf'
+input_md_dir = os.path.join(project_dir, 'sys', 'cv')
+output_pdf_dir = os.path.join(project_dir, 'sys', 'pdf')
 
 if not os.path.exists(output_pdf_dir):
     os.makedirs(output_pdf_dir)
@@ -95,8 +100,8 @@ if not os.path.exists(output_pdf_dir):
 # ---------------------------------
 # Paths for CSS files
 # ---------------------------------
-css_file_path = './style.css'
-css_file_theme_path = './css/mdTheme/default.css'
+css_file_path = os.path.join(project_dir, 'sys', 'style.css')
+css_file_theme_path = os.path.join(project_dir, 'sys', 'css', 'mdTheme', 'default.css')
 
 # ---------------------------------
 # Read CSS file contents
@@ -115,8 +120,8 @@ def gerar_pdf(document):
     # ---------------------------------
     # Path for the Markdown file
     # ---------------------------------
-    markdown_file_path = os.path.join(input_md_dir, f"{document['nome']}.md")
-    output_pdf_path = os.path.join(output_pdf_dir, f"{document['nome']}.pdf")
+    markdown_file_path = os.path.join('sys', input_md_dir, f"{document['nome']}.md")
+    output_pdf_path = os.path.join('sys', output_pdf_dir, f"{document['nome']}.pdf")
 
     # ---------------------------------
     # Read the Markdown file
@@ -142,6 +147,14 @@ def gerar_pdf(document):
 
     html_content = '\n'.join(html_content_lines)
 
+#   @top-right {{
+#         content: '';
+#         content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAUCAMAAACtdX32AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAADMUExURQNGlQBElABDlQFElDFdegxKj1NvaCJVg3aCU3WBVCNWggtJjxNOipWSQz5kcxBMjA9MjD9kcpSSQxNNiwlJjxZPiQNFkwxKjgZHkQBElU5taZaTQJeTQE1sah9UhDxjdAVGkgVHkTxjcx5ThAJFkwBCli5cfHmDUhROii1bfS1bfHiDUhFNixJNiyxbfQFFkz5kck5sag5LjQ9LjJeUQExsagRGkhVOipSRQz9kcxFMjEBlcgpJj1FuaSFVg3iDU3eCUyJVgjBde////wzxLiAAAAABYktHRENn0A1iAAAAB3RJTUUH6AcaAwk30H74uwAAAM9JREFUKM+FkucWgjAMhUmKOFDBwVARFwhuxYUD1/s/lHqUgy2o+ZWcr7e9ScpxvwOoQKRrjmKE5wl14gOnhDTJZElOEJMw5gtFlGQslSsYx1VF1XTAGuiaqlRZjPWG/BahZDSRxWarHUo63R6LwbIjQ7bFXI59JzKErjNAGg9H4whPnCmNYQYf00Ag7NtmUQ9Tfd6LNbYwvLCx5Wodcy66qrd5JhtPdUVW/RBt/R3uJTz4bsJQAY7BiZwv5BocvywUgL8BfFnoa+V0/ecv3QHwgw6Bi4GI+QAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNC0wNy0yNlQwMzowOTozOSswMDowMMdmgq4AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjQtMDctMjZUMDM6MDk6MzkrMDA6MDC2OzoSAAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDI0LTA3LTI2VDAzOjA5OjU1KzAwOjAw4OF4PgAAAABJRU5ErkJggg==');
+#         width: 30px;
+#         height: 20px;
+#         padding-right: 12px;
+#         }}
+
     # ---------------------------------
     # Define styles and header/footer content
     # ---------------------------------
@@ -149,21 +162,27 @@ def gerar_pdf(document):
     @page {{
       margin: 10mm;
     }}
+    @page:first {{
+      @top-center {{
+        margin-top: 14px;
+      }}
+    }}
+
     @page {{
       @top-center {{
-        text-transform: uppercase;
+        text-transform: normal;
         content: "{document['header_content']}";
-        font-size: 12px;
+        font-size: 13px;
         color: #333;
-        font-family: 'Fira Code', Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        font-family: 'Lato', 'Fira Code', Consolas,  Courier, monospace;
       }}
       @bottom-left {{
         text-transform: uppercase;
         content: "{document['footer_left_content']}";
-        font-size: 10px;
-        color: #888;
+        font-size: 12px;
+        color: #333;
         padding-left: 20px;
-        font-family: 'Fira Code', Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        font-family: 'Fira Code', Consolas,  Courier, monospace;
       }}
       @bottom-right {{
         text-transform: uppercase;
@@ -171,7 +190,7 @@ def gerar_pdf(document):
         font-size: 12px;
         color: #333;
         padding-right: 20px;
-        font-family: 'Fira Code', Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        font-family: 'Fira Code', Consolas,  Courier, monospace;
       }}
     }}
     """
@@ -187,9 +206,13 @@ def gerar_pdf(document):
     <meta name="version" content="{document['version']}">
     <meta name="title" content="{document['header_content']}">
     <meta name="date" content="{datetime.now().strftime('%Y-%m-%d')}">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap">
+
     <style>{css_content} {page_styles}</style>
     </head>
     <body>{html_content}</body>

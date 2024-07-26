@@ -1,44 +1,52 @@
+/* Styles for links */
+.links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.links a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.links svg {
+  margin-right: 5px;
+}
+
+/* Styles for company tables */
 table.company {
   margin-bottom: 10px;
 }
 
-table.details td:first-child {
-  background-color: #f6faff !important;
-  width: 150px;
-  border-left: 4px solid rgba(221, 221, 221, 0.74);
-}
-
-table.details td:first-child(2) {
-  text-align: justify;
-  padding-left: 0px;
-}
-
-table.ref td:nth-child(2) {
-  text-align: justify;
-}
-
+/* Styles for green text */
 .green {
   color: #006400;
 }
 
+/* Styles for small specific text */
 small.mr33 {
   font-family: consolas;
   color: #ffffff;
 }
 
+/* Styles for the body */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Lato', 'Raleway', Arial, sans-serif;
   line-height: 1.6;
   padding: 5px;
 }
 
+/* Styles for the .mr33 class */
 .mr33 {
   font-weight: normal;
   color: rgba(244, 244, 244, 0.1);
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: Consolas, Courier, monospace;
 }
 
-
+/* Styles for avatar images */
 img.avatar {
   border-radius: 100%;
   margin: auto;
@@ -46,23 +54,36 @@ img.avatar {
   border: 1px solid #333 !important;
 }
 
+/* Styles for reference tables */
 table.ref {
   margin-top: 10px;
 }
 
 table.ref td:first-child {
   background-color: #f6faff !important;
-  width: 250px;
-  min-width: 250px;
-  max-width: 250px;
+  width: 220px;
+  min-width: 220px;
+  max-width: 220px;
+  font-family: 'Lato', 'Raleway', 'Libre Franklin';
+  font-weight: 700;
 }
 
+.tiny{
+  font-family: 'Raleway', 'Libre Franklin';
+  font-weight: 400;
+}
+
+/* Styles for technical tables */
 table.tech td:first-child {
   background-color: #f6faff !important;
+  font-family: 'Lato', 'Raleway', 'Libre Franklin';
+  font-weight: 700;
 }
 
 table.ref td:nth-child(2) {
+  font-family: 'Lato', 'Raleway', 'Libre Franklin';
   text-align: justify;
+  font-weight: 400;
 }
 
 table.tech td:nth-child(2),
@@ -75,51 +96,65 @@ table.tech th:nth-child(3) {
   text-align: center;
 }
 
-
+/* Styles for paragraphs */
 p {
   text-align: justify;
 }
 
-
+/* Styles for cells with avatar */
 th.avatar {
   background-color: #f6faff !important;
-
   background-size: cover;
-
   border-right: 0px !important;
-  border-top: 0.5px solid rgba(0, 0, 0, 0.4);
-  border-left: 0.5px solid rgba(0, 0, 0, 0.4);
+  border-top: 0.5px solid #333;
+  border-left: 1px solid #333;
+  border-bottom: 0.5px solid #333;
 }
 
-ul.slogan>li {
+/* Styles for slogan lists */
+ul.slogan > li {
   list-style: none;
   padding-left: 20px;
   padding-right: 20px;
-  background: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="utf-8"?><svg width="800px" height="800px" viewBox="0 0 1024 1024" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z" fill="#000000" /></svg>') no-repeat left center;
+  background: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="utf-8"?><svg width="800px" height="800px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z" fill="#000000" /></svg>') no-repeat left center;
   background-size: 10px 10px;
   background-repeat: no-repeat;
   text-align: justify;
 }
 
+/* Styles for specific table cells */
 td.slogan {
-  font-family: 'Fira Code', Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: 'Lato', 'Raleway', 'Fira Code', Consolas, Courier, monospace;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: normal;
+  border-top: 1px solid rgba(80,80,80,0.5);
+  border-left: 1px solid #333;
+  border-right: 0.5px solid #333;
+  border-bottom: 0.5px solid #333;
+  /* text-transform: uppercase; */
+}
+
+td.visa {
+  font-family: 'Fira Code', Consolas, Courier, monospace;
   font-size: 12px;
-  color: #333;
+  color: rgba(0, 0, 0, 0.85);
   font-weight: normal;
   background-color: #fff9f1;
-  border-left: 0.5px solid rgba(0, 0, 0, 0.4);
-  border-right: 0.5px solid rgba(0, 0, 0, 0.4);
-  border-bottom: 0.5px solid rgba(0, 0, 0, 0.4);
+  border-left: 0.5px solid #333;
+  border-right: 0.5px solid #333;
+  border-bottom: 0.5px solid #333;
   text-transform: uppercase;
 }
 
+/* Styles for main table cells */
 td.main {
   font-size: 18px !important;
   font-size: 25px;
   font-weight: normal;
-  background-color: #333;
+  background-color: rgba(0, 0, 0, 0.85);
   color: #f2f2f2;
-  border-left: 0.5px solid #333;
+  border-left: 1px solid #333;
   border-right: 0.5px solid #333;
   border-bottom: 0.5px solid #333;
   border-top: 0.5px solid #333;
@@ -127,65 +162,101 @@ td.main {
   padding-left: 20px;
 }
 
+/* Styles for name headers */
 th.name {
   background-color: #f6faff !important;
   border-left: 0px !important;
-  border-top: 0.5px solid rgba(0, 0, 0, 0.4);
-  border-right: 0.5px solid rgba(0, 0, 0, 0.4);
-  font-size: 26px;
+  border-top: 0.5px solid #333;
+  border-right: 0.5px solid #333;
+  font-family: 'Montserrat', 'Fira Code', Consolas, Courier, monospace;
+  font-size: 33px;
   font-weight: bold;
+  border-bottom: 0.5px solid #333;
 }
 
-ul,
-ol {
+/* Styles for ordered and unordered lists */
+ul, ol {
   margin: 0px 0px 0px 0px;
   padding-left: 20px;
 }
 
+/* Styles for certification paragraphs */
 p.cert {
-  font-family: 'Fira Code', Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-weight: normal !important;
+  font-family: 'Lato', 'Raleway', 'Fira Code', Consolas, Courier, monospace;
+  font-weight: 400;
   font-size: 14px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
+/* Styles for about paragraphs */
 p.about {
   font-size: 14px;
-  text-transform: uppercase;
-  font-weight: normal !important;
-  font-family: 'Fira Code', Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  /* text-transform: uppercase; */
+  font-weight: 400;
+  font-family: 'Lato', 'Raleway', 'Fira Code', Consolas, Courier, monospace;
 }
 
+/* Styles for links paragraphs */
 p.links {
+  position: relative;
+  top: 5px;
   font-size: 16px;
   text-transform: uppercase;
-  font-weight: normal !important;
-  font-family: 'Fira Code', Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-weight: bold !important;
+  font-family: 'Fira Code', Consolas, Courier, monospace;
+}
+
+/* Styles for separators */
+.separator {
+  margin: 0 10px;
 }
 
 .separator {
-  font-family: 'Fira Code', Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: 'Fira Code', Consolas, Courier, monospace;
   color: rgba(0, 0, 0, 0.4);
 }
 
-ul ul,
-ol ol {
+.separator_main {
+  font-family: 'Fira Code', Consolas, Courier, monospace;
+  color: rgba(0, 0, 0, 0.4);
+  margin: 20px 10px;
+  position: relative;
+  top: -4px;
+  margin-left: 20px;
+}
+
+/* Styles for link text */
+.link_text {
+  font-family: 'Fira Code', Consolas, Courier, monospace;
+  margin: 0px 6px;
+  position: relative;
+  top: -4px;
+  color: #0366d6;
+  text-decoration: underline;
+}
+
+.link_text:hover {
+  text-decoration: none;
+}
+
+/* Styles for nested lists */
+ul ul, ol ol {
   margin: 0px 0px 0px 0px;
   padding-top: 0px;
   padding-left: 20px;
 }
 
-ul>li {
+ul > li {
   list-style: none;
   padding-left: 20px;
-  background: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="utf-8"?><svg width="800px" height="800px" viewBox="0 0 1024 1024" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z" fill="#000000" /></svg>') no-repeat left 8px;
+  background: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="utf-8"?><svg width="800px" height="800px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z" fill="#000000" /></svg>') no-repeat left 8px;
   background-size: 10px 10px;
   background-repeat: no-repeat;
   text-align: justify;
   padding-right: 20px;
 }
 
-ul>li>ul>li {
+ul > li > ul > li {
   list-style: none;
   padding-left: 20px;
   background: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="utf-8"?><svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>') no-repeat left center;
@@ -193,6 +264,7 @@ ul>li>ul>li {
   background-repeat: no-repeat;
 }
 
+/* Styles for code highlighting */
 .codehilite {
   font-size: 0.85em;
 }
@@ -201,10 +273,11 @@ code {
   background-color: #f4f4f4;
   padding: 2px 4px;
   border-radius: 4px;
-  font-family: 'Fira Code', Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: 'Fira Code', Consolas, Courier, monospace;
   white-space: pre-wrap;
 }
 
+/* Page styles */
 @page {
   size: A4;
   margin-top: 4cm;
@@ -214,6 +287,7 @@ code {
   }
 }
 
+/* Styles for table headers and footers */
 thead {
   display: table-header-group;
 }
@@ -222,72 +296,77 @@ tfoot {
   display: table-footer-group;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+/* Styles for headers */
+h1, h2, h3, h4, h5, h6 {
   color: #222222;
   margin-top: 20px;
   font-weight: bold;
+  font-family: 'Montserrat', 'Fira Code', Consolas, Courier, monospace;
+  text-transform: uppercase;
 }
 
+/* Additional styles for company tables */
 table.company {
   margin-top: 20px;
 }
 
+table.company th {
+  background-color: #f2f2f274;
+}
+
 table.company th:first-child {
   text-align: left;
-  border-left: 4px solid rgba(221, 221, 221, 0.74);
+  border-left: 4px solid #333;
   text-transform: uppercase;
   padding-left: 20px;
   padding-right: 8px;
+  font-weight: bold;
+  font-family: 'Montserrat', 'Fira Code', Consolas, Courier, monospace;
 }
 
 table.company th:nth-child(2) {
   text-align: center;
   border-left: 0.5px solid rgba(221, 221, 221, 0.74);
-  text-transform: uppercase;
-  background-color: #f2f2f274;
+  /* text-transform: uppercase; */
   padding-left: 8px;
   padding-right: 8px;
+  font-family: 'Lato', 'Raleway', 'Fira Code', Consolas, Courier, monospace;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 table.company th:nth-child(3) {
   text-align: center;
-  font-family: 'Fira Code', Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: 'Lato', 'Raleway', 'Fira Code', Consolas, Courier, monospace;
   font-weight: normal !important;
   font-size: 14px;
-  text-transform: uppercase;
-  background-color: #f2f2f274;
+  /* text-transform: uppercase; */
   padding-left: 8px;
   padding-right: 8px;
 }
 
 table.company th:nth-child(4) {
   text-align: center;
-  font-family: 'Fira Code', Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: 'Fira Code', Consolas, Courier, monospace;
   font-weight: normal !important;
   font-size: 14px;
   text-transform: uppercase;
-  background-color: #f2f2f274;
   padding-left: 8px;
   padding-right: 8px;
 }
-
 
 table.company th {
   border: 1px solid #ddd;
   padding-top: 8px;
   padding-bottom: 8px;
   text-align: left;
-  background-color: #f2f2f2;
 }
 
+/* Main header styles */
 h2.main {
-  background-color: #333;
+  background-color: rgba(0, 0, 0, 0.85);
   color: #f2f2f2;
+  font-family: 'Montserrat', 'Fira Code', Consolas, Courier, monospace;
 }
 
 h2 {
@@ -301,11 +380,12 @@ h2 {
   background-color: #f2f2f2;
   text-transform: uppercase;
   font-weight: bold;
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', 'Fira Code', Consolas, Courier, monospace;
   font-size: 22px;
   font-weight: bold;
 }
 
+/* Subheader styles */
 h3 {
   border: 1px solid rgba(221, 221, 221, 0.74);
   border-left: 4px solid #333;
@@ -316,23 +396,26 @@ h3 {
   text-align: left;
   background-color: #f2f2f274;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
 }
 
+/* Styles for general paragraphs */
 p {
   margin: 10px 0;
 }
 
+/* Styles for code blocks */
 pre {
   background-color: #f4f4f4;
   padding: 10px;
   border-radius: 4px;
   overflow: auto;
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: Consolas, Courier, monospace;
   white-space: pre-wrap;
 }
 
+/* Styles for links */
 a {
   color: #0366d6;
   text-decoration: underline;
@@ -342,14 +425,14 @@ a:hover {
   text-decoration: none;
 }
 
+/* Styles for general tables */
 table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 20px;
 }
 
-th,
-td {
+th, td {
   border: 1px solid rgba(221, 221, 221, 0.74);
   padding: 8px;
   text-align: left;
@@ -360,11 +443,13 @@ th {
   font-weight: bold;
 }
 
+/* Styles for images */
 img {
   max-width: 100px;
   height: auto;
 }
 
+/* Styles for blockquotes */
 blockquote {
   border-left: 2px solid #dfe2e5;
   color: #6a737d;
@@ -376,6 +461,7 @@ blockquote {
   background-color: #f9f9f9;
 }
 
+/* Styles for horizontal rules */
 hr {
   border: 0;
   height: 1px;

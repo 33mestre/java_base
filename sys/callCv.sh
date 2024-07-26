@@ -8,9 +8,9 @@
 # /____/_/ /_/\___/_/____/\____/_/ /_/  /_/    \___/_/  /_/   \__,_/_/  /_/
 # ---------------------------------
 # Currency Conversion API - Unix / Linux Version
-# Script to run the Groovy script
-# That generates the changelog and updates the version
+# Script to run the Python script
+# That generates the cv and updates the version
 # ---------------------------------
 
-echo "Compiling and running the Groovy script..."
-groovy /app/sys/generateChangelogAndProjectVersion.groovy
+echo "Compiling and running the Python script..."
+python /app/sys/markdown_to_pdf.py

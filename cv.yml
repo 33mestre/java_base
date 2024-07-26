@@ -19,7 +19,7 @@ RUN apt-get update && apt-get install -y \
 # ---------------------------------
 # Install necessary Python packages
 # ---------------------------------
-RUN pip3 install markdown2 weasyprint pygments markdown pdfkit
+RUN pip3 install markdown2 weasyprint pygments markdown pdfkit PyPDF2
 
 # ---------------------------------
 # Set the working directory inside the container
@@ -30,7 +30,6 @@ WORKDIR /app
 # Copy the necessary files to the container
 # ---------------------------------
 COPY sys ./sys
-COPY FUTURE2.md ./FUTURE2.md
 
 # ---------------------------------
 # Command to start the Python script
