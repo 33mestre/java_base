@@ -28,7 +28,7 @@
 </svg>
 </p>
 <p class="cert">70+ certifications <small class="separatorCert">|</small> 23 yrs. exp.</p>
-<p class="about">47 yrs <small class="separator">·</small> single <small class="separator">·</small> Brazilian <small class="separator">·</small> São Paulo, Brazil</p>
+<p class="about">47 yrs. <small class="separator">·</small> single <small class="separator">·</small> Brazilian <small class="separator">·</small> São Paulo, Brazil</p>
 
 <p class="links">
     <a href="https://www.linkedin.com/in/shelson/">
@@ -460,7 +460,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 - **Client**: CERC.
 - **Project**: Command Center Automation.
-- **Location**: São Paulo <small class="separator">–</small> Brazil.
+- **Location**: São Paulo, Brazil.
 - **Sectors**: IT, Financial, Banking.
 - **Work Arrangement**: Hybrid.
 - **Activities**:
@@ -480,14 +480,14 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 - **Client**: Banco Macro.
 - **Project**: Bank Innovation.
-- **Location**: São Paulo <small class="separator">–</small> Brazil.
+- **Location**: São Paulo, Brazil.
 - **Sectors**: IT, Financial, Banking.
 - **Work Arrangement**: Home Office.
 - **Activities**:
   - Business Processes: Development of advanced resources for the orchestration and automation of business processes, focusing on creating efficient workflows;
   - Architecture and Development: Design and implementation of robust and scalable architectures for complex systems.
 - **Technologies and Tools**:
-  - Languages: Java 17;
+  - Language: Java 17;
   - BPMS Camunda: Platform, Cockpit, Modeler, Optimize, Tasklist.
 
 <table class="company">
@@ -500,7 +500,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 - **Client**: Vitplay.
 - **Project**: Low-Code System.
-- **Location**: São Paulo <small class="separator">–</small> Brazil.
+- **Location**: São Paulo, Brazil.
 - **Sectors**: IT, Services.
 - **Work Arrangement**: Home Office.
 - **Activities**:
@@ -522,7 +522,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 - **Client**: Favo.
 - **Project**: Core System.
-- **Location**: São Paulo <small class="separator">–</small> Brazil.
+- **Location**: São Paulo, Brazil.
 - **Sectors**: IT, Retail.
 - **Work Arrangement**: Home Office.
 - **Activities**:
@@ -542,9 +542,9 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
   </tr>
 </table>
 
-- **Client**: Tokio Marine
+- **Client**: Tokio Marine.
 - **Project**: Core Integration.
-- **Location**: São Paulo <small class="separator">–</small> Brazil.
+- **Location**: São Paulo, Brazil.
 - **Sectors**: IT, Insurance.
 - **Work Arrangement**: Home Office.
 - **Activities**:
@@ -568,7 +568,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 - **Client**: Banco BV.
 - **Project**: Migração BV.
-- **Location**: São Paulo <small class="separator">–</small> Brazil.
+- **Location**: São Paulo, Brazil.
 - **Sectors**: IT, Finance, Banking.
 - **Work Arrangement**: Onsite.
 - **Activities**:
@@ -592,7 +592,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 - **Client**: Santander.
 - **Project**: Bank slip.
-- **Location**: São Paulo <small class="separator">–</small> Brazil.
+- **Location**: São Paulo, Brazil.
 - **Sectors**: IT, Banking.
 - **Work Arrangement**: Onsite.
 - **Activities**:
@@ -616,7 +616,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 - **Client**: CIELO.
 - **Project**: Multi-Brand Project.
-- **Location**: São Paulo <small class="separator">–</small> Brazil.
+- **Location**: São Paulo, Brazil.
 - **Sectors**: IT, Banking.
 - **Work Arrangement**: Onsite.
 - **Activities**:
@@ -641,7 +641,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 - **Client**: Saferocket.
 - **Project**: Swift Project.
-- **Location**: São Paulo <small class="separator">–</small> Brazil.
+- **Location**: São Paulo, Brazil.
 - **Sectors**: IT, Finance.
 - **Work Arrangement**: Hybrid.
 - **Activities**:
@@ -659,7 +659,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 - **Client**: C&A Modas.
 - **Project**: Migração de Sistemas POS.
-- **Location**: São Paulo <small class="separator">–</small> Brazil.
+- **Location**: São Paulo, Brazil.
 - **Sectors**: IT, Retail.
 - **Work Arrangement**: Onsite.
 - **Activities**:
@@ -678,7 +678,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 - **Client**: Valemobi.
 - **Project**: Home Broker and Investment Funds.
-- **Location**: São Paulo <small class="separator">–</small> Brazil.
+- **Location**: São Paulo, Brazil.
 - **Sectors**: IT, Finance, Banking.
 - **Work Arrangement**: Onsite.
 - **Activities**:
@@ -702,7 +702,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 - **Client**: Santander.
 - **Project**: Santander Improvements.
-- **Location**: São Paulo <small class="separator">–</small> Brazil.
+- **Location**: São Paulo, Brazil.
 - **Sectors**: IT, Services.
 - **Work Arrangement**: Onsite.
 - **Activities**:
@@ -721,7 +721,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 - **Client**: Diebold.
 - **Project**: POS SAT / SEFAZ.
-- **Location**: São Paulo <small class="separator">–</small> Brazil.
+- **Location**: São Paulo, Brazil.
 - **Sectors**: IT, Retail.
 - **Work Arrangement**: Onsite.
 - **Activities**:
@@ -742,7 +742,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 - **Client**: Itaú.
 - **Project**: Artificial Intelligence Project.
-- **Location**: São Paulo <small class="separator">–</small> Brazil.
+- **Location**: São Paulo, Brazil.
 - **Sectors**: IT, Finance, Banking.
 - **Work Arrangement**: Onsite.
 - **Activities**:
@@ -763,7 +763,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 - **Client**: Itaú.
 - **Project**: Thermometer Project.
-- **Location**: São Paulo <small class="separator">–</small> Brazil.
+- **Location**: São Paulo, Brazil.
 - **Sectors**: IT, Finance, Banking.
 - **Work Arrangement**: Onsite.
 - **Activities**:
@@ -781,7 +781,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 - **Client**: Bradesco.
 - **Project**: Bradesco IT Improvements Project.
-- **Location**: São Paulo <small class="separator">–</small> Brazil.
+- **Location**: São Paulo, Brazil.
 - **Sectors**: IT, Finance, Banking.
 - **Work Arrangement**: Onsite.
 - **Activities**:
@@ -799,7 +799,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 - **Client**: Bradesco.
 - **Project**: Financial Dashboard Project.
-- **Location**: São Paulo <small class="separator">–</small> Brazil.
+- **Location**: São Paulo, Brazil.
 - **Sectors**: IT, Finance, Banking.
 - **Work Arrangement**: Onsite.
 - **Activities**:
@@ -817,7 +817,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 - **Client**: Bradesco.
 - **Project**: Financial Dashboard.
-- **Location**: São Paulo <small class="separator">–</small> Brazil.
+- **Location**: São Paulo, Brazil.
 - **Sectors**: IT, Finance, Banking.
 - **Work Arrangement**: Onsite.
 - **Activities**:

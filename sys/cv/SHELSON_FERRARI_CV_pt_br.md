@@ -459,7 +459,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 - **Cliente**: CERC.
 - **Projeto**: Automação do Centro de Comando.
-- **Localização**: São Paulo <small class="separator">–</small> Brasil.
+- **Localização**: São Paulo, Brasil.
 - **Setores**: TI, Financeiro, Bancário.
 - **Regime de Trabalho**: Híbrido.
 - **Atividades**:
@@ -479,14 +479,14 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 - **Cliente**: Banco Macro.
 - **Projeto**: Inovação Bancária.
-- **Localização**: São Paulo <small class="separator">–</small> Brasil.
+- **Localização**: São Paulo, Brasil.
 - **Setores**: TI, Financeiro, Bancário.
 - **Regime de Trabalho**: Home Office.
 - **Atividades**:
   - Processos de Negócios: Desenvolvimento de recursos avançados para a orquestração e automação de processos de negócios, com foco ;na criação de fluxos de trabalho eficientes;
   - Arquitetura e Desenvolvimento: Design e implementação de arquiteturas robustas e escaláveis para sistemas complexos.
 - **Tecnologias e Ferramentas**:
-  - Linguagens: Java 17;
+  - Linguagem: Java 17;
   - BPMS Camunda: Plataforma, Cockpit, Modeler, Optimize, Tasklist.
 
 <table class="company">
@@ -499,7 +499,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 - **Cliente**: Vitplay.
 - **Projeto**: Sistema Low-Code.
-- **Localização**: São Paulo <small class="separator">–</small> Brasil.
+- **Localização**: São Paulo, Brasil.
 - **Setores**: TI, Serviços.
 - **Regime de Trabalho**: Home Office.
 - **Atividades**:
@@ -521,7 +521,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 - **Cliente**: Favo.
 - **Projeto**: Sistema Core.
-- **Localização**: São Paulo <small class="separator">–</small> Brasil.
+- **Localização**: São Paulo, Brasil.
 - **Setores**: TI, Varejo.
 - **Regime de Trabalho**: Home Office.
 - **Atividades**:
@@ -543,7 +543,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 - **Cliente**: Tokio Marine.
 - **Projeto**: Integração Core.
-- **Localização**: São Paulo <small class="separator">–</small> Brasil.
+- **Localização**: São Paulo, Brasil.
 - **Setores**: TI, Seguros.
 - **Regime de Trabalho**: Home Office.
 - **Atividades**:
@@ -567,7 +567,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 - **Cliente**: Banco BV.
 - **Projeto**: Migração BV.
-- **Localização**: São Paulo <small class="separator">–</small> Brasil.
+- **Localização**: São Paulo, Brasil.
 - **Setores**: TI, Financeiro, Bancário.
 - **Regime de Trabalho**: Presencial.
 - **Atividades**:
@@ -591,7 +591,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 - **Cliente**: Santander.
 - **Projeto**: Boleto Bancário.
-- **Localização**: São Paulo <small class="separator">–</small> Brasil.
+- **Localização**: São Paulo, Brasil.
 - **Setores**: TI, Bancário.
 - **Regime de Trabalho**: Presencial.
 - **Atividades**:
@@ -615,7 +615,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 - **Cliente**: CIELO.
 - **Projeto**: Projeto Multibandeira.
-- **Localização**: São Paulo <small class="separator">–</small> Brasil.
+- **Localização**: São Paulo, Brasil.
 - **Setores**: TI, Bancário.
 - **Regime de Trabalho**: Presencial.
 - **Atividades**:
@@ -640,7 +640,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 - **Cliente**: Saferocket.
 - **Projeto**: Projeto Swift.
-- **Localização**: São Paulo <small class="separator">–</small> Brasil.
+- **Localização**: São Paulo, Brasil.
 - **Setores**: TI, Financeiro.
 - **Regime de Trabalho**: Híbrido.
 - **Atividades**:
@@ -658,7 +658,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 - **Cliente**: C&A Modas.
 - **Projeto**: Migração de Sistemas POS.
-- **Localização**: São Paulo <small class="separator">–</small> Brasil.
+- **Localização**: São Paulo, Brasil.
 - **Setores**: TI, Varejo.
 - **Regime de Trabalho**: Presencial.
 - **Atividades**:
@@ -677,7 +677,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 - **Cliente**: Valemobi.
 - **Projeto**: Home Broker e Fundos de Investimento.
-- **Localização**: São Paulo <small class="separator">–</small> Brasil.
+- **Localização**: São Paulo, Brasil.
 - **Setores**: TI, Financeiro, Bancário.
 - **Regime de Trabalho**: Presencial.
 - **Atividades**:
@@ -701,7 +701,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 - **Cliente**: Santander.
 - **Projeto**: Melhorias Santander.
-- **Localização**: São Paulo <small class="separator">–</small> Brasil.
+- **Localização**: São Paulo, Brasil.
 - **Setores**: TI, Serviços.
 - **Regime de Trabalho**: Presencial.
 - **Atividades**:
@@ -720,7 +720,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 - **Cliente**: Diebold.
 - **Projeto**: POS SAT / SEFAZ.
-- **Localização**: São Paulo <small class="separator">–</small> Brasil.
+- **Localização**: São Paulo, Brasil.
 - **Setores**: TI, Varejo.
 - **Regime de Trabalho**: Presencial.
 - **Atividades**:
@@ -741,7 +741,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 - **Cliente**: Itaú.
 - **Projeto**: Projeto de Inteligência Artificial.
-- **Localização**: São Paulo <small class="separator">–</small> Brasil.
+- **Localização**: São Paulo, Brasil.
 - **Setores**: TI, Financeiro, Bancário.
 - **Regime de Trabalho**: Presencial.
 - **Atividades**:
@@ -762,7 +762,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 - **Cliente**: Itaú.
 - **Projeto**: Projeto Termômetro.
-- **Localização**: São Paulo <small class="separator">–</small> Brasil.
+- **Localização**: São Paulo, Brasil.
 - **Setores**: TI, Financeiro, Bancário.
 - **Regime de Trabalho**: Presencial.
 - **Atividades**:
@@ -780,7 +780,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 - **Cliente**: Bradesco.
 - **Projeto**: Projeto de Melhorias de TI Bradesco.
-- **Localização**: São Paulo <small class="separator">–</small> Brasil.
+- **Localização**: São Paulo, Brasil.
 - **Setores**: TI, Financeiro, Bancário.
 - **Regime de Trabalho**: Presencial.
 - **Atividades**:
@@ -798,7 +798,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 - **Cliente**: Bradesco.
 - **Projeto**: Projeto de Painel Financeiro.
-- **Localização**: São Paulo <small class="separator">–</small> Brasil.
+- **Localização**: São Paulo, Brasil.
 - **Setores**: TI, Financeiro, Bancário.
 - **Regime de Trabalho**: Presencial.
 - **Atividades**:
@@ -816,7 +816,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 - **Cliente**: Bradesco.
 - **Projeto**: Painel Financeiro.
-- **Localização**: São Paulo <small class="separator">–</small> Brasil.
+- **Localização**: São Paulo, Brasil.
 - **Setores**: TI, Financeiro, Bancário.
 - **Regime de Trabalho**: Presencial.
 - **Atividades**:

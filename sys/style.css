@@ -110,6 +110,14 @@ table.company {
   margin-bottom: 10px;
 }
 
+table.companyDesc td:first-child, table.companyDesc th {
+  background-color: rgba(242, 242, 242, 0.455);
+  font-family: 'Lato', 'Raleway', 'Libre Franklin';
+  font-weight: 700;
+  border-left: 4px solid rgba(221, 221, 221, 0.74);
+}
+
+
 /* Styles for green text */
 .green {
   color: #006400;
@@ -284,7 +292,7 @@ th.name {
 /* Styles for ordered and unordered lists */
 ul, ol {
   margin: 0px 0px 0px 0px;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 /* Styles for certification paragraphs */
@@ -314,7 +322,7 @@ p.links {
 }
 
 /* Styles for separators */
-.separator {
+.separator, .separatorDate {
   margin: 0 5px;
   font-family: 'Fira Code', Consolas, Courier, monospace;
   color: rgba(0, 0, 0, 0.4);
@@ -359,7 +367,7 @@ p.links {
 ul ul, ol ol {
   margin: 0px 0px 0px 0px;
   padding-top: 0px;
-  padding-left: 20px;
+  padding-left: 0px;
 }
 
 ul > li {

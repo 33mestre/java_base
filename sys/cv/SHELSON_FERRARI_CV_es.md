@@ -460,7 +460,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 - **Cliente**: CERC.
 - **Proyecto**: Automatización del Centro de Comando.
-- **Localización**: São Paulo <small class="separator">–</small> Brasil.
+- **Localización**: São Paulo, Brasil.
 - **Sectores**: TI, Financiero, Bancario.
 - **Régimen de Trabajo**: Híbrido.
 - **Actividades**:
@@ -480,14 +480,14 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 - **Cliente**: Banco Macro.
 - **Proyecto**: Innovación Bancaria.
-- **Localización**: São Paulo <small class="separator">–</small> Brasil.
+- **Localización**: São Paulo, Brasil.
 - **Sectores**: TI, Financiero, Bancario.
 - **Régimen de Trabajo**: Trabajo a distancia.
 - **Actividades**:
   - Procesos de Negocios: Desarrollo de recursos avanzados para la orquestación y automatización de procesos de negocios, enfocándose en la creación de flujos de trabajo eficientes;
   - Arquitectura y Desarrollo: Diseño e implementación de arquitecturas robustas y escalables para sistemas complejos.
 - **Tecnologías y Herramientas**:
-  - Lenguajes: Java 17;
+  - Lenguaje: Java 17;
   - BPMS Camunda: Plataforma, Cockpit, Modelador, Optimize, Lista de Tareas.
 
 <table class="company">
@@ -500,7 +500,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 - **Cliente**: Vitplay.
 - **Proyecto**: Sistema Low-Code.
-- **Localización**: São Paulo <small class="separator">–</small> Brasil.
+- **Localización**: São Paulo, Brasil.
 - **Sectores**: TI, Servicios.
 - **Régimen de Trabajo**: Trabajo a distancia.
 - **Actividades**:
@@ -522,7 +522,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 - **Cliente**: Favo.
 - **Proyecto**: Sistema Core.
-- **Localización**: São Paulo <small class="separator">–</small> Brasil.
+- **Localización**: São Paulo, Brasil.
 - **Sectores**: TI, Retail.
 - **Régimen de Trabajo**: Trabajo a distancia.
 - **Actividades**:
@@ -544,7 +544,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 - **Cliente**: Tokio Marine.
 - **Proyecto**: Integración Core.
-- **Localización**: São Paulo <small class="separator">–</small> Brasil.
+- **Localización**: São Paulo, Brasil.
 - **Sectores**: TI, Seguros.
 - **Régimen de Trabajo**: Trabajo a distancia.
 - **Actividades**:
@@ -568,7 +568,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 - **Cliente**: Banco BV.
 - **Proyecto**: Migración BV.
-- **Localización**: São Paulo <small class="separator">–</small> Brasil.
+- **Localización**: São Paulo, Brasil.
 - **Sectores**: TI, Finanzas, Bancario.
 - **Régimen de Trabajo**: Presencial.
 - **Actividades**:
@@ -592,7 +592,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 - **Cliente**: Santander.
 - **Proyecto**: Boleto Bancario.
-- **Localización**: São Paulo <small class="separator">–</small> Brasil.
+- **Localización**: São Paulo, Brasil.
 - **Sectores**: TI, Bancario.
 - **Régimen de Trabajo**: Presencial.
 - **Actividades**:
@@ -616,7 +616,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 - **Cliente**: CIELO.
 - **Proyecto**: Proyecto Multi-Marca.
-- **Localización**: São Paulo <small class="separator">–</small> Brasil.
+- **Localización**: São Paulo, Brasil.
 - **Sectores**: TI, Bancario.
 - **Régimen de Trabajo**: Presencial.
 - **Actividades**:
@@ -641,7 +641,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 - **Cliente**: Saferocket.
 - **Proyecto**: Proyecto Swift.
-- **Localización**: São Paulo <small class="separator">–</small> Brasil.
+- **Localización**: São Paulo, Brasil.
 - **Sectores**: TI, Finanzas.
 - **Régimen de Trabajo**: Híbrido.
 - **Actividades**:
@@ -659,7 +659,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 - **Cliente**: C&A Modas.
 - **Proyecto**: Migración de Sistemas POS.
-- **Localización**: São Paulo <small class="separator">–</small> Brasil.
+- **Localización**: São Paulo, Brasil.
 - **Sectores**: TI, Retail.
 - **Régimen de Trabajo**: Presencial.
 - **Actividades**:
@@ -678,7 +678,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 - **Cliente**: Valemobi.
 - **Proyecto**: Home Broker y Fondos de Inversión.
-- **Localización**: São Paulo <small class="separator">–</small> Brasil.
+- **Localización**: São Paulo, Brasil.
 - **Sectores**: TI, Finanzas, Bancario.
 - **Régimen de Trabajo**: Presencial.
 - **Actividades**:
@@ -702,7 +702,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 - **Cliente**: Santander.
 - **Proyecto**: Mejoras en Santander.
-- **Localización**: São Paulo <small class="separator">–</small> Brasil.
+- **Localización**: São Paulo, Brasil.
 - **Sectores**: TI, Servicios.
 - **Régimen de Trabajo**: Presencial.
 - **Actividades**:
@@ -721,7 +721,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 - **Cliente**: Diebold.
 - **Proyecto**: POS SAT / SEFAZ.
-- **Localización**: São Paulo <small class="separator">–</small> Brasil.
+- **Localización**: São Paulo, Brasil.
 - **Sectores**: TI, Retail.
 - **Régimen de Trabajo**: Presencial.
 - **Actividades**:
@@ -742,7 +742,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 - **Cliente**: Itaú.
 - **Proyecto**: Proyecto de Inteligencia Artificial.
-- **Localización**: São Paulo <small class="separator">–</small> Brasil.
+- **Localización**: São Paulo, Brasil.
 - **Sectores**: TI, Finanzas, Bancario.
 - **Régimen de Trabajo**: Presencial.
 - **Actividades**:
@@ -763,7 +763,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 - **Cliente**: Itaú.
 - **Proyecto**: Proyecto Termómetro.
-- **Localización**: São Paulo <small class="separator">–</small> Brasil.
+- **Localización**: São Paulo, Brasil.
 - **Sectores**: TI, Finanzas, Bancario.
 - **Régimen de Trabajo**: Presencial.
 - **Actividades**:
@@ -781,7 +781,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 - **Cliente**: Bradesco.
 - **Proyecto**: Proyecto de Mejoras de TI de Bradesco.
-- **Localización**: São Paulo <small class="separator">–</small> Brasil.
+- **Localización**: São Paulo, Brasil.
 - **Sectores**: TI, Finanzas, Bancario.
 - **Régimen de Trabajo**: Presencial.
 - **Actividades**:
@@ -799,7 +799,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 - **Cliente**: Bradesco.
 - **Proyecto**: Proyecto de Tablero Financiero.
-- **Localización**: São Paulo <small class="separator">–</small> Brasil.
+- **Localización**: São Paulo, Brasil.
 - **Sectores**: TI, Finanzas, Bancario.
 - **Régimen de Trabajo**: Presencial.
 - **Actividades**:
@@ -817,7 +817,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 - **Cliente**: Bradesco.
 - **Proyecto**: Tablero Financiero.
-- **Localización**: São Paulo <small class="separator">–</small> Brasil.
+- **Localización**: São Paulo, Brasil.
 - **Sectores**: TI, Finanzas, Bancario.
 - **Régimen de Trabajo**: Presencial.
 - **Actividades**:
