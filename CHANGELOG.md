@@ -1,7 +1,12 @@
 
 # Currency Conversion API - Project Change Log
 
-**Current version:** [0.8.4](https://github.com/33mestre/java_base/commit/5d91877) (Shelson Ferrari) - 27/07/2024 04:01h
+**Current version:** [0.8.5](https://github.com/33mestre/java_base/commit/1382d3a) (Shelson Ferrari) - 27/07/2024 04:10h
+
+---
+
+[0.8.5](https://github.com/33mestre/java_base/commit/1382d3a) - 27/07/2024 04:10h - 1382d3a - Shelson Ferrari
+- mudanda font md
 
 ---
 
