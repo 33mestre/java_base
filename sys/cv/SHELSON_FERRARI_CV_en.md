@@ -438,7 +438,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 ### Language Certification <small class="separator">–</small> English <small class="separator">(</small>C1<small class="separator">)</small>
 
-- **[EFSET English Certificate](https://cert.efset.org/CpUPqt)**: Level C1, 27 Jun 2024.
+- **[EFSET English Certificate](https://cert.efset.org/CpUPqt)**: Level C1, Jun 2024.
 
 ## Professional Experience
 

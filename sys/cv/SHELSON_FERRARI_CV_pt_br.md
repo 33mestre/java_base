@@ -437,7 +437,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 ### Certificação de Idiomas <small class="separator">–</small> Inglês <small class="separator">(</small>C1<small class="separator">)</small>
 
-- **[Certificado de Inglês EFSET](https://cert.efset.org/CpUPqt)**: Nível C1, 27 Jun 2024.
+- **[Certificado de Inglês EFSET](https://cert.efset.org/CpUPqt)**: Nível C1, Jun 2024.
 
 ## Experiência Profissional
 
