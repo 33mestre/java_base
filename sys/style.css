@@ -1,3 +1,23 @@
+.triangle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-bottom: 20px solid #098995;
+  transform: rotate(-90deg);
+  transform-origin: top right;
+}
+
+h3 .separator{
+  font-size: 18px !important;
+}
+
+table.company th .separator{
+  font-size: 16px !important;
+}
+
 table.language {
   width: 100%;
   border-collapse: collapse;
@@ -14,6 +34,7 @@ table.language th {
   vertical-align: middle;
   border: 1px solid #ddd;
 }
+
 table.language .header {
   font-weight: bold;
   font-size: 1.2em;
@@ -119,7 +140,7 @@ img.avatar {
   border-radius: 100%;
   margin: auto;
   display: block;
-  border: 1px solid #333 !important;
+  border: 1px solid rgba(0,0,0,0.85) !important;
 }
 
 /* Styles for reference tables */
@@ -128,12 +149,13 @@ table.ref {
 }
 
 table.ref td:first-child {
-  background-color: #f6faff !important;
+  background-color: #f6f9ff !important;
   width: 220px;
   min-width: 220px;
   max-width: 220px;
   font-family: 'Lato', 'Raleway', 'Libre Franklin';
   font-weight: 700;
+  border-left: 4px solid rgba(221, 221, 221, 0.74);
 }
 
 .tiny{
@@ -143,9 +165,13 @@ table.ref td:first-child {
 
 /* Styles for technical tables */
 table.tech td:first-child {
-  background-color: #f6faff !important;
+  background-color: #f6f9ff !important;
   font-family: 'Lato', 'Raleway', 'Libre Franklin';
   font-weight: 700;
+  border-left: 4px solid rgba(221, 221, 221, 0.74);
+}
+table.tech th:first-child {
+  border-left: 4px solid rgba(221, 221, 221, 0.74);
 }
 
 table.ref td:nth-child(2) {
@@ -171,12 +197,12 @@ p {
 
 /* Styles for cells with avatar */
 th.avatar {
-  background-color: #f6faff !important;
+  background-color: #f6f9ff !important;
   background-size: cover;
   border-right: 0px !important;
-  border-top: 0.5px solid #333;
-  border-left: 1px solid #333;
-  border-bottom: 0.5px solid #333;
+  border-top: 0.5px solid rgba(0, 0, 0, 0.4);
+  border-left: 0.5px solid rgba(0, 0, 0, 0.4);
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.4);
 }
 
 /* Styles for slogan lists */
@@ -196,10 +222,10 @@ td.slogan {
   font-size: 13px;
   color: rgba(0, 0, 0, 0.85);
   font-weight: normal;
-  border-top: 1px solid rgba(80,80,80,0.5);
-  border-left: 1px solid #333;
-  border-right: 0.5px solid #333;
-  border-bottom: 0.5px solid #333;
+  border-top: 0.5px solid rgba(0, 0, 0, 0.4);
+  border-left: 0.5px solid rgba(0, 0, 0, 0.4);
+  border-right: 0.5px solid rgba(0, 0, 0, 0.4);
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.4);
   background-color: rgba(9, 137, 149, 0.1);
   /* text-transform: uppercase; */
 }
@@ -245,14 +271,14 @@ td.main div{
 
 /* Styles for name headers */
 th.name {
-  background-color: #f6faff !important;
+  background-color: #f6f9ff !important;
   border-left: 0px !important;
-  border-top: 0.5px solid #333;
-  border-right: 0.5px solid #333;
+  border-top: 0.5px solid rgba(0, 0, 0, 0.4);
+  border-right: 0.5px solid rgba(0, 0, 0, 0.4);
   font-family: 'Montserrat', 'Fira Code', Consolas, Courier, monospace;
   font-size: 33px;
   font-weight: bold;
-  border-bottom: 0.5px solid #333;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.4);
 }
 
 /* Styles for ordered and unordered lists */
@@ -265,7 +291,7 @@ ul, ol {
 p.cert {
   font-family: 'Lato', 'Raleway', 'Fira Code', Consolas, Courier, monospace;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   /* text-transform: uppercase; */
 }
 
@@ -289,12 +315,19 @@ p.links {
 
 /* Styles for separators */
 .separator {
-  margin: 0 10px;
-}
-
-.separator {
+  margin: 0 5px;
   font-family: 'Fira Code', Consolas, Courier, monospace;
   color: rgba(0, 0, 0, 0.4);
+  font-size: 11px;
+  font-weight: normal;
+}
+
+.separatorCert{
+  margin: 0 5px;
+  font-family: 'Fira Code', Consolas, Courier, monospace;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 16px;
+  font-weight: normal;
 }
 
 .separator_main {
@@ -304,6 +337,8 @@ p.links {
   position: relative;
   top: -4px;
   margin-left: 20px;
+  font-size: 11px;
+  font-weight: normal;
 }
 
 /* Styles for link text */
@@ -398,6 +433,9 @@ table.company th {
 table.company th:first-child {
   text-align: left;
   border-left: 4px solid #333;
+  border-top: 0.5px solid #333;
+  border-bottom: 0.5px solid #333;
+  border-right: 0.5px solid #333;
   text-transform: uppercase;
   padding-left: 20px;
   padding-right: 8px;
@@ -408,22 +446,31 @@ table.company th:first-child {
 table.company th:nth-child(2) {
   text-align: center;
   border-left: 0.5px solid rgba(221, 221, 221, 0.74);
+  border-top: 0.5px solid #333;
+  border-bottom: 0.5px solid #333;
+  border-right: 0.5px solid #333;
   /* text-transform: uppercase; */
   padding-left: 8px;
   padding-right: 8px;
   font-family: 'Lato', 'Raleway', 'Fira Code', Consolas, Courier, monospace;
   font-weight: 700;
   font-size: 14px;
+  background-color: #f6f9ff;
 }
 
 table.company th:nth-child(3) {
   text-align: center;
   font-family: 'Lato', 'Raleway', 'Fira Code', Consolas, Courier, monospace;
   font-weight: normal !important;
+  border-top: 0.5px solid #333;
+  border-bottom: 0.5px solid #333;
+  border-right: 0.5px solid #333;
+  border-left: 0px;
   font-size: 14px;
   /* text-transform: uppercase; */
   padding-left: 8px;
   padding-right: 8px;
+  background-color: transparent;
 }
 
 table.company th:nth-child(4) {
@@ -451,7 +498,7 @@ h2.main {
 }
 
 h2 {
-  border: 1px solid rgba(221, 221, 221, 0.74);
+  border: 0.5px solid #333;
   border-left: 4px solid #333;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -468,7 +515,7 @@ h2 {
 
 /* Subheader styles */
 h3 {
-  border: 1px solid rgba(221, 221, 221, 0.74);
+  border: 0.5px solid #333;;
   border-left: 4px solid #333;
   padding-top: 4px;
   padding-bottom: 4px;

@@ -2,8 +2,27 @@
 <tr><th width="150" class="avatar">
 <img class="avatar" src="https://avatars.githubusercontent.com/u/5073958?v=4" alt="Shelson Ferrari's GitHub Profile Picture" width="100" height="100"></th>
 <th align="left" class="name"><p>SHELSON FERRARI</p>
-<p class="cert">70+ certifications <small class="separator">|</small> 23 yrs. exp.</p>
-<p class="about">47 yrs — single — Brazilian — São Paulo, Brazil</p>
+<p style="color: rgba(0, 0, 0, 0.020);position: absolute;right: 44px;top: -40px;font-size: 120px;font-family: consolas;font-weight: 100">ஃ </p>
+<p style="color: rgba(0, 0, 0, 0.025);position: absolute;right: 33px;top: 3px;font-size: 120px;font-family: consolas;font-weight: 100" class="triangle">&nbsp;</p>
+<p style="color: rgba(0, 0, 0, 0.025);position: absolute;left: 24px;top: -60px;font-size: 120px;font-family: consolas;font-weight: 100">
+<svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity: 0.04;">
+<circle cx="12" cy="12" r="5" stroke="#1C274C" stroke-width="1.5"></circle>
+<path d="M12 2V4" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
+<path d="M12 20V22" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
+<path d="M4 12L2 12" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
+<path d="M22 12L20 12" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
+<path opacity="0.5" d="M19.7778 4.22266L17.5558 6.25424" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
+<path opacity="0.5" d="M4.22217 4.22266L6.44418 6.25424" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
+<path opacity="0.5" d="M6.44434 17.5557L4.22211 19.7779" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
+</svg>
+</p>
+<p style="color: rgba(0, 0, 0, 0.025);position: absolute;left: 164px;top: -65px;font-size: 120px;font-family: consolas;font-weight: 100">
+<svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity: 0.04;">
+<path d="M21.0672 11.8568L20.4253 11.469L21.0672 11.8568ZM12.1432 2.93276L11.7553 2.29085V2.29085L12.1432 2.93276ZM21.25 12C21.25 17.1086 17.1086 21.25 12 21.25V22.75C17.9371 22.75 22.75 17.9371 22.75 12H21.25ZM12 21.25C6.89137 21.25 2.75 17.1086 2.75 12H1.25C1.25 17.9371 6.06294 22.75 12 22.75V21.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75V1.25C6.06294 1.25 1.25 6.06294 1.25 12H2.75ZM15.5 14.25C12.3244 14.25 9.75 11.6756 9.75 8.5H8.25C8.25 12.5041 11.4959 15.75 15.5 15.75V14.25ZM20.4253 11.469C19.4172 13.1373 17.5882 14.25 15.5 14.25V15.75C18.1349 15.75 20.4407 14.3439 21.7092 12.2447L20.4253 11.469ZM9.75 8.5C9.75 6.41182 10.8627 4.5828 12.531 3.57467L11.7553 2.29085C9.65609 3.5593 8.25 5.86509 8.25 8.5H9.75ZM12 2.75C11.9115 2.75 11.8077 2.71008 11.7324 2.63168C11.6686 2.56527 11.6538 2.50244 11.6503 2.47703C11.6461 2.44587 11.6482 2.35557 11.7553 2.29085L12.531 3.57467C13.0342 3.27065 13.196 2.71398 13.1368 2.27627C13.0754 1.82126 12.7166 1.25 12 1.25V2.75ZM21.7092 12.2447C21.6444 12.3518 21.5541 12.3539 21.523 12.3497C21.4976 12.3462 21.4347 12.3314 21.3683 12.2676C21.2899 12.1923 21.25 12.0885 21.25 12H22.75C22.75 11.2834 22.1787 10.9246 21.7237 10.8632C21.286 10.804 20.7293 10.9658 20.4253 11.469L21.7092 12.2447Z" fill="#1C274C"/>
+</svg>
+</p>
+<p class="cert">70+ certifications <small class="separatorCert">|</small> 23 yrs. exp.</p>
+<p class="about">47 yrs <small class="separator">·</small> single <small class="separator">·</small> Brazilian <small class="separator">·</small> São Paulo, Brazil</p>
 
 <p class="links">
     <a href="https://www.linkedin.com/in/shelson/">
@@ -151,7 +170,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 ## Technical Certifications
 
-- **Database / Data Engineering**
+- **Database <small class="separator">/</small> Data Engineering**
   - [Oracle Autonomous Database Administration](https://www.coursera.org/account/accomplishments/records/7QK7FELRHMDN)
   - [Oracle Database Foundations](https://www.coursera.org/account/accomplishments/records/8AZ7ZHGTPX8A)
   - [Introduction to NoSQL Databases](https://www.coursera.org/account/accomplishments/records/AXKP447EHTM2)
@@ -359,7 +378,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 ## Education
 
-### PUC – Pontifical Catholic University of SP
+### PUC <small class="separator">–</small> Pontifical Catholic University of SP
 
 - **Course**: Business Administration.
 - **Period**: 2017 – 2020.
@@ -402,7 +421,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
         <th>Writen</th>
     </tr>
     <tr class="lang blue">
-      <td class="right border "><strong>English</strong></td>
+      <td class="right border" style="border-left: 4px solid rgba(221, 221, 221, 0.74);"><strong>English</strong></td>
       <td class="border ">C2</td>
       <td class="border ">C2</td>
       <td class="border">C1</td>
@@ -410,7 +429,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
       <td class="border">B2</td>
   </tr>
   <tr class="gray lang">
-    <td class="right border"><strong>Spanish</strong></td>
+    <td class="right border" style="border-left: 4px solid rgba(221, 221, 221, 0.74);"><strong>Spanish</strong></td>
     <td class="border">C1</td>
     <td class="border">C1</td>
     <td class="border">B2</td>
@@ -419,7 +438,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 </tr>
 </table>
 
-### Language Certification – English (C1)
+### Language Certification <small class="separator">–</small> English <small class="separator">(</small>C1<small class="separator">)</small>
 
 - **[EFSET English Certificate](https://cert.efset.org/CpUPqt)**: Level C1, 27 Jun 2024.
 
@@ -435,7 +454,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 - **Client**: CERC.
 - **Project**: Command Center Automation.
-- **Location**: São Paulo – Brazil.
+- **Location**: São Paulo <small class="separator">–</small> Brazil.
 - **Sectors**: IT, Financial, Banking.
 - **Work Arrangement**: Hybrid.
 - **Activities**:
@@ -447,7 +466,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 <table class="company">
   <tr>
-    <th>Dev Back-End Java / Camunda Sr</th>
+    <th>Dev Back-End Java <small class="separator">/</small> Camunda Sr</th>
     <th>NTConsult</th>
     <th>May 2023 – Dec 2023</th>
   </tr>
@@ -455,7 +474,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 - **Client**: Banco Macro.
 - **Project**: Bank Innovation.
-- **Location**: São Paulo – Brazil.
+- **Location**: São Paulo <small class="separator">–</small> Brazil.
 - **Sectors**: IT, Financial, Banking.
 - **Work Arrangement**: Home Office.
 - **Activities**:
@@ -475,7 +494,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 - **Client**: Vitplay.
 - **Project**: Low-Code System.
-- **Location**: São Paulo – Brazil.
+- **Location**: São Paulo <small class="separator">–</small> Brazil.
 - **Sectors**: IT, Services.
 - **Work Arrangement**: Home Office.
 - **Activities**:
@@ -489,7 +508,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 <table class="company">
   <tr>
-    <th>Java Software Engineer / Technical Lead</th>
+    <th>Java Software Engineer<small class="separator">/</small>Technical Lead</th>
     <th>Favo</th>
     <th>Dec 2021 – Sep 2022</th>
   </tr>
@@ -497,7 +516,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 - **Client**: Favo.
 - **Project**: Core System.
-- **Location**: São Paulo – Brazil.
+- **Location**: São Paulo <small class="separator">–</small> Brazil.
 - **Sectors**: IT, Retail.
 - **Work Arrangement**: Home Office.
 - **Activities**:
@@ -519,7 +538,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 - **Client**: Tokio Marine
 - **Project**: Core Integration.
-- **Location**: São Paulo – Brazil.
+- **Location**: São Paulo <small class="separator">–</small> Brazil.
 - **Sectors**: IT, Insurance.
 - **Work Arrangement**: Home Office.
 - **Activities**:
@@ -543,7 +562,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 - **Client**: Banco BV.
 - **Project**: Migração BV.
-- **Location**: São Paulo – Brazil.
+- **Location**: São Paulo <small class="separator">–</small> Brazil.
 - **Sectors**: IT, Finance, Banking.
 - **Work Arrangement**: Onsite.
 - **Activities**:
@@ -559,7 +578,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 <table class="company">
   <tr>
-    <th>Full-Stack / Technical Lead</th>
+    <th>Full-Stack <small class="separator">/</small> Technical Lead</th>
     <th>Capgemini</th>
     <th>Sep 2019 – Dec 2019</th>
   </tr>
@@ -567,7 +586,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 - **Client**: Santander.
 - **Project**: Bank slip.
-- **Location**: São Paulo – Brazil.
+- **Location**: São Paulo <small class="separator">–</small> Brazil.
 - **Sectors**: IT, Banking.
 - **Work Arrangement**: Onsite.
 - **Activities**:
@@ -583,7 +602,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 <table class="company">
   <tr>
-    <th>Full-Stack / Technical Lead</th>
+    <th>Full-Stack <small class="separator">/</small> Technical Lead</th>
     <th>ZUP</th>
     <th>May 2019 – Aug 2019</th>
   </tr>
@@ -591,7 +610,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 - **Client**: CIELO.
 - **Project**: Multi-Brand Project.
-- **Location**: São Paulo – Brazil.
+- **Location**: São Paulo <small class="separator">–</small> Brazil.
 - **Sectors**: IT, Banking.
 - **Work Arrangement**: Onsite.
 - **Activities**:
@@ -616,7 +635,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 - **Client**: Saferocket.
 - **Project**: Swift Project.
-- **Location**: São Paulo – Brazil.
+- **Location**: São Paulo <small class="separator">–</small> Brazil.
 - **Sectors**: IT, Finance.
 - **Work Arrangement**: Hybrid.
 - **Activities**:
@@ -634,7 +653,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 - **Client**: C&A Modas.
 - **Project**: Migração de Sistemas POS.
-- **Location**: São Paulo – Brazil.
+- **Location**: São Paulo <small class="separator">–</small> Brazil.
 - **Sectors**: IT, Retail.
 - **Work Arrangement**: Onsite.
 - **Activities**:
@@ -645,7 +664,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 <table class="company">
   <tr>
-    <th>Dev Back-End Java / Technical Lead</th>
+    <th>Dev Back-End Java <small class="separator">/</small> Technical Lead</th>
     <th>Valemobi</th>
     <th>Apr 2018 – Aug 2018</th>
   </tr>
@@ -653,7 +672,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 - **Client**: Valemobi.
 - **Project**: Home Broker and Investment Funds.
-- **Location**: São Paulo – Brazil.
+- **Location**: São Paulo <small class="separator">–</small> Brazil.
 - **Sectors**: IT, Finance, Banking.
 - **Work Arrangement**: Onsite.
 - **Activities**:
@@ -669,7 +688,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 <table class="company">
   <tr>
-    <th>Full-Stack Java / JavaScript</th>
+    <th>Full-Stack Java <small class="separator">/</small> JavaScript</th>
     <th>Indra</th>
     <th>Jan 2018 – Mar 2018</th>
   </tr>
@@ -677,7 +696,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 - **Client**: Santander.
 - **Project**: Santander Improvements.
-- **Location**: São Paulo – Brazil.
+- **Location**: São Paulo <small class="separator">–</small> Brazil.
 - **Sectors**: IT, Services.
 - **Work Arrangement**: Onsite.
 - **Activities**:
@@ -688,7 +707,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 <table class="company">
   <tr>
-    <th>Full-Stack Java / JavaScript</th>
+    <th>Full-Stack Java <small class="separator">/</small> JavaScript</th>
     <th>Decision</th>
     <th>Sep 2017 – Dec 2017</th>
   </tr>
@@ -696,7 +715,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 - **Client**: Diebold.
 - **Project**: POS SAT / SEFAZ.
-- **Location**: São Paulo – Brazil.
+- **Location**: São Paulo <small class="separator">–</small> Brazil.
 - **Sectors**: IT, Retail.
 - **Work Arrangement**: Onsite.
 - **Activities**:
@@ -717,7 +736,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 - **Client**: Itaú.
 - **Project**: Artificial Intelligence Project.
-- **Location**: São Paulo – Brazil.
+- **Location**: São Paulo <small class="separator">–</small> Brazil.
 - **Sectors**: IT, Finance, Banking.
 - **Work Arrangement**: Onsite.
 - **Activities**:
@@ -738,7 +757,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 - **Client**: Itaú.
 - **Project**: Thermometer Project.
-- **Location**: São Paulo – Brazil.
+- **Location**: São Paulo <small class="separator">–</small> Brazil.
 - **Sectors**: IT, Finance, Banking.
 - **Work Arrangement**: Onsite.
 - **Activities**:
@@ -756,7 +775,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 - **Client**: Bradesco.
 - **Project**: Bradesco IT Improvements Project.
-- **Location**: São Paulo – Brazil.
+- **Location**: São Paulo <small class="separator">–</small> Brazil.
 - **Sectors**: IT, Finance, Banking.
 - **Work Arrangement**: Onsite.
 - **Activities**:
@@ -774,7 +793,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 - **Client**: Bradesco.
 - **Project**: Financial Dashboard Project.
-- **Location**: São Paulo – Brazil.
+- **Location**: São Paulo <small class="separator">–</small> Brazil.
 - **Sectors**: IT, Finance, Banking.
 - **Work Arrangement**: Onsite.
 - **Activities**:
@@ -792,7 +811,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 
 - **Client**: Bradesco.
 - **Project**: Financial Dashboard.
-- **Location**: São Paulo – Brazil.
+- **Location**: São Paulo <small class="separator">–</small> Brazil.
 - **Sectors**: IT, Finance, Banking.
 - **Work Arrangement**: Onsite.
 - **Activities**:

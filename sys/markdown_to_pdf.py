@@ -59,24 +59,24 @@ def highlight_code(code, language):
 documents = [
     {
         "nome": "SHELSON_FERRARI_CV_en",
-        "header_content": "Shelson Ferrari - Full Stack Software Engineer | Cloud Architect",
-        "footer_left_content": "CV Euro Pass - en version",
+        "header_content": "Shelson Ferrari — Full Stack Software Engineer | Cloud Architect",
+        "footer_left_content": "CV Euro Pass — en version",
         "footer_right_content": "Page ",
         "author": "Shelson Ferrari",
         "version": "1.0"
     },
     {
         "nome": "SHELSON_FERRARI_CV_pt_br",
-        "header_content": "Shelson Ferrari - Engenheiro de Software Full Stack | Arquiteto de Nuvem",
-        "footer_left_content": "CV Euro Pass - versão pt_br",
+        "header_content": "Shelson Ferrari — Engenheiro de Software Full Stack | Arquiteto de Nuvem",
+        "footer_left_content": "CV Euro Pass — versão pt_br",
         "footer_right_content": "Página ",
         "author": "Shelson Ferrari",
         "version": "1.0"
     },
     {
         "nome": "SHELSON_FERRARI_CV_es",
-        "header_content": "Shelson Ferrari - Ingeniero de Software Full Stack | Arquitecto de Nube",
-        "footer_left_content": "CV Euro Pass - versión es",
+        "header_content": "Shelson Ferrari — Ingeniero de Software Full Stack | Arquitecto de Nube",
+        "footer_left_content": "CV Euro Pass — versión es",
         "footer_right_content": "Página ",
         "author": "Shelson Ferrari",
         "version": "1.0"
@@ -229,7 +229,7 @@ def gerar_pdf(document):
         '/Author': document['author'],
         '/Title': document['header_content'],
         '/Subject': document['footer_left_content'],
-        '/Keywords': 'Shelson, Ferrari, Kadosch, Java, Python, CV, GO, Node.js, JavaScript, AWS, GCP, IBM',
+        '/Keywords': 'Shelson, Ferrari, Kadosch, Java, Python, CV, GO, Node.js, JavaScript, AWS, GCP, IBM, Master, 33, Mr33, 33mestre',
         '/Producer': document['author'],
         '/CreationDate': datetime.now().strftime("D:%Y%m%d%H%M%S")
     }

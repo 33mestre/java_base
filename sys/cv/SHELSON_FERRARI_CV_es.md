@@ -2,8 +2,27 @@
 <tr><th width="150" class="avatar">
 <img class="avatar" src="https://avatars.githubusercontent.com/u/5073958?v=4" alt="Shelson Ferrari's GitHub Profile Picture" width="100" height="100"></th>
 <th align="left" class="name"><p>SHELSON FERRARI</p>
-<p class="cert">70+ certificaciones <small class="separator">|</small> 23 años de exp.</p>
-<p class="about">47 años — soltero — brasileño — São Paulo, Brasil</p>
+<p style="color: rgba(0, 0, 0, 0.020);position: absolute;right: 44px;top: -40px;font-size: 120px;font-family: consolas;font-weight: 100">ஃ </p>
+<p style="color: rgba(0, 0, 0, 0.025);position: absolute;right: 33px;top: 3px;font-size: 120px;font-family: consolas;font-weight: 100" class="triangle">&nbsp;</p>
+<p style="color: rgba(0, 0, 0, 0.025);position: absolute;left: 24px;top: -60px;font-size: 120px;font-family: consolas;font-weight: 100">
+<svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity: 0.04;">
+<circle cx="12" cy="12" r="5" stroke="#1C274C" stroke-width="1.5"></circle>
+<path d="M12 2V4" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
+<path d="M12 20V22" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
+<path d="M4 12L2 12" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
+<path d="M22 12L20 12" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
+<path opacity="0.5" d="M19.7778 4.22266L17.5558 6.25424" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
+<path opacity="0.5" d="M4.22217 4.22266L6.44418 6.25424" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
+<path opacity="0.5" d="M6.44434 17.5557L4.22211 19.7779" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
+</svg>
+</p>
+<p style="color: rgba(0, 0, 0, 0.025);position: absolute;left: 164px;top: -65px;font-size: 120px;font-family: consolas;font-weight: 100">
+<svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity: 0.04;">
+<path d="M21.0672 11.8568L20.4253 11.469L21.0672 11.8568ZM12.1432 2.93276L11.7553 2.29085V2.29085L12.1432 2.93276ZM21.25 12C21.25 17.1086 17.1086 21.25 12 21.25V22.75C17.9371 22.75 22.75 17.9371 22.75 12H21.25ZM12 21.25C6.89137 21.25 2.75 17.1086 2.75 12H1.25C1.25 17.9371 6.06294 22.75 12 22.75V21.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75V1.25C6.06294 1.25 1.25 6.06294 1.25 12H2.75ZM15.5 14.25C12.3244 14.25 9.75 11.6756 9.75 8.5H8.25C8.25 12.5041 11.4959 15.75 15.5 15.75V14.25ZM20.4253 11.469C19.4172 13.1373 17.5882 14.25 15.5 14.25V15.75C18.1349 15.75 20.4407 14.3439 21.7092 12.2447L20.4253 11.469ZM9.75 8.5C9.75 6.41182 10.8627 4.5828 12.531 3.57467L11.7553 2.29085C9.65609 3.5593 8.25 5.86509 8.25 8.5H9.75ZM12 2.75C11.9115 2.75 11.8077 2.71008 11.7324 2.63168C11.6686 2.56527 11.6538 2.50244 11.6503 2.47703C11.6461 2.44587 11.6482 2.35557 11.7553 2.29085L12.531 3.57467C13.0342 3.27065 13.196 2.71398 13.1368 2.27627C13.0754 1.82126 12.7166 1.25 12 1.25V2.75ZM21.7092 12.2447C21.6444 12.3518 21.5541 12.3539 21.523 12.3497C21.4976 12.3462 21.4347 12.3314 21.3683 12.2676C21.2899 12.1923 21.25 12.0885 21.25 12H22.75C22.75 11.2834 22.1787 10.9246 21.7237 10.8632C21.286 10.804 20.7293 10.9658 20.4253 11.469L21.7092 12.2447Z" fill="#1C274C"/>
+</svg>
+</p>
+<p class="cert">70+ certificaciones <small class="separatorCert">|</small> 23 años de exp.</p>
+<p class="about">47 años <small class="separator">·</small> soltero <small class="separator">·</small> brasileño <small class="separator">·</small> São Paulo, Brasil</p>
 <p class="links">
     <a href="https://www.linkedin.com/in/shelson/">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 30 30" fill="none">
@@ -150,7 +169,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 ## Certificaciones Técnicas
 
-- **Base de Datos / Ingeniería de Datos**
+- **Base de Datos <small class="separator">/</small> Ingeniería de Datos**
   - [Administración de Base de Datos Autónoma de Oracle](https://www.coursera.org/account/accomplishments/records/7QK7FELRHMDN)
   - [Fundamentos de Base de Datos de Oracle](https://www.coursera.org/account/accomplishments/records/8AZ7ZHGTPX8A)
   - [Introducción a Bases de Datos NoSQL](https://www.coursera.org/account/accomplishments/records/AXKP447EHTM2)
@@ -358,7 +377,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 ## Educación
 
-### PUC – Pontificia Universidad Católica de SP
+### PUC <small class="separator">–</small> Pontificia Universidad Católica de SP
 
 - **Curso**: Administración de Empresas.
 - **Período**: 2017 – 2020.
@@ -401,7 +420,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
         <th>Escrito</th>
     </tr>
     <tr class="lang blue">
-        <td class="right border"><strong>Inglés</strong></td>
+        <td class="right border" style="border-left: 4px solid rgba(221, 221, 221, 0.74);"><strong>Inglés</strong></td>
         <td class="border">C2</td>
         <td class="border">C2</td>
         <td class="border">C1</td>
@@ -409,7 +428,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
         <td class="border">B2</td>
     </tr>
     <tr class="gray lang">
-        <td class="right border"><strong>Español</strong></td>
+        <td class="right border" style="border-left: 4px solid rgba(221, 221, 221, 0.74);"><strong>Español</strong></td>
         <td class="border">C1</td>
         <td class="border">C1</td>
         <td class="border">B2</td>
@@ -419,7 +438,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 </table>
 
 
-### Certificación de Idiomas – Inglés (C1)
+### Certificación de Idiomas <small class="separator">–</small> Inglés <small class="separator">(</small>C1<small class="separator">)</small>
 
 - **[Certificado de Inglés EFSET](https://cert.efset.org/CpUPqt)**: Nivel C1, 27 Jun 2024.
 
@@ -435,7 +454,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 - **Cliente**: CERC.
 - **Proyecto**: Automatización del Centro de Comando.
-- **Localización**: São Paulo – Brasil.
+- **Localización**: São Paulo <small class="separator">–</small> Brasil.
 - **Sectores**: TI, Financiero, Bancario.
 - **Régimen de Trabajo**: Híbrido.
 - **Actividades**:
@@ -447,7 +466,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 <table class="company">
   <tr>
-    <th>DEV Back-End<br>Java / Camunda Sr</th>
+    <th>DEV Back-End<br>Java <small class="separator">/</small> Camunda Sr</th>
     <th>NTConsult</th>
     <th>May 2023 – Dec 2023</th>
   </tr>
@@ -455,7 +474,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 - **Cliente**: Banco Macro.
 - **Proyecto**: Innovación Bancaria.
-- **Localización**: São Paulo – Brasil.
+- **Localización**: São Paulo <small class="separator">–</small> Brasil.
 - **Sectores**: TI, Financiero, Bancario.
 - **Régimen de Trabajo**: Trabajo a distancia.
 - **Actividades**:
@@ -475,7 +494,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 - **Cliente**: Vitplay.
 - **Proyecto**: Sistema Low-Code.
-- **Localización**: São Paulo – Brasil.
+- **Localización**: São Paulo <small class="separator">–</small> Brasil.
 - **Sectores**: TI, Servicios.
 - **Régimen de Trabajo**: Trabajo a distancia.
 - **Actividades**:
@@ -489,7 +508,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 <table class="company">
   <tr>
-    <th>Ingeniero de Software Java / Líder Técnico</th>
+    <th>Ingeniero de Software Java <small class="separator">/</small> Líder Técnico</th>
     <th>Favo</th>
     <th>Dec 2021 – Sep 2022</th>
   </tr>
@@ -497,7 +516,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 - **Cliente**: Favo.
 - **Proyecto**: Sistema Core.
-- **Localización**: São Paulo – Brasil.
+- **Localización**: São Paulo <small class="separator">–</small> Brasil.
 - **Sectores**: TI, Retail.
 - **Régimen de Trabajo**: Trabajo a distancia.
 - **Actividades**:
@@ -519,7 +538,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 - **Cliente**: Tokio Marine.
 - **Proyecto**: Integración Core.
-- **Localización**: São Paulo – Brasil.
+- **Localización**: São Paulo <small class="separator">–</small> Brasil.
 - **Sectores**: TI, Seguros.
 - **Régimen de Trabajo**: Trabajo a distancia.
 - **Actividades**:
@@ -543,7 +562,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 - **Cliente**: Banco BV.
 - **Proyecto**: Migración BV.
-- **Localización**: São Paulo – Brasil.
+- **Localización**: São Paulo <small class="separator">–</small> Brasil.
 - **Sectores**: TI, Finanzas, Bancario.
 - **Régimen de Trabajo**: Presencial.
 - **Actividades**:
@@ -559,7 +578,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 <table class="company">
   <tr>
-    <th>Full-Stack / Líder Técnico</th>
+    <th>Full-Stack <small class="separator">/</small> Líder Técnico</th>
     <th>Capgemini</th>
     <th>Sep 2019 – Dec 2019</th>
   </tr>
@@ -567,7 +586,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 - **Cliente**: Santander.
 - **Proyecto**: Boleto Bancario.
-- **Localización**: São Paulo – Brasil.
+- **Localización**: São Paulo <small class="separator">–</small> Brasil.
 - **Sectores**: TI, Bancario.
 - **Régimen de Trabajo**: Presencial.
 - **Actividades**:
@@ -583,7 +602,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 <table class="company">
   <tr>
-    <th>Full-Stack / Líder Técnico</th>
+    <th>Full-Stack <small class="separator">/</small> Líder Técnico</th>
     <th>ZUP</th>
     <th>May 2019 – Aug 2019</th>
   </tr>
@@ -591,7 +610,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 - **Cliente**: CIELO.
 - **Proyecto**: Proyecto Multi-Marca.
-- **Localización**: São Paulo – Brasil.
+- **Localización**: São Paulo <small class="separator">–</small> Brasil.
 - **Sectores**: TI, Bancario.
 - **Régimen de Trabajo**: Presencial.
 - **Actividades**:
@@ -616,7 +635,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 - **Cliente**: Saferocket.
 - **Proyecto**: Proyecto Swift.
-- **Localización**: São Paulo – Brasil.
+- **Localización**: São Paulo <small class="separator">–</small> Brasil.
 - **Sectores**: TI, Finanzas.
 - **Régimen de Trabajo**: Híbrido.
 - **Actividades**:
@@ -634,7 +653,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 - **Cliente**: C&A Modas.
 - **Proyecto**: Migración de Sistemas POS.
-- **Localización**: São Paulo – Brasil.
+- **Localización**: São Paulo <small class="separator">–</small> Brasil.
 - **Sectores**: TI, Retail.
 - **Régimen de Trabajo**: Presencial.
 - **Actividades**:
@@ -645,7 +664,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 <table class="company">
   <tr>
-    <th>DEV Back-End Java / Líder Técnico</th>
+    <th>DEV Back-End Java <small class="separator">/</small> Líder Técnico</th>
     <th>Valemobi</th>
     <th>Apr 2018 – Aug 2018</th>
   </tr>
@@ -653,7 +672,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 - **Cliente**: Valemobi.
 - **Proyecto**: Home Broker y Fondos de Inversión.
-- **Localización**: São Paulo – Brasil.
+- **Localización**: São Paulo <small class="separator">–</small> Brasil.
 - **Sectores**: TI, Finanzas, Bancario.
 - **Régimen de Trabajo**: Presencial.
 - **Actividades**:
@@ -669,7 +688,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 <table class="company">
   <tr>
-    <th>Full-Stack Java / JavaScript</th>
+    <th>Full-Stack Java <small class="separator">/</small> JavaScript</th>
     <th>Indra</th>
     <th>Jan 2018 – Mar 2018</th>
   </tr>
@@ -677,7 +696,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 - **Cliente**: Santander.
 - **Proyecto**: Mejoras en Santander.
-- **Localización**: São Paulo – Brasil.
+- **Localización**: São Paulo <small class="separator">–</small> Brasil.
 - **Sectores**: TI, Servicios.
 - **Régimen de Trabajo**: Presencial.
 - **Actividades**:
@@ -688,7 +707,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 <table class="company">
   <tr>
-    <th>Full-Stack Java / JavaScript</th>
+    <th>Full-Stack Java <small class="separator">/</small> JavaScript</th>
     <th>Decision</th>
     <th>Sep 2017 – Dec 2017</th>
   </tr>
@@ -696,7 +715,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 - **Cliente**: Diebold.
 - **Proyecto**: POS SAT / SEFAZ.
-- **Localización**: São Paulo – Brasil.
+- **Localización**: São Paulo <small class="separator">–</small> Brasil.
 - **Sectores**: TI, Retail.
 - **Régimen de Trabajo**: Presencial.
 - **Actividades**:
@@ -717,7 +736,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 - **Cliente**: Itaú.
 - **Proyecto**: Proyecto de Inteligencia Artificial.
-- **Localización**: São Paulo – Brasil.
+- **Localización**: São Paulo <small class="separator">–</small> Brasil.
 - **Sectores**: TI, Finanzas, Bancario.
 - **Régimen de Trabajo**: Presencial.
 - **Actividades**:
@@ -738,7 +757,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 - **Cliente**: Itaú.
 - **Proyecto**: Proyecto Termómetro.
-- **Localización**: São Paulo – Brasil.
+- **Localización**: São Paulo <small class="separator">–</small> Brasil.
 - **Sectores**: TI, Finanzas, Bancario.
 - **Régimen de Trabajo**: Presencial.
 - **Actividades**:
@@ -756,7 +775,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 - **Cliente**: Bradesco.
 - **Proyecto**: Proyecto de Mejoras de TI de Bradesco.
-- **Localización**: São Paulo – Brasil.
+- **Localización**: São Paulo <small class="separator">–</small> Brasil.
 - **Sectores**: TI, Finanzas, Bancario.
 - **Régimen de Trabajo**: Presencial.
 - **Actividades**:
@@ -774,7 +793,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 - **Cliente**: Bradesco.
 - **Proyecto**: Proyecto de Tablero Financiero.
-- **Localización**: São Paulo – Brasil.
+- **Localización**: São Paulo <small class="separator">–</small> Brasil.
 - **Sectores**: TI, Finanzas, Bancario.
 - **Régimen de Trabajo**: Presencial.
 - **Actividades**:
@@ -792,7 +811,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
 - **Cliente**: Bradesco.
 - **Proyecto**: Tablero Financiero.
-- **Localización**: São Paulo – Brasil.
+- **Localización**: São Paulo <small class="separator">–</small> Brasil.
 - **Sectores**: TI, Finanzas, Bancario.
 - **Régimen de Trabajo**: Presencial.
 - **Actividades**:

@@ -2,8 +2,27 @@
 <tr><th width="150" class="avatar">
 <img class="avatar" src="https://avatars.githubusercontent.com/u/5073958?v=4" alt="Shelson Ferrari's GitHub Profile Picture" width="95" height="100"></th>
 <th align="left" class="name"><p>SHELSON FERRARI</p>
-<p class="cert">70+ certificações <small class="separator">|</small> 23 anos de exp.</p>
-<p class="about">47 anos — solteiro — brasileiro — São Paulo, Brasil</p>
+<p style="color: rgba(0, 0, 0, 0.020);position: absolute;right: 44px;top: -40px;font-size: 120px;font-family: consolas;font-weight: 100">ஃ </p>
+<p style="color: rgba(0, 0, 0, 0.025);position: absolute;right: 33px;top: 3px;font-size: 120px;font-family: consolas;font-weight: 100" class="triangle">&nbsp;</p>
+<p style="color: rgba(0, 0, 0, 0.025);position: absolute;left: 24px;top: -60px;font-size: 120px;font-family: consolas;font-weight: 100">
+<svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity: 0.04;">
+<circle cx="12" cy="12" r="5" stroke="#1C274C" stroke-width="1.5"></circle>
+<path d="M12 2V4" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
+<path d="M12 20V22" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
+<path d="M4 12L2 12" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
+<path d="M22 12L20 12" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
+<path opacity="0.5" d="M19.7778 4.22266L17.5558 6.25424" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
+<path opacity="0.5" d="M4.22217 4.22266L6.44418 6.25424" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
+<path opacity="0.5" d="M6.44434 17.5557L4.22211 19.7779" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
+</svg>
+</p>
+<p style="color: rgba(0, 0, 0, 0.025);position: absolute;left: 164px;top: -65px;font-size: 120px;font-family: consolas;font-weight: 100">
+<svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity: 0.04;">
+<path d="M21.0672 11.8568L20.4253 11.469L21.0672 11.8568ZM12.1432 2.93276L11.7553 2.29085V2.29085L12.1432 2.93276ZM21.25 12C21.25 17.1086 17.1086 21.25 12 21.25V22.75C17.9371 22.75 22.75 17.9371 22.75 12H21.25ZM12 21.25C6.89137 21.25 2.75 17.1086 2.75 12H1.25C1.25 17.9371 6.06294 22.75 12 22.75V21.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75V1.25C6.06294 1.25 1.25 6.06294 1.25 12H2.75ZM15.5 14.25C12.3244 14.25 9.75 11.6756 9.75 8.5H8.25C8.25 12.5041 11.4959 15.75 15.5 15.75V14.25ZM20.4253 11.469C19.4172 13.1373 17.5882 14.25 15.5 14.25V15.75C18.1349 15.75 20.4407 14.3439 21.7092 12.2447L20.4253 11.469ZM9.75 8.5C9.75 6.41182 10.8627 4.5828 12.531 3.57467L11.7553 2.29085C9.65609 3.5593 8.25 5.86509 8.25 8.5H9.75ZM12 2.75C11.9115 2.75 11.8077 2.71008 11.7324 2.63168C11.6686 2.56527 11.6538 2.50244 11.6503 2.47703C11.6461 2.44587 11.6482 2.35557 11.7553 2.29085L12.531 3.57467C13.0342 3.27065 13.196 2.71398 13.1368 2.27627C13.0754 1.82126 12.7166 1.25 12 1.25V2.75ZM21.7092 12.2447C21.6444 12.3518 21.5541 12.3539 21.523 12.3497C21.4976 12.3462 21.4347 12.3314 21.3683 12.2676C21.2899 12.1923 21.25 12.0885 21.25 12H22.75C22.75 11.2834 22.1787 10.9246 21.7237 10.8632C21.286 10.804 20.7293 10.9658 20.4253 11.469L21.7092 12.2447Z" fill="#1C274C"/>
+</svg>
+</p>
+<p class="cert">70+ certificações <small class="separatorCert">|</small> 23 anos de exp.</p>
+<p class="about">47 anos <small class="separator">·</small> solteiro <small class="separator">·</small> brasileiro <small class="separator">·</small> São Paulo, Brasil</p>
 <p class="links">
     <a href="https://www.linkedin.com/in/shelson/">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 30 30" fill="none">
@@ -150,7 +169,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 ## Certificações Técnicas
 
-- **Banco de Dados / Engenharia de Dados**
+- **Banco de Dados <small class="separator">/</small> Engenharia de Dados**
   - [Administração de Banco de Dados Autônomos Oracle](https://www.coursera.org/account/accomplishments/records/7QK7FELRHMDN)
   - [Fundamentos de Banco de Dados Oracle](https://www.coursera.org/account/accomplishments/records/8AZ7ZHGTPX8A)
   - [Introdução a Bancos de Dados NoSQL](https://www.coursera.org/account/accomplishments/records/AXKP447EHTM2)
@@ -358,7 +377,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 ## Educação
 
-### PUC – Pontifícia Universidade Católica de SP
+### PUC <small class="separator">–</small> Pontifícia Universidade Católica de SP
 
 - **Curso**: Administração de Empresas.
 - **Período**: 2017 – 2020.
@@ -401,7 +420,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
         <th>Escrever</th>
     </tr>
     <tr class="lang blue">
-      <td class="right border "><strong>Inglês</strong></td>
+      <td class="right border" style="border-left: 4px solid rgba(221, 221, 221, 0.74);"><strong>Inglês</strong></td>
       <td class="border ">C2</td>
       <td class="border ">C2</td>
       <td class="border">C1</td>
@@ -409,7 +428,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
       <td class="border">B2</td>
   </tr>
   <tr class="gray lang">
-    <td class="right border"><strong>Espanhol</strong></td>
+    <td class="right border" style="border-left: 4px solid rgba(221, 221, 221, 0.74);"><strong>Espanhol</strong></td>
     <td class="border">C1</td>
     <td class="border">C1</td>
     <td class="border">B2</td>
@@ -418,7 +437,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 </tr>
 </table>
 
-### Certificação de Idiomas – Inglês (C1)
+### Certificação de Idiomas <small class="separator">–</small> Inglês <small class="separator">(</small>C1<small class="separator">)</small>
 
 - **[Certificado de Inglês EFSET](https://cert.efset.org/CpUPqt)**: Nível C1, 27 Jun 2024.
 
@@ -434,7 +453,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 - **Cliente**: CERC.
 - **Projeto**: Automação do Centro de Comando.
-- **Localização**: São Paulo – Brasil.
+- **Localização**: São Paulo <small class="separator">–</small> Brasil.
 - **Setores**: TI, Financeiro, Bancário.
 - **Regime de Trabalho**: Híbrido.
 - **Atividades**:
@@ -446,7 +465,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 <table class="company">
   <tr>
-    <th>DEV Back-End Java / Camunda Sênior</th>
+    <th>DEV Back-End Java <small class="separator">/</small> Camunda Sênior</th>
     <th>NTConsult</th>
     <th>Mai 2023 – Dez 2023</th>
   </tr>
@@ -454,7 +473,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 - **Cliente**: Banco Macro.
 - **Projeto**: Inovação Bancária.
-- **Localização**: São Paulo – Brasil.
+- **Localização**: São Paulo <small class="separator">–</small> Brasil.
 - **Setores**: TI, Financeiro, Bancário.
 - **Regime de Trabalho**: Home Office.
 - **Atividades**:
@@ -474,7 +493,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 - **Cliente**: Vitplay.
 - **Projeto**: Sistema Low-Code.
-- **Localização**: São Paulo – Brasil.
+- **Localização**: São Paulo <small class="separator">–</small> Brasil.
 - **Setores**: TI, Serviços.
 - **Regime de Trabalho**: Home Office.
 - **Atividades**:
@@ -488,7 +507,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 <table class="company">
   <tr>
-    <th>Engenheiro de Software Java / Líder Técnico</th>
+    <th>Engenheiro de Software Java <small class="separator">/</small> Líder Técnico</th>
     <th>Favo</th>
     <th>Dez 2021 – Set 2022</th>
   </tr>
@@ -496,7 +515,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 - **Cliente**: Favo.
 - **Projeto**: Sistema Core.
-- **Localização**: São Paulo – Brasil.
+- **Localização**: São Paulo <small class="separator">–</small> Brasil.
 - **Setores**: TI, Varejo.
 - **Regime de Trabalho**: Home Office.
 - **Atividades**:
@@ -518,7 +537,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 - **Cliente**: Tokio Marine.
 - **Projeto**: Integração Core.
-- **Localização**: São Paulo – Brasil.
+- **Localização**: São Paulo <small class="separator">–</small> Brasil.
 - **Setores**: TI, Seguros.
 - **Regime de Trabalho**: Home Office.
 - **Atividades**:
@@ -542,7 +561,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 - **Cliente**: Banco BV.
 - **Projeto**: Migração BV.
-- **Localização**: São Paulo – Brasil.
+- **Localização**: São Paulo <small class="separator">–</small> Brasil.
 - **Setores**: TI, Financeiro, Bancário.
 - **Regime de Trabalho**: Presencial.
 - **Atividades**:
@@ -558,7 +577,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 <table class="company">
   <tr>
-    <th>Full-Stack / Líder Técnico</th>
+    <th>Full-Stack <small class="separator">/</small> Líder Técnico</th>
     <th>Capgemini</th>
     <th>Set 2019 – Dez 2019</th>
   </tr>
@@ -566,7 +585,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 - **Cliente**: Santander.
 - **Projeto**: Boleto Bancário.
-- **Localização**: São Paulo – Brasil.
+- **Localização**: São Paulo <small class="separator">–</small> Brasil.
 - **Setores**: TI, Bancário.
 - **Regime de Trabalho**: Presencial.
 - **Atividades**:
@@ -582,7 +601,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 <table class="company">
   <tr>
-    <th>Full-Stack / Líder Técnico</th>
+    <th>Full-Stack <small class="separator">/</small> Líder Técnico</th>
     <th>ZUP</th>
     <th>Mai 2019 – Ago 2019</th>
   </tr>
@@ -590,7 +609,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 - **Cliente**: CIELO.
 - **Projeto**: Projeto Multibandeira.
-- **Localização**: São Paulo – Brasil.
+- **Localização**: São Paulo <small class="separator">–</small> Brasil.
 - **Setores**: TI, Bancário.
 - **Regime de Trabalho**: Presencial.
 - **Atividades**:
@@ -615,7 +634,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 - **Cliente**: Saferocket.
 - **Projeto**: Projeto Swift.
-- **Localização**: São Paulo – Brasil.
+- **Localização**: São Paulo <small class="separator">–</small> Brasil.
 - **Setores**: TI, Financeiro.
 - **Regime de Trabalho**: Híbrido.
 - **Atividades**:
@@ -633,7 +652,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 - **Cliente**: C&A Modas.
 - **Projeto**: Migração de Sistemas POS.
-- **Localização**: São Paulo – Brasil.
+- **Localização**: São Paulo <small class="separator">–</small> Brasil.
 - **Setores**: TI, Varejo.
 - **Regime de Trabalho**: Presencial.
 - **Atividades**:
@@ -644,7 +663,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 <table class="company">
   <tr>
-    <th>DEV Back-End Java / Líder Técnico</th>
+    <th>DEV Back-End Java <small class="separator">/</small> Líder Técnico</th>
     <th>Valemobi</th>
     <th>Abr 2018 – Ago 2018</th>
   </tr>
@@ -652,7 +671,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 - **Cliente**: Valemobi.
 - **Projeto**: Home Broker e Fundos de Investimento.
-- **Localização**: São Paulo – Brasil.
+- **Localização**: São Paulo <small class="separator">–</small> Brasil.
 - **Setores**: TI, Financeiro, Bancário.
 - **Regime de Trabalho**: Presencial.
 - **Atividades**:
@@ -668,7 +687,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 <table class="company">
   <tr>
-    <th>Full-Stack Java / JavaScript</th>
+    <th>Full-Stack Java <small class="separator">/</small> JavaScript</th>
     <th>Indra</th>
     <th>Jan 2018 – Mar 2018</th>
   </tr>
@@ -676,7 +695,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 - **Cliente**: Santander.
 - **Projeto**: Melhorias Santander.
-- **Localização**: São Paulo – Brasil.
+- **Localização**: São Paulo <small class="separator">–</small> Brasil.
 - **Setores**: TI, Serviços.
 - **Regime de Trabalho**: Presencial.
 - **Atividades**:
@@ -687,7 +706,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 <table class="company">
   <tr>
-    <th>Full-Stack Java / JavaScript</th>
+    <th>Full-Stack Java <small class="separator">/</small> JavaScript</th>
     <th>Decision</th>
     <th>Set 2017 – Dez 2017</th>
   </tr>
@@ -695,7 +714,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 - **Cliente**: Diebold.
 - **Projeto**: POS SAT / SEFAZ.
-- **Localização**: São Paulo – Brasil.
+- **Localização**: São Paulo <small class="separator">–</small> Brasil.
 - **Setores**: TI, Varejo.
 - **Regime de Trabalho**: Presencial.
 - **Atividades**:
@@ -716,7 +735,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 - **Cliente**: Itaú.
 - **Projeto**: Projeto de Inteligência Artificial.
-- **Localização**: São Paulo – Brasil.
+- **Localização**: São Paulo <small class="separator">–</small> Brasil.
 - **Setores**: TI, Financeiro, Bancário.
 - **Regime de Trabalho**: Presencial.
 - **Atividades**:
@@ -737,7 +756,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 - **Cliente**: Itaú.
 - **Projeto**: Projeto Termômetro.
-- **Localização**: São Paulo – Brasil.
+- **Localização**: São Paulo <small class="separator">–</small> Brasil.
 - **Setores**: TI, Financeiro, Bancário.
 - **Regime de Trabalho**: Presencial.
 - **Atividades**:
@@ -755,7 +774,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 - **Cliente**: Bradesco.
 - **Projeto**: Projeto de Melhorias de TI Bradesco.
-- **Localização**: São Paulo – Brasil.
+- **Localização**: São Paulo <small class="separator">–</small> Brasil.
 - **Setores**: TI, Financeiro, Bancário.
 - **Regime de Trabalho**: Presencial.
 - **Atividades**:
@@ -773,7 +792,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 - **Cliente**: Bradesco.
 - **Projeto**: Projeto de Painel Financeiro.
-- **Localização**: São Paulo – Brasil.
+- **Localização**: São Paulo <small class="separator">–</small> Brasil.
 - **Setores**: TI, Financeiro, Bancário.
 - **Regime de Trabalho**: Presencial.
 - **Atividades**:
@@ -791,7 +810,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 
 - **Cliente**: Bradesco.
 - **Projeto**: Painel Financeiro.
-- **Localização**: São Paulo – Brasil.
+- **Localização**: São Paulo <small class="separator">–</small> Brasil.
 - **Setores**: TI, Financeiro, Bancário.
 - **Regime de Trabalho**: Presencial.
 - **Atividades**:
