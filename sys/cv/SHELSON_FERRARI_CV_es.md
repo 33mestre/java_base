@@ -73,7 +73,7 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 
   <tr>
     <td><strong>Lenguajes de Programación</strong></td>
-    <td>Java, JavaScript, Python, Go.</td>
+    <td>Java, JavaScript, Python y Go.</td>
   </tr>
   <tr>
     <td><strong>Gestión de Procesos</strong></td>
@@ -370,12 +370,54 @@ Soy intelectualmente inspirado y en línea desde 1999, y todo lo que realmente q
 - **Período**: 1992 – 1995.
 - **Título Obtenido**: Curso Técnico en Electrónica.
 
-### Habilidades Lingüísticas
+## Habilidades Lingüísticas
 
-- **Lengua Materna**: Portugués.
-- **Otros Idiomas**:
-  - **Inglés**: C2 (Comprensión auditiva, Lectura), C1 (Interacción oral, Producción oral), B2 (Escritura);
-  - **Español**: C1 (Comprensión auditiva, Lectura), B2 (Interacción oral, Producción oral, Escritura).
+<table class="language">
+    <tr>
+        <td class="right mothertongue">
+            <strong>Lengua Materna</strong>
+        </td>
+        <td class="left mothertongue label">
+            <strong>Portugués</strong>
+        </td>
+        <td colspan="4" class="mothertongue" style="border-left:0px;">&nbsp;</td>
+    </tr>
+    <tr>
+        <td class="right noborder"><strong>Otros Idiomas</strong></td>
+        <td colspan="5" class="noborder">&nbsp;</td>
+    </tr>
+    <tr>
+        <td class="right noborder"><small class="tiny">Autoevaluación</small></td>
+        <th colspan="2" class="border darkGray"><strong>Comprensión</strong></th>
+        <th colspan="2" class="darkGray"><strong>Habla</strong></th>
+        <th class="darkGray"><strong>Escritura</strong></th>
+    </tr>
+    <tr>
+        <td class="right noborder"><small class="tiny">Nivel Europeo (&nbsp;CEFR&nbsp;)</small></td>
+        <th>Comprensión auditiva</th>
+        <th>Lectura</th>
+        <th>Interacción oral</th>
+        <th>Expresión oral</th>
+        <th>Escrito</th>
+    </tr>
+    <tr class="lang blue">
+        <td class="right border"><strong>Inglés</strong></td>
+        <td class="border">C2</td>
+        <td class="border">C2</td>
+        <td class="border">C1</td>
+        <td class="border">C1</td>
+        <td class="border">B2</td>
+    </tr>
+    <tr class="gray lang">
+        <td class="right border"><strong>Español</strong></td>
+        <td class="border">C1</td>
+        <td class="border">C1</td>
+        <td class="border">B2</td>
+        <td class="border">B2</td>
+        <td class="border">B2</td>
+    </tr>
+</table>
+
 
 ### Certificación de Idiomas – Inglés (C1)
 

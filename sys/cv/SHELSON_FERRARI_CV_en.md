@@ -74,7 +74,7 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
   </tr>
   <tr>
     <td>Programming Languages</td>
-    <td>Java, JavaScript, Python, Go.</td>
+    <td>Java, JavaScript, Python and Go.</td>
   </tr>
   <tr>
     <td>Process Management</td>
@@ -366,17 +366,58 @@ I'm intellectually inspired and have been online since 1999, and all I really wa
 - **Qualification Awarded**: Bachelor's degree in Business Administration (Incomplete).
 
 ### Bradesco Foundation
-
+ 
 - **Course**: Electronics.
 - **Period**: 1992 – 1995.
 - **Qualification Awarded**: Technical Course in Electronics.
 
-### Language Skills
+## Language Skills
 
-- **Mother Tongue**: Portuguese.
-- **Other Languages**:
-  - **English**: C2 (Listening, Reading), C1 (Oral interaction, Oral production), B2 (Writing);
-  - **Spanish**: C1 (Listening, Reading), B2 (Oral interaction, Oral production, Writing).
+<table class="language">
+    <tr>
+        <td class="right mothertongue">
+            <strong>Mother Tongue</strong>
+        </td>
+        <td class="left mothertongue label">
+            <strong>Portuguese</strong>
+        </td>
+        <td colspan="4" class="mothertongue" style="border-left:0px;">&nbsp;</td>
+    </tr>
+    <tr>
+        <td class="right noborder"><strong>Other Languages</strong></td>
+        <td colspan="5" class="noborder">&nbsp;</td>
+    </tr>
+    <tr>
+        <td class="right noborder"><small class="tiny">Self-assessment</small></td>
+        <th colspan="2" class="border darkGray"><strong>Understanding</strong></th>
+        <th colspan="2" class="darkGray"><strong>Speaking</strong></th>
+        <th class="darkGray"><strong>Writing</strong></th>
+    </tr>
+    <tr>
+        <td class="right noborder"><small class="tiny">European Level (&nbsp;CEFR&nbsp;)</small></td>
+        <th>Listening comprehension</th>
+        <th>Reading</th>
+        <th>Oral interaction</th>
+        <th>Oral production</th>
+        <th>Writen</th>
+    </tr>
+    <tr class="lang blue">
+      <td class="right border "><strong>English</strong></td>
+      <td class="border ">C2</td>
+      <td class="border ">C2</td>
+      <td class="border">C1</td>
+      <td class="border">C1</td>
+      <td class="border">B2</td>
+  </tr>
+  <tr class="gray lang">
+    <td class="right border"><strong>Spanish</strong></td>
+    <td class="border">C1</td>
+    <td class="border">C1</td>
+    <td class="border">B2</td>
+    <td class="border">B2</td>
+    <td class="border">B2</td>
+</tr>
+</table>
 
 ### Language Certification – English (C1)
 

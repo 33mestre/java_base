@@ -73,7 +73,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
   </tr>
   <tr>
     <td><strong>Linguagens de Programação</strong></td>
-    <td>Java, JavaScript, Python, Go.</td>
+    <td>Java, JavaScript, Python e Go.</td>
   </tr>
   <tr>
     <td><strong>Gestão de Processos</strong></td>
@@ -370,12 +370,53 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 - **Período**: 1992 – 1995.
 - **Qualificação Obtida**: Curso Técnico em Eletrônica.
 
-### Habilidades Linguísticas
+## Habilidades Linguísticas
 
-- **Língua Nativa**: Português.
-- **Outros Idiomas**:
-  - **Inglês**: C2 (Compreensão auditiva, Leitura), C1 (Interação oral, Produção oral), B2 (Escrita);
-  - **Espanhol**: C1 (Compreensão auditiva, Leitura), B2 (Interação oral, Produção oral, Escrita).
+<table class="language">
+    <tr>
+        <td class="right mothertongue">
+            <strong>Língua Materna</strong>
+        </td>
+        <td class="left mothertongue label">
+            <strong>Português</strong>
+        </td>
+        <td colspan="4" class="mothertongue" style="border-left:0px;">&nbsp;</td>
+    </tr>
+    <tr>
+        <td class="right noborder"><strong>Outros Idiomas</strong></td>
+        <td colspan="5" class="noborder">&nbsp;</td>
+    </tr>
+    <tr>
+        <td class="right noborder"><small class="tiny">Autoavaliação</small></td>
+        <th colspan="2" class="border darkGray"><strong>Compreensão</strong></th>
+        <th colspan="2" class="darkGray"><strong>Fala</strong></th>
+        <th class="darkGray"><strong>Escrita</strong></th>
+    </tr>
+    <tr>
+        <td class="right noborder"><small class="tiny">Nível Europeu (&nbsp;CEFR&nbsp;)</small></td>
+        <th>Compreensão auditiva</th>
+        <th>Leitura</th>
+        <th>Interação oral</th>
+        <th>Produção oral</th>
+        <th>Escrever</th>
+    </tr>
+    <tr class="lang blue">
+      <td class="right border "><strong>Inglês</strong></td>
+      <td class="border ">C2</td>
+      <td class="border ">C2</td>
+      <td class="border">C1</td>
+      <td class="border">C1</td>
+      <td class="border">B2</td>
+  </tr>
+  <tr class="gray lang">
+    <td class="right border"><strong>Espanhol</strong></td>
+    <td class="border">C1</td>
+    <td class="border">C1</td>
+    <td class="border">B2</td>
+    <td class="border">B2</td>
+    <td class="border">B2</td>
+</tr>
+</table>
 
 ### Certificação de Idiomas – Inglês (C1)
 
@@ -438,7 +479,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 - **Regime de Trabalho**: Home Office.
 - **Atividades**:
   - Análise e Arquitetura de Sistemas: Criação de uma arquitetura exclusiva, design e implementação de diagramas, modelagem de dados, criação de histórias de usuários, documentação do produto;
-  - Desenv.olvimento: Sistema low-code e no-code com uma interface cognitiva única;
+  - Desenvolvimento: Sistema low-code e no-code com uma interface cognitiva única;
   - UX/UI: Coleta de hipóteses, pesquisa de mesa, jornadas de clientes, testes de usabilidade, wireframes, acessibilidade, prototipagem, documentação.
 - **Tecnologias e Ferramentas**:
   - Linguagem / Servidor: JavaScript, Node.js;
@@ -459,7 +500,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 - **Setores**: TI, Varejo.
 - **Regime de Trabalho**: Home Office.
 - **Atividades**:
-  - Análise e Arquitetura de Sistemas: Colaboração com outras equipes para garantir a implementação consistente da arquitetura, ;resolução de problemas de integração, design e implementação de diagramas, modelagem de dados, criação de histórias de usuários, .documentação do produto;
+  - Análise e Arquitetura de Sistemas: Colaboração com outras equipes para garantir a implementação consistente da arquitetura, resolução de problemas de integração, design e implementação de diagramas, modelagem de dados, criação de histórias de usuários, documentação do produto;
   - Desenvolvimento: Construção de aplicações web reativas e testes automatizados.
 - **Tecnologias e Ferramentas**:
   - Linguagens / Servidores: Java 8, JavaScript, Java Spring, Node.js;
@@ -700,7 +741,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 - **Setores**: TI, Financeiro, Bancário.
 - **Regime de Trabalho**: Presencial.
 - **Atividades**:
-  - Desenvolvimento, arquitetura e análise do sistema Java para o projeto do cliente – um sistema voltado para avaliar a satisfação ;de todos os profissionais do cliente.
+  - Desenvolvimento, arquitetura e análise do sistema Java para o projeto do cliente – um sistema voltado para avaliar a satisfação de todos os profissionais do cliente.
 - **Tecnologias e Ferramentas**:
   - Java EE 5, Eclipse 3.2, IBM WebSphere, Struts, Hibernate, Oracle DB, XML e XSL, JBoss Seam, JSF, JPA, RichFaces, JUnit, DBUnit, Selenium, DHTML.
 
@@ -718,7 +759,7 @@ Sou intelectualmente inspirado e estou online desde 1999, e tudo o que eu realme
 - **Setores**: TI, Financeiro, Bancário.
 - **Regime de Trabalho**: Presencial.
 - **Atividades**:
-  - Desenvolvimento, arquitetura e análise do sistema Java para o projeto do cliente – um sistema para parceiros dentro dos padrões ;de desenvolvimento de TI.
+  - Desenvolvimento, arquitetura e análise do sistema Java para o projeto do cliente – um sistema para parceiros dentro dos padrões de desenvolvimento de TI.
 - **Tecnologias e Ferramentas**:
   - Java, IBM WebSphere, IBM DB2.
 
