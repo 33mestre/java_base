@@ -2,7 +2,7 @@
 <tr><th width="150" class="avatar">
 <img class="avatar" src="https://avatars.githubusercontent.com/u/5073958?v=4" alt="Shelson Ferrari's GitHub Profile Picture" width="100" height="100"></th>
 <th align="left" class="name"><p>SHELSON FERRARI</p>
-<p style="color: rgba(0, 0, 0, 0.020);position: absolute;right: 44px;top: -40px;font-size: 120px;font-family: 'Montserrat';font-weight: 100">ஃ </p>
+<p style="color: rgba(0, 0, 0, 0.020);position: absolute;right: 44px;top: -40px;font-size: 120px;font-family: 'Montserrat';font-weight: 100">xஃ </p>
 <p style="color: rgba(0, 0, 0, 0.025);position: absolute;right: 33px;top: 3px;font-size: 120px;font-family: 'Montserrat';font-weight: 100" class="triangle">&nbsp;</p>
 <p style="color: rgba(0, 0, 0, 0.025);position: absolute;left: 24px;top: -60px;font-size: 120px;font-family: 'Montserrat';font-weight: 100">
 <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity: 0.04;">
