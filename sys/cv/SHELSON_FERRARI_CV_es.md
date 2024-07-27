@@ -2,9 +2,15 @@
 <tr><th width="150" class="avatar">
 <img class="avatar" src="https://avatars.githubusercontent.com/u/5073958?v=4" alt="Shelson Ferrari's GitHub Profile Picture" width="100" height="100"></th>
 <th align="left" class="name"><p>SHELSON FERRARI</p>
-<p style="color: rgba(0, 0, 0, 0.020);position: absolute;right: 44px;top: -40px;font-size: 120px;font-family: 'Montserrat';font-weight: 100">ஃ </p>
-<p style="color: rgba(0, 0, 0, 0.025);position: absolute;right: 33px;top: 3px;font-size: 120px;font-family: 'Montserrat';font-weight: 100" class="triangle">&nbsp;</p>
-<p style="color: rgba(0, 0, 0, 0.025);position: absolute;left: 24px;top: -60px;font-size: 120px;font-family: 'Montserrat';font-weight: 100">
+<p style="color: rgba(0, 0, 0, 0.020);position: absolute;right: 24px;top: 10px;">
+<svg width="140" height="140" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="50" cy="30" r="10" fill="none" stroke="rgba(0, 0, 0, 0.020)" stroke-width="2"/>
+  <circle cx="30" cy="60" r="10" fill="none" stroke="rgba(0, 0, 0, 0.020)" stroke-width="2"/>
+  <circle cx="70" cy="60" r="10" fill="none" stroke="rgba(0, 0, 0, 0.020)" stroke-width="2"/>
+</svg>
+ </p>
+<p style="color: rgba(0, 0, 0, 0.025);position: absolute;right: 33px;top: 3px;font-size: 120px;" class="triangle">&nbsp;</p>
+<p style="color: rgba(0, 0, 0, 0.025);position: absolute;left: 24px;top: -60px;font-size: 120px;">
 <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity: 0.04;">
 <circle cx="12" cy="12" r="5" stroke="#1C274C" stroke-width="1.5"></circle>
 <path d="M12 2V4" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
