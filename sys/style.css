@@ -1,3 +1,8 @@
+table, figure, img, ul li, .companyBlock{
+  page-break-inside: avoid;
+}
+
+
 .triangle {
   position: absolute;
   top: 0;
@@ -292,7 +297,7 @@ th.name {
 /* Styles for ordered and unordered lists */
 ul, ol {
   margin: 0px 0px 0px 0px;
-  padding-left: 10px;
+  padding-left: 0px;
 }
 
 /* Styles for certification paragraphs */
@@ -382,8 +387,8 @@ ul > li {
 
 ul > li > ul > li {
   list-style: none;
-  padding-left: 20px;
-  background: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="utf-8"?><svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>') no-repeat left center;
+  padding-left: 15px;
+  background: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="utf-8"?><svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>') no-repeat 0px 10px;
   background-size: 8px 8px;
   background-repeat: no-repeat;
 }
@@ -539,6 +544,7 @@ h3 {
 /* Styles for general paragraphs */
 p {
   margin: 10px 0;
+  margin-bottom: 0px;
 }
 
 /* Styles for code blocks */
