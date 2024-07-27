@@ -1,7 +1,12 @@
 
 # Currency Conversion API - Project Change Log
 
-**Current version:** [0.8.3](https://github.com/33mestre/java_base/commit/aa2041d) (Shelson Ferrari) - 27/07/2024 03:48h
+**Current version:** [0.8.4](https://github.com/33mestre/java_base/commit/5d91877) (Shelson Ferrari) - 27/07/2024 04:01h
+
+---
+
+[0.8.4](https://github.com/33mestre/java_base/commit/5d91877) - 27/07/2024 04:01h - 5d91877 - Shelson Ferrari
+- font monospaced comum em mac e linux
 
 ---
 
