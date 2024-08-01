@@ -114,6 +114,12 @@ public class CurrencyConversionController {
 
         // Validate that only the expected parameters are present
         validateParameters(request);
+        
+        // Validate the amount parameter
+        if (amount <= 0) {
+            logger.error("Invalid amount provided: {}", amount);
+            throw new BusinessException("Amount must be greater than zero");
+        }
 
         try {
             Currency sourceCurrency = Currency.valueOf(source);
