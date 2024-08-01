@@ -1,7 +1,17 @@
 
 # Currency Conversion API - Project Change Log
 
-**Current version:** [0.9.4](https://github.com/33mestre/java_base/commit/3da2a37) (Shelson Ferrari) - 31/07/2024 23:33h
+**Current version:** [0.9.6](https://github.com/33mestre/java_base/commit/e6bfd6a) (Shelson Ferrari) - 01/08/2024 00:34h
+
+---
+
+[0.9.6](https://github.com/33mestre/java_base/commit/e6bfd6a) - 01/08/2024 00:34h - e6bfd6a - Shelson Ferrari
+- ajustes md, style
+
+---
+
+[0.9.5](https://github.com/33mestre/java_base/commit/747ad4f) - 01/08/2024 00:11h - 747ad4f - Shelson Ferrari
+- validacao de valores melhores q zero no service q utiliza cammel
 
 ---
 
