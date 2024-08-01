@@ -14,16 +14,6 @@ $dokka.location:com.shelson.application.controller/SwaggerRedirectController/red
 $dokka.location:com.shelson.application.dto////PointingToDeclaration/java_base/com.shelson.application.dto/index.md
 $dokka.location:com.shelson.application.dto/CurrencyConversionDTO///PointingToDeclaration/java_base/com.shelson.application.dto/-currency-conversion-d-t-o/index.md
 $dokka.location:com.shelson.application.dto/CurrencyConversionDTO/CurrencyConversionDTO/#/PointingToDeclaration/java_base/com.shelson.application.dto/-currency-conversion-d-t-o/-currency-conversion-d-t-o.md
-$dokka.location:com.shelson.application.dto/CurrencyConversionDTO/CurrencyConversionDTO/#com.shelson.domain.model.Currency#com.shelson.domain.model.Currency#double#java.time.LocalDateTime#double#double/PointingToDeclaration/java_base/com.shelson.application.dto/-currency-conversion-d-t-o/-currency-conversion-d-t-o.md
-$dokka.location:com.shelson.application.dto/CurrencyConversionDTO/amount/#/PointingToDeclaration/java_base/com.shelson.application.dto/-currency-conversion-d-t-o/amount.md
-$dokka.location:com.shelson.application.dto/CurrencyConversionDTO/conversionRate/#/PointingToDeclaration/java_base/com.shelson.application.dto/-currency-conversion-d-t-o/conversion-rate.md
-$dokka.location:com.shelson.application.dto/CurrencyConversionDTO/convertedAmount/#/PointingToDeclaration/java_base/com.shelson.application.dto/-currency-conversion-d-t-o/converted-amount.md
-$dokka.location:com.shelson.application.dto/CurrencyConversionDTO/equals/#java.lang.Object/PointingToDeclaration/java_base/com.shelson.application.dto/-currency-conversion-d-t-o/equals.md
-$dokka.location:com.shelson.application.dto/CurrencyConversionDTO/hashCode/#/PointingToDeclaration/java_base/com.shelson.application.dto/-currency-conversion-d-t-o/hash-code.md
-$dokka.location:com.shelson.application.dto/CurrencyConversionDTO/queryDate/#/PointingToDeclaration/java_base/com.shelson.application.dto/-currency-conversion-d-t-o/query-date.md
-$dokka.location:com.shelson.application.dto/CurrencyConversionDTO/sourceCurrency/#/PointingToDeclaration/java_base/com.shelson.application.dto/-currency-conversion-d-t-o/source-currency.md
-$dokka.location:com.shelson.application.dto/CurrencyConversionDTO/targetCurrency/#/PointingToDeclaration/java_base/com.shelson.application.dto/-currency-conversion-d-t-o/target-currency.md
-$dokka.location:com.shelson.application.dto/CurrencyConversionDTO/toString/#/PointingToDeclaration/java_base/com.shelson.application.dto/-currency-conversion-d-t-o/to-string.md
 $dokka.location:com.shelson.application.processors////PointingToDeclaration/java_base/com.shelson.application.processors/index.md
 $dokka.location:com.shelson.application.processors/ExchangeRateProcessor///PointingToDeclaration/java_base/com.shelson.application.processors/-exchange-rate-processor/index.md
 $dokka.location:com.shelson.application.processors/ExchangeRateProcessor/ExchangeRateProcessor/#/PointingToDeclaration/java_base/com.shelson.application.processors/-exchange-rate-processor/-exchange-rate-processor.md
