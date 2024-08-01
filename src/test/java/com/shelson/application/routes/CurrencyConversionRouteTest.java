@@ -37,7 +37,7 @@ import com.shelson.application.dto.CurrencyConversionDTO;
 /**
  * Unit tests for the {@link CurrencyConversionRoute} class.
  * 
- * @version 0.9.2
+ * @version 0.6.3
  * @since 2024-07-24
  * 
  * @author Shelson Ferrari
@@ -85,7 +85,7 @@ public class CurrencyConversionRouteTest {
         logger.info("Result received: {}", result);
 
         assertEquals("USD", result.sourceCurrency().getCode(), "The source currency should be USD");
-        assertEquals("EUR", result.sourceCurrency().getCode(), "The target currency should be EUR");
+        assertEquals("EUR", result.targetCurrency().getCode(), "The target currency should be EUR");
 
         camelContext.stop();
         logger.info("Camel context stopped");
