@@ -47,7 +47,7 @@ import com.shelson.infrastructure.exception.ResourceNotFoundException;
 /**
  * Unit tests for {@link CurrencyConversionService}.
  * 
- * @version 0.9.2
+ * @version 0.6.3
  * @since 2024-07-24
  * 
  * @author Shelson Ferrari
@@ -110,8 +110,8 @@ public class CurrencyConversionServiceTest {
 
         // Assert results
         assertThat(resultDTO.sourceCurrency()).isEqualTo(source);
-        assertThat(resultDTO.sourceCurrency()).isEqualTo(target);
-        assertThat(resultDTO.sourceCurrency()).isEqualTo(rate);
+        assertThat(resultDTO.targetCurrency()).isEqualTo(target);
+        assertThat(resultDTO.conversionRate()).isEqualTo(rate);
 
         // Compare year, month, day, hour, minute, second fields, ignoring nanos
         LocalDateTime expectedQueryDate = now.withNano(0);
