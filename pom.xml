@@ -77,6 +77,22 @@ Configures:
 
     <!-- Project dependencies -->
     <dependencies>
+    
+   <dependency>
+	<groupId>com.itextpdf</groupId>
+	<artifactId>layout</artifactId>
+	<version>7.1.1</version>
+</dependency>
+<!-- Thanks for using https://jar-download.com -->
+
+
+
+    <dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-simple</artifactId>
+    <version>1.7.30</version>
+</dependency>
+
 
         <!-- apache commons -->
         <dependency>
